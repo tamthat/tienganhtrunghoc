@@ -1,0 +1,6 @@
+# Windows reserved filenames
+dict/con.json
+dict/con .json
+dict/prn.json
+dict/aux.json
+dict/nul.json
