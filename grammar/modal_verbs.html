@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Động Từ Khuyết Thiếu (Modal Verbs)</h2>
+
+        <div class="card">
+            <h3>Động Từ Khuyết Thiếu Là Gì?</h3>
+            <p><span class="highlight">Động Từ Khuyết Thiếu (Modal Verbs)</span> là <strong>những động từ trợ thêm (auxiliary verbs) được dùng kèm với động từ chính để thể hiện khả năng, sự cho phép, lời khuyên, nghĩa vụ, dự đoán, hoặc các ý nghĩa khác</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Modal verbs LUÔN đi kèm với động từ chính dạng infinitive KHÔNG "to" (infinitive without to) | KHÔNG thay đổi dạng theo chủ ngữ | Rất quan trọng và dùng rất thường xuyên trong tiếng Anh.
+            </div>
+
+            <h3>16 Modal Verbs & Ý Nghĩa Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal Verb</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Thì</th>
+                        <th>Loại</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAN</strong></td>
+                        <td>Khả năng, sự cho phép</td>
+                        <td>Hiện tại</td>
+                        <td>Ability/Permission</td>
+                        <td>I can swim</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>COULD</strong></td>
+                        <td>Khả năng quá khứ, yêu cầu polite</td>
+                        <td>Quá khứ/Hiện tại</td>
+                        <td>Past ability/Polite request</td>
+                        <td>I could swim / Could you help?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAY</strong></td>
+                        <td>Sự cho phép (formal), khả năng</td>
+                        <td>Hiện tại</td>
+                        <td>Permission/Possibility</td>
+                        <td>May I come in?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MIGHT</strong></td>
+                        <td>Khả năng (thấp hơn may)</td>
+                        <td>Hiện tại/Tương lai</td>
+                        <td>Possibility</td>
+                        <td>It might rain tomorrow</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MUST</strong></td>
+                        <td>Nghĩa vụ, dự đoán chắc chắn</td>
+                        <td>Hiện tại</td>
+                        <td>Obligation/Deduction</td>
+                        <td>You must wear a seatbelt</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SHOULD</strong></td>
+                        <td>Lời khuyên, kỳ vọng</td>
+                        <td>Hiện tại</td>
+                        <td>Advice/Expectation</td>
+                        <td>You should eat vegetables</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WILL</strong></td>
+                        <td>Tương lai, cam đoan</td>
+                        <td>Tương lai</td>
+                        <td>Future/Promise</td>
+                        <td>I will help you</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WOULD</strong></td>
+                        <td>Quá khứ lặp lại, điều kiện</td>
+                        <td>Quá khứ/Hypothetical</td>
+                        <td>Past habit/Conditional</td>
+                        <td>I would visit every summer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHALL</strong></td>
+                        <td>Lời đề nghị formal, nghĩa vụ</td>
+                        <td>Tương lai/Formal</td>
+                        <td>Offer/Obligation</td>
+                        <td>Shall I help you?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>OUGHT TO</strong></td>
+                        <td>Lời khuyên, kỳ vọng</td>
+                        <td>Hiện tại</td>
+                        <td>Advice/Expectation</td>
+                        <td>You ought to apologize</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NEED TO</strong></td>
+                        <td>Cần thiết, không cần thiết</td>
+                        <td>Hiện tại</td>
+                        <td>Necessity/No necessity</td>
+                        <td>You need to come early</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HAVE TO</strong></td>
+                        <td>Bắt buộc, áp dụng từ ngoài</td>
+                        <td>Hiện tại</td>
+                        <td>External obligation</td>
+                        <td>I have to go to work</td>
+                    </tr>
+                    <tr>
+                        <td><strong>USED TO</strong></td>
+                        <td>Thói quen quá khứ</td>
+                        <td>Quá khứ</td>
+                        <td>Past habit</td>
+                        <td>I used to smoke</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HAD BETTER</strong></td>
+                        <td>Nên, hẳn là nên (mạnh)</td>
+                        <td>Hiện tại</td>
+                        <td>Advice (strong)</td>
+                        <td>You had better leave now</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DARE</strong></td>
+                        <td>Dám (thách đố)</td>
+                        <td>Hiện tại/Quá khứ</td>
+                        <td>Challenge/Risk</td>
+                        <td>How dare you!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BE ABLE TO</strong></td>
+                        <td>Có khả năng (bất kỳ thì nào)</td>
+                        <td>Bất kỳ thì</td>
+                        <td>Ability</td>
+                        <td>I will be able to do it</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ABILITY - KHẢ NĂNG -->
+        <h2>💪 1. Khả Năng (Ability): Can, Could, Be Able To, Manage To</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Thì</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAN</strong></td>
+                        <td>Hiện tại/Hiện tại chung</td>
+                        <td>Khả năng hiện tại</td>
+                        <td>She can speak English</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>COULD</strong></td>
+                        <td>Quá khứ chung</td>
+                        <td>Khả năng quá khứ (chung chung)</td>
+                        <td>I could swim as a child</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WAS/WERE ABLE TO</strong></td>
+                        <td>Quá khứ cụ thể</td>
+                        <td>Khả năng quá khứ (một lần cụ thể)</td>
+                        <td>He was able to escape (một lần)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MANAGED TO</strong></td>
+                        <td>Quá khứ cụ thể</td>
+                        <td>Thành công mặc dù khó khăn</td>
+                        <td>She managed to finish despite difficulty</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Can - Khả Năng Hiện Tại:</strong></p>
+            <div class="example">
+                • I can play the guitar (Tôi có thể chơi đàn ghi-ta)<br>
+                • She can speak three languages (Cô ấy có thể nói ba ngôn ngữ)<br>
+                • They can solve this problem (Họ có thể giải quyết vấn đề này)<br>
+                • Can you drive a car? (Bạn có thể lái xe không?)
+            </div>
+
+            <p><strong>Could - Khả Năng Quá Khứ (Chung Chung):</strong></p>
+            <div class="example">
+                • When I was young, I could climb trees (Khi tôi trẻ, tôi có thể爬 cây)<br>
+                • Mozart could play the piano at age five (Mozart có thể chơi đàn piano ở tuổi năm)<br>
+                • He could speak English fluently (Anh ấy có thể nói tiếng Anh lưu loát)<br>
+                • Could you swim when you were a child? (Bạn có thể bơi khi còn nhỏ không?)
+            </div>
+
+            <p><strong>Was/Were Able To & Managed To - Khả Năng Quá Khứ (Một Lần Cụ Thể):</strong></p>
+            <div class="example">
+                • Despite heavy traffic, he was able to arrive on time (Mặc dù giao thông cấp, anh ấy có thể đến đúng giờ)<br>
+                • She managed to finish her work before midnight (Cô ấy thành công hoàn thành công việc trước nửa đêm)<br>
+                • The burglar was able to get in through the window (Tên cướp có thể vào qua cửa sổ)<br>
+                • They managed to escape from the building (Họ thành công thoát khỏi tòa nhà)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng - Could vs Was Able To:</strong><br>
+                • Could = khả năng CHUNG (habitual) | Was able to = khả năng CỤTHỂ (specific occasion)<br>
+                ✅ I could swim as a child (khả năng chung) | ✅ I was able to swim across the river (lần cụ thể)<br>
+                ❌ Could not thường không dùng cho one occasion | ✅ Couldn't fix the car = generally didn't have ability
+            </div>
+        </div>
+
+        <!-- PERMISSION - SỰ CHO PHÉP -->
+        <h2>🔓 2. Sự Cho Phép (Permission): Can, Could, May, Might</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <p><span class="highlight">CAN, COULD, MAY, MIGHT được dùng để xin/cho phép, tùy độ chính thức</span>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Tone</th>
+                        <th>Cách Dùng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAN</strong></td>
+                        <td>Informal</td>
+                        <td>Xin phép không chính thức</td>
+                        <td>Can I go to the bathroom?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>COULD</strong></td>
+                        <td>Polite</td>
+                        <td>Xin phép polite hơn can</td>
+                        <td>Could I leave early?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAY</strong></td>
+                        <td>Formal</td>
+                        <td>Xin phép chính thức</td>
+                        <td>May I ask a question?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MIGHT</strong></td>
+                        <td>Formal (rare)</td>
+                        <td>Xin phép rất chính thức (ít dùng)</td>
+                        <td>Might I interrupt?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Can - Xin Phép Không Chính Thức:</strong></p>
+            <div class="example">
+                • Can I use your phone? (Tôi có thể dùng điện thoại của bạn không?)<br>
+                • Can I come in? (Tôi có thể vào được không?)<br>
+                • Can I help you? (Tôi có thể giúp bạn không?)<br>
+                • Can I have a coffee? (Tôi có thể có một cà phê không?)
+            </div>
+
+            <p><strong>Could - Xin Phép Polite:</strong></p>
+            <div class="example">
+                • Could I ask you a favor? (Tôi có thể nhờ bạn một việc không?)<br>
+                • Could you please help me? (Bạn có thể giúp tôi được không?)<br>
+                • Could I possibly borrow your pen? (Tôi có thể mượn bút của bạn được không?)<br>
+                • Could you spare a moment? (Bạn có thể dành chút thời gian không?)
+            </div>
+
+            <p><strong>May - Xin Phép Chính Thức:</strong></p>
+            <div class="example">
+                • May I leave now? (Tôi có thể rời đi bây giờ được không?)<br>
+                • May I speak with the manager? (Tôi có thể nói chuyện với quản lý được không?)<br>
+                • May I present my ideas? (Tôi có thể trình bày ý tưởng của tôi được không?)<br>
+                • You may go now (Bạn có thể đi bây giờ - cho phép)
+            </div>
+        </div>
+
+        <!-- POSSIBILITY - KHÍA NĂNG -->
+        <h2>🎲 3. Khả Năng (Possibility): May, Might, Could, Can't</h2>
+
+        <div class="card">
+            <h3>I. Mức Độ Chắc Chắn</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Mức Độ Chắc Chắn</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MUST</strong></td>
+                        <td>95% - Chắc chắn hầu như 100%</td>
+                        <td>Dự đoán chắc chắn nhất</td>
+                        <td>She must be at home (chắc chắn ở nhà)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WILL</strong></td>
+                        <td>90% - Rất chắc chắn</td>
+                        <td>Tương lai chắc chắn</td>
+                        <td>It will rain tomorrow</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAY</strong></td>
+                        <td>50% - Có thể xảy ra</td>
+                        <td>Khả năng trung bình</td>
+                        <td>It may rain tomorrow</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MIGHT</strong></td>
+                        <td>40% - Có thể xảy ra (thấp hơn may)</td>
+                        <td>Khả năng thấp hơn may</td>
+                        <td>It might rain tomorrow</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAN'T</strong></td>
+                        <td>0% - Chắc chắn không</td>
+                        <td>Dự đoán không thể</td>
+                        <td>That can't be true (chắc chắn không)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Must - Dự Đoán Chắc Chắn (95%):</strong></p>
+            <div class="example">
+                • She must be at home now (Cô ấy chắc chắn ở nhà bây giờ)<br>
+                • He must be the manager (Anh ấy chắc chắn là quản lý)<br>
+                • They must have already left (Họ chắc chắn đã rời đi)<br>
+                • This must be your book (Đây chắc chắn là cuốn sách của bạn)
+            </div>
+
+            <p><strong>May & Might - Khả Năng Trung Bình:</strong></p>
+            <div class="example">
+                • It may rain tomorrow (Ngày mai có thể mưa - 50%)<br>
+                • It might rain tomorrow (Ngày mai có thể mưa - 40%)<br>
+                • She may come to the party (Cô ấy có thể đến bữa tiệc)<br>
+                • They might arrive late (Họ có thể đến muộn)
+            </div>
+
+            <p><strong>Can't - Không Thể (0%):</strong></p>
+            <div class="example">
+                • That can't be true (Điều đó không thể là sự thật)<br>
+                • He can't be 30 years old (Anh ấy không thể 30 tuổi)<br>
+                • This can't be the answer (Đây không thể là câu trả lời)<br>
+                • She can't have forgotten (Cô ấy không thể quên)
+            </div>
+        </div>
+
+        <!-- OBLIGATION - NGHĨA VỤ -->
+        <h2>⚠️ 4. Nghĩa Vụ & Bắt Buộc (Obligation): Must, Have To, Need To, Should</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Mức Độ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MUST</strong></td>
+                        <td>Mạnh - Bắt buộc tuyệt đối</td>
+                        <td>Quyết định/luật lệ bên trong</td>
+                        <td>You must arrive on time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HAVE TO</strong></td>
+                        <td>Mạnh - Bắt buộc từ bên ngoài</td>
+                        <td>Luật lệ/quyết định từ ngoài</td>
+                        <td>I have to go to work (job)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NEED TO</strong></td>
+                        <td>Mạnh - Cần thiết</td>
+                        <td>Thiết yếu, cần phải làm</td>
+                        <td>You need to study for the exam</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SHOULD</strong></td>
+                        <td>Trung bình - Lời khuyên</td>
+                        <td>Khuyên bảo, kỳ vọng</td>
+                        <td>You should eat vegetables</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OUGHT TO</strong></td>
+                        <td>Trung bình - Lời khuyên (formal)</td>
+                        <td>Khuyên bảo (chính thức)</td>
+                        <td>You ought to apologize</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Must - Bắt Buộc Tuyệt Đối (Quyết Định Nội Bộ):</strong></p>
+            <div class="example">
+                • You must wear a seatbelt while driving (Bạn phải đeo dây an toàn khi lái xe)<br>
+                • Students must attend all classes (Học sinh phải tham dự tất cả các lớp)<br>
+                • Everyone must follow the rules (Mọi người phải tuân theo quy tắc)<br>
+                • You must leave immediately (Bạn phải rời đi ngay lập tức)
+            </div>
+
+            <p><strong>Have To - Bắt Buộc Từ Bên Ngoài (Luật Lệ/Quyết Định Từ Ngoài):</strong></p>
+            <div class="example">
+                • I have to go to work every day (Tôi phải đi làm mỗi ngày - công việc bắt buộc)<br>
+                • She has to take the medication (Cô ấy phải uống thuốc - bác sĩ bắt buộc)<br>
+                • We have to follow the company policy (Chúng tôi phải tuân theo chính sách công ty)<br>
+                • You have to be there by 5 PM (Bạn phải ở đó trước 5 giờ chiều)
+            </div>
+
+            <p><strong>Should - Lời Khuyên (Không Bắt Buộc Nhưng Nên):</strong></p>
+            <div class="example">
+                • You should eat more healthy food (Bạn nên ăn thức ăn lành mạnh hơn)<br>
+                • She should see a doctor about her cough (Cô ấy nên khám bác sĩ về cơn ho)<br>
+                • They should arrive by 6 PM (Họ nên đến vào lúc 6 giờ chiều)<br>
+                • You should apologize for your mistake (Bạn nên xin lỗi vì sai lầm)
+            </div>
+        </div>
+
+        <!-- PAST ABILITY & HABIT - QUÁ KHỨ -->
+        <h2>⏰ 5. Khả Năng & Thói Quen Quá Khứ: Used To, Would, Could</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <p><span class="highlight">USED TO, WOULD, COULD được dùng để nói về thói quen và khả năng quá khứ</span>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Dùng Cho</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USED TO</strong></td>
+                        <td>Hành động & Tình trạng</td>
+                        <td>Thói quen quá khứ (không còn)</td>
+                        <td>I used to smoke (không còn hút)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WOULD</strong></td>
+                        <td>Chỉ hành động (formal/storytelling)</td>
+                        <td>Thói quen quá khứ (trong kể chuyện)</td>
+                        <td>Every summer we would go camping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>COULD</strong></td>
+                        <td>Khả năng chung quá khứ</td>
+                        <td>Khả năng đó đã có từ trước</td>
+                        <td>I could swim as a child</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Used To - Thói Quen/Tình Trạng Quá Khứ (Cả Hành Động & States):</strong></p>
+            <div class="example">
+                • I used to live in Paris (Tôi từng sống ở Paris)<br>
+                • She used to play tennis every week (Cô ấy từng chơi tennis mỗi tuần)<br>
+                • They used to be friends (Họ từng là bạn)<br>
+                • He used to like spicy food (Anh ấy từng thích đồ ăn cay)
+            </div>
+
+            <p><strong>Would - Thói Quen Quá Khứ (Chỉ Hành Động, Formal/Kể Chuyện):</strong></p>
+            <div class="example">
+                • Every summer, we would visit our grandparents (Mỗi mùa hè, chúng tôi sẽ thăm ông bà)<br>
+                • When I was young, I would ride my bike to school (Khi tôi trẻ, tôi sẽ đạp xe đến trường)<br>
+                • He would always come home late (Anh ấy lúc nào cũng về nhà muộn)<br>
+                • They would go fishing on weekends (Họ sẽ đi câu cá vào cuối tuần)
+            </div>
+
+            <p><strong>Could - Khả Năng Quá Khứ (Chung Chung):</strong></p>
+            <div class="example">
+                • I could speak English fluently (Tôi có thể nói tiếng Anh lưu loát)<br>
+                • She could play the piano very well (Cô ấy có thể chơi đàn piano rất tốt)<br>
+                • They could run very fast (Họ có thể chạy rất nhanh)<br>
+                • He couldn't swim when he was young (Anh ấy không thể bơi khi còn trẻ)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng "to" sau modal verb (modal + to + V)</p>
+            <div class="example">
+                ❌ I can to swim | ✅ I can swim<br>
+                ❌ She must to leave | ✅ She must leave<br>
+                ✅ Modal + V (KHÔNG "to")
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Nhầm must vs have to</p>
+            <div class="example">
+                ❌ I have to wear a seatbelt (sai ngữ cảnh) | ✅ I must wear a seatbelt (luật lệ)<br>
+                ❌ You must go to work (sai - bên ngoài) | ✅ You have to go to work (công việc)
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng could cho khả năng quá khứ cụ thể</p>
+            <div class="example">
+                ❌ I could finish the project yesterday (lần cụ thể) | ✅ I was able to finish / I managed to finish<br>
+                ✅ I could speak English (khả năng chung)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên thay đổi hình thức cho từng thì</p>
+            <div class="example">
+                ❌ I can go tomorrow (future) | ✅ I will be able to go tomorrow<br>
+                ❌ I can have done it (perfect) | ✅ I have been able to do it
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Modal verbs thay đổi theo chủ ngữ</p>
+            <div class="example">
+                ❌ He cans swim | ✅ He can swim (KHÔNG thay đổi)<br>
+                ❌ She shoulds come | ✅ She should come
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Công Thức Cơ Bản</strong></p>
+            <ul>
+                <li>Modal + V1 (infinitive without "to"): I can go, She must leave</li>
+                <li>KHÔNG thêm "to" sau modal verb (ngoại lệ: ought to, have to, used to)</li>
+                <li>Modal KHÔNG thay đổi theo chủ ngữ: I can, He can, They can</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhớ 5 Loại Ý Nghĩa</strong></p>
+            <ul>
+                <li>Ability (Khả năng): can, could, be able to, manage to</li>
+                <li>Permission (Sự cho phép): can, could, may, might</li>
+                <li>Possibility (Khả năng xảy ra): may, might, could, must, will, can't</li>
+                <li>Obligation (Bắt buộc): must, have to, should, need to</li>
+                <li>Past habit (Thói quen quá khứ): used to, would, could</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Must vs Have To vs Should</strong></p>
+            <ul>
+                <li>Must = bắt buộc (quyết định nội bộ/luật lệ)</li>
+                <li>Have to = bắt buộc (từ bên ngoài/công việc)</li>
+                <li>Should = lời khuyên (không bắt buộc nhưng nên)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Độ Chắc Chắn Của Dự Đoán</strong></p>
+            <ul>
+                <li>Must (95%) > Will (90%) > May (50%) > Might (40%) > Can't (0%)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Could - Quá Khứ vs Hiện Tại</strong></p>
+            <ul>
+                <li>Could (past ability): I could swim as a child</li>
+                <li>Could (polite request): Could you help me?</li>
+                <li>Could (possibility): It could rain tomorrow</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 5 câu cho mỗi loại ý nghĩa</li>
+                <li>Xác định modal verb đúng cho ngữ cảnh</li>
+                <li>Lưu ý "to" - chỉ ought to, have to, used to, be able to có "to"</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết - 16 Modal Verbs</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                        <th>Loại</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Can</strong></td>
+                        <td>Khả năng, sự cho phép</td>
+                        <td>I can swim</td>
+                        <td>Ability/Permission</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Could</strong></td>
+                        <td>Quá khứ, yêu cầu polite, khả năng</td>
+                        <td>I could swim / Could you help?</td>
+                        <td>Past/Polite/Possibility</td>
+                    </tr>
+                    <tr>
+                        <td><strong>May</strong></td>
+                        <td>Sự cho phép (formal), khả năng</td>
+                        <td>May I leave?</td>
+                        <td>Permission/Possibility</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Might</strong></td>
+                        <td>Khả năng (thấp hơn may)</td>
+                        <td>It might rain</td>
+                        <td>Possibility</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Must</strong></td>
+                        <td>Bắt buộc, dự đoán chắc chắn</td>
+                        <td>You must go / She must be home</td>
+                        <td>Obligation/Deduction</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Should</strong></td>
+                        <td>Lời khuyên, kỳ vọng</td>
+                        <td>You should eat vegetables</td>
+                        <td>Advice/Expectation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Will</strong></td>
+                        <td>Tương lai, cam đoan, dự đoán</td>
+                        <td>I will help you</td>
+                        <td>Future/Promise</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Would</strong></td>
+                        <td>Quá khứ lặp lại, điều kiện</td>
+                        <td>We would visit every summer</td>
+                        <td>Past habit/Conditional</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shall</strong></td>
+                        <td>Lời đề nghị (formal), nghĩa vụ</td>
+                        <td>Shall I help?</td>
+                        <td>Offer/Obligation</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ought to</strong></td>
+                        <td>Lời khuyên (formal hơn should)</td>
+                        <td>You ought to apologize</td>
+                        <td>Advice</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Need to</strong></td>
+                        <td>Cần thiết, không cần thiết</td>
+                        <td>You need to come</td>
+                        <td>Necessity</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Have to</strong></td>
+                        <td>Bắt buộc (từ ngoài)</td>
+                        <td>I have to work</td>
+                        <td>External obligation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Used to</strong></td>
+                        <td>Thói quen quá khứ</td>
+                        <td>I used to smoke</td>
+                        <td>Past habit</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Had better</strong></td>
+                        <td>Nên (mạnh hơn should)</td>
+                        <td>You had better leave</td>
+                        <td>Strong advice</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dare</strong></td>
+                        <td>Dám (thách đố)</td>
+                        <td>How dare you!</td>
+                        <td>Challenge</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Be able to</strong></td>
+                        <td>Có khả năng (bất kỳ thì)</td>
+                        <td>I will be able to do it</td>
+                        <td>Ability (all tenses)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Hiện Tại Đơn Là Gì?</h3>
+            <p><span class="highlight">Simple Present Tense</span> là một trong những thì căn bản nhất của tiếng Anh, được sử dụng để diễn tả các hành động xảy ra thường xuyên, các sự thật chung chung hoặc tình trạng bình thường.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Thì hiện tại đơn còn được gọi là <span class="highlight">Present Indefinite Tense</span> vì nó diễn tả các hành động vô định, không giới hạn trong một khoảng thời gian cụ thể.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động xảy ra thường xuyên hoặc lặp đi lặp lại</li>
+                <li>Dùng để nói về sự thật phổ quát hoặc bất biến</li>
+                <li>Mô tả thói quen hàng ngày và lịch trình cố định</li>
+                <li>Sử dụng động từ ở dạng gốc hoặc thêm -s/-es cho ngôi thứ ba số ít (he, she, it)</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + Verb (base form / +s/es)
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Chia Động Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I</span></td>
+                        <td>Dạng gốc (base form)</td>
+                        <td>I <span class="verb-form">work</span> every day</td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">You</span></td>
+                        <td>Dạng gốc (base form)</td>
+                        <td>You <span class="verb-form">work</span> every day</td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">We</span></td>
+                        <td>Dạng gốc (base form)</td>
+                        <td>We <span class="verb-form">work</span> every day</td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">They</span></td>
+                        <td>Dạng gốc (base form)</td>
+                        <td>They <span class="verb-form">work</span> every day</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span class="verb-form">He/She/It</span></td>
+                        <td>Thêm <span class="highlight">-s</span> hoặc <span class="highlight">-es</span></td>
+                        <td>He <span class="verb-form">works</span> every day</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>play</strong> football<br>
+                • She <strong>plays</strong> football<br>
+                • They <strong>go</strong> to school<br>
+                • It <strong>rains</strong> every afternoon
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + do/does + NOT + Verb (base form)
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Dùng <span class="verb-form">do not (don't)</span> với I, you, we, they và <span class="verb-form">does not (doesn't)</span> với he, she, it</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td>do not</td>
+                        <td>don't</td>
+                        <td>I <strong style="color: #c0152f;">don't like</strong> coffee</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td>does not</td>
+                        <td>doesn't</td>
+                        <td>She <strong style="color: #c0152f;">doesn't like</strong> coffee</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>don't eat</strong> meat<br>
+                • He <strong>doesn't watch</strong> TV<br>
+                • They <strong>don't play</strong> soccer<br>
+                • She <strong>doesn't drink</strong> coffee
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý Quan Trọng:</strong> Không thêm -s vào động từ trong câu phủ định. Nó là "doesn't like" chứ không phải "doesn't likes"
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Do/Does + Subject + Verb (base form) + ?
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Đặt <span class="verb-form">do</span> hoặc <span class="verb-form">does</span> lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Ngắn (Dương)</th>
+                        <th>Trả Lời Ngắn (Âm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Do</span> you like pizza?</td>
+                        <td>Yes, I do</td>
+                        <td>No, I don't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Does</span> she like pizza?</td>
+                        <td>Yes, she does</td>
+                        <td>No, she doesn't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Do you</strong> like ice cream? → Yes, I do<br>
+                • <strong>Does he</strong> play tennis? → Yes, he does<br>
+                • <strong>Do they</strong> study English? → No, they don't<br>
+                • <strong>Does she</strong> work here? → No, she doesn't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + V / V+s/es</td>
+                        <td>He reads a book</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + don't/doesn't + V</td>
+                        <td>He doesn't read a book</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Do/Does + S + V + ?</td>
+                        <td>Does he read a book?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + do/does</td>
+                        <td>Yes, he does</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Hiện Tại Đơn</h2>
+
+        <div class="card">
+            <h3>1. Thói Quen & Hành Động Thường Xuyên</h3>
+            <p>Dùng để diễn tả các hành động lặp đi lặp lại hoặc thói quen hàng ngày</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>wake up</strong> at 6 a.m. every day<br>
+                • She <strong>drinks</strong> milk every morning<br>
+                • They <strong>play</strong> football on Sundays<br>
+                • I <strong>read</strong> the newspaper every morning
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Sự Thật Phổ Quát & Bất Biến</h3>
+            <p>Dùng để nói về các sự thật khoa học, những điều luôn đúng hoặc tính chất vĩnh viễn</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • Water <strong>boils</strong> at 100°C<br>
+                • The Earth <strong>revolves</strong> around the sun<br>
+                • A week <strong>has</strong> seven days<br>
+                • The sun <strong>rises</strong> in the east
+            </div>
+
+            <div class="note">
+                <strong>📌 Ghi Nhớ:</strong> Những sự thật này không thay đổi, vì vậy chúng ta luôn dùng thì hiện tại đơn
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Lịch Trình & Sự Kiện Cố Định</h3>
+            <p>Dùng cho các lịch trình công cộng, tuyến du lịch, hay giờ học dù nó nói về tương lai</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • The flight <strong>departs</strong> at 8:00 AM<br>
+                • The train <strong>leaves</strong> at 9 PM<br>
+                • Class <strong>starts</strong> at 8 o'clock<br>
+                • The store <strong>opens</strong> at 9 a.m. every Monday
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Mặc dù nó nói về tương lai, nhưng vẫn dùng thì hiện tại đơn vì đó là một sự kiện đã được sắp xếp từ trước
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Tình Trạng & Cảm Xúc Lâu Dài</h3>
+            <p>Diễn tả các tình trạng hoặc cảm xúc bền vững</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>like</strong> ice cream<br>
+                • Jane <strong>feels</strong> excited<br>
+                • She <strong>loves</strong> her job<br>
+                • I <strong>hate</strong> spicy food
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Hướng Dẫn & Chỉ Dẫn</h3>
+            <p>Dùng để hướng dẫn cách làm hoặc chỉ dẫn đường</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • You <strong>add</strong> sugar to the tea<br>
+                • You <strong>cut</strong> the strawberry and <strong>put</strong> it on the cake<br>
+                • First, you <strong>mix</strong> the ingredients<br>
+                • You <strong>walk</strong> for 200 meters, then <strong>turn</strong> left
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>6. Tình Huống Điều Kiện (First Conditional)</h3>
+            <p>Dùng trong mệnh đề If để diễn tả điều kiện</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • If people <strong>smoke</strong>, they <strong>suffer</strong> health risks<br>
+                • If it <strong>rains</strong>, I <strong>stay</strong> at home<br>
+                • If you <strong>study</strong> hard, you <strong>pass</strong> the exam
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>7. Bình Luận Trực Tiếp (Narration & Commentary)</h3>
+            <p>Dùng trong thể thao hoặc kể chuyện để mô tả sự kiện đang diễn ra</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • Rohit <strong>hits</strong> the ball to the boundary!<br>
+                • The hero <strong>enters</strong> the scene<br>
+                • He <strong>runs</strong> across the field and <strong>scores</strong> a goal!
+            </div>
+        </div>
+
+        <!-- EXCEPTIONS SECTION -->
+        <h2>⚡ Ngoại Lệ & Quy Tắc Đặc Biệt</h2>
+
+        <div class="card warning">
+            <h3>1. Động Từ Không Quy Tắc: TO BE</h3>
+            <p><span class="highlight">To be</span> là động từ bất quy tắc nhất, có hình thức riêng biệt cho mỗi ngôi</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Khẳng Định</th>
+                        <th>Phủ Định</th>
+                        <th>Câu Hỏi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td><span class="verb-form">am</span></td>
+                        <td>am <strong>not</strong></td>
+                        <td><strong>Am</strong> I...?</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>You/We/They</td>
+                        <td><span class="verb-form">are</span></td>
+                        <td>are <strong>not</strong> (aren't)</td>
+                        <td><strong>Are</strong> you...?</td>
+                    </tr>
+                    <tr>
+                        <td>He/She/It</td>
+                        <td><span class="verb-form">is</span></td>
+                        <td>is <strong>not</strong> (isn't)</td>
+                        <td><strong>Is</strong> he/she/it...?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>am</strong> a student (Tôi là học sinh)<br>
+                • She <strong>is</strong> a teacher (Cô ấy là giáo viên)<br>
+                • They <strong>are</strong> happy (Họ rất vui)<br>
+                • <strong>Is</strong> he a doctor? (Anh ấy có phải bác sĩ không?)
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3>2. Động Từ Không Quy Tắc: HAVE/HAS</h3>
+            <p>Động từ <span class="highlight">have</span> thay đổi thành <span class="highlight">has</span> ở ngôi thứ ba số ít</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Khẳng Định</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td><span class="verb-form">have</span></td>
+                        <td>I <strong>have</strong> two sisters</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>He/She/It</td>
+                        <td><span class="verb-form">has</span></td>
+                        <td>She <strong>has</strong> one sister</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card warning">
+            <h3>3. Động Từ Khiếm Khuyết (Modal Verbs)</h3>
+            <p>Các động từ <span class="highlight">can, may, might, must</span> không thay đổi ở ngôi thứ ba số ít</p>
+
+            <div class="example">
+                <strong>Ví dụ (KHÔNG thêm -s):</strong><br>
+                • He <strong>can</strong> speak English (không phải "cans")<br>
+                • She <strong>may</strong> go home (không phải "mays")<br>
+                • It <strong>must</strong> be done today (không phải "musts")
+            </div>
+
+            <div class="note">
+                <strong>📌 Quy Tắc Vàng:</strong> Modal verbs KHÔNG bao giờ thêm -s hoặc -es
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3>4. Quy Tắc Phát Âm & Cách Viết (Spelling Rules)</h3>
+
+            <p><strong>A) Động từ kết thúc bằng -o hoặc các chữ sibilant (ch, sh, s, x):</strong> Thêm -es</p>
+            <div class="example">
+                • go → he <strong>goes</strong><br>
+                • do → he <strong>does</strong><br>
+                • wash → she <strong>washes</strong><br>
+                • pass → he <strong>passes</strong><br>
+                • fix → it <strong>fixes</strong><br>
+                • catch → she <strong>catches</strong>
+            </div>
+
+            <p><strong>B) Động từ kết thúc bằng -y:</strong></p>
+            <ul>
+                <li><strong>Sau phụ âm → thay y thành ies:</strong><br>
+                    worry → he <strong>worries</strong> | study → she <strong>studies</strong> | carry → it <strong>carries</strong>
+                </li>
+                <li><strong>Sau nguyên âm → chỉ thêm -s:</strong><br>
+                    play → he <strong>plays</strong> | say → she <strong>says</strong> | buy → it <strong>buys</strong>
+                </li>
+            </ul>
+
+            <p><strong>C) Động từ thông thường: Chỉ thêm -s</strong></p>
+            <div class="example">
+                • work → he <strong>works</strong><br>
+                • read → she <strong>reads</strong><br>
+                • like → it <strong>likes</strong>
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3>5. Động Từ GO & DO</h3>
+            <p>Hai động từ này có cách chia khác thường:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>I/You/We/They</th>
+                        <th>He/She/It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">go</span></td>
+                        <td>go</td>
+                        <td><span class="highlight">goes</span> (không phải "gos")</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><span class="verb-form">do</span></td>
+                        <td>do</td>
+                        <td><span class="highlight">does</span> (không phải "dos")</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • She <strong>goes</strong> to school<br>
+                • He <strong>does</strong> homework
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>work</strong> in a bank</li>
+                    <li>She <strong>plays</strong> the piano</li>
+                    <li>They <strong>live</strong> in London</li>
+                    <li>It <strong>rains</strong> every afternoon here</li>
+                    <li>We <strong>enjoy</strong> reading</li>
+                    <li>He <strong>watches</strong> TV every night</li>
+                    <li>The cat <strong>sleeps</strong> all day</li>
+                    <li>I <strong>have</strong> a dog</li>
+                    <li>She <strong>drinks</strong> coffee every morning</li>
+                    <li>They <strong>study</strong> English at school</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>don't work</strong> in a factory</li>
+                    <li>She <strong>doesn't play</strong> football</li>
+                    <li>They <strong>don't live</strong> in Paris</li>
+                    <li>It <strong>doesn't rain</strong> every day</li>
+                    <li>We <strong>don't like</strong> spicy food</li>
+                    <li>He <strong>doesn't watch</strong> sports</li>
+                    <li>The cat <strong>doesn't eat</strong> vegetables</li>
+                    <li>I <strong>don't have</strong> a car</li>
+                    <li>She <strong>doesn't drink</strong> milk</li>
+                    <li>They <strong>don't study</strong> French</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Do you like ice cream?</td>
+                        <td>Yes, I do</td>
+                        <td>No, I don't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Does she play tennis?</td>
+                        <td>Yes, she does</td>
+                        <td>No, she doesn't</td>
+                    </tr>
+                    <tr>
+                        <td>Do they speak English?</td>
+                        <td>Yes, they do</td>
+                        <td>No, they don't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Does he work here?</td>
+                        <td>Yes, he does</td>
+                        <td>No, he doesn't</td>
+                    </tr>
+                    <tr>
+                        <td>Do you have a pen?</td>
+                        <td>Yes, I do</td>
+                        <td>No, I don't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Simple Present</h3>
+            
+            <p>Những từ và cụm từ sau thường đi kèm với thì hiện tại đơn để chỉ ra tính lặp lại hoặc thường xuyên của hành động:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tần Suất</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Luôn luôn</strong></td>
+                        <td>always, all the time, all day</td>
+                        <td>She <strong>always</strong> wakes up early</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hầu hết</strong></td>
+                        <td>usually, generally, normally</td>
+                        <td>I <strong>usually</strong> study at night</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thường xuyên</strong></td>
+                        <td>often, frequently, regularly</td>
+                        <td>They <strong>often</strong> go to the beach</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Đôi khi</strong></td>
+                        <td>sometimes, at times, occasionally</td>
+                        <td>We <strong>sometimes</strong> eat out</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hiếm khi</strong></td>
+                        <td>seldom, rarely, hardly ever</td>
+                        <td>He <strong>rarely</strong> gets angry</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Không bao giờ</strong></td>
+                        <td>never</td>
+                        <td>I <strong>never</strong> smoke</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thời gian cụ thể</strong></td>
+                        <td>every day, every week, every month, every year, each day</td>
+                        <td>She goes to gym <strong>every day</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời gian cụ thể</strong></td>
+                        <td>on Mondays, in the morning, at 8 o'clock</td>
+                        <td>I play soccer <strong>on Sundays</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Vị Trí của Từ Chỉ Tần Suất:</strong><br>
+                • <strong>Trước động từ chính:</strong> She <strong>usually</strong> arrives late<br>
+                • <strong>Sau động từ "to be":</strong> He <strong>is</strong> always busy<br>
+                • <strong>Cuối câu:</strong> I go to school every day / We eat lunch at noon
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh với Các Thì Khác</h2>
+
+        <div class="card">
+            <h3>Simple Present vs Present Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Cấu Trúc</th>
+                        <th>Sử Dụng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Simple Present</strong></td>
+                        <td>S + V / V+s/es</td>
+                        <td>Hành động lặp lại, thường xuyên, thói quen</td>
+                        <td>She <strong>reads</strong> daily</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Continuous</strong></td>
+                        <td>S + am/is/are + V-ing</td>
+                        <td>Hành động đang diễn ra <strong>NGAY BÂY GIỜ</strong></td>
+                        <td>She <strong>is reading</strong> now</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ I <strong>watch</strong> TV every evening (thói quen)<br>
+                ✓ I <strong>am watching</strong> TV right now (đang diễn ra)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Simple Present vs Simple Past</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Cấu Trúc</th>
+                        <th>Thời Gian</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Simple Present</strong></td>
+                        <td>S + V</td>
+                        <td>Hiện tại, thường xuyên</td>
+                        <td>I <strong>work</strong> here</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Simple Past</strong></td>
+                        <td>S + V-ed</td>
+                        <td>Quá khứ, hoàn thành</td>
+                        <td>I <strong>worked</strong> there</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Thêm -s cho tất cả các ngôi</p>
+            <div class="example">
+                ❌ I works hard | ✅ I work hard
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên thêm -s/es cho ngôi thứ ba số ít</p>
+            <div class="example">
+                ❌ He play football | ✅ He plays football
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Thêm -s trong câu phủ định & câu hỏi</p>
+            <div class="example">
+                ❌ Does she plays tennis? | ✅ Does she play tennis?
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sử dụng -s cho modal verbs</p>
+            <div class="example">
+                ❌ He cans speak English | ✅ He can speak English
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Ghi Nhớ Quy Tắc Thêm -s/-es</strong></p>
+            <ul>
+                <li>-o, ch, sh, s, x → +es: go→goes, watch→watches</li>
+                <li>-y sau phụ âm → -ies: study→studies, worry→worries</li>
+                <li>-y sau nguyên âm → +s: play→plays</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhận Diện Thì Hiện Tại Đơn</strong></p>
+            <ul>
+                <li>Tìm từ chỉ tần suất: always, usually, often, sometimes, never</li>
+                <li>Tìm sự thật chung chung: water boils, earth revolves</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Phân Biệt Simple Present & Present Continuous</strong></p>
+            <ul>
+                <li>Simple Present = thường xuyên, thói quen (She reads books)</li>
+                <li>Present Continuous = đang diễn ra bây giờ (She is reading)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động thường xuyên, thói quen, sự thật</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + V / V+s/es (I work, he works)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + don't/doesn't + V</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Do/Does + S + V?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ngoại Lệ Chính</strong></td>
+                        <td>to be (am, is, are), have/has, modal verbs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

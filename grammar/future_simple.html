@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Tương Lai Đơn Là Gì?</h3>
+            <p><span class="highlight">Simple Future Tense</span> (cũng gọi là Future Simple) là thì được sử dụng để diễn tả các hành động <strong>sẽ xảy ra trong tương lai</strong>. Đó là những hoạt động mà chúng ta dự kiến, dự đoán, hoặc quyết định sẽ xảy ra sau thời điểm hiện tại.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Simple Future nhấn mạn <strong>hành động sẽ xảy ra trong tương lai</strong> dựa trên dự đoán, quyết định tức thì, hoặc sự thật hiển nhiên. Thường dùng "will" trong tiếng Anh hiện đại.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động sẽ xảy ra trong tương lai</li>
+                <li>Có thể là dự đoán, quyết định tức thì, hoặc lời hứa</li>
+                <li>Không có kế hoạch cụ thể trước đó (khác với "going to")</li>
+                <li>Cấu trúc: will + base verb (động từ nguyên mẫu)</li>
+                <li>Hoặc: shall + base verb (chủ yếu dùng với I/We ở tiếng Anh Anh)</li>
+                <li>Thường đi kèm với: tomorrow, next week, later, soon, in the future</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + will + Base Verb
+            </div>
+
+            <p><span class="highlight">Lưu Ý:</span> Sau "will" luôn dùng <strong>base form</strong> (động từ nguyên mẫu), KHÔNG thêm bất cứ gì</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Will</th>
+                        <th>Base Verb</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I/You/He/She/It/We/They</span></td>
+                        <td><span class="highlight">will</span></td>
+                        <td><span class="highlight">go, eat, play, etc.</span></td>
+                        <td>I <span class="verb-form">will go</span> tomorrow</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td colspan="4"><span class="highlight">Lưu Ý:</span> "Will" giống cho tất cả các ngôi - không phân biệt số lượng hoặc người</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>will finish</strong> my homework tomorrow<br>
+                • She <strong>will visit</strong> Paris next year<br>
+                • They <strong>will arrive</strong> at 5 PM<br>
+                • It <strong>will rain</strong> this weekend
+            </div>
+
+            <div class="note">
+                <strong>📌 Rút Gọn:</strong> I'll, you'll, he'll, she'll, it'll, we'll, they'll (sử dụng hình thức rút gọn trong tiếng nói hàng ngày)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + will + NOT + Base Verb
+            </div>
+
+            <p><span class="highlight">Rút Gọn:</span> won't (will not)</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/He/She/It/We/They</td>
+                        <td>will not</td>
+                        <td>won't</td>
+                        <td>I <strong>won't go</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>won't finish</strong> my homework today<br>
+                • He <strong>will not visit</strong> Paris<br>
+                • They <strong>won't arrive</strong> on time<br>
+                • She <strong>won't watch</strong> the film
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Will + Subject + Base Verb + ?
+            </div>
+
+            <p><span class="highlight">Quy Tắc:</span> Đặt "Will" lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Will</span> you go?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span style="color: #32b8c6; font-weight: bold;">Will</span> she arrive?</td>
+                        <td>Yes, she will</td>
+                        <td>No, she won't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Will you</strong> help me? → Yes, I will<br>
+                • <strong>Will she</strong> come tomorrow? → No, she won't<br>
+                • <strong>Will they</strong> finish on time? → Yes, they will<br>
+                • <strong>Will it</strong> rain? → No, it won't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + will + Base Verb</td>
+                        <td>She will help you</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + will + NOT + Base Verb</td>
+                        <td>She will not help you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Will + S + Base Verb + ?</td>
+                        <td>Will she help you?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + will/won't</td>
+                        <td>Yes, she will</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Tương Lai Đơn</h2>
+
+        <div class="card">
+            <h3>1. Dự Đoán Về Tương Lai</h3>
+            <p>Diễn tả những gì chúng ta dự kiến hoặc dự đoán sẽ xảy ra trong tương lai</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I think it <strong>will rain</strong> tomorrow<br>
+                • She <strong>will pass</strong> the exam<br>
+                • They <strong>won't come</strong> to the party<br>
+                • The economy <strong>will improve</strong> next year
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Quyết Định Tức Thì (Spontaneous Decision)</h3>
+            <p>Diễn tả quyết định mà chúng ta đưa ra ngay lúc nói, không có kế hoạch trước</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • A: I'm cold. B: I <strong>will close</strong> the window<br>
+                • Don't worry, I <strong>will help</strong> you<br>
+                • <strong>I'll pay</strong> the bill<br>
+                • <strong>I'll answer</strong> the door (chuông cửa reo)
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với "Going to":</strong> "I'm going to help" có nghĩa đã có kế hoạch từ trước, "I will help" là quyết định tức thì ngay lúc nói
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Lời Hứa, Đe Dọa, Hoặc Đề Xuất</h3>
+            <p>Dùng Simple Future để hứa, đe dọa, hay đề xuất điều gì đó</p>
+
+            <div class="example">
+                <strong>Ví dụ Lời Hứa:</strong><br>
+                • I <strong>will never</strong> leave you<br>
+                • <strong>I'll call</strong> you tomorrow<br>
+                • <strong>I promise</strong> I <strong>will</strong> be on time<br><br>
+                
+                <strong>Ví dụ Đe Dọa:</strong><br>
+                • Stop that or <strong>I'll call</strong> the police<br>
+                • <strong>You won't</strong> regret this<br><br>
+                
+                <strong>Ví dụ Đề Xuất:</strong><br>
+                • <strong>I'll help</strong> you with that
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Sự Kiện Chắc Chắn Hoặc Tự Nhiên Sẽ Xảy Ra</h3>
+            <p>Diễn tả những sự kiện mà chúng ta biết chắc sẽ xảy ra (hiện tượng tự nhiên, sự thật)</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • The sun <strong>will rise</strong> at 6 AM tomorrow<br>
+                • Christmas <strong>will be</strong> in December<br>
+                • Water <strong>will freeze</strong> at 0 degrees<br>
+                • The semester <strong>will start</strong> in September
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Yêu Cầu Hoặc Đơn Xin Lịch Sự</h3>
+            <p>Dùng Simple Future để đề nghị hoặc yêu cầu điều gì đó một cách lịch sự</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • <strong>Will you</strong> help me?<br>
+                • <strong>Will you</strong> close the door please?<br>
+                • <strong>Won't you</strong> come to our party?<br>
+                • <strong>Will you</strong> pass the salt?
+            </div>
+        </div>
+
+        <!-- WILL VS SHALL SECTION -->
+        <h2>⚡ Will vs Shall</h2>
+
+        <div class="card warning">
+            <h3>Sự Khác Biệt Giữa "Will" và "Shall"</h3>
+
+            <p><strong>Trong tiếng Anh hiện đại, "will" được sử dụng phổ biến cho tất cả các ngôi</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Will</th>
+                        <th>Shall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sử Dụng</strong></td>
+                        <td>Tất cả các ngôi (I, you, he, she, it, we, they)</td>
+                        <td>Chủ yếu với I và We (tiếng Anh Anh lâu xưa)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phổ Biến</strong></td>
+                        <td>Hiện đại, thường dùng</td>
+                        <td>Hiếm, lỗi thời</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>I will go (phổ biến)</td>
+                        <td>I shall go (lỗi thời)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Shall" vẫn dùng trong một số ngữ cảnh lịch sự:<br>
+                • Shall I help you? (Tôi có thể giúp bạn không?)<br>
+                • Shall we go? (Chúng ta có nên đi không?)<br>
+                • Ở các tài liệu chính thức hoặc pháp lý
+            </div>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Simple Future</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ngày mai</strong></td>
+                        <td>tomorrow, tomorrow morning/afternoon/evening</td>
+                        <td>I will go <strong>tomorrow</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Tuần/Tháng/Năm tới</strong></td>
+                        <td>next week, next month, next year</td>
+                        <td>She will arrive <strong>next week</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trong tương lai</strong></td>
+                        <td>soon, later, in the future, in a moment</td>
+                        <td>They will come <strong>soon</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời gian cụ thể</strong></td>
+                        <td>at 3 PM, in an hour, next Monday</td>
+                        <td>I will meet you <strong>at 5 PM</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Không xác định</strong></td>
+                        <td>sometime, one day, eventually</td>
+                        <td>I will see you <strong>one day</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Simple Future vs Going To</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Simple Future (will)</th>
+                        <th>Going To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Quyết Định</strong></td>
+                        <td>Quyết định tức thì (vừa nói vừa quyết định)</td>
+                        <td>Đã quyết định trước đó</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Kế Hoạch</strong></td>
+                        <td>Không có kế hoạch cụ thể</td>
+                        <td>Có kế hoạch hoặc sự sắp xếp</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dự Đoán</strong></td>
+                        <td>Dự đoán chung chung</td>
+                        <td>Dự đoán dựa trên bằng chứng hiệp tại</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I'll pay the bill (vừa quyết định)</td>
+                        <td>I'm going to pay the bill (đã quyết định rồi)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ A: I have no money. B: <strong>I'll lend</strong> you some (quyết định tức thì)<br>
+                ✓ A: I have no money. B: <strong>I'm going to lend</strong> you some (đã quyết định từ trước)<br><br>
+                ✓ It <strong>will rain</strong> tomorrow (dự đoán chung chung)<br>
+                ✓ Look at the sky! It <strong>is going to rain</strong> (có bằng chứng là mây đen)<br><br>
+                ✓ <strong>I'll help</strong> you (spontaneous)<br>
+                ✓ <strong>I'm going to help</strong> you (planned)
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>will go</strong> to Paris tomorrow</li>
+                    <li>She <strong>will finish</strong> her work on time</li>
+                    <li>They <strong>will arrive</strong> at 5 PM</li>
+                    <li>It <strong>will rain</strong> next week</li>
+                    <li>We <strong>will meet</strong> at the café</li>
+                    <li>He <strong>will call</strong> you later</li>
+                    <li>The package <strong>will arrive</strong> tomorrow</li>
+                    <li>I <strong>will help</strong> you with this</li>
+                    <li>She <strong>will never forget</strong> this day</li>
+                    <li>They <strong>will win</strong> the game</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>won't go</strong> to the party</li>
+                    <li>She <strong>will not finish</strong> today</li>
+                    <li>They <strong>won't arrive</strong> on time</li>
+                    <li>It <strong>won't rain</strong> tomorrow</li>
+                    <li>We <strong>won't leave</strong> early</li>
+                    <li>He <strong>won't call</strong> me</li>
+                    <li>The package <strong>won't arrive</strong> today</li>
+                    <li>I <strong>won't forget</strong> you</li>
+                    <li>She <strong>won't help</strong> us</li>
+                    <li>They <strong>won't win</strong> the match</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Will you help me?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Will she come tomorrow?</td>
+                        <td>Yes, she will</td>
+                        <td>No, she won't</td>
+                    </tr>
+                    <tr>
+                        <td>Will they finish on time?</td>
+                        <td>Yes, they will</td>
+                        <td>No, they won't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Will it rain?</td>
+                        <td>Yes, it will</td>
+                        <td>No, it won't</td>
+                    </tr>
+                    <tr>
+                        <td>Will you call me?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Thêm "-ed" hoặc "-ing" sau "will"</p>
+            <div class="example">
+                ❌ I will goed | ✅ I will go<br>
+                ❌ I will going | ✅ I will go
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Nhầm lẫn "will" và "going to"</p>
+            <div class="example">
+                ❌ I'm going buy a car | ✅ I'm going to buy a car
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng thì này khi nên dùng "be going to"</p>
+            <div class="example">
+                ❌ I will go to Paris (nếu đã quyết định rồi) | ✅ I'm going to go to Paris
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai cách phủ định</p>
+            <div class="example">
+                ❌ I will not go là "willn't" | ✅ I won't go
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Quên "will" trong câu hỏi</p>
+            <div class="example">
+                ❌ You go tomorrow? | ✅ Will you go tomorrow?
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Tìm Từ Chỉ Thời Gian Tương Lai</strong></p>
+            <ul>
+                <li>tomorrow, next week, next month, soon, later → Simple Future</li>
+                <li>Không có từ chỉ thời gian → Cần bối cảnh để quyết định</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Simple Future = Will + Base Form</strong></p>
+            <ul>
+                <li>Luôn dùng base form (động từ nguyên mẫu) sau "will"</li>
+                <li>KHÔNG thêm -ed, -ing, hay bất cứ gì khác</li>
+            </ul>
+
+            <p><strong>Mẹo 3: So Sánh Will vs Going To</strong></p>
+            <ul>
+                <li>Will = Quyết định tức thì, dự đoán chung chung</li>
+                <li>Going to = Kế hoạch trước đó, dự đoán dựa trên bằng chứng</li>
+            </ul>
+
+            <p><strong>Mẹo 4: "Will not" = "Won't"</strong></p>
+            <ul>
+                <li>Phủ định của "will" là "won't" (rút gọn), KHÔNG "willn't"</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Shall Hầu Như Không Dùng</strong></p>
+            <ul>
+                <li>Dùng "will" cho tất cả các ngôi trong tiếng Anh hiện đại</li>
+                <li>"Shall" chỉ còn dùng trong "Shall I?" hoặc "Shall we?"</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động sẽ xảy ra trong tương lai (dự đoán, quyết định tức thì)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + will + Base Form</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + will + NOT + Base Form</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Will + S + Base Form + ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phủ Định Rút Gọn</strong></td>
+                        <td>won't (KHÔNG "willn't")</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>tomorrow, next week, soon, later, next month/year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cách Sử Dụng Chính</strong></td>
+                        <td>Dự đoán, quyết định tức thì, lời hứa, đe dọa, sự kiện chắc chắn</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Khác Với Going To</strong></td>
+                        <td>Quyết định tức thì, không phải kế hoạch</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

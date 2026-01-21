@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Liên Từ (Conjunctions)</h2>
+
+        <div class="card">
+            <h3>Liên Từ Là Gì?</h3>
+            <p><span class="highlight">Liên Từ (Conjunction)</span> là một từ loại dùng để <strong>nối các từ, cụm từ, hoặc mệnh đề lại với nhau để tạo thành một câu có ý nghĩa hoàn chỉnh</strong>. Liên từ giúp diễn đạt mối quan hệ giữa các ý tưởng.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Liên từ có hai loại chính: Coordinating conjunctions (liên từ kết hợp) và Subordinating conjunctions (liên từ phụ thuộc).
+            </div>
+
+            <h3>Chức Năng Của Liên Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Kết Hợp (Joining):</strong> I like apples and bananas</li>
+                <li><strong>Tương Phản (Contrasting):</strong> I like apples but not oranges</li>
+                <li><strong>Lựa Chọn (Choosing):</strong> Do you want tea or coffee?</li>
+                <li><strong>Nguyên Nhân (Cause):</strong> I stayed home because it was raining</li>
+                <li><strong>Điều Kiện (Condition):</strong> If you study, you will pass</li>
+            </ul>
+        </div>
+
+        <!-- COORDINATING CONJUNCTIONS -->
+        <h2>➕ 1. Liên Từ Kết Hợp (Coordinating Conjunctions)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Liên từ kết hợp</span> là những liên từ <strong>nối hai mệnh đề độc lập có tầm quan trọng bằng nhau</strong>. Chúng được gọi là FANBOYS.</p>
+
+            <p><strong>FANBOYS = For, And, Nor, But, Or, Yet, So</strong></p>
+
+            <h3>II. Bảy Coordinating Conjunctions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>FOR</strong></td>
+                        <td>Vì (nguyên nhân)</td>
+                        <td>She stayed home, for it was raining</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AND</strong></td>
+                        <td>Và (kết hợp)</td>
+                        <td>I like apples and bananas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NOR</strong></td>
+                        <td>Cũng không (phủ định đôi)</td>
+                        <td>He doesn't drink coffee, nor does he drink tea</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BUT</strong></td>
+                        <td>Nhưng (tương phản)</td>
+                        <td>I like apples, but not oranges</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OR</strong></td>
+                        <td>Hoặc (lựa chọn)</td>
+                        <td>Do you want tea or coffee?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>YET</strong></td>
+                        <td>Tuy nhiên (tương phản, hơi ngạc nhiên)</td>
+                        <td>She trained hard, yet she didn't win</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SO</strong></td>
+                        <td>Vì vậy (kết quả)</td>
+                        <td>It was raining, so I stayed home</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng & Vị Trí</h3>
+
+            <p><strong>AND (Kết Hợp/Thêm Vào)</strong></p>
+            <div class="example">
+                • I like apples <strong>and</strong> bananas<br>
+                • She is intelligent <strong>and</strong> hardworking<br>
+                • We studied hard, <strong>and</strong> we passed the exam<br>
+                • I drink tea, coffee, <strong>and</strong> juice
+            </div>
+
+            <p><strong>BUT (Tương Phản)</strong></p>
+            <div class="example">
+                • I like apples, <strong>but</strong> not oranges<br>
+                • She is tall, <strong>but</strong> her sister is short<br>
+                • The weather was bad, <strong>but</strong> we went anyway<br>
+                • He studied hard, <strong>but</strong> he still failed
+            </div>
+
+            <p><strong>OR (Lựa Chọn)</strong></p>
+            <div class="example">
+                • Do you want tea <strong>or</strong> coffee?<br>
+                • You can go to Paris <strong>or</strong> London<br>
+                • We can work late <strong>or</strong> go home<br>
+                • Is it Monday <strong>or</strong> Tuesday?
+            </div>
+
+            <p><strong>SO (Kết Quả)</strong></p>
+            <div class="example">
+                • It was raining, <strong>so</strong> I stayed home<br>
+                • I was tired, <strong>so</strong> I went to sleep<br>
+                • The show was cancelled, <strong>so</strong> we went out<br>
+                • He failed, <strong>so</strong> he studied harder
+            </div>
+
+            <p><strong>YET (Tương Phản - Hơi Ngạc Nhiên)</strong></p>
+            <div class="example">
+                • She trained hard, <strong>yet</strong> she didn't win<br>
+                • He is new to English, <strong>yet</strong> he speaks fluently<br>
+                • The idea was risky, <strong>yet</strong> we went ahead<br>
+                • I didn't expect it, <strong>yet</strong> it happened
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Coordinating conjunctions luôn kèm dấu phẩy (,) khi nối hai mệnh đề độc lập<br>
+                ✅ I like apples, and I like bananas | ❌ I like apples and I like bananas (thiếu dấu phẩy)
+            </div>
+        </div>
+
+        <!-- SUBORDINATING CONJUNCTIONS - CONTRAST -->
+        <h2>🔀 2. Liên Từ Phụ Thuộc - Tương Phản (Contrast)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Liên từ tương phản</span> là những liên từ <strong>nối một mệnh đề phụ thuộc với một mệnh đề độc lập, thể hiện sự tương phản hoặc bất ngờ</strong>.</p>
+
+            <h3>II. Các Liên Từ Tương Phản</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ALTHOUGH</strong></td>
+                        <td>Mặc dù (tính thức)</td>
+                        <td>Although he studied, he failed</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THOUGH</strong></td>
+                        <td>Mặc dù (nói chuyện hơn)</td>
+                        <td>Though she was tired, she kept working</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EVEN THOUGH</strong></td>
+                        <td>Cho dù (nhấn mạnh mạnh)</td>
+                        <td>Even though it rained, we went out</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHEREAS</strong></td>
+                        <td>Trong khi đó (so sánh)</td>
+                        <td>She is tall, whereas her sister is short</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHILE</strong></td>
+                        <td>Trong khi (so sánh)</td>
+                        <td>He is rich, while his brother is poor</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng & Vị Trí</h3>
+
+            <p><strong>ALTHOUGH/THOUGH (Mệnh Đề Ở Đầu)</strong></p>
+            <div class="example">
+                • <strong>Although he studied hard</strong>, he failed the exam<br>
+                • <strong>Though she was tired</strong>, she kept working<br>
+                • <strong>Even though it was late</strong>, they stayed to help<br>
+                • <strong>Although the weather was cold</strong>, we went outside
+            </div>
+
+            <p><strong>ALTHOUGH/THOUGH (Mệnh Đề Ở Cuối)</strong></p>
+            <div class="example">
+                • He failed the exam <strong>although he studied hard</strong><br>
+                • She kept working <strong>though she was tired</strong><br>
+                • They stayed to help <strong>even though it was late</strong><br>
+                • We went outside <strong>although the weather was cold</strong>
+            </div>
+
+            <p><strong>WHEREAS/WHILE (So Sánh)</strong></p>
+            <div class="example">
+                • He is tall, <strong>whereas</strong> his brother is short<br>
+                • I like tea, <strong>while</strong> she prefers coffee<br>
+                • The first method is fast, <strong>whereas</strong> the second is accurate<br>
+                • Some people like summer, <strong>while</strong> others prefer winter
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý Quan Trọng:</strong> Khi mệnh đề phụ ở đầu, cần dấu phẩy sau nó<br>
+                ✅ Although it rained, we went out | ❌ Although it rained we went out<br>
+                ✅ We went out although it rained | ❌ We went out, although it rained (không cần dấu phẩy)
+            </div>
+        </div>
+
+        <!-- SUBORDINATING CONJUNCTIONS - CAUSE -->
+        <h2>🔗 3. Liên Từ Phụ Thuộc - Nguyên Nhân (Cause)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Liên từ nguyên nhân</span> là những liên từ <strong>chỉ lý do hoặc nguyên nhân của một sự việc</strong>.</p>
+
+            <h3>II. Các Liên Từ Nguyên Nhân</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BECAUSE</strong></td>
+                        <td>Vì (phổ biến nhất)</td>
+                        <td>I stayed home because it was raining</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SINCE</strong></td>
+                        <td>Vì (hơi tính thức)</td>
+                        <td>Since you're here, let's start</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AS</strong></td>
+                        <td>Vì (tính thức)</td>
+                        <td>As it was late, we left</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>BECAUSE (Nguyên Nhân - Phổ Biến)</strong></p>
+            <div class="example">
+                • I stayed home <strong>because</strong> it was raining<br>
+                • She couldn't come <strong>because</strong> she was sick<br>
+                • <strong>Because he studied hard</strong>, he passed the exam<br>
+                • I like this place <strong>because</strong> it's quiet
+            </div>
+
+            <p><strong>SINCE (Nguyên Nhân - Hơi Tính Thức)</strong></p>
+            <div class="example">
+                • <strong>Since you're here</strong>, let's start the meeting<br>
+                • I've been happy <strong>since</strong> I got the job<br>
+                • <strong>Since we have time</strong>, we can go shopping<br>
+                • The situation improved <strong>since</strong> she joined the team
+            </div>
+
+            <p><strong>AS (Nguyên Nhân - Tính Thức)</strong></p>
+            <div class="example">
+                • <strong>As it was getting dark</strong>, we went home<br>
+                • I couldn't see him <strong>as</strong> it was too foggy<br>
+                • <strong>As you know</strong>, prices have increased<br>
+                • We left <strong>as</strong> the party was ending
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG dùng "since" để chỉ thời gian khi nó có nghĩa là nguyên nhân<br>
+                ✅ I've been here since 2020 (thời gian) | ✅ Since you're here, let's start (nguyên nhân)
+            </div>
+        </div>
+
+        <!-- SUBORDINATING CONJUNCTIONS - CONDITION -->
+        <h2>❓ 4. Liên Từ Phụ Thuộc - Điều Kiện (Condition)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Liên từ điều kiện</span> là những liên từ <strong>chỉ một điều kiện phải được thỏa mãn để một điều gì đó xảy ra</strong>.</p>
+
+            <h3>II. Các Liên Từ Điều Kiện</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IF</strong></td>
+                        <td>Nếu (điều kiện)</td>
+                        <td>If you study, you will pass</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>UNLESS</strong></td>
+                        <td>Trừ khi (if not)</td>
+                        <td>Unless you hurry, we'll be late</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROVIDED THAT</strong></td>
+                        <td>Với điều kiện là (chính thức)</td>
+                        <td>You can go provided that you finish work</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AS LONG AS</strong></td>
+                        <td>Miễn là, với điều kiện</td>
+                        <td>As long as you work hard, you'll succeed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SUPPOSING</strong></td>
+                        <td>Giả sử (what if)</td>
+                        <td>Supposing it rains, will you stay home?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>IF (Điều Kiện Thực)</strong></p>
+            <div class="example">
+                • <strong>If you study</strong>, you will pass<br>
+                • I'll go <strong>if</strong> the weather is good<br>
+                • <strong>If she calls</strong>, I'll tell her the news<br>
+                • We can play outside <strong>if</strong> it doesn't rain
+            </div>
+
+            <p><strong>UNLESS (Trừ Khi = If Not)</strong></p>
+            <div class="example">
+                • <strong>Unless you hurry</strong>, we'll be late (nếu bạn không vội)<br>
+                • I'll come <strong>unless</strong> it rains (nếu không mưa)<br>
+                • <strong>Unless you study</strong>, you won't pass (nếu bạn không học)<br>
+                • We can't leave <strong>unless</strong> we finish (nếu chúng ta không hoàn thành)
+            </div>
+
+            <p><strong>PROVIDED THAT / PROVIDING THAT (Với Điều Kiện)</strong></p>
+            <div class="example">
+                • You can borrow my car <strong>provided that</strong> you return it tomorrow<br>
+                • You can stay <strong>providing that</strong> you keep quiet<br>
+                • We'll help <strong>provided that</strong> you pay us<br>
+                • You can leave <strong>provided that</strong> your work is finished
+            </div>
+
+            <p><strong>AS LONG AS (Miễn Là)</strong></p>
+            <div class="example">
+                • <strong>As long as</strong> you work hard, you'll succeed<br>
+                • You can use my phone <strong>as long as</strong> you don't call abroad<br>
+                • <strong>As long as</strong> we have food, we can survive<br>
+                • She'll be happy <strong>as long as</strong> you're kind to her
+            </div>
+
+            <p><strong>SUPPOSING (Giả Sử)</strong></p>
+            <div class="example">
+                • <strong>Supposing</strong> it rains, will you stay home?<br>
+                • <strong>Supposing</strong> you won the lottery, what would you do?<br>
+                • <strong>Supposing</strong> he doesn't come, what should we do?<br>
+                • <strong>Supposing</strong> prices go up, how will we manage?
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> KHÔNG dùng "unless" và "if" cùng nhau trong cùng một câu<br>
+                ✅ Unless you hurry, we'll be late | ❌ Unless if you hurry, we'll be late
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Coordinating Conjunctions (Kết Hợp)</h3>
+            <ul>
+                <li>I like apples <strong>and</strong> bananas</li>
+                <li>I like apples, <strong>but</strong> not oranges</li>
+                <li>Do you want tea <strong>or</strong> coffee?</li>
+                <li>It was raining, <strong>so</strong> I stayed home</li>
+                <li>She trained hard, <strong>yet</strong> she didn't win</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Contrast Conjunctions (Tương Phản)</h3>
+            <ul>
+                <li><strong>Although</strong> he studied hard, he failed</li>
+                <li>She is tall, <strong>whereas</strong> her sister is short</li>
+                <li><strong>Even though</strong> it was late, they stayed</li>
+                <li>I like summer, <strong>while</strong> she prefers winter</li>
+                <li><strong>Though</strong> she was tired, she kept working</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Cause Conjunctions (Nguyên Nhân)</h3>
+            <ul>
+                <li>I stayed home <strong>because</strong> it was raining</li>
+                <li><strong>Since</strong> you're here, let's start</li>
+                <li><strong>As</strong> it was getting dark, we went home</li>
+                <li>She couldn't come <strong>because</strong> she was sick</li>
+                <li>I've been happy <strong>since</strong> I got the job</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Conditional Conjunctions (Điều Kiện)</h3>
+            <ul>
+                <li><strong>If</strong> you study, you will pass</li>
+                <li><strong>Unless</strong> you hurry, we'll be late</li>
+                <li>You can go <strong>provided that</strong> you finish work</li>
+                <li><strong>As long as</strong> you work hard, you'll succeed</li>
+                <li><strong>Supposing</strong> it rains, will you stay home?</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng ALTHOUGH và BUT cùng nhau</p>
+            <div class="example">
+                ❌ Although he studied hard, but he failed | ✅ Although he studied hard, he failed<br>
+                ❌ Although it rained, but we went out | ✅ Although it rained, we went out
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên dấu phẩy với coordinating conjunctions</p>
+            <div class="example">
+                ❌ I like apples and I like bananas (thiếu dấu phẩy) | ✅ I like apples, and I like bananas<br>
+                ❌ It was raining so I stayed home | ✅ It was raining, so I stayed home
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng UNLESS và IF cùng nhau</p>
+            <div class="example">
+                ❌ Unless if you hurry, we'll be late | ✅ Unless you hurry, we'll be late<br>
+                ❌ If not you come, we'll leave | ✅ Unless you come, we'll leave
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai vị trí dấu phẩy với subordinating conjunctions</p>
+            <div class="example">
+                ❌ Although it rained we went out (thiếu dấu phẩy) | ✅ Although it rained, we went out<br>
+                ❌ We went out, although it rained (dấu phẩy thừa) | ✅ We went out although it rained
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng YET như một mạo từ thay vì liên từ</p>
+            <div class="example">
+                ❌ I didn't see it yet (dùng làm trạng từ) | ✅ He trained hard, yet he didn't win (dùng làm liên từ)
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ FANBOYS Cho Coordinating Conjunctions</strong></p>
+            <ul>
+                <li><strong>F</strong>or (vì), <strong>A</strong>nd (và), <strong>N</strong>or (cũng không), <strong>B</strong>ut (nhưng), <strong>O</strong>r (hoặc), <strong>Y</strong>et (tuy nhiên), <strong>S</strong>o (vì vậy)</li>
+                <li>Luôn dùng dấu phẩy trước FANBOYS khi nối hai mệnh đề độc lập</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Phân Biệt ALTHOUGH/BUT</strong></p>
+            <ul>
+                <li><strong>Although</strong> = subordinating (mệnh đề phụ trước, có dấu phẩy)</li>
+                <li><strong>But</strong> = coordinating (dùng dấu phẩy giữa hai mệnh đề độc lập)</li>
+                <li>KHÔNG dùng cả hai cùng lúc</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Vị Trí Dấu Phẩy Với Subordinating Conjunctions</strong></p>
+            <ul>
+                <li>Mệnh đề phụ ở đầu → Cần dấu phẩy: <strong>Although it rained,</strong> we went out</li>
+                <li>Mệnh đề phụ ở cuối → KHÔNG cần dấu phẩy: We went out <strong>although it rained</strong></li>
+            </ul>
+
+            <p><strong>Mẹo 4: UNLESS = If Not</strong></p>
+            <ul>
+                <li>Unless you hurry = If you don't hurry</li>
+                <li>KHÔNG dùng "unless if" cùng lúc</li>
+            </ul>
+
+            <p><strong>Mẹo 5: SINCE, BECAUSE, AS Dùng Cho Nguyên Nhân</strong></p>
+            <ul>
+                <li><strong>Because</strong> = phổ biến nhất</li>
+                <li><strong>Since</strong> = hơi tính thức (cũng dùng cho thời gian)</li>
+                <li><strong>As</strong> = tính thức nhất</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Liên Từ</th>
+                        <th>Ví Dụ</th>
+                        <th>Chức Năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Coordinating</strong></td>
+                        <td>and, but, or, so, yet, nor, for</td>
+                        <td>Nối hai mệnh đề độc lập (FANBOYS)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Contrast</strong></td>
+                        <td>although, though, even though, whereas, while</td>
+                        <td>Chỉ tương phản, bất ngờ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cause</strong></td>
+                        <td>because, since, as</td>
+                        <td>Chỉ nguyên nhân, lý do</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Condition</strong></td>
+                        <td>if, unless, provided that, as long as, supposing</td>
+                        <td>Chỉ điều kiện</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

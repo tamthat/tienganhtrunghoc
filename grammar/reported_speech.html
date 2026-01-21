@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Câu Tường Thuật (Reported Speech)</h2>
+
+        <div class="card">
+            <h3>Câu Tường Thuật Là Gì?</h3>
+            <p><span class="highlight">Câu Tường Thuật (Reported Speech / Indirect Speech)</span> là <strong>cách diễn tả lại những lời nói của người khác mà không sử dụng lời nói trực tiếp (không dùng dấu ngoặc kép), thường kèm theo sự thay đổi thì của động từ</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Câu tường thuật có bốn loại: tường thuật câu kể, tường thuật câu hỏi, tường thuật câu mệnh lệnh, tường thuật lời khuyên/đề xuất.
+            </div>
+
+            <h3>Cấu Trúc Cơ Bản</h3>
+            <ul>
+                <li><strong>Direct Speech:</strong> Lời nói trực tiếp (có dấu ngoặc kép)</li>
+                <li><strong>Reported Speech:</strong> Lời nói gián tiếp (không có dấu ngoặc kép)</li>
+                <li><strong>Reporting Clause:</strong> Phần mở đầu (S + said/told + ...)</li>
+                <li><strong>Backshift:</strong> Thay đổi thì lùi lại (present → past, past → past perfect)</li>
+            </ul>
+        </div>
+
+        <!-- REPORTED STATEMENTS -->
+        <h2>📢 1. Tường Thuật Câu Kể (Reported Statements)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tường thuật câu kể</span> dùng để <strong>diễn tả lại những phát biểu, nhận xét, hoặc thông tin của người khác</strong>.</p>
+
+            <h3>II. Công Thức Cơ Bản</h3>
+
+            <div class="formula">
+                <strong>S + said (that) + S + V (past tense)</strong><br>
+                hoặc<br>
+                <strong>S + told + object + (that) + S + V (past tense)</strong>
+            </div>
+
+            <h3>III. Say Vs Tell</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Said</strong></td>
+                        <td>S + said (that) + reported clause</td>
+                        <td>She said that she was happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Told</strong></td>
+                        <td>S + told + object + (that) + reported clause</td>
+                        <td>She told me that she was happy</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> "Tell" PHẢI có object (người được nói với), "say" không cần<br>
+                ✅ She said that she was happy | ✅ She told me that she was happy<br>
+                ❌ She said me that she was happy | ❌ She told that she was happy
+            </div>
+
+            <h3>IV. Thay Đổi Thì (Backshift)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Direct Speech</th>
+                        <th>Reported Speech</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Simple</strong></td>
+                        <td>Past Simple</td>
+                        <td>"I am happy" → He said he was happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Continuous</strong></td>
+                        <td>Past Continuous</td>
+                        <td>"I am studying" → He said he was studying</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Perfect</strong></td>
+                        <td>Past Perfect</td>
+                        <td>"I have finished" → He said he had finished</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Simple</strong></td>
+                        <td>Past Perfect</td>
+                        <td>"I bought a house" → He said he had bought a house</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Past Continuous</strong></td>
+                        <td>Past Perfect Continuous</td>
+                        <td>"I was watching TV" → He said he had been watching TV</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Will</strong></td>
+                        <td>Would</td>
+                        <td>"I will come tomorrow" → He said he would come the next day</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Can</strong></td>
+                        <td>Could</td>
+                        <td>"I can swim" → He said he could swim</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>May</strong></td>
+                        <td>Might</td>
+                        <td>"I may come" → He said he might come</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>V. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • "I love this book," she said → She said that she loved that book<br>
+                • "I will visit you tomorrow," he said → He said he would visit me the next day<br>
+                • "I have finished my work," John said → John said he had finished his work<br>
+                • "I was sleeping when he called," she said → She said she had been sleeping when he called<br>
+                • "She can speak three languages," he said → He said she could speak three languages
+            </div>
+
+            <h3>VI. Thay Đổi Từ Chỉ Thời Gian Và Địa Điểm</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Direct Speech</th>
+                        <th>Reported Speech</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>today</td>
+                        <td>that day</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>tomorrow</td>
+                        <td>the next day / the following day</td>
+                    </tr>
+                    <tr>
+                        <td>yesterday</td>
+                        <td>the day before</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>this week</td>
+                        <td>that week</td>
+                    </tr>
+                    <tr>
+                        <td>next month</td>
+                        <td>the following month</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>last year</td>
+                        <td>the year before</td>
+                    </tr>
+                    <tr>
+                        <td>here</td>
+                        <td>there</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- REPORTED QUESTIONS -->
+        <h2>❓ 2. Tường Thuật Câu Hỏi (Reported Questions)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tường thuật câu hỏi</span> dùng để <strong>diễn tả lại câu hỏi của người khác, nhưng ở dạng phát biểu thay vì dạng câu hỏi</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Reported question là dạng PHÁT BIỂU (statement form), không phải câu hỏi (question form)<br>
+                ❌ He asked me if I did work there | ✅ He asked me if I worked there
+            </div>
+
+            <h3>II. Câu Hỏi Yes/No</h3>
+
+            <div class="formula">
+                <strong>S + asked + object + if/whether + S + V (past tense)</strong>
+            </div>
+
+            <div class="example">
+                • Direct: "Do you like coffee?" he asked<br>
+                • Reported: He asked me if I liked coffee<br>
+                • Direct: "Will you come tomorrow?" she asked<br>
+                • Reported: She asked if I would come the next day<br>
+                • Direct: "Have you finished your homework?" the teacher asked<br>
+                • Reported: The teacher asked if we had finished our homework
+            </div>
+
+            <h3>III. Câu Hỏi With Question Words (Who, What, Where, When, Why, How)</h3>
+
+            <div class="formula">
+                <strong>S + asked + object + question word + S + V (past tense)</strong>
+            </div>
+
+            <div class="example">
+                • Direct: "Where do you live?" he asked<br>
+                • Reported: He asked me where I lived<br>
+                • Direct: "What did you see?" she asked<br>
+                • Reported: She asked me what I had seen<br>
+                • Direct: "Why is he late?" the teacher asked<br>
+                • Reported: The teacher asked why he was late<br>
+                • Direct: "How much does it cost?" she asked<br>
+                • Reported: She asked how much it cost
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Reported question dùng STATEMENT FORM (S + V), KHÔNG dùng question form (V + S)<br>
+                ❌ He asked me where did I live | ✅ He asked me where I lived<br>
+                ❌ She asked what have you seen | ✅ She asked what I had seen
+            </div>
+        </div>
+
+        <!-- REPORTED COMMANDS & REQUESTS -->
+        <h2>⚠️ 3. Tường Thuật Câu Mệnh Lệnh & Yêu Cầu (Reported Commands & Requests)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tường thuật câu mệnh lệnh/yêu cầu</span> dùng để <strong>diễn tả lại lệnh hoặc yêu cầu của người khác, thường dùng động từ như tell, order, ask, command, request</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + told/ordered/asked + object + (not) to + V1</strong>
+            </div>
+
+            <h3>III. Các Động Từ Tường Thuật Mệnh Lệnh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tell</strong></td>
+                        <td>Bảo, yêu cầu</td>
+                        <td>She told me to be quiet</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Order</strong></td>
+                        <td>Ra lệnh</td>
+                        <td>The officer ordered us to leave</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Command</strong></td>
+                        <td>Chỉ huy</td>
+                        <td>The general commanded the soldiers to advance</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ask</strong></td>
+                        <td>Yêu cầu lịch sự</td>
+                        <td>She asked me to help her</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Warn</strong></td>
+                        <td>Cảnh báo</td>
+                        <td>He warned me not to touch it</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Advise</strong></td>
+                        <td>Khuyên</td>
+                        <td>The doctor advised him to rest</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forbid</strong></td>
+                        <td>Cấm</td>
+                        <td>His father forbade him to go out</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Invite</strong></td>
+                        <td>Mời</td>
+                        <td>She invited me to her party</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Mệnh Lệnh Dương Tính (Affirmative):</strong></p>
+            <div class="example">
+                • "Sit down!" the teacher said → The teacher told me to sit down<br>
+                • "Stop smoking!" the doctor said → The doctor told him to stop smoking<br>
+                • "Come here!" she said → She told me to come there<br>
+                • "Open the door!" he ordered → He ordered me to open the door
+            </div>
+
+            <p><strong>Mệnh Lệnh Âm Tính (Negative):</strong></p>
+            <div class="example">
+                • "Don't go out!" she said → She told me not to go out<br>
+                • "Don't touch that!" he warned → He warned me not to touch that<br>
+                • "Don't be late!" the boss said → The boss told us not to be late<br>
+                • "Don't talk!" the teacher ordered → The teacher ordered him not to talk
+            </div>
+        </div>
+
+        <!-- REPORTED ADVICE & SUGGESTIONS -->
+        <h2>💡 4. Tường Thuật Lời Khuyên & Đề Xuất (Reported Advice & Suggestions)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tường thuật lời khuyên/đề xuất</span> dùng để <strong>diễn tả lại lời khuyên hoặc gợi ý của người khác, dùng các động từ như suggest, advise, recommend</strong>.</p>
+
+            <h3>II. Các Cấu Trúc Tường Thuật Lời Khuyên</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Advise</strong></td>
+                        <td>advise + object + to + V1</td>
+                        <td>He advised me to see a doctor</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Recommend</strong></td>
+                        <td>recommend + V-ing / (that) clause</td>
+                        <td>She recommended reading this book</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Suggest</strong></td>
+                        <td>suggest + V-ing / (that) clause</td>
+                        <td>He suggested going to the beach</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Propose</strong></td>
+                        <td>propose + (that) clause</td>
+                        <td>She proposed that we should go together</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Insist</strong></td>
+                        <td>insist + (that) clause</td>
+                        <td>He insisted that we should leave</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Dùng "Advise":</strong></p>
+            <div class="example">
+                • Direct: "You should rest," the doctor said<br>
+                • Reported: The doctor advised me to rest<br>
+                • Direct: "You should learn English," she said<br>
+                • Reported: She advised me to learn English
+            </div>
+
+            <p><strong>Dùng "Suggest" (Với V-ing):</strong></p>
+            <div class="example">
+                • Direct: "Why don't we go out?" she said<br>
+                • Reported: She suggested going out<br>
+                • Direct: "Let's have a picnic," he said<br>
+                • Reported: He suggested having a picnic
+            </div>
+
+            <p><strong>Dùng "Suggest" (Với That Clause):</strong></p>
+            <div class="example">
+                • Direct: "Why don't you take a vacation?" she said<br>
+                • Reported: She suggested that I should take a vacation<br>
+                • Direct: "Let's invite Mary," he said<br>
+                • Reported: He suggested that we (should) invite Mary
+            </div>
+
+            <p><strong>Dùng "Recommend":</strong></p>
+            <div class="example">
+                • Direct: "You should read this book," he said<br>
+                • Reported: He recommended reading that book<br>
+                • Direct: "I think you should try this restaurant," she said<br>
+                • Reported: She recommended trying that restaurant
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> "Suggest", "recommend", "propose", "insist" thường dùng với V-ing hoặc that-clause (với should hoặc không)<br>
+                ✅ He suggested going | ✅ He suggested (that) I (should) go<br>
+                ❌ He suggested me to go
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng "said" với object (phải dùng "told")</p>
+            <div class="example">
+                ❌ She said me that she was happy | ✅ She told me that she was happy<br>
+                ❌ He said her to come | ✅ He told her to come
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên thay đổi thì (backshift)</p>
+            <div class="example">
+                ❌ He said he is happy | ✅ He said he was happy<br>
+                ❌ She told me she will come | ✅ She told me she would come
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng question form trong reported question</p>
+            <div class="example">
+                ❌ He asked me where do I live | ✅ He asked me where I lived<br>
+                ❌ She asked me if will I come | ✅ She asked me if I would come
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "asked to" thay vì "told to" hoặc ngược lại</p>
+            <div class="example">
+                ❌ He asked me to give him the book (nên dùng "told") | ✅ He told me to give him the book<br>
+                ❌ She told me if I could help (nên dùng "asked") | ✅ She asked if I could help
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng sai động từ tường thuật lời khuyên</p>
+            <div class="example">
+                ❌ He suggested me to go | ✅ He suggested (that) I (should) go<br>
+                ❌ She advised me going | ✅ She advised me to go
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Say vs Tell</strong></p>
+            <ul>
+                <li><strong>Said:</strong> Không cần object | She said (that) she was happy</li>
+                <li><strong>Told:</strong> PHẢI có object | She told me (that) she was happy</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Thay Đổi Thì (Backshift)</strong></p>
+            <ul>
+                <li>Present → Past | "I am" → he said he was</li>
+                <li>Past → Past Perfect | "I bought" → he said he had bought</li>
+                <li>Will → Would | "I will go" → he said he would go</li>
+                <li>Can → Could | "I can" → he said he could</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Reported Question - Statement Form</strong></p>
+            <ul>
+                <li>Yes/No Question: if/whether + S + V</li>
+                <li>Wh-Question: Wh-word + S + V</li>
+                <li>LUÔN ở dạng phát biểu (S + V), KHÔNG phải câu hỏi (V + S)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Mệnh Lệnh/Yêu Cầu - To + Verb</strong></p>
+            <ul>
+                <li>Dương tính: told/ordered + me + to + V</li>
+                <li>Âm tính: told/ordered + me + not to + V</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Lời Khuyên - V-ing Hoặc That Clause</strong></p>
+            <ul>
+                <li>Advise: advise + object + to + V</li>
+                <li>Suggest: suggest + V-ing hoặc (that) + S + (should) + V</li>
+                <li>Recommend: recommend + V-ing hoặc that-clause</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt 4 Loại Tường Thuật</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Động Từ</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Câu Kể</strong></td>
+                        <td>said / told</td>
+                        <td>S + said (that) + V past</td>
+                        <td>He said he was happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>asked</td>
+                        <td>S + asked + if/whether/Wh + S + V past</td>
+                        <td>She asked where I lived</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mệnh Lệnh</strong></td>
+                        <td>told / ordered / asked</td>
+                        <td>S + told + object + to + V</td>
+                        <td>He told me to sit down</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Khuyên/Đề Xuất</strong></td>
+                        <td>suggested / advised / recommended</td>
+                        <td>S + suggested + V-ing / that-clause</td>
+                        <td>She suggested going out</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

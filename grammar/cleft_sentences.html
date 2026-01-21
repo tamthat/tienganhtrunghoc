@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Câu Chẻ (Cleft Sentences)</h2>
+
+        <div class="card">
+            <h3>Câu Chẻ Là Gì?</h3>
+            <p><span class="highlight">Câu Chẻ (Cleft Sentence)</span> là <strong>một câu phức được tạo bằng cách chia một câu đơn thành hai phần để nhấn mạnh hoặc làm nổi bật một phần cụ thể của câu gốc, giúp diễn đạt ý tưởng một cách có cảm xúc và rõ ràng hơn</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Câu chẻ có ba dạng chính: It-Cleft, Wh-Cleft (Pseudo-Cleft), và All-Cleft. Dùng để nhấn mạnh một phần của câu.
+            </div>
+
+            <h3>Đặc Điểm Của Câu Chẻ</h3>
+            <ul>
+                <li><strong>Nhấn Mạnh:</strong> Giúp làm nổi bật một phần cụ thể của câu</li>
+                <li><strong>Có Cảm Xúc:</strong> Làm câu nghe tự nhiên và thể hiện cảm xúc hơn</li>
+                <li><strong>Làm Rõ Ràng:</strong> Giúp làm rõ hoặc giải thích thông tin</li>
+                <li><strong>Hai Phần:</strong> Bao gồm mệnh đề chính (focus) và mệnh đề phụ (relative clause)</li>
+            </ul>
+        </div>
+
+        <!-- IT-CLEFT SENTENCES -->
+        <h2>🔵 1. It-Cleft Sentences (Câu Chẻ Với "It")</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">It-Cleft</span> là <strong>dạng câu chẻ phổ biến nhất, dùng để nhấn mạnh chủ ngữ, tân ngữ, nơi chốn, thời gian hoặc lý do</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bắt đầu bằng "It + be" | Theo sau bởi phần nhấn mạnh | Kết thúc bằng mệnh đề quan hệ (that/who)
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>It + be (tense) + Emphasized Part + that/who + Rest of Sentence</strong>
+            </div>
+
+            <h3>III. Các Loại It-Cleft</h3>
+
+            <p><strong>1. Nhấn Mạnh Chủ Ngữ (Subject)</strong></p>
+            <div class="example">
+                • Original: Sarah baked the cake<br>
+                • Cleft: It was Sarah who baked the cake (Dùng "who" cho người)<br>
+                • Original: The wind broke the window<br>
+                • Cleft: It was the wind that broke the window (Dùng "that" cho vật)
+            </div>
+
+            <p><strong>2. Nhấn Mạnh Tân Ngữ (Object)</strong></p>
+            <div class="example">
+                • Original: He wrote the report<br>
+                • Cleft: It was the report that he wrote<br>
+                • Original: They invited many people<br>
+                • Cleft: It was many people that they invited
+            </div>
+
+            <p><strong>3. Nhấn Mạnh Nơi Chốn (Place/Adverbial of Place)</strong></p>
+            <div class="example">
+                • Original: They met in Paris<br>
+                • Cleft: It was in Paris that they met<br>
+                • Original: The incident happened at the station<br>
+                • Cleft: It was at the station that the incident happened
+            </div>
+
+            <p><strong>4. Nhấn Mạnh Thời Gian (Time/Adverbial of Time)</strong></p>
+            <div class="example">
+                • Original: They left after lunch<br>
+                • Cleft: It was after lunch that they left<br>
+                • Original: She started the project on Monday<br>
+                • Cleft: It was on Monday that she started the project
+            </div>
+
+            <p><strong>5. Nhấn Mạnh Lý Do (Reason)</strong></p>
+            <div class="example">
+                • Original: We stayed home because of the rain<br>
+                • Cleft: It was because of the rain that we stayed home<br>
+                • Original: She left early due to her illness<br>
+                • Cleft: It was due to her illness that she left early
+            </div>
+
+            <h3>IV. Các Thì Khác Nhau Trong It-Cleft</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Simple</strong></td>
+                        <td>It is + part + that + present</td>
+                        <td>It is Sarah who bakes the cake</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Simple</strong></td>
+                        <td>It was + part + that + past</td>
+                        <td>It was Sarah who baked the cake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Future</strong></td>
+                        <td>It will be + part + that + future</td>
+                        <td>It will be Sarah who bakes the cake</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Perfect</strong></td>
+                        <td>It had been + part + that + past perfect</td>
+                        <td>It had been Sarah who had baked the cake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modal Verbs</strong></td>
+                        <td>It must/should be + part + that</td>
+                        <td>It must be John who called</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- WH-CLEFT SENTENCES -->
+        <h2>❓ 2. Wh-Cleft Sentences (Câu Chẻ Với What - Pseudo-Cleft)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Wh-Cleft (Pseudo-Cleft)</span> là <strong>dạng câu chẻ dùng "What", "Which", "Where", "When", "Why", "How" ở đầu câu, thường nhấn mạnh hành động, nhu cầu, hoặc kết quả</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bắt đầu bằng Wh-word | KHÔNG cần "that" hoặc "who" | Mệnh đề what ở đầu, phần nhấn mạnh sau "be"
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>What + S + V + be + Emphasized Part</strong><br>
+                hoặc<br>
+                <strong>Wh-word + Clause + be + Emphasized Part</strong>
+            </div>
+
+            <h3>III. Các Loại Wh-Cleft</h3>
+
+            <p><strong>1. Nhấn Mạnh Hành Động/Hoạt Động (Action/Activity)</strong></p>
+            <div class="example">
+                • Original: She enjoys reading fiction<br>
+                • Cleft: What she enjoys most is reading fiction<br>
+                • Original: I love painting landscapes<br>
+                • Cleft: What I love is painting landscapes
+            </div>
+
+            <p><strong>2. Nhấn Mạnh Nhu Cầu/Mong Muốn (Need/Want)</strong></p>
+            <div class="example">
+                • Original: I need a break<br>
+                • Cleft: What I need is a break<br>
+                • Original: They want better communication<br>
+                • Cleft: What they want is better communication
+            </div>
+
+            <p><strong>3. Nhấn Mạnh Cảm Xúc (Emotion)</strong></p>
+            <div class="example">
+                • Original: His honesty surprised me<br>
+                • Cleft: What surprised me was his honesty<br>
+                • Original: The noise annoyed me<br>
+                • Cleft: What annoyed me was the noise
+            </div>
+
+            <p><strong>4. Nhấn Mạnh Khám Phá/Tiết Lộ (Discovery/Revelation)</strong></p>
+            <div class="example">
+                • Original: They found something unexpected<br>
+                • Cleft: What they found was unexpected<br>
+                • Original: She revealed a secret<br>
+                • Cleft: What she revealed was a secret
+            </div>
+
+            <p><strong>5. Nhấn Mạnh Giải Thích (Explanation)</strong></p>
+            <div class="example">
+                • Original: The weather caused the delay<br>
+                • Cleft: What caused the delay was the weather<br>
+                • Original: His dedication impressed them<br>
+                • Cleft: What impressed them was his dedication
+            </div>
+
+            <h3>IV. Wh-Cleft Với Các Question Words Khác</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wh-Word</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WHERE</strong></td>
+                        <td>Where we met was at the airport</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHEN</strong></td>
+                        <td>When I realized was too late</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHY</strong></td>
+                        <td>Why they left was a mystery</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HOW</strong></td>
+                        <td>How we solved it was quite simple</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ALL-CLEFT SENTENCES -->
+        <h2>⭐ 3. All-Cleft Sentences (Câu Chẻ Với "All")</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">All-Cleft</span> dùng để <strong>nhấn mạnh rằng cái gì đó là "tất cả những gì cần", "chỉ có", hoặc "không có gì khác"</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bắt đầu bằng "All" | Nhấn mạnh "tính duy nhất" hoặc "tính toàn diện" | Thường dùng trong các phát biểu khẳng định
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>All + Clause + be + Emphasized Part</strong>
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Nhấn Mạnh Nhu Cầu Duy Nhất (Only Need)</strong></p>
+            <div class="example">
+                • Original: I wanted to help you<br>
+                • Cleft: All I wanted was to help you<br>
+                • Original: She needs rest<br>
+                • Cleft: All she needs is rest
+            </div>
+
+            <p><strong>Nhấn Mạnh Hành Động Duy Nhất (Only Action)</strong></p>
+            <div class="example">
+                • Original: I did work all day<br>
+                • Cleft: All that I did was work all day<br>
+                • Original: They want a chance<br>
+                • Cleft: All they want is a chance
+            </div>
+
+            <p><strong>Nhấn Mạnh Tài Nguyên/Nguồn Lực (Resource)</strong></p>
+            <div class="example">
+                • Original: What you have is hope<br>
+                • Cleft: All you have is hope<br>
+                • Original: They possess only courage<br>
+                • Cleft: All they possess is courage
+            </div>
+
+            <p><strong>Những Phát Biểu Nổi Tiếng (Famous Statements)</strong></p>
+            <div class="example">
+                • Love is all you need (Tình yêu là tất cả những gì bạn cần)<br>
+                • All I want is to make you happy (Tất cả tôi muốn là làm bạn hạnh phúc)
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> All-Cleft nhấn mạnh rằng không có gì khác ngoài phần được nhấn mạnh
+            </div>
+        </div>
+
+        <!-- COMPARISON & NOTES -->
+        <h2>🎯 So Sánh Ba Loại Câu Chẻ</h2>
+
+        <div class="card">
+            <h3>Bảng So Sánh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>It-Cleft</strong></td>
+                        <td>It + be + part + that/who</td>
+                        <td>Nhấn mạnh một phần cụ thể</td>
+                        <td>It was John who called</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Wh-Cleft</strong></td>
+                        <td>What/Wh + clause + be + part</td>
+                        <td>Nhấn mạnh hành động/nhu cầu</td>
+                        <td>What surprised me was his honesty</td>
+                    </tr>
+                    <tr>
+                        <td><strong>All-Cleft</strong></td>
+                        <td>All + clause + be + part</td>
+                        <td>Nhấn mạnh "chỉ có, không có gì khác"</td>
+                        <td>All I want is peace</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai who/that</p>
+            <div class="example">
+                ❌ It was the book that John wrote (người) | ✅ It was John who wrote the book<br>
+                ❌ It was the man that did it (người) | ✅ It was the man who did it
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên relative clause</p>
+            <div class="example">
+                ❌ It was John fixed the car | ✅ It was John who fixed the car<br>
+                ❌ It was yesterday they arrived | ✅ It was yesterday that they arrived
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Sai động từ trong relative clause</p>
+            <div class="example">
+                ❌ It was yesterday that the package arrive | ✅ It was yesterday that the package arrived<br>
+                ❌ It is Mary who have called | ✅ It is Mary who has called
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sử dụng sai cấu trúc Wh-Cleft</p>
+            <div class="example">
+                ❌ What she enjoys reading fiction is | ✅ What she enjoys is reading fiction<br>
+                ❌ What I need to is a break | ✅ What I need is a break
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Sai động từ "be" theo thì</p>
+            <div class="example">
+                ❌ It were John who did it | ✅ It was John who did it (quá khứ)<br>
+                ❌ It are the kids who made noise | ✅ It is the kids who made noise (hiện tại)
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: It-Cleft - Bắt Đầu Từ Câu Đơn</strong></p>
+            <ul>
+                <li>Viết câu gốc: John broke the window</li>
+                <li>Xác định phần nhấn mạnh: John (người) → dùng "who"</li>
+                <li>Tạo câu chẻ: It was John who broke the window</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Who vs That</strong></p>
+            <ul>
+                <li><strong>Who:</strong> Dùng cho người làm subject</li>
+                <li><strong>That:</strong> Dùng cho vật hoặc người làm object/adverbial</li>
+                <li>Nhưng "that" có thể dùng cho cả người và vật</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Wh-Cleft - Nhấn Mạnh Hành Động/Cảm Xúc</strong></p>
+            <ul>
+                <li>What + S + V (hành động) + is + kết quả</li>
+                <li>What surprised me = điều đó làm tôi ngạc nhiên</li>
+                <li>What I need = cái mà tôi cần</li>
+            </ul>
+
+            <p><strong>Mẹo 4: All-Cleft - Nhấn Mạnh "Tính Duy Nhất"</strong></p>
+            <ul>
+                <li>All + clause = "chỉ có, không có gì khác"</li>
+                <li>All I want is peace (Tất cả tôi muốn là bình yên)</li>
+                <li>Cảm giác: "chỉ có điều đó, không thêm gì"</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Ba Bước</strong></p>
+            <ul>
+                <li>Bước 1: Viết câu gốc đơn giản</li>
+                <li>Bước 2: Chọn phần để nhấn mạnh</li>
+                <li>Bước 3: Chuyển thành câu chẻ (it-cleft hoặc wh-cleft)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Khi Nào Dùng Câu Chẻ?</h3>
+
+            <p><strong>Dùng It-Cleft Khi:</strong></p>
+            <ul>
+                <li>Muốn nhấn mạnh một phần cụ thể (chủ ngữ, tân ngữ, thời gian)</li>
+                <li>Muốn làm rõ ràng hoặc giải thích thông tin</li>
+                <li>Trong lời nói trang trọng hoặc viết chính thức</li>
+            </ul>
+
+            <p><strong>Dùng Wh-Cleft Khi:</strong></p>
+            <ul>
+                <li>Muốn nhấn mạnh hành động hoặc cảm xúc</li>
+                <li>Muốn làm câu có cảm xúc, thể hiện tình cảm</li>
+                <li>Trong câu chuyện hoặc viết sáng tạo</li>
+            </ul>
+
+            <p><strong>Dùng All-Cleft Khi:</strong></p>
+            <ul>
+                <li>Muốn nhấn mạnh "tính duy nhất" hoặc "đó là tất cả"</li>
+                <li>Muốn tạo ra cảm giác: "chỉ có cái này, không có cái khác"</li>
+                <li>Thường dùng trong các phát biểu mạnh mẽ hoặc nổi tiếng</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Động Từ Nguyên Mẫu Không "To" (Bare Infinitive)</h2>
+
+        <div class="card">
+            <h3>Động Từ Nguyên Mẫu Không "To" Là Gì?</h3>
+            <p><span class="highlight">Động Từ Nguyên Mẫu Không "To" (Bare Infinitive)</span> là <strong>dạng V1 (base form) của động từ mà không có "to", được sử dụng sau modal verbs, động từ cảm giác (perception verbs), động từ causative (make, let, have), và một số trường hợp đặc biệt khác</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Bare infinitive giống như to-infinitive nhưng KHÔNG có "to". Nó được sử dụng trong những tình huống đặc biệt, chủ yếu sau modal verbs.
+            </div>
+
+            <h3>Bare Infinitive Vs To-Infinitive</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>Bare Infinitive</th>
+                        <th>To-Infinitive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hình Thức</strong></td>
+                        <td>V1 (không "to")</td>
+                        <td>to + V1</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>can go, must study, let me run</td>
+                        <td>to go, to study, to run</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dùng Sau</strong></td>
+                        <td>Modal verbs, make, let, help, perception verbs</td>
+                        <td>Tính từ, động từ khác, danh từ, giới từ (không bao giờ)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ Câu</strong></td>
+                        <td>I can go (Tôi có thể đi)</td>
+                        <td>I want to go (Tôi muốn đi)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Cấu trúc hoàn toàn giống nhau (V1), nhưng cách sử dụng rất khác nhau trong các bối cảnh khác nhau.
+            </div>
+        </div>
+
+        <!-- BARE INFINITIVE AFTER MODAL VERBS -->
+        <h2>🔴 1. Bare Infinitive Sau Modal Verbs (Bare Infinitive After Modals)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Bare infinitive sau modal verbs</span> là <strong>dạng V1 được dùng sau tất cả các modal verbs, là cách bắt buộc và duy nhất để dùng modal verbs</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: Modal + V1 | LUÔN LUÔN không có "to" | Động từ không thay đổi với subject (S/he/it)
+            </div>
+
+            <h3>II. Các Modal Verbs Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal Verb</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAN</strong></td>
+                        <td>Có thể, khả năng</td>
+                        <td>She can speak English</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>COULD</strong></td>
+                        <td>Có thể (quá khứ), lịch sự hơn</td>
+                        <td>He could help you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WILL</strong></td>
+                        <td>Sẽ, tương lai</td>
+                        <td>I will call you later</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WOULD</strong></td>
+                        <td>Sẽ (quá khứ), điều kiện</td>
+                        <td>Would you help me?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHALL</strong></td>
+                        <td>Sẽ (chính thức), đề xuất</td>
+                        <td>Shall we go?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SHOULD</strong></td>
+                        <td>Nên, lời khuyên</td>
+                        <td>You should study</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MUST</strong></td>
+                        <td>Phải, bắt buộc</td>
+                        <td>We must finish on time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MIGHT</strong></td>
+                        <td>Có thể, khả năng thấp</td>
+                        <td>It might rain tomorrow</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAY</strong></td>
+                        <td>Có thể, cho phép</td>
+                        <td>You may leave now</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NEED (MODAL)</strong></td>
+                        <td>Cần, bắt buộc</td>
+                        <td>You needn't come</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OUGHT TO</strong></td>
+                        <td>Nên, lời khuyên</td>
+                        <td>She ought to see a doctor</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Khả Năng & Sự Cho Phép:</strong></p>
+            <div class="example">
+                • I can swim (Tôi biết bơi)<br>
+                • She can speak five languages (Cô ấy có thể nói năm ngôn ngữ)<br>
+                • Could you help me? (Bạn có thể giúp tôi không?)<br>
+                • You may use my computer (Bạn được phép dùng máy tính của tôi)<br>
+                • Might we have a chance to win? (Chúng ta có thể có cơ hội chiến thắng không?)
+            </div>
+
+            <p><strong>Lời Khuyên & Bắt Buộc:</strong></p>
+            <div class="example">
+                • You should study harder (Bạn nên học chăm chỉ hơn)<br>
+                • We must finish this project (Chúng ta phải hoàn thành dự án này)<br>
+                • You ought to see a doctor (Bạn nên đi gặp bác sĩ)<br>
+                • You needn't come tomorrow (Bạn không cần phải đến ngày mai)<br>
+                • She must be at the office by 9 (Cô ấy phải có mặt ở văn phòng vào lúc 9 giờ)
+            </div>
+
+            <p><strong>Tương Lai & Điều Kiện:</strong></p>
+            <div class="example">
+                • I will call you (Tôi sẽ gọi bạn)<br>
+                • They will arrive tomorrow (Họ sẽ đến vào ngày mai)<br>
+                • Would you like some coffee? (Bạn muốn cà phê không?)<br>
+                • Shall we dance? (Chúng ta có nhảy không?)<br>
+                • If you studied, you would pass (Nếu bạn học, bạn sẽ qua)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> LUÔN LUÔN không có "to" sau modal verbs<br>
+                ✅ I can go | ❌ I can to go<br>
+                ✅ She must study | ❌ She must to study<br>
+                ✅ They will help | ❌ They will to help
+            </div>
+        </div>
+
+        <!-- BARE INFINITIVE AFTER CAUSATIVE VERBS -->
+        <h2>⚡ 2. Bare Infinitive Sau Động Từ Causative (Bare Infinitive After Causative Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Bare infinitive sau causative verbs</span> là <strong>bare infinitive được dùng sau "make", "let", "have" để chỉ một hành động được gây ra hoặc được cho phép</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: S + causative verb + object + V1 | Object ở giữa causative verb và bare infinitive
+            </div>
+
+            <h3>II. Ba Động Từ Causative Chính</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MAKE</strong></td>
+                        <td>Buộc, làm cho ai làm gì</td>
+                        <td>make + object + V1</td>
+                        <td>They made him cry</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LET</strong></td>
+                        <td>Cho phép, để cho</td>
+                        <td>let + object + V1</td>
+                        <td>Parents let children play</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HAVE</strong></td>
+                        <td>Bảo, yêu cầu ai làm gì</td>
+                        <td>have + object + V1</td>
+                        <td>I have him fix the car</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Make - Buộc, Làm Cho:</strong></p>
+            <div class="example">
+                • The teacher made us study hard (Giáo viên bắt chúng tôi học chăm chỉ)<br>
+                • Don't make me laugh (Đừng làm tôi cười)<br>
+                • This movie makes me cry (Bộ phim này làm tôi khóc)<br>
+                • What made him leave? (Cái gì làm anh ấy rời đi?)<br>
+                • They made us wait for an hour (Họ bắt chúng tôi chờ một giờ)
+            </div>
+
+            <p><strong>Let - Cho Phép, Để Cho:</strong></p>
+            <div class="example">
+                • Let me help you (Để tôi giúp bạn)<br>
+                • She let him go home early (Cô ấy để anh ấy về sớm)<br>
+                • Please let me know (Vui lòng cho tôi biết)<br>
+                • Parents should let children play (Cha mẹ nên để trẻ chơi)<br>
+                • Let the cake cool before eating (Để bánh nguội trước khi ăn)
+            </div>
+
+            <p><strong>Have - Bảo, Yêu Cầu:</strong></p>
+            <div class="example">
+                • I have him fix the computer (Tôi bảo anh ấy sửa máy tính)<br>
+                • She had them clean the room (Cô ấy bảo họ dọn phòng)<br>
+                • You should have him check your health (Bạn nên bảo anh ấy kiểm tra sức khỏe)<br>
+                • I'll have the mechanic repair the car (Tôi sẽ bảo thợ sửa chiếc xe)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Passive Voice Với Make:</strong> Trong câu bị động, "make" được theo sau bởi to-infinitive<br>
+                ✅ Active: They made us wait | ✅ Passive: We were made to wait<br>
+                ❌ We were made wait (sai)
+            </div>
+        </div>
+
+        <!-- BARE INFINITIVE AFTER HELP -->
+        <h2>🤝 3. Bare Infinitive Sau "Help"</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Bare infinitive sau "help"</span> là <strong>"help" có thể được theo sau bởi bare infinitive HOẶC to-infinitive, cả hai cách đều chính xác</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Help + (object) + bare infinitive hoặc to-infinitive | Cả hai đều đúng | Bare infinitive phổ biến hơn
+            </div>
+
+            <h3>II. Cấu Trúc & Ví Dụ</h3>
+
+            <p><strong>Công Thức 1: help + object + bare infinitive</strong></p>
+            <div class="example">
+                • We helped them paint the house (Chúng tôi giúp họ sơn nhà)<br>
+                • She helped him carry the bags (Cô ấy giúp anh ấy mang túi)<br>
+                • Can you help me prepare dinner? (Bạn có thể giúp tôi chuẩn bị bữa tối không?)<br>
+                • I helped my sister build the shelf (Tôi giúp em gái tôi xây kệ)
+            </div>
+
+            <p><strong>Công Thức 2: help + object + to-infinitive</strong></p>
+            <div class="example">
+                • We helped them to paint the house (Chúng tôi giúp họ sơn nhà)<br>
+                • She helped him to carry the bags (Cô ấy giúp anh ấy mang túi)<br>
+                • Can you help me to prepare dinner? (Bạn có thể giúp tôi chuẩn bị bữa tối không?)<br>
+                • I helped my sister to build the shelf (Tôi giúp em gái tôi xây kệ)
+            </div>
+
+            <p><strong>Công Thức 3: help + bare/to-infinitive (KHÔNG có object)</strong></p>
+            <div class="example">
+                • We helped paint the house (Chúng tôi giúp sơn nhà)<br>
+                • We helped to paint the house (Chúng tôi giúp sơn nhà)<br>
+                • Can you help prepare dinner? (Bạn có thể giúp chuẩn bị bữa tối không?)<br>
+                • Can you help to prepare dinner? (Bạn có thể giúp chuẩn bị bữa tối không?)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Với "help", cả bare infinitive và to-infinitive đều được chấp nhận<br>
+                ✅ We helped paint | ✅ We helped to paint<br>
+                ✅ We helped them paint | ✅ We helped them to paint
+            </div>
+        </div>
+
+        <!-- BARE INFINITIVE AFTER PERCEPTION VERBS -->
+        <h2>👁️ 4. Bare Infinitive Sau Động Từ Tri Giác (Bare Infinitive After Perception Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Bare infinitive sau perception verbs</span> là <strong>dạng V1 được dùng sau "see", "hear", "watch", "notice", "feel", "smell" để chỉ một hành động được quan sát hoặc cảm nhận</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: S + perception verb + object + bare infinitive | Chỉ hành động hoàn tất (một lần) | Cũng có thể dùng V-ing
+            </div>
+
+            <h3>II. Công Thức & Ý Nghĩa</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Perception Verb</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ Bare Inf</th>
+                        <th>Ví Dụ V-ing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SEE</strong></td>
+                        <td>Thấy</td>
+                        <td>I saw him run (một lần)</td>
+                        <td>I saw him running (đang chạy)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HEAR</strong></td>
+                        <td>Nghe</td>
+                        <td>I heard her sing (một bài)</td>
+                        <td>I heard her singing (đang hát)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WATCH</strong></td>
+                        <td>Xem, quan sát</td>
+                        <td>We watched them dance (một bài)</td>
+                        <td>We watched them dancing (đang nhảy)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NOTICE</strong></td>
+                        <td>Để ý</td>
+                        <td>I noticed him leave (rời đi)</td>
+                        <td>I noticed him leaving (đang rời)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FEEL</strong></td>
+                        <td>Cảm nhận</td>
+                        <td>I felt the ground shake (một lần)</td>
+                        <td>I felt the ground shaking (đang run động)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SMELL</strong></td>
+                        <td>Ngửi</td>
+                        <td>I smelled the cake burn (cháy)</td>
+                        <td>I smelled the cake burning (đang cháy)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Bare Infinitive (Hành Động Hoàn Tất):</strong></p>
+            <div class="example">
+                • I saw the burglar climb over the fence (Tôi thấy kẻ trộm leo qua hàng rào)<br>
+                • She heard the baby cry in the next room (Cô ấy nghe em bé khóc ở phòng bên)<br>
+                • We watched them play soccer in the park (Chúng tôi xem họ chơi bóng đá ở công viên)<br>
+                • I felt the ground shake for a moment (Tôi cảm thấy đất run một lúc)<br>
+                • I noticed him leave without saying goodbye (Tôi để ý anh ấy rời đi mà không nói lời tạm biệt)
+            </div>
+
+            <p><strong>V-ing (Hành Động Đang Diễn Ra):</strong></p>
+            <div class="example">
+                • I saw the burglar climbing over the fence (Tôi thấy kẻ trộm đang leo qua hàng rào)<br>
+                • She heard the baby crying in the next room (Cô ấy nghe em bé đang khóc ở phòng bên)<br>
+                • We watched them playing soccer in the park (Chúng tôi xem họ đang chơi bóng đá ở công viên)<br>
+                • I felt the ground shaking for about half a minute (Tôi cảm thấy đất đang run khoảng nửa phút)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Passive Voice Với Perception Verbs:</strong> Trong câu bị động, dùng to-infinitive<br>
+                ✅ Active: I saw him run | ✅ Passive: He was seen to run<br>
+                ❌ He was seen run (sai)
+            </div>
+        </div>
+
+        <!-- OTHER EXPRESSIONS WITH BARE INFINITIVE -->
+        <h2>🎯 5. Các Cấu Trúc Khác Với Bare Infinitive</h2>
+
+        <div class="card">
+            <h3>I. "Had Better" & "Would Rather"</h3>
+
+            <p><strong>Had Better (Nên, Tốt hơn):</strong></p>
+            <div class="example">
+                • You'd better hurry or you'll be late (Bạn nên vội hay sẽ bị muộn)<br>
+                • She'd better call the doctor (Cô ấy nên gọi bác sĩ)<br>
+                • They'd better arrive on time (Họ nên đến đúng giờ)<br>
+                • I'd better not eat too much (Tôi nên không ăn quá nhiều)
+            </div>
+
+            <p><strong>Would Rather (Thích hơn, Muốn hơn):</strong></p>
+            <div class="example">
+                • I would rather stay at home (Tôi muốn ở nhà hơn)<br>
+                • She'd rather leave early (Cô ấy muốn rời sớm hơn)<br>
+                • Would you rather go or stay? (Bạn muốn đi hay ở hơn?)<br>
+                • They would rather work than rest (Họ muốn làm việc hơn là nghỉ ngơi)
+            </div>
+
+            <h3>II. Why Not + Bare Infinitive (Gợi Ý)</h3>
+
+            <div class="example">
+                • Why not call him? (Tại sao không gọi anh ấy?)<br>
+                • Why don't you try again? (Tại sao bạn không thử lại?)<br>
+                • Why not take a break? (Tại sao không nghỉ ngơi?)<br>
+                • Why not come with us? (Tại sao không đi cùng chúng tôi?)
+            </div>
+
+            <h3>III. Commands & Imperatives</h3>
+
+            <div class="example">
+                • Go home! (Về nhà!)<br>
+                • Don't be late! (Đừng muộn!)<br>
+                • Listen to me! (Hãy nghe tôi!)<br>
+                • Don't make noise! (Đừng làm ồn!)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Thêm "to" sau modal verbs</p>
+            <div class="example">
+                ❌ I can to go | ✅ I can go<br>
+                ❌ She must to study | ✅ She must study<br>
+                ❌ They will to help | ✅ They will help
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng to-infinitive sau make/let/have</p>
+            <div class="example">
+                ❌ They made us to wait | ✅ They made us wait<br>
+                ❌ Let me to help | ✅ Let me help<br>
+                ❌ I have him to fix | ✅ I have him fix
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên object sau causative verbs</p>
+            <div class="example">
+                ❌ Make study hard | ✅ Make students study hard<br>
+                ❌ Let go home | ✅ Let him go home<br>
+                ❌ Have clean the room | ✅ Have them clean the room
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng to-infinitive sau perception verbs (formal writing)</p>
+            <div class="example">
+                ❌ I saw him to run | ✅ I saw him run<br>
+                ❌ She heard them to sing | ✅ She heard them sing<br>
+                (Lưu ý: To-infinitive có thể dùng trong passive voice)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn bare infinitive vs V-ing với perception verbs</p>
+            <div class="example">
+                Bare Inf (hoàn tất): I saw him run (một lần) | V-ing (đang diễn): I saw him running<br>
+                ✅ I watched the game end | ✅ I watched the game ending
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Modal Verbs + Bare Infinitive</strong></p>
+            <ul>
+                <li>Tất cả modal verbs LUÔN LUÔN + bare infinitive</li>
+                <li>Không bao giờ có "to" sau modal verbs</li>
+                <li>Danh sách: can, could, will, would, shall, should, must, might, may, ought to, need</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Make/Let/Have + Object + Bare Inf</strong></p>
+            <ul>
+                <li>Luôn có object ở giữa động từ và bare infinitive</li>
+                <li>KHÔNG bao giờ có "to"</li>
+                <li>Make (quá khứ: was made to + inf), Let, Have</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Perception Verbs + Object + Bare Inf</strong></p>
+            <ul>
+                <li>See, hear, watch, notice, feel, smell + object + V1 (hoàn tất) hoặc V-ing (đang)</li>
+                <li>Passive: was seen to + inf (có "to")</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Help (Linh Hoạt)</strong></p>
+            <ul>
+                <li>Help có thể + bare inf hoặc to-inf</li>
+                <li>Cả hai đều đúng</li>
+                <li>Help + (object) + V1 hoặc to + V1</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Danh Sách</strong></p>
+            <ul>
+                <li>Viết 10 câu với modal verbs + bare inf</li>
+                <li>Viết 10 câu với make/let/have + object + bare inf</li>
+                <li>Viết 10 câu với perception verbs</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Bare Infinitive</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Modal Verbs</strong></td>
+                        <td>Modal + V1</td>
+                        <td>I can go, She must study</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Make/Let/Have</strong></td>
+                        <td>V + object + V1</td>
+                        <td>They made us wait, Let me help</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Help</strong></td>
+                        <td>Help + (obj) + V1/to-V</td>
+                        <td>We helped paint / We helped to paint</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Perception Verbs</strong></td>
+                        <td>Perception + obj + V1/V-ing</td>
+                        <td>I saw him run (hoàn tất) / running (đang)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Had Better/Would Rather</strong></td>
+                        <td>Had better + V1 / Would rather + V1</td>
+                        <td>You'd better hurry, I'd rather stay</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

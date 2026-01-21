@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Mạo Từ (Articles): A/An, The, Zero Article</h2>
+
+        <div class="card">
+            <h3>Mạo Từ Là Gì?</h3>
+            <p><span class="highlight">Mạo Từ (Articles)</span> là <strong>các từ nhỏ dùng trước danh từ hoặc cụm danh từ để chỉ ra liệu chúng ta đang nói về một cái gì đó cụ thể (xác định) hay không cụ thể (bất định)</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Tiếng Anh có ba loại mạo từ: A/AN (bất định, số ít), THE (xác định, mọi số), và ZERO ARTICLE (không có mạo từ). Mạo từ là từ hay sử dụng nhất trong tiếng Anh và rất quan trọng đối với người học.
+            </div>
+
+            <h3>Ba Loại Mạo Từ</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mạo Từ</th>
+                        <th>Tên Gọi</th>
+                        <th>Dùng Với</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A / AN</strong></td>
+                        <td>Indefinite (bất định)</td>
+                        <td>Danh từ số ít đếm được</td>
+                        <td>Một cái gì đó không cụ thể</td>
+                        <td>a dog, an apple</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THE</strong></td>
+                        <td>Definite (xác định)</td>
+                        <td>Mọi danh từ</td>
+                        <td>Cái gì đó cụ thể/xác định</td>
+                        <td>the dog, the apples</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ZERO ARTICLE (Ø)</strong></td>
+                        <td>Không có mạo từ</td>
+                        <td>Danh từ số nhiều, không đếm được, riêng danh từ</td>
+                        <td>Nói chuyên đề, không xác định</td>
+                        <td>dogs, water, Paris</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- A/AN -->
+        <h2>📍 1. A / AN (Mạo Từ Bất Định - Indefinite Article)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">A/AN được dùng để nói về một cái gì đó không cụ thể, lần đầu tiên được nhắc đến, hoặc khi người nghe không biết chúng ta đang nói về cái nào</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Chỉ dùng với danh từ số ít đếm được | A trước âm cơ bản, AN trước âm nguyên âm | Giới thiệu cái gì đó lần đầu tiên | KHÔNG dùng với danh từ số nhiều hay không đếm được
+            </div>
+
+            <h3>II. A Vs AN - Phương Pháp Âm Thanh</h3>
+
+            <p><span class="highlight">Chọn A hay AN phụ thuộc vào ÂM ĐẦU của từ tiếp theo, KHÔNG phải chữ cái</span>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Quy Tắc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A</strong></td>
+                        <td>Trước âm cơ bản (consonant sound)</td>
+                        <td>a dog, a book, a car, a university (phát âm /ju/)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AN</strong></td>
+                        <td>Trước âm nguyên âm (vowel sound)</td>
+                        <td>an apple, an egg, an umbrella, an hour</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Lưu Ý Đặc Biệt - Phát Âm, Không Phải Chữ Cái:</strong></p>
+            <div class="example">
+                • a university (phát âm bắt đầu bằng /ju/ - consonant sound, dù U là nguyên âm)<br>
+                • an umbrella (phát âm bắt đầu bằng /ʌ/ - vowel sound)<br>
+                • a European country (phát âm bắt đầu bằng /j/ - consonant sound)<br>
+                • an honest man (phát âm bắt đầu bằng /ɔ/ - vowel sound, H im lặng)<br>
+                • a one-year-old (phát âm bắt đầu bằng /w/ - consonant sound)
+            </div>
+
+            <h3>III. Cách Sử Dụng A/AN</h3>
+
+            <p><strong>Giới Thiệu Cái Gì Đó Lần Đầu Tiên (Không Cụ Thể):</strong></p>
+            <div class="example">
+                • I saw a movie yesterday (Tôi xem một bộ phim hôm qua - chưa biết bộ nào)<br>
+                • She's looking for an apartment (Cô ấy đang tìm một căn hộ - bất kỳ căn nào)<br>
+                • I need a pen to write (Tôi cần một cây bút để viết - bất kỳ cây nào)
+            </div>
+
+            <p><strong>Nói Về Nghề Nghiệp, Danh Xưng:</strong></p>
+            <div class="example">
+                • She is a doctor (Cô ấy là một bác sĩ)<br>
+                • My father is an engineer (Cha tôi là kỹ sư)<br>
+                • He wants to be a teacher (Anh ấy muốn trở thành giáo viên)
+            </div>
+
+            <p><strong>Chỉ Số Lượng & Thời Gian:</strong></p>
+            <div class="example">
+                • I eat an apple a day (Tôi ăn một quả táo một ngày)<br>
+                • A kilo of rice (Một kilogam gạo)<br>
+                • Twice a week (Hai lần một tuần)<br>
+                • An hour late (Muộn một tiếng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ KHÔNG Dùng A/AN:</strong><br>
+                ❌ I have a apples (danh từ số nhiều) | ✅ I have apples / I have an apple<br>
+                ❌ a water (danh từ không đếm được) | ✅ water / a glass of water
+            </div>
+        </div>
+
+        <!-- THE -->
+        <h2>🎯 2. THE (Mạo Từ Xác Định - Definite Article)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">THE được dùng để nói về cái gì đó cụ thể, xác định, hoặc khi cả người nói lẫn người nghe đều biết chúng ta đang nói về cái nào</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Dùng với mọi danh từ (số ít, số nhiều, đếm được, không đếm được) | Khi cái gì đó được nhắc lần thứ hai | Khi chỉ có một cái | Hoặc khi rõ ràng từ ngữ cảnh
+            </div>
+
+            <h3>II. Cách Sử Dụng THE</h3>
+
+            <p><strong>Lần Đầu Tiên: A (bất định) → Lần Thứ Hai: THE (xác định):</strong></p>
+            <div class="example">
+                • I met a friend yesterday. The friend is very kind.<br>
+                (Hôm qua tôi gặp một người bạn. Người bạn đó rất tốt bụng)<br>
+                • She bought a new car. The car is very expensive.<br>
+                (Cô ấy mua một chiếc xe ô tô mới. Chiếc xe đó rất đắt)
+            </div>
+
+            <p><strong>Chỉ Một Cái Duy Nhất (Trong Ngữ Cảnh):</strong></p>
+            <div class="example">
+                • The sun rises in the east (Mặt trời mọc ở phía đông)<br>
+                • The moon is bright tonight (Mặt trăng sáng tối nay)<br>
+                • The president of the US (Tổng thống Hoa Kỳ)<br>
+                • The director of the school (Hiệu trưởng của trường)
+            </div>
+
+            <p><strong>Khi Rõ Ràng Từ Cụm Từ Mô Tả Nào Cái Đó:</strong></p>
+            <div class="example">
+                • The book on the table is mine (Cuốn sách trên bàn là của tôi)<br>
+                • The girl wearing a red dress is my sister (Cô gái mặc đầm đỏ là em gái tôi)<br>
+                • The man I talked to yesterday (Người đàn ông tôi nói chuyện hôm qua)<br>
+                • The house where I grew up (Ngôi nhà nơi tôi lớn lên)
+            </div>
+
+            <p><strong>Trước Danh Từ Số Nhiều Cụ Thể:</strong></p>
+            <div class="example">
+                • The students in this classroom are very smart (Những học sinh trong lớp này rất thông minh)<br>
+                • The books on the shelf are old (Những cuốn sách trên kệ là cũ)<br>
+                • The flowers in the garden are beautiful (Những bông hoa trong vườn rất đẹp)
+            </div>
+
+            <p><strong>Với Danh Từ Không Đếm Được Cụ Thể:</strong></p>
+            <div class="example">
+                • The water in this bottle is cold (Nước trong chai này lạnh)<br>
+                • The music in that restaurant is too loud (Nhạc nhạc trong nhà hàng đó quá to)<br>
+                • The information you gave me was helpful (Thông tin bạn cung cấp cho tôi rất hữu ích)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Lần đầu nói: a/an (hoặc zero) | Lần thứ hai: the (đã rõ ràng cái nào)<br>
+                ✅ I saw a dog. The dog was brown.<br>
+                ❌ I saw dog. The dog was brown.
+            </div>
+        </div>
+
+        <!-- ZERO ARTICLE -->
+        <h2>⭕ 3. ZERO ARTICLE (Không Có Mạo Từ)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">ZERO ARTICLE (hay No Article) là khi KHÔNG dùng mạo từ nào trước danh từ, thường dùng khi nói chuyên đề hoặc tổng quát</span>.</p>
+
+            <h3>II. Các Trường Hợp Dùng Zero Article</h3>
+
+            <p><strong>1. Danh Từ Số Nhiều Nói Chuyên Đề (General Statements):</strong></p>
+            <div class="example">
+                • Dogs are loyal animals (Chó là những con vật trung thực - nói chuyên đề)<br>
+                • Books are helpful for learning (Sách hữu ích cho việc học tập)<br>
+                • ❌ The dogs are loyal (sai - nói chuyên đề, KHÔNG dùng THE)<br>
+                • ✅ Cats are independent (Mèo độc lập) | ✅ The cats in my house are independent (những con mèo trong nhà tôi)
+            </div>
+
+            <p><strong>2. Danh Từ Không Đếm Được Nói Chuyên Đề:</strong></p>
+            <div class="example">
+                • Water is essential for life (Nước cần thiết cho sự sống)<br>
+                • Music helps us relax (Nhạc giúp chúng ta thư giãn)<br>
+                • ❌ The water is essential (sai) | ✅ Water is essential<br>
+                • ❌ The music helps us (sai) | ✅ Music helps us
+            </div>
+
+            <p><strong>3. Riêng Danh Từ (Proper Nouns) - Tên Người, Nơi, Quốc Gia, Thành Phố:</strong></p>
+            <div class="example">
+                • My name is John (Tên tôi là John)<br>
+                • I live in Vietnam (Tôi sống ở Việt Nam)<br>
+                • She's from Paris (Cô ấy từ Paris)<br>
+                • He speaks English (Anh ấy nói tiếng Anh)<br>
+                • ❌ I live in the Vietnam (sai) | ✅ I live in Vietnam
+            </div>
+
+            <p><strong>4. Môn Học, Ngôn Ngữ, Thể Thao (Nói Chuyên Đề):</strong></p>
+            <div class="example">
+                • She studies biology at university (Cô ấy học sinh học ở đại học)<br>
+                • I play basketball on weekends (Tôi chơi bóng rổ vào cuối tuần)<br>
+                • They speak German fluently (Họ nói tiếng Đức lưu loát)<br>
+                • ❌ She studies the biology (sai) | ✅ She studies biology
+            </div>
+
+            <p><strong>5. Các Bữa Ăn, Thời Gian (Chung Chung):</strong></p>
+            <div class="example">
+                • We eat breakfast at 7 a.m. (Chúng tôi ăn sáng lúc 7 giờ sáng)<br>
+                • School starts Monday (Trường bắt đầu vào thứ Hai)<br>
+                • Her birthday is in July (Sinh nhật cô ấy vào tháng Bảy)<br>
+                • ❌ We eat the breakfast (sai) | ✅ We eat breakfast<br>
+                • ❌ School starts the Monday (sai) | ✅ School starts Monday
+            </p>
+
+            <p><strong>6. Nơi Thường Đi (Routine Places):</strong></p>
+            <div class="example">
+                • She's at school (Cô ấy đang ở trường - nơi sinh hoạt)<br>
+                • He's at work (Anh ấy đang ở công việc)<br>
+                • I go to hospital for surgery (Tôi đi bệnh viện để phẫu thuật)<br>
+                • ❌ She's at the school (sai - nơi sinh hoạt) | ✅ She's at school<br>
+                • ✅ She's at the school for a meeting (đúng - nơi cụ thể)
+            </div>
+
+            <p><strong>7. Phương Tiện Đi Lại (Được dùng sau "by"):</strong></p>
+            <div class="example">
+                • I go to work by car (Tôi đi làm bằng ô tô)<br>
+                • They travel by train (Họ du hành bằng tàu)<br>
+                • She goes to school by bus (Cô ấy đi học bằng xe buýt)<br>
+                • ❌ I go by the car (sai) | ✅ I go by car
+            </div>
+
+            <p><strong>8. Các Cụm Từ Tương Đối Cố Định:</strong></p>
+            <div class="example">
+                • In conclusion (Tóm lại)<br>
+                • At night (Vào ban đêm)<br>
+                • In summer (Vào mùa hè)<br>
+                • On vacation (Đang nghỉ)<br>
+                • In jail (Bị giam)<br>
+                • ❌ In the conclusion (sai) | ✅ In conclusion
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Khác Biệt - THE vs ZERO:</strong><br>
+                • Dogs are loyal (chuyên đề) VS The dogs are loyal (chỉ những con chó cụ thể)<br>
+                • School starts Monday (sinh hoạt) VS The school starts Monday (specific school)<br>
+                • I study biology (chuyên đề) VS I study the biology of this region (cụ thể)
+            </div>
+        </div>
+
+        <!-- THE - EXCEPTIONS -->
+        <h2>🔑 4. THE - Các Trường Hợp Đặc Biệt</h2>
+
+        <div class="card">
+            <h3>I. Trường Hợp Phải Dùng THE</h3>
+
+            <p><strong>Các Danh Từ Riêng (Proper Nouns) CÓ THE:</strong></p>
+            <div class="example">
+                • The United States (Hoa Kỳ)<br>
+                • The United Kingdom (Vương quốc Anh)<br>
+                • The Netherlands (Hà Lan)<br>
+                • The Philippines (Philippin)<br>
+                • The Thames (Sông Thames)<br>
+                • The Sahara (Sa mạc Sahara)<br>
+                • The Rocky Mountains (Dãy Rocky)<br>
+                • The Gulf of Mexico (Vùng Vịnh Mexico)<br>
+                • The Titanic (Con tàu Titanic)
+            </div>
+
+            <p><strong>Các Nhạc Cụ & Khiêu Vũ:</strong></p>
+            <div class="example">
+                • Play the piano (Chơi đàn piano)<br>
+                • Play the guitar (Chơi đàn ghi-ta)<br>
+                • Dance the tango (Nhảy tango)<br>
+                • ✅ She plays the piano<br>
+                • ❌ She plays piano (sai khi nói về nhạc cụ)
+            </div>
+
+            <p><strong>Các Kỳ Tích & Công Trình Nổi Tiếng:</strong></p>
+            <div class="example">
+                • The Statue of Liberty (Tượng Nữ Thần Tự Do)<br>
+                • The Eiffel Tower (Tháp Eiffel)<br>
+                • The Great Wall of China (Vạn Lý Trường Thành)<br>
+                • The Colosseum (Đấu trường Colosseum)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng A/AN với danh từ số nhiều hoặc không đếm được</p>
+            <div class="example">
+                ❌ a dogs | ✅ dogs / a dog<br>
+                ❌ a water | ✅ water / a glass of water
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Chọn A hay AN dựa vào chữ cái, không phải âm thanh</p>
+            <div class="example">
+                ❌ a umbrella (chữ U nhưng phát âm /ʌ/) | ✅ an umbrella<br>
+                ❌ an university (chữ u là nguyên âm nhưng phát âm /ju/) | ✅ a university
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng THE với danh từ số nhiều nói chuyên đề</p>
+            <div class="example">
+                ❌ The dogs are loyal animals | ✅ Dogs are loyal animals<br>
+                ❌ The students are hardworking | ✅ Students are hardworking
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng THE với ngôn ngữ, môn học (nói chuyên đề)</p>
+            <div class="example">
+                ❌ I study the English | ✅ I study English<br>
+                ❌ She speaks the French | ✅ She speaks French
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng THE với thời gian chung chung</p>
+            <div class="example">
+                ❌ We eat the breakfast | ✅ We eat breakfast<br>
+                ❌ School starts the Monday | ✅ School starts Monday
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: A/AN - Âm Thanh, Không Phải Chữ Cái</strong></p>
+            <ul>
+                <li>Phát âm từ tiếp theo: A (âm cơ bản), AN (âm nguyên âm)</li>
+                <li>Vowel sounds: /ə/, /e/, /i/, /ɔ/, /ʌ/ → AN</li>
+                <li>Consonant sounds: /b/, /d/, /k/, /p/, /t/ → A</li>
+            </ul>
+
+            <p><strong>Mẹo 2: THE - Khi Cụ Thể</strong></p>
+            <ul>
+                <li>Lần thứ hai nhắc đến → THE</li>
+                <li>Chỉ có một cái → THE</li>
+                <li>Rõ ràng từ cụm từ mô tả → THE</li>
+            </ul>
+
+            <p><strong>Mẹo 3: ZERO - Khi Chuyên Đề</strong></p>
+            <ul>
+                <li>Danh từ số nhiều nói chuyên đề → ZERO</li>
+                <li>Danh từ không đếm được nói chuyên đề → ZERO</li>
+                <li>Riêng danh từ (tên, nơi) → ZERO (ngoại trừ those/rivers/mountains)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Hỏi 3 Câu</strong></p>
+            <ul>
+                <li>Nó cụ thể hay chuyên đề? (Specific or general?)</li>
+                <li>Nó là lần đầu hay lần thứ hai? (First or second mention?)</li>
+                <li>Người nghe có biết tôi đang nói cái nào không? (Does listener know which one?)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 10 câu và xác định mạo từ phù hợp</li>
+                <li>Đọc tiếng Anh và chú ý mạo từ</li>
+                <li>So sánh: A dog (bất định) vs The dog (xác định) vs Dogs (chuyên đề)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mạo Từ</th>
+                        <th>Dùng Với</th>
+                        <th>Khi Nào</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A/AN</strong></td>
+                        <td>Danh từ số ít đếm được</td>
+                        <td>Bất định, lần đầu, không cụ thể</td>
+                        <td>a dog, an apple</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THE</strong></td>
+                        <td>Mọi danh từ</td>
+                        <td>Xác định, cụ thể, lần thứ hai</td>
+                        <td>the dog, the apples</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ZERO (Ø)</strong></td>
+                        <td>Danh từ số nhiều, không đếm được, riêng danh từ</td>
+                        <td>Chuyên đề, nói chung, tên riêng</td>
+                        <td>dogs, water, Paris</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 20px;"><strong>So Sánh 3 Loại:</strong></p>
+            <div class="example">
+                • A dog is loyal (Một con chó trung thực - nói chuyên đề, mới giới thiệu)<br>
+                • The dog is loyal (Con chó đó trung thực - chỉ con chó cụ thể)<br>
+                • Dogs are loyal (Chó trung thực - nói chuyên đề, không cụ thể)<br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

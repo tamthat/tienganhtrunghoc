@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Tương Lai Tiếp Diễn Là Gì?</h3>
+            <p><span class="highlight">Future Continuous Tense</span> (cũng gọi là Future Progressive) là thì được sử dụng để diễn tả các hành động <strong>sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai</strong>. Đó là những hoạt động mà chúng ta dự kiến sẽ đang tiếp tục vào một lúc nào đó trong tương lai.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Future Continuous nhấn mạn <strong>quá trình hoặc sự tiếp diễn</strong> của hành động tại một thời điểm cụ thể trong tương lai, không phải hành động sẽ hoàn thành hay xảy ra.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai</li>
+                <li>Hành động sẽ bắt đầu trước thời điểm đó và tiếp tục sau</li>
+                <li>Nhấn mạn quá trình, không phải hoàn thành</li>
+                <li>Cấu trúc: will + be + V-ing</li>
+                <li>Thường đi kèm với: when, while, at 3 PM tomorrow, this time next week</li>
+                <li>Không dùng với stative verbs (like, want, have, know, etc.)</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + will + be + V-ing
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Will Be</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I/You/He/She/It/We/They</span></td>
+                        <td><span class="highlight">will be</span></td>
+                        <td>I <span class="verb-form">will be studying</span></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td colspan="3"><span class="highlight">Lưu Ý:</span> "Will be" giống cho tất cả các ngôi - không phân biệt số lượng hoặc người</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>will be working</strong> at 3 PM tomorrow<br>
+                • She <strong>will be sleeping</strong> when you arrive<br>
+                • They <strong>will be traveling</strong> next week<br>
+                • It <strong>will be raining</strong> this time tomorrow
+            </div>
+
+            <div class="note">
+                <strong>📌 Rút Gọn:</strong> I'll be, you'll be, he'll be, she'll be, it'll be, we'll be, they'll be (sử dụng hình thức rút gọn trong tiếng nói hàng ngày)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + will + NOT + be + V-ing
+            </div>
+
+            <p><span class="highlight">Rút Gọn:</span> won't be (will not be)</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/He/She/It/We/They</td>
+                        <td>will not be</td>
+                        <td>won't be</td>
+                        <td>I <strong>won't be working</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>won't be studying</strong> tomorrow<br>
+                • She <strong>will not be sleeping</strong> when you call<br>
+                • They <strong>won't be traveling</strong> next month<br>
+                • He <strong>won't be watching</strong> TV at that time
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Will + Subject + be + V-ing + ?
+            </div>
+
+            <p><span class="highlight">Quy Tắc:</span> Đặt "Will" lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Will</span> you be working?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span style="color: #32b8c6; font-weight: bold;">Will</span> she be sleeping?</td>
+                        <td>Yes, she will</td>
+                        <td>No, she won't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Will you</strong> be studying tomorrow? → Yes, I will<br>
+                • <strong>Will she</strong> be sleeping when I arrive? → No, she won't<br>
+                • <strong>Will they</strong> be working this time next week? → Yes, they will<br>
+                • <strong>Will it</strong> be raining? → No, it won't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + will + be + V-ing</td>
+                        <td>She will be working hard</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + will + NOT + be + V-ing</td>
+                        <td>She will not be working hard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Will + S + be + V-ing + ?</td>
+                        <td>Will she be working hard?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + will/won't</td>
+                        <td>Yes, she will</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SPELLING RULES -->
+        <h2>✏️ Quy Tắc Thêm -ING</h2>
+
+        <div class="card warning">
+            <h3>Quy Tắc Thêm -ING Cơ Bản</h3>
+
+            <p><strong>A) Động từ thông thường: Chỉ thêm -ing</strong></p>
+            <div class="example">
+                • read → <strong>reading</strong><br>
+                • write → <strong>writing</strong><br>
+                • play → <strong>playing</strong><br>
+                • work → <strong>working</strong>
+            </div>
+
+            <p><strong>B) Động từ kết thúc bằng e (câm): Bỏ e, thêm -ing</strong></p>
+            <div class="example">
+                • make → <strong>making</strong><br>
+                • take → <strong>taking</strong><br>
+                • come → <strong>coming</strong><br>
+                • live → <strong>living</strong>
+            </div>
+
+            <p><strong>C) Động từ kết thúc bằng ie: Đổi ie → y, thêm -ing</strong></p>
+            <div class="example">
+                • lie → <strong>lying</strong><br>
+                • die → <strong>dying</strong>
+            </div>
+
+            <p><strong>D) Động từ 1 âm tiết, kết thúc CVC: Gấp đôi phụ âm cuối, thêm -ing</strong></p>
+            <div class="example">
+                • sit → <strong>sitting</strong><br>
+                • run → <strong>running</strong><br>
+                • swim → <strong>swimming</strong><br>
+                • stop → <strong>stopping</strong>
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Không gấp đôi nếu động từ kết thúc bằng -w, -x, -y:<br>
+                • fix → <strong>fixing</strong><br>
+                • play → <strong>playing</strong>
+            </div>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Tương Lai Tiếp Diễn</h2>
+
+        <div class="card">
+            <h3>1. Hành Động Sẽ Đang Diễn Ra Tại Một Thời Điểm Cụ Thể</h3>
+            <p>Diễn tả hành động sẽ đang xảy ra vào một lúc cụ thể trong tương lai</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • At 3 PM tomorrow, I <strong>will be working</strong><br>
+                • This time next week, she <strong>will be flying</strong> to Paris<br>
+                • When you arrive, they <strong>will be eating</strong> dinner<br>
+                • At 6 AM, he <strong>will be running</strong> in the park
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Simple Future:</strong> "I will work" (sẽ làm) ≠ "I will be working" (sẽ đang làm)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Hành Động Sẽ Bị Gián Đoạn Bởi Hành Động Khác</h3>
+            <p>Diễn tả hành động sẽ đang diễn ra khi một hành động khác xảy ra</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • When you call, I <strong>will be sleeping</strong><br>
+                • While she <strong>will be working</strong>, I will handle the guests<br>
+                • When the guests arrive, we <strong>will be cooking</strong> dinner<br>
+                • He <strong>will be taking</strong> a shower when I arrive
+            </div>
+
+            <div class="note">
+                <strong>📌 Cấu Trúc:</strong> Future Continuous + When/While + Simple Present (không phải Future)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Kế Hoạch Hoặc Sự Sắp Xếp Trong Tương Lai</h3>
+            <p>Diễn tả kế hoạch hoặc sự sắp xếp sẽ diễn ra trong một khoảng thời gian</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • We <strong>will be painting</strong> our house all weekend<br>
+                • She <strong>will be attending</strong> the conference next week<br>
+                • They <strong>will be traveling</strong> around Europe for three weeks<br>
+                • I <strong>will be working</strong> on this project for the next month
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Câu Hỏi Lịch Sự Hoặc Gián Tiếp</h3>
+            <p>Dùng Future Continuous để hỏi về kế hoạch một cách lịch sự hoặc gián tiếp</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • <strong>Will you be using</strong> the printer in the next hour?<br>
+                • <strong>Will you be attending</strong> the meeting tomorrow?<br>
+                • <strong>Will she be working</strong> late tonight?<br>
+                • <strong>Will they be joining</strong> us for dinner?
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Will you be using the printer?" nghe lịch sự hơn "Will you use the printer?"
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Dự Đoán Hoặc Hình Dung Tương Lai</h3>
+            <p>Dùng Future Continuous để dự đoán hoặc hình dung sẽ xảy ra ở tương lai</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • Next year at this time, I <strong>will be living</strong> in London<br>
+                • In 10 years, robots <strong>will be doing</strong> most of our shopping<br>
+                • By 2030, more people <strong>will be using</strong> renewable energy<br>
+                • This time tomorrow, we <strong>will be celebrating</strong> our anniversary
+            </div>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Future Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thời điểm cụ thể</strong></td>
+                        <td>at 3 PM tomorrow, at this time next week/month/year</td>
+                        <td>I <strong>will be working</strong> <strong>at 3 PM</strong> tomorrow</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Khoảng thời gian</strong></td>
+                        <td>all morning, all day, all week, the whole day</td>
+                        <td>She <strong>will be studying</strong> <strong>all day</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>From ... to ...</strong></td>
+                        <td>from ... to ..., between ... and ...</td>
+                        <td>They <strong>will be working</strong> <strong>from 9 to 5</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>When/While</strong></td>
+                        <td>when, while, just as</td>
+                        <td>I <strong>will be working</strong> <strong>when</strong> you arrive</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Later/Soon</strong></td>
+                        <td>later, soon, tonight, this afternoon</td>
+                        <td>We <strong>will be meeting</strong> <strong>later</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Quan Trọng:</strong> Future Continuous nhấn mạn một thời điểm cụ thể khi hành động đang diễn ra, không phải khoảng thời gian bắt đầu hoặc kết thúc
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Future Continuous vs Simple Future</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Simple Future</th>
+                        <th>Future Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + will + Base Form</td>
+                        <td>S + will + be + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Tập Trung</strong></td>
+                        <td>Hành động sẽ xảy ra</td>
+                        <td>Hành động sẽ đang diễn ra</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ý Nghĩa</strong></td>
+                        <td>Hành động hoàn toàn ở tương lai</td>
+                        <td>Quá trình tại một thời điểm tương lai</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I will work tomorrow (sẽ làm)</td>
+                        <td>I will be working at 3 PM (sẽ đang làm)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ I <strong>will open</strong> the door (Simple Future - hành động hoàn thành)<br>
+                ✓ I <strong>will be opening</strong> the door when you call (Future Continuous - quá trình)<br><br>
+                ✓ She <strong>will arrive</strong> at 5 PM (Simple Future - thời điểm cụ thể)<br>
+                ✓ At 5 PM, she <strong>will be traveling</strong> on the train (Future Continuous - đang xảy ra tại thời điểm đó)<br><br>
+                ✓ When I <strong>call</strong>, <strong>I'll open</strong> the door (Simple - kế hoạch đơn giản)<br>
+                ✓ When I <strong>call</strong>, I'll <strong>be opening</strong> the door (Continuous - đang làm khi tôi gọi)
+            </div>
+        </div>
+
+        <!-- STATIVE VERBS SECTION -->
+        <h2>⚡ Động Từ KHÔNG Dùng Future Continuous</h2>
+
+        <div class="card warning">
+            <h3>Stative Verbs (Động Từ Trạng Thái)</h3>
+            <p>Những động từ này diễn tả trạng thái không thể dùng ở dạng continuous (cả tương lai)</p>
+
+            <p><strong>Danh Sách Các Stative Verbs Phổ Biến:</strong></p>
+            <ul>
+                <li><strong>Cảm Xúc:</strong> like, love, hate, want, need, prefer, dislike</li>
+                <li><strong>Sở Hữu:</strong> have, own, possess, belong</li>
+                <li><strong>Suy Nghĩ/Nhận Thức:</strong> think, believe, know, understand, realize, suppose</li>
+                <li><strong>Cảm Giác:</strong> see, hear, taste, smell, feel (cảm xúc)</li>
+                <li><strong>Bề Ngoài:</strong> seem, look, appear, resemble</li>
+            </ul>
+
+            <div class="example">
+                <strong>❌ Sai:</strong> I will be needing help<br>
+                <strong>✅ Đúng:</strong> I will need help<br><br>
+                <strong>❌ Sai:</strong> She will be having a car<br>
+                <strong>✅ Đúng:</strong> She will have a car
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>will be working</strong> at 3 PM tomorrow</li>
+                    <li>She <strong>will be sleeping</strong> when you arrive</li>
+                    <li>They <strong>will be traveling</strong> next week</li>
+                    <li>It <strong>will be raining</strong> this time tomorrow</li>
+                    <li>We <strong>will be meeting</strong> at the café</li>
+                    <li>He <strong>will be studying</strong> for the exam</li>
+                    <li>The children <strong>will be playing</strong> in the garden</li>
+                    <li>I <strong>will be waiting</strong> for you</li>
+                    <li>She <strong>will be cooking</strong> dinner</li>
+                    <li>They <strong>will be flying</strong> to Paris</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>won't be working</strong> tomorrow</li>
+                    <li>She <strong>will not be sleeping</strong> at that time</li>
+                    <li>They <strong>won't be traveling</strong> next month</li>
+                    <li>It <strong>won't be raining</strong> this week</li>
+                    <li>We <strong>won't be meeting</strong> today</li>
+                    <li>He <strong>won't be studying</strong> hard</li>
+                    <li>The cat <strong>won't be eating</strong> much</li>
+                    <li>I <strong>won't be waiting</strong> long</li>
+                    <li>She <strong>won't be cooking</strong> today</li>
+                    <li>They <strong>won't be flying</strong> this week</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Will you be working?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Will she be sleeping?</td>
+                        <td>Yes, she will</td>
+                        <td>No, she won't</td>
+                    </tr>
+                    <tr>
+                        <td>Will they be traveling?</td>
+                        <td>Yes, they will</td>
+                        <td>No, they won't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Will it be raining?</td>
+                        <td>Yes, it will</td>
+                        <td>No, it won't</td>
+                    </tr>
+                    <tr>
+                        <td>Will you be free tonight?</td>
+                        <td>Yes, I will</td>
+                        <td>No, I won't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên "be" trong cấu trúc</p>
+            <div class="example">
+                ❌ I will working | ✅ I will be working
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên thêm -ing vào động từ</p>
+            <div class="example">
+                ❌ She will be work | ✅ She will be working
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng stative verbs ở dạng continuous</p>
+            <div class="example">
+                ❌ I will be needing help | ✅ I will need help
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Nhầm lẫn với Simple Future</p>
+            <div class="example">
+                ❌ I will work at 3 PM (sai ngữ cảnh) | ✅ I will be working at 3 PM
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng Future Continuous sau "when" mà quên Simple Present</p>
+            <div class="example">
+                ❌ When I will arrive, she will be cooking | ✅ When I arrive, she will be cooking
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ "Sẽ Đang Làm"</strong></p>
+            <ul>
+                <li>Future Continuous = Sẽ đang làm gì vào lúc nào đó</li>
+                <li>Tìm "at 3 PM", "when", "while" → Future Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 2: "Will Be" Là Chìa Khóa</strong></p>
+            <ul>
+                <li>will + be + V-ing = Future Continuous</li>
+                <li>Nếu không có "be" hoặc "-ing" thì không phải Future Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 3: So Sánh Simple Future</strong></p>
+            <ul>
+                <li>Will work = Sẽ làm (hoàn thành)</li>
+                <li>Will be working = Sẽ đang làm (quá trình)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: "When" + Simple Present, KHÔNG Future</strong></p>
+            <ul>
+                <li>When I arrive, she will be cooking (KHÔNG "When I will arrive")</li>
+                <li>While/When + Simple Present là quy tắc quan trọng</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Tránh Stative Verbs</strong></p>
+            <ul>
+                <li>Không dùng continuous với like, want, have, know, think (khi là suy nghĩ)</li>
+                <li>Dùng Simple Future thay vào đó</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + will + be + V-ing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + will + NOT + be + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Will + S + be + V-ing + ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quy Tắc -ING</strong></td>
+                        <td>Thêm -ing, bỏ e câm, gấp đôi CVC</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>at 3 PM tomorrow, when, while, all day, this time next week</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cách Sử Dụng Chính</strong></td>
+                        <td>Hành động sẽ đang diễn ra, bị gián đoạn, lịch sự, dự đoán</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Không Dùng Với</strong></td>
+                        <td>Stative verbs (like, want, have, know...)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

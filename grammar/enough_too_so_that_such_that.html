@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Cấu Trúc Enough/Too, So...that/Such...that (Degree & Result Structures)</h2>
+
+        <div class="card">
+            <h3>Các Cấu Trúc Chỉ Mức Độ Và Kết Quả</h3>
+            <p><span class="highlight">Các cấu trúc "enough", "too", "so...that", "such...that" được sử dụng để chỉ mức độ của một sự vật/sự kiện hoặc để chỉ kết quả/hậu quả của một tình huống</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Cả bốn cấu trúc này đều dùng để thể hiện mức độ (degree), nhưng cách sử dụng và vị trí chúng trong câu khác nhau. "So...that" và "such...that" cũng có thể dùng để chỉ kết quả.
+            </div>
+
+            <h3>So Sánh Tổng Quát</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Dùng Với</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ENOUGH</strong></td>
+                        <td>Đủ, vừa đủ (lượng cần thiết)</td>
+                        <td>Sau tính từ/trạng từ, trước danh từ</td>
+                        <td>Good enough, enough time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TOO</strong></td>
+                        <td>Quá, quá mức (hơn cần thiết)</td>
+                        <td>Trước tính từ/trạng từ</td>
+                        <td>Too small, too fast</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SO...THAT</strong></td>
+                        <td>Quá...đến nỗi, với kết quả là</td>
+                        <td>So + tính từ/trạng từ, so many/much + noun</td>
+                        <td>So cold that, so many people that</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SUCH...THAT</strong></td>
+                        <td>Quá...đến nỗi, với kết quả là</td>
+                        <td>Such + (a/an) + tính từ + danh từ</td>
+                        <td>Such a good teacher that</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ENOUGH -->
+        <h2>✅ 1. ENOUGH (Đủ, Vừa Đủ)</h2>
+
+        <div class="card">
+            <h3>I. Vị Trí & Công Thức</h3>
+
+            <p><span class="highlight">ENOUGH có hai vị trí khác nhau tùy thuộc vào loại từ nó đi kèm</span>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Từ</th>
+                        <th>Vị Trí</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tính Từ</strong></td>
+                        <td>SAU tính từ</td>
+                        <td>adj + enough</td>
+                        <td>good enough, big enough, old enough</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trạng Từ</strong></td>
+                        <td>SAU trạng từ</td>
+                        <td>adv + enough</td>
+                        <td>quickly enough, slowly enough, well enough</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Danh Từ</strong></td>
+                        <td>TRƯỚC danh từ</td>
+                        <td>enough + noun</td>
+                        <td>enough time, enough money, enough people</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Động Từ</strong></td>
+                        <td>SAU động từ</td>
+                        <td>V + enough</td>
+                        <td>practice enough, rest enough, drink enough</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Enough Sau Tính Từ + To-Infinitive:</strong></p>
+            <div class="example">
+                • This coat is warm enough to wear in winter (Chiếc áo khoác này ấm đủ để mặc vào mùa đông)<br>
+                • Is the water hot enough to take a shower? (Nước có đủ nóng để tắm không?)<br>
+                • He's old enough to drive a car (Anh ấy đủ tuổi để lái xe)<br>
+                • She's experienced enough to handle this job (Cô ấy có kinh nghiệm đủ để làm công việc này)
+            </div>
+
+            <p><strong>Enough Sau Trạng Từ + To-Infinitive:</strong></p>
+            <div class="example">
+                • She spoke slowly enough for everyone to understand (Cô ấy nói chậm đủ để mọi người hiểu được)<br>
+                • He ran quickly enough to catch the bus (Anh ấy chạy nhanh đủ để bắt được xe buýt)<br>
+                • The music played loudly enough for everyone to hear (Âm nhạc phát đủ to để mọi người nghe được)
+            </div>
+
+            <p><strong>Enough Trước Danh Từ:</strong></p>
+            <div class="example">
+                • Do we have enough time to finish this project? (Chúng ta có đủ thời gian để hoàn thành dự án này không?)<br>
+                • There isn't enough bread to make sandwiches (Không có đủ bánh mì để làm bánh kẹp)<br>
+                • Have you got enough money to buy a car? (Bạn có đủ tiền để mua xe không?)<br>
+                • There are enough seats for all the guests (Có đủ chỗ ngồi cho tất cả các khách)
+            </div>
+
+            <p><strong>Enough Sau Động Từ:</strong></p>
+            <div class="example">
+                • I don't sleep enough (Tôi không ngủ đủ)<br>
+                • We need to drink enough water every day (Chúng ta cần uống đủ nước mỗi ngày)<br>
+                • He doesn't study enough for his exams (Anh ấy không học đủ cho kỳ thi)<br>
+                • She exercises enough to stay healthy (Cô ấy tập luyện đủ để giữ sức khỏe)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý - Hai Vị Trí Khác Nhau Với Tính Từ + Danh Từ:</strong><br>
+                • <strong>Big enough envelopes:</strong> Các phong bì đủ lớn (đó là vấn đề của kích thước)<br>
+                • <strong>Enough big envelopes:</strong> Đủ số lượng các phong bì lớn (đó là vấn đề của số lượng)
+            </div>
+        </div>
+
+        <!-- TOO -->
+        <h2>⚠️ 2. TOO (Quá, Hơn Cần Thiết)</h2>
+
+        <div class="card">
+            <h3>I. Vị Trí & Công Thức</h3>
+
+            <p><span class="highlight">TOO luôn đứng TRƯỚC tính từ hoặc trạng từ</span>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Từ</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tính Từ</strong></td>
+                        <td>too + adj</td>
+                        <td>too small, too expensive, too difficult</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trạng Từ</strong></td>
+                        <td>too + adv</td>
+                        <td>too fast, too slowly, too quietly</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Much/Many + Noun</strong></td>
+                        <td>too much/many + noun</td>
+                        <td>too much sugar, too many people</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ý Nghĩa & Ví Dụ</h3>
+
+            <p><strong>Too + Tính Từ + To-Infinitive (Quá... để...):</strong></p>
+            <div class="example">
+                • This box is too heavy to carry (Chiếc hộp này quá nặng để mang)<br>
+                • The water is too hot to drink (Nước quá nóng để uống)<br>
+                • He's too young to get married (Anh ấy quá trẻ để kết hôn)<br>
+                • This problem is too difficult to solve (Bài toán này quá khó để giải)
+            </div>
+
+            <p><strong>Too + Trạng Từ + To-Infinitive:</strong></p>
+            <div class="example">
+                • You're driving too fast to be safe (Bạn lái xe quá nhanh để an toàn)<br>
+                • She spoke too quietly to be heard (Cô ấy nói quá nhỏ để được nghe)<br>
+                • He ran too slowly to catch the ball (Anh ấy chạy quá chậm để bắt được bóng)
+            </div>
+
+            <p><strong>Too Much/Many + Noun:</strong></p>
+            <div class="example">
+                • There's too much sugar in this coffee (Có quá nhiều đường trong cà phê này)<br>
+                • I've eaten too many biscuits (Tôi đã ăn quá nhiều bánh quy)<br>
+                • There are too many cars on the road (Có quá nhiều xe trên đường)<br>
+                • You put too much salt in the soup (Bạn cho quá nhiều muối vào canh)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Về Ý Nghĩa:</strong> "TOO" thường mang ý nghĩa tiêu cực - đó là quá mức cần thiết. Không dùng "too" khi muốn nói điều gì đó là rất tốt<br>
+                ❌ The food was too delicious (sai) | ✅ The food was delicious (đúng)<br>
+                ✅ The restaurant is too crowded (quá đông - tiêu cực) | ✅ The restaurant is very crowded (rất đông)
+            </div>
+        </div>
+
+        <!-- SO...THAT -->
+        <h2>🎯 3. SO...THAT (Quá...Đến Nỗi, Kết Quả Là)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">SO...THAT dùng để chỉ một tình huống quá đến mức nó gây ra một kết quả nào đó</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: So + adj/adv + that + S + V | Dùng để chỉ kết quả (result clause) | Thường có "so many/so much"
+            </div>
+
+            <h3>II. Công Thức & Ví Dụ</h3>
+
+            <p><strong>So + Tính Từ + That + Result:</strong></p>
+            <div class="example">
+                • It was so cold that the water froze (Nó lạnh đến nỗi nước bị đóng băng)<br>
+                • The movie was so boring that I fell asleep (Bộ phim quá nhàm chán đến nỗi tôi ngủ着)<br>
+                • He was so tired that he couldn't stay awake (Anh ấy mệt đến nỗi không thể tỉnh táo)<br>
+                • She was so angry that she stormed out of the room (Cô ấy giận đến nỗi bước ra khỏi phòng)
+            </div>
+
+            <p><strong>So + Trạng Từ + That + Result:</strong></p>
+            <div class="example">
+                • He ran so quickly that no one could catch him (Anh ấy chạy quá nhanh đến nỗi không ai bắt được)<br>
+                • She spoke so softly that I couldn't hear her (Cô ấy nói quá nhỏ đến nỗi tôi không nghe được)<br>
+                • They worked so hard that they finished early (Họ làm việc quá chăm chỉ đến nỗi kết thúc sớm)
+            </div>
+
+            <p><strong>So Many/Much + Noun + That + Result:</strong></p>
+            <div class="example">
+                • There were so many people that we couldn't enter (Có quá nhiều người đến nỗi chúng tôi không thể vào)<br>
+                • He ate so much food that he felt sick (Anh ấy ăn quá nhiều đến nỗi cảm thấy buồn nôn)<br>
+                • There was so much noise that I couldn't concentrate (Có quá nhiều ồn ào đến nỗi tôi không thể tập trung)<br>
+                • There were so many mistakes that we had to redo it (Có quá nhiều lỗi đến nỗi chúng tôi phải làm lại)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ So...that Vs Too...to:</strong><br>
+                • <strong>So...that:</strong> Chỉ kết quả/hậu quả (result) - cần có "that" clause<br>
+                • <strong>Too...to:</strong> Chỉ không thể làm được - không cần "that" clause<br>
+                ✅ The box is so heavy that I can't carry it | ✅ The box is too heavy to carry
+            </div>
+        </div>
+
+        <!-- SUCH...THAT -->
+        <h2>🎁 4. SUCH...THAT (Quá...Đến Nỗi, Kết Quả Là)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">SUCH...THAT dùng để chỉ tính chất của sự vật/con người quá đến mức gây ra một kết quả nào đó</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: Such + (a/an) + adj + noun + that + S + V | Thường dùng với danh từ | Cùng ý nghĩa với so...that
+            </div>
+
+            <h3>II. Công Thức & Ví Dụ</h3>
+
+            <p><strong>Such + (a/an) + Tính Từ + Danh Từ + That + Result:</strong></p>
+            <div class="example">
+                • It was such a beautiful day that we decided to go to the beach<br>
+                (Đó là một ngày quá đẹp đến nỗi chúng tôi quyết định đi biển)<br>
+                • He is such a talented musician that he won the competition<br>
+                (Anh ấy là một nhạc sĩ quá tài năng đến nỗi anh ấy thắng cuộc thi)<br>
+                • It was such a boring speech that half the audience fell asleep<br>
+                (Bài phát biểu quá nhàm chán đến nỗi nửa khán giả ngủ)<br>
+                • She told such funny jokes that everyone laughed<br>
+                (Cô ấy kể các trò đùa quá vui nhộn đến nỗi mọi người cười)
+            </div>
+
+            <p><strong>Không Có Tính Từ - Just Noun + That:</strong></p>
+            <div class="example">
+                • It was such a mess that we had to clean it all again<br>
+                (Đó quá bừa bộn đến nỗi chúng tôi phải dọn sạch lại)<br>
+                • She had such bad luck that she missed every bus<br>
+                (Cô ấy quá xui xẻo đến nỗi cô ấy bỏ lỡ mọi chuyến xe buýt)
+            </div>
+
+            <p><strong>So Sánh Such...that Vs So...that:</strong></p>
+            <div class="example">
+                • Such: It was such a cold day that schools were closed<br>
+                (Such + noun: tập trung vào danh từ)<br>
+                • So: It was so cold that schools were closed<br>
+                (So + adjective: tập trung vào tính chất)<br>
+                Cả hai câu đều đúng và có ý nghĩa giống nhau!
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Về Article (A/An):</strong><br>
+                • Danh từ số ít: Such + a/an + noun | Such a beautiful woman<br>
+                • Danh từ số nhiều: Such + noun | Such beautiful women<br>
+                • Danh từ không đếm được: Such + noun | Such delicious food
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Sai vị trí của "enough"</p>
+            <div class="example">
+                ❌ Enough big envelopes (sai - enough trước tính từ) | ✅ Big enough envelopes (đúng)<br>
+                ❌ Enough time enough (sai - lặp lại) | ✅ Enough time (đúng)<br>
+                ❌ Good enough money | ✅ Enough good money / Good enough money
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng "too" cho ý nghĩa tích cực</p>
+            <div class="example">
+                ❌ This food is too delicious (sai) | ✅ This food is very delicious (đúng)<br>
+                ❌ Your song is too beautiful (sai) | ✅ Your song is very beautiful (đúng)<br>
+                ✅ This food is too salty (đúng - tiêu cực)
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Nhầm so...that và such...that</p>
+            <div class="example">
+                ❌ It was such a cold weather that... | ✅ It was so cold that weather/It was such cold weather that...<br>
+                ❌ He was so a talented musician that... | ✅ He was such a talented musician that...
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng too...to thay vì so...that khi cần chỉ kết quả</p>
+            <div class="example">
+                ❌ He was too tired that he fell asleep | ✅ He was so tired that he fell asleep<br>
+                ✅ He was too tired to work (đúng - không làm được)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Quên "that" trong so...that/such...that</p>
+            <div class="example">
+                ❌ It was so cold no one wanted to go outside | ✅ It was so cold that no one wanted to go outside<br>
+                ❌ It was such a boring movie I fell asleep | ✅ It was such a boring movie that I fell asleep
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: ENOUGH - Vị Trí Phụ Thuộc Vào Từ Loại</strong></p>
+            <ul>
+                <li>Sau tính từ: adj + enough | good enough</li>
+                <li>Sau trạng từ: adv + enough | quickly enough</li>
+                <li>Trước danh từ: enough + noun | enough time</li>
+                <li>Sau động từ: V + enough | work enough</li>
+            </ul>
+
+            <p><strong>Mẹo 2: TOO - Luôn TRƯỚC Tính Từ/Trạng Từ</strong></p>
+            <ul>
+                <li>too + adj: too small, too expensive</li>
+                <li>too + adv: too fast, too slowly</li>
+                <li>too much/many + noun: too many people</li>
+                <li>"Too" thường mang ý nghĩa tiêu cực</li>
+            </ul>
+
+            <p><strong>Mẹo 3: SO...THAT - Chỉ Kết Quả (Result)</strong></p>
+            <ul>
+                <li>so + adj + that: so cold that</li>
+                <li>so + adv + that: so quickly that</li>
+                <li>so many/much + noun + that: so many people that</li>
+                <li>LUÔN có "that" clause</li>
+            </ul>
+
+            <p><strong>Mẹo 4: SUCH...THAT - Tập Trung Vào Danh Từ</strong></p>
+            <ul>
+                <li>such + a/an + adj + noun + that (số ít)</li>
+                <li>such + adj + noun + that (số nhiều hoặc không đếm được)</li>
+                <li>Có thể không có tính từ: such a mess that</li>
+                <li>LUÔN có "that" clause</li>
+            </ul>
+
+            <p><strong>Mẹo 5: So...that Vs Too...to</strong></p>
+            <ul>
+                <li><strong>So...that:</strong> Chỉ kết quả → need "that" clause → He was so tired that he fell asleep</li>
+                <li><strong>Too...to:</strong> Chỉ không thể làm được → no "that" clause → He was too tired to work</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Luyện Tập So Sánh</strong></p>
+            <ul>
+                <li>Viết câu dùng "too...to" và đổi thành "so...that"</li>
+                <li>Viết câu dùng "so...that" và thử đổi thành "such...that"</li>
+                <li>Luyện tập vị trí của "enough" với các từ loại khác nhau</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt & So Sánh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Vị Trí</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ENOUGH</strong></td>
+                        <td>Sau adj/adv, trước noun</td>
+                        <td>Đủ, vừa đủ</td>
+                        <td>Good enough, enough time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TOO</strong></td>
+                        <td>Trước adj/adv</td>
+                        <td>Quá, hơn cần (tiêu cực)</td>
+                        <td>Too small, too fast</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SO...THAT</strong></td>
+                        <td>So + adj/adv + that clause</td>
+                        <td>Quá...đến nỗi (kết quả)</td>
+                        <td>So cold that, so many that</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SUCH...THAT</strong></td>
+                        <td>Such + (a/an) + adj + noun + that</td>
+                        <td>Quá...đến nỗi (tập trung noun)</td>
+                        <td>Such a beautiful day that</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 20px;"><strong>Conversion (Chuyển Đổi):</strong></p>
+            <div class="example">
+                • Too + adj/adv = Not + adj/adv + enough<br>
+                Too heavy = Not light enough<br>
+                Too slowly = Not quickly enough<br>
+                <br>
+                • So + adj + that = Such + a/an + adj + noun + that<br>
+                So cold that = Such cold weather that<br>
+                So beautiful that = Such beautiful scenery that
+            </div>
+        </div>
+    </div>
+</body>
+</html>

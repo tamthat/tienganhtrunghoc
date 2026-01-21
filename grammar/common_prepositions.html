@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Giới Từ Thường Gặp & Phrasal Verbs (Common Prepositions & Phrasal Verbs)</h2>
+
+        <div class="card">
+            <h3>Giới Từ & Phrasal Verbs Là Gì?</h3>
+            <p><span class="highlight">Giới Từ (Prepositions) là những từ nhỏ chỉ vị trí, thời gian, mối quan hệ; Phrasal Verbs là sự kết hợp của động từ + giới từ/trạng từ tạo thành một ý nghĩa mới</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Giới từ và phrasal verbs rất quan trọng trong tiếng Anh. Có hơn 100 giới từ, hàng trăm phrasal verbs, nhưng chỉ cần học những cái thường gặp nhất. Cách tốt nhất là học từ từ qua ngữ cảnh.
+            </div>
+
+            <h3>25 Giới Từ Thường Gặp Nhất</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa Chính</th>
+                        <th>Loại</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IN</strong></td>
+                        <td>Bên trong, vào trong (không gian/thời gian)</td>
+                        <td>Place/Time</td>
+                        <td>in the room, in 2025, in January</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON</strong></td>
+                        <td>Trên, vào (ngày, xem phim)</td>
+                        <td>Place/Time</td>
+                        <td>on the table, on Monday, on TV</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Tại, ở (điểm cụ thể, giờ)</td>
+                        <td>Place/Time</td>
+                        <td>at home, at 5 o'clock, at school</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BY</strong></td>
+                        <td>Bởi (người làm), gần, trước (deadline)</td>
+                        <td>Agent/Place/Time</td>
+                        <td>by John, by the window, by Friday</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FOR</strong></td>
+                        <td>Cho, dành cho, trong khoảng thời gian</td>
+                        <td>Purpose/Time</td>
+                        <td>for you, for 3 hours, for Christmas</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WITH</strong></td>
+                        <td>Với, cùng với, dùng cái gì</td>
+                        <td>Accompaniment/Instrument</td>
+                        <td>with you, with a knife, with joy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TO</strong></td>
+                        <td>Tới, đến, chỉ hướng</td>
+                        <td>Direction/Destination</td>
+                        <td>to Paris, to the store, 1 to 10</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FROM</strong></td>
+                        <td>Từ, bắt đầu từ</td>
+                        <td>Source/Origin</td>
+                        <td>from London, from 9 to 5, from now</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ABOUT</strong></td>
+                        <td>Về, liên quan đến</td>
+                        <td>Subject/Topic</td>
+                        <td>about you, about 50 people, ask about</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>DURING</strong></td>
+                        <td>Trong suốt, lúc nào đó trong khoảng</td>
+                        <td>Time</td>
+                        <td>during the meeting, during summer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BEFORE/AFTER</strong></td>
+                        <td>Trước/Sau</td>
+                        <td>Time/Sequence</td>
+                        <td>before noon, after the game</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BETWEEN</strong></td>
+                        <td>Giữa (hai)</td>
+                        <td>Place/Relationship</td>
+                        <td>between A and B, between you and me</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THROUGH</strong></td>
+                        <td>Xuyên qua, thông qua</td>
+                        <td>Movement/Means</td>
+                        <td>through the forest, through luck</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>INTO</strong></td>
+                        <td>Vào trong (chuyển động)</td>
+                        <td>Movement/Direction</td>
+                        <td>into the room, turn into gold</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OUT OF</strong></td>
+                        <td>Ra khỏi, ngoài</td>
+                        <td>Movement/Direction</td>
+                        <td>out of the room, out of money</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>OVER</strong></td>
+                        <td>Trên, qua (phía bên kia)</td>
+                        <td>Place/Movement</td>
+                        <td>over the mountain, over 50 years old</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UNDER</strong></td>
+                        <td>Dưới, theo</td>
+                        <td>Place/Condition</td>
+                        <td>under the table, under pressure</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ABOVE</strong></td>
+                        <td>Phía trên</td>
+                        <td>Place</td>
+                        <td>above the clouds, above sea level</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BELOW</strong></td>
+                        <td>Phía dưới</td>
+                        <td>Place</td>
+                        <td>below the surface, below average</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AROUND/ROUND</strong></td>
+                        <td>Quanh, vòng quanh</td>
+                        <td>Place/Movement</td>
+                        <td>around the world, round the corner</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AGAINST</strong></td>
+                        <td>Chống, tựa vào</td>
+                        <td>Opposition/Support</td>
+                        <td>against the wall, against discrimination</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LIKE</strong></td>
+                        <td>Như, giống như</td>
+                        <td>Similarity/Comparison</td>
+                        <td>like an angel, like this, like coffee</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SINCE</strong></td>
+                        <td>Từ khi, kể từ</td>
+                        <td>Time</td>
+                        <td>since Monday, since 2020, since then</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>UNTIL</strong></td>
+                        <td>Cho đến khi</td>
+                        <td>Time/Duration</td>
+                        <td>until tomorrow, until now, until you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WITHOUT</strong></td>
+                        <td>Không có, mà không</td>
+                        <td>Negation/Lack</td>
+                        <td>without me, without doubt, without help</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PREPOSITIONS OF TIME -->
+        <h2>⏰ 1. Giới Từ Thời Gian (Prepositions of Time): IN, ON, AT</h2>
+
+        <div class="card">
+            <h3>I. Quy Tắc Cơ Bản</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Dùng Cho</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IN</strong></td>
+                        <td>Tháng, năm, mùa, buổi (morning/afternoon/evening), thế kỷ</td>
+                        <td>in January, in 2025, in summer, in the morning, in the 21st century</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON</strong></td>
+                        <td>Ngày cụ thể, ngày trong tuần, ngày lễ</td>
+                        <td>on Monday, on January 1st, on Christmas Day, on my birthday</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Giờ cụ thể, lúc ăn cơm, lúc đêm, các dịp lễ</td>
+                        <td>at 5 o'clock, at noon, at midnight, at night, at Christmas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>IN - Khoảng Thời Gian Dài:</strong></p>
+            <div class="example">
+                • in January (vào tháng Giêng)<br>
+                • in 2025 (năm 2025)<br>
+                • in summer (vào mùa hè)<br>
+                • in the morning (vào buổi sáng)<br>
+                • in the afternoon (vào buổi chiều)<br>
+                • in the evening (vào buổi tối)<br>
+                • in the 1990s (trong thập niên 1990)
+            </div>
+
+            <p><strong>ON - Ngày Cụ Thể:</strong></p>
+            <div class="example">
+                • on Monday (vào thứ Hai)<br>
+                • on January 15 (vào ngày 15 tháng 1)<br>
+                • on Christmas Day (vào ngày lễ Giáng Sinh)<br>
+                • on my birthday (vào sinh nhật tôi)<br>
+                • on a rainy day (vào một ngày mưa)<br>
+                • on the first of May (vào ngày 1 tháng 5)
+            </div>
+
+            <p><strong>AT - Thời Gian Cụ Thể:</strong></p>
+            <div class="example">
+                • at 5 o'clock (lúc 5 giờ)<br>
+                • at noon (lúc trưa)<br>
+                • at midnight (lúc nửa đêm)<br>
+                • at lunchtime (lúc ăn trưa)<br>
+                • at night (vào ban đêm)<br>
+                • at Christmas (vào Giáng Sinh)<br>
+                • at the moment (hiện tại)
+            </div>
+
+            <p><strong>Các Giới Từ Khác (FOR, DURING, BEFORE, AFTER, SINCE, UNTIL):</strong></p>
+            <div class="example">
+                • for 3 hours (trong 3 giờ)<br>
+                • for 2 weeks (trong 2 tuần)<br>
+                • during the meeting (trong cuộc họp)<br>
+                • before noon (trước trưa)<br>
+                • after the game (sau trận đấu)<br>
+                • since 2020 (kể từ 2020)<br>
+                • until tomorrow (cho đến ngày mai)
+            </div>
+        </div>
+
+        <!-- FIXED PREPOSITION PHRASES -->
+        <h2>🔐 2. Cụm Giới Từ Cố Định (Fixed Preposition Phrases)</h2>
+
+        <div class="card">
+            <h3>I. Danh Sách Cụm Giới Từ Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cụm Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BE INTERESTED IN</strong></td>
+                        <td>Quan tâm đến</td>
+                        <td>I'm interested in English</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BE GOOD/BAD AT</strong></td>
+                        <td>Giỏi/Kém ở</td>
+                        <td>She's good at mathematics</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BE KEEN ON</strong></td>
+                        <td>Thích lắm, nhiệt tình với</td>
+                        <td>He's keen on sports</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BE FOND OF</strong></td>
+                        <td>Thích, yêu mến</td>
+                        <td>She's fond of animals</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BE PROUD OF</strong></td>
+                        <td>Tự hào về</td>
+                        <td>I'm proud of my achievements</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BE AWARE OF</strong></td>
+                        <td>Nhận thức được</td>
+                        <td>Are you aware of the problem?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BE SCARED/AFRAID OF</strong></td>
+                        <td>Sợ</td>
+                        <td>I'm afraid of spiders</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BE SATISFIED WITH</strong></td>
+                        <td>Hài lòng với</td>
+                        <td>Are you satisfied with your work?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>APOLOGISE FOR</strong></td>
+                        <td>Xin lỗi vì</td>
+                        <td>I apologise for being late</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>CARE FOR/ABOUT</strong></td>
+                        <td>Quan tâm đến, chăm sóc</td>
+                        <td>I care about you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CURIOUS ABOUT</strong></td>
+                        <td>Tò mò về</td>
+                        <td>I'm curious about that</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>CONSIST OF</strong></td>
+                        <td>Bao gồm, gồm có</td>
+                        <td>The team consists of 5 people</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DEPEND ON</strong></td>
+                        <td>Phụ thuộc vào</td>
+                        <td>It depends on the weather</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BY THE WAY</strong></td>
+                        <td>Nhân tiện, tiện thể</td>
+                        <td>By the way, did you see John?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IN GENERAL</strong></td>
+                        <td>Nói chung, nhìn chung</td>
+                        <td>In general, I like the weather here</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON PURPOSE</strong></td>
+                        <td>Có chủ ý, cố tình</td>
+                        <td>He did it on purpose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TAKE A BREAK</strong></td>
+                        <td>Nghỉ ngơi, giải lao</td>
+                        <td>Let's take a break</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MAKE A DECISION</strong></td>
+                        <td>Đưa ra quyết định</td>
+                        <td>I made a decision</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DO EXERCISE</strong></td>
+                        <td>Tập thể dục</td>
+                        <td>She does exercise every day</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>KEEP FIT</strong></td>
+                        <td>Giữ sức khỏe</td>
+                        <td>Exercise helps to keep fit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PHRASAL VERBS -->
+        <h2>🔗 3. Phrasal Verbs - Động Từ Ghép (30+ Phổ Biến Nhất)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">Phrasal Verbs là sự kết hợp của động từ + giới từ/trạng từ, tạo thành một ý nghĩa mới hoàn toàn khác với từng từ riêng lẻ</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Ý nghĩa không thể đoán từ những từ riêng lẻ | Có thể separable (tách được) hoặc inseparable (không tách được) | Rất phổ biến trong tiếng Anh hàng ngày
+            </div>
+
+            <h3>II. 30+ Phrasal Verbs Phổ Biến Nhất</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phrasal Verb</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Loại</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GET UP</strong></td>
+                        <td>Thức dậy, đứng lên</td>
+                        <td>Inseparable</td>
+                        <td>I get up at 6 am</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>GET DOWN</strong></td>
+                        <td>Cúi xuống, buồn</td>
+                        <td>Inseparable</td>
+                        <td>Don't get down about it</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GET ON/ALONG WITH</strong></td>
+                        <td>Hòa thuận với</td>
+                        <td>Inseparable</td>
+                        <td>They get on well together</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>GET AWAY</strong></td>
+                        <td>Trốn thoát, đi chơi</td>
+                        <td>Inseparable</td>
+                        <td>Let's get away for the weekend</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GET OVER</strong></td>
+                        <td>Vượt qua, hồi phục</td>
+                        <td>Inseparable</td>
+                        <td>She got over the illness</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>PUT ON</strong></td>
+                        <td>Mặc vào, bật (thiết bị)</td>
+                        <td>Separable</td>
+                        <td>Put on your coat / Put your coat on</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PUT OFF</strong></td>
+                        <td>Tắt, hoãn lại</td>
+                        <td>Separable</td>
+                        <td>Put off the light / Put the light off</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>PUT UP WITH</strong></td>
+                        <td>Chịu đựng</td>
+                        <td>Inseparable</td>
+                        <td>I can't put up with this noise</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TAKE OFF</strong></td>
+                        <td>Cởi, tắc cánh (máy bay)</td>
+                        <td>Separable/Inseparable</td>
+                        <td>Take off your shoes / The plane took off</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TAKE OUT</strong></td>
+                        <td>Lấy ra, đưa ra</td>
+                        <td>Separable</td>
+                        <td>Take out the garbage / Take the garbage out</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TAKE OVER</strong></td>
+                        <td>Tiếp quản, lấy quyền</td>
+                        <td>Inseparable</td>
+                        <td>He took over the company</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TAKE AFTER</strong></td>
+                        <td>Giống, kế thừa (tính cách)</td>
+                        <td>Inseparable</td>
+                        <td>She takes after her mother</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LOOK FOR</strong></td>
+                        <td>Tìm kiếm</td>
+                        <td>Inseparable</td>
+                        <td>I'm looking for my keys</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LOOK UP</strong></td>
+                        <td>Tra cứu, cải thiện</td>
+                        <td>Separable</td>
+                        <td>Look up the word / Look the word up</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LOOK DOWN ON</strong></td>
+                        <td>Khinh miệt, coi thường</td>
+                        <td>Inseparable</td>
+                        <td>Don't look down on others</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LOOK FORWARD TO</strong></td>
+                        <td>Mong chờ, chờ mong</td>
+                        <td>Inseparable</td>
+                        <td>I'm looking forward to the trip</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LOOK AFTER</strong></td>
+                        <td>Chăm sóc, trông nom</td>
+                        <td>Inseparable</td>
+                        <td>Can you look after my dog?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TURN ON</strong></td>
+                        <td>Bật (thiết bị)</td>
+                        <td>Separable</td>
+                        <td>Turn on the TV / Turn the TV on</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TURN OFF</strong></td>
+                        <td>Tắt (thiết bị)</td>
+                        <td>Separable</td>
+                        <td>Turn off the light / Turn the light off</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TURN DOWN</strong></td>
+                        <td>Từ chối, giảm âm lượng</td>
+                        <td>Separable</td>
+                        <td>Turn down the music / Turn the music down</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CHECK IN</strong></td>
+                        <td>Nhập viện, đăng ký vào khách sạn</td>
+                        <td>Inseparable</td>
+                        <td>We checked in at the hotel</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>CHECK OUT</strong></td>
+                        <td>Trả phòng, xem xét</td>
+                        <td>Inseparable</td>
+                        <td>Check out that new restaurant</td>
+                    </tr>
+                    <tr>
+                        <td><strong>COME ACROSS</strong></td>
+                        <td>Gặp, tìm thấy (tình cờ)</td>
+                        <td>Inseparable</td>
+                        <td>I came across her yesterday</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>COME BACK</strong></td>
+                        <td>Quay lại, trở về</td>
+                        <td>Inseparable</td>
+                        <td>She came back from vacation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CARRY OUT</strong></td>
+                        <td>Thực hiện, tiến hành</td>
+                        <td>Separable</td>
+                        <td>Carry out the research / Carry the research out</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>CATCH UP</strong></td>
+                        <td>Bắt kịp, cập nhật thông tin</td>
+                        <td>Inseparable</td>
+                        <td>I need to catch up on my reading</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FILL IN</strong></td>
+                        <td>Điền vào, giải thích</td>
+                        <td>Separable</td>
+                        <td>Fill in the form / Fill the form in</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FIND OUT</strong></td>
+                        <td>Phát hiện, tìm ra</td>
+                        <td>Separable</td>
+                        <td>Find out the truth / Find the truth out</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GIVE UP</strong></td>
+                        <td>Từ bỏ, buông xuôi</td>
+                        <td>Separable</td>
+                        <td>Give up smoking / Give smoking up</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>KEEP UP WITH</strong></td>
+                        <td>Bắt kịp, theo kịp</td>
+                        <td>Inseparable</td>
+                        <td>Keep up with the latest news</td>
+                    </tr>
+                    <tr>
+                        <td><strong>STICK TO</strong></td>
+                        <td>Tuân thủ, bám dính</td>
+                        <td>Inseparable</td>
+                        <td>Stick to your budget</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Separable vs Inseparable</h3>
+
+            <p><strong>SEPARABLE - Có thể tách được (Đặt object ở giữa):</strong></p>
+            <div class="example">
+                • Put on your coat = Put your coat on<br>
+                • Take off your shoes = Take your shoes off<br>
+                • Fill in the form = Fill the form in<br>
+                • Turn off the light = Turn the light off<br>
+                • Give up smoking = Give smoking up
+            </div>
+
+            <p><strong>INSEPARABLE - Không tách được (Object luôn sau cả cụm):</strong></p>
+            <div class="example">
+                • Get up at 6 (KHÔNG: Get 6 up)<br>
+                • Look for my keys (KHÔNG: Look my keys for)<br>
+                • Get on with him (KHÔNG: Get him on with)<br>
+                • Keep up with the news (KHÔNG: Keep the news up with)<br>
+                • Look forward to the trip (KHÔNG: Look the trip forward to)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai giới từ thời gian</p>
+            <div class="example">
+                ❌ in Monday | ✅ on Monday<br>
+                ❌ at January | ✅ in January<br>
+                ❌ on 5 o'clock | ✅ at 5 o'clock
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Tách phrasal verbs inseparable</p>
+            <div class="example">
+                ❌ look my keys for | ✅ look for my keys<br>
+                ❌ keep the news up with | ✅ keep up with the news<br>
+                ❌ get him on with | ✅ get on with him
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng sai cụm giới từ cố định</p>
+            <div class="example">
+                ❌ interested on | ✅ interested in<br>
+                ❌ good in | ✅ good at<br>
+                ❌ proud in | ✅ proud of
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên preposition trong phrasal verb</p>
+            <div class="example">
+                ❌ look forward the trip | ✅ look forward to the trip<br>
+                ❌ put with the noise | ✅ put up with the noise
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm phrasal verbs tương tự</p>
+            <div class="example">
+                ❌ get down with (sai) | ✅ get on with (hòa thuận)<br>
+                ❌ look for forward (sai) | ✅ look forward to (mong chờ)
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Giới Từ Thời Gian - IN, ON, AT</strong></p>
+            <ul>
+                <li>IN = Tháng, năm, mùa, buổi (morning/afternoon/evening)</li>
+                <li>ON = Ngày cụ thể, ngày trong tuần, ngày lễ</li>
+                <li>AT = Giờ cụ thể, lúc ăn cơm, lúc đêm, ngày lễ (at night, at Christmas)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Học Phrasal Verbs Theo Cách Phân Nhóm</strong></p>
+            <ul>
+                <li>GET: get up, get down, get on/along, get away, get over</li>
+                <li>PUT: put on, put off, put up with</li>
+                <li>LOOK: look for, look up, look down on, look forward to, look after</li>
+                <li>TAKE: take off, take out, take over, take after</li>
+                <li>TURN: turn on, turn off, turn down</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Separable vs Inseparable</strong></p>
+            <ul>
+                <li>Separable (có thể đặt object ở giữa): put on, turn off, take out, give up</li>
+                <li>Inseparable (object sau): look for, get on with, keep up with, put up with</li>
+                <li>Mẹo nhớ: Nếu có pronoun (me, him, it), PHẢI tách: take it out (NOT take out it)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Cụm Giới Từ Cố Định - Học Theo Pattern</strong></p>
+            <ul>
+                <li>Be + adj + preposition: be interested in, be good at, be afraid of, be proud of</li>
+                <li>Verb + preposition: apologise for, depend on, consist of, care about</li>
+                <li>Fixed phrases: by the way, on purpose, in general, take a break</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Hiệu Quả</strong></p>
+            <ul>
+                <li>Viết 20 câu với giới từ thời gian (IN, ON, AT)</li>
+                <li>Viết 20 câu với phrasal verbs (10 separable, 10 inseparable)</li>
+                <li>Làm bài tập điền cụm giới từ cố định</li>
+                <li>Đọc, nghe tiếng Anh thực và chú ý phrasal verbs</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Ví Dụ</th>
+                        <th>Cách Dùng</th>
+                        <th>Lưu Ý</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Prepositions of Time - IN</strong></td>
+                        <td>in January, in summer, in the morning</td>
+                        <td>Tháng, năm, mùa, buổi</td>
+                        <td>Dài nhất</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Prepositions of Time - ON</strong></td>
+                        <td>on Monday, on Christmas Day</td>
+                        <td>Ngày cụ thể, ngày trong tuần</td>
+                        <td>Cụ thể nhất</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prepositions of Time - AT</strong></td>
+                        <td>at 5 o'clock, at noon, at night</td>
+                        <td>Giờ cụ thể, lúc ăn cơm</td>
+                        <td>Ngắn nhất/chính xác</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Fixed Phrases</strong></td>
+                        <td>be interested in, good at, apologise for</td>
+                        <td>Từ + preposition cố định</td>
+                        <td>Phải nhớ đúng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phrasal Verbs - Separable</strong></td>
+                        <td>put on / put your coat on</td>
+                        <td>Có thể tách, object ở giữa</td>
+                        <td>Với pronoun phải tách</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phrasal Verbs - Inseparable</strong></td>
+                        <td>look for my keys (NOT look my keys for)</td>
+                        <td>KHÔNG tách, object sau</td>
+                        <td>Luôn ở một chỗ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

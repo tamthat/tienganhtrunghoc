@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Mệnh Đề Quan Hệ (Relative Clauses)</h2>
+
+        <div class="card">
+            <h3>Mệnh Đề Quan Hệ Là Gì?</h3>
+            <p><span class="highlight">Mệnh Đề Quan Hệ (Relative Clause)</span> là <strong>một mệnh đề phụ dùng để cung cấp thêm thông tin về một danh từ (antecedent) trong mệnh đề chính, bắt đầu bằng một đại từ quan hệ (relative pronoun)</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Mệnh đề quan hệ có hai loại: xác định (defining) và không xác định (non-defining). Có thể rút gọn bằng cách sử dụng participles hoặc tính từ.
+            </div>
+
+            <h3>Các Thành Phần Chính</h3>
+            <ul>
+                <li><strong>Antecedent:</strong> Danh từ được mệnh đề quan hệ mô tả</li>
+                <li><strong>Relative Pronoun:</strong> who, whom, whose, which, that (đại từ quan hệ)</li>
+                <li><strong>Relative Clause:</strong> Phần còn lại của mệnh đề (contain subject + verb)</li>
+                <li><strong>Relative Adverbs:</strong> where, when, why (trong một số trường hợp)</li>
+            </ul>
+        </div>
+
+        <!-- DEFINING RELATIVE CLAUSES -->
+        <h2>📍 1. Mệnh Đề Quan Hệ Xác Định (Defining Relative Clauses)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Mệnh đề quan hệ xác định</span> là <strong>mệnh đề chứa thông tin thiết yếu, cần thiết để xác định danh từ. Nếu bỏ đi, câu sẽ mất ý nghĩa hoặc thay đổi ý nghĩa</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> KHÔNG dùng dấu phẩy | Có thể bỏ relative pronoun khi nó là object
+            </div>
+
+            <h3>II. Relative Pronouns Cho Defining Clauses</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Relative Pronoun</th>
+                        <th>Dùng Cho</th>
+                        <th>Vai Trò</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WHO</strong></td>
+                        <td>Người (subject)</td>
+                        <td>Chủ ngữ</td>
+                        <td>The man who lives here is my friend</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHOM</strong></td>
+                        <td>Người (object)</td>
+                        <td>Tân ngữ</td>
+                        <td>The woman whom I met is a doctor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHOSE</strong></td>
+                        <td>Người (sở hữu)</td>
+                        <td>Sở hữu</td>
+                        <td>The student whose book is lost</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHICH</strong></td>
+                        <td>Vật/Điều (subject/object)</td>
+                        <td>Chủ ngữ/Tân ngữ</td>
+                        <td>The car which I bought is blue</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THAT</strong></td>
+                        <td>Người hoặc vật</td>
+                        <td>Chủ ngữ/Tân ngữ</td>
+                        <td>The house that I live in is old</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Quy Tắc Bỏ Relative Pronoun</h3>
+
+            <p><strong>Quy Tắc: Chỉ bỏ được khi relative pronoun là OBJECT</strong></p>
+
+            <div class="example">
+                <strong>Bỏ được (pronoun = object):</strong><br>
+                • The book (that/which) I read was interesting → The book I read was interesting<br>
+                • The person (who/that) you met is my brother → The person you met is my brother<br>
+                <strong>KHÔNG bỏ được (pronoun = subject):</strong><br>
+                • ❌ The car _____ is red (sai) | ✅ The car that is red (đúng)<br>
+                • ❌ The woman _____ works here (sai) | ✅ The woman who works here (đúng)
+            </div>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Relative Pronoun Là Subject:</strong></p>
+            <div class="example">
+                • The student who speaks English well will get a scholarship<br>
+                • The car which parked outside is mine<br>
+                • The person that helped me is very kind<br>
+                • The house that was built last year is beautiful
+            </div>
+
+            <p><strong>Relative Pronoun Là Object (Có Thể Bỏ):</strong></p>
+            <div class="example">
+                • The film (that) I watched yesterday was great<br>
+                • The friend (who) you introduced me to is nice<br>
+                • The book (which) she borrowed is interesting<br>
+                • The restaurant (that) we visited last week is expensive
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> "That" không được dùng trong mệnh đề không xác định<br>
+                ✅ The car, which is red, is mine | ❌ The car, that is red, is mine
+            </div>
+        </div>
+
+        <!-- NON-DEFINING RELATIVE CLAUSES -->
+        <h2>🔄 2. Mệnh Đề Quan Hệ Không Xác Định (Non-defining Relative Clauses)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Mệnh đề quan hệ không xác định</span> là <strong>mệnh đề chứa thông tin bổ sung, không thiết yếu. Nếu bỏ đi, câu vẫn hoàn chỉnh và ý nghĩa không thay đổi</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> LUÔN dùng dấu phẩy | KHÔNG thể bỏ relative pronoun | KHÔNG dùng "that"
+            </div>
+
+            <h3>II. Relative Pronouns Cho Non-defining Clauses</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Relative Pronoun</th>
+                        <th>Dùng Cho</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WHO</strong></td>
+                        <td>Người</td>
+                        <td>My brother, who is a doctor, lives in London</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHOSE</strong></td>
+                        <td>Sở hữu (người)</td>
+                        <td>John, whose car is red, is my friend</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHICH</strong></td>
+                        <td>Vật/Toàn bộ mệnh đề</td>
+                        <td>The book, which is very good, is a bestseller</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHOM</strong></td>
+                        <td>Người (object - hiếm)</td>
+                        <td>John, whom you met, is my friend</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • My sister, who is a teacher, lives in Paris<br>
+                • The book, which I enjoyed, was a bestseller<br>
+                • London, which is the capital of England, is famous<br>
+                • Albert Einstein, whose theories changed physics, died in 1955<br>
+                • The new restaurant, which opened last month, is very popular<br>
+                • My car, which is blue, is parked outside<br>
+                • Sarah, who graduated last year, is working as an engineer
+            </div>
+
+            <h3>IV. So Sánh Defining Vs Non-defining</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>Defining</th>
+                        <th>Non-defining</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thông Tin</strong></td>
+                        <td>Thiết yếu, cần thiết</td>
+                        <td>Bổ sung, không cần thiết</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Dấu Phẩy</strong></td>
+                        <td>KHÔNG dùng dấu phẩy</td>
+                        <td>LUÔN dùng dấu phẩy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Relative Pronoun</strong></td>
+                        <td>who, whom, which, that, whose</td>
+                        <td>who, whom, which, whose (KHÔNG that)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Bỏ Pronoun</strong></td>
+                        <td>Có thể bỏ nếu là object</td>
+                        <td>KHÔNG thể bỏ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>The car that is red (chỉ chiếc xe đó)</td>
+                        <td>The car, which is red, is mine (thêm thông tin)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- REDUCED RELATIVE CLAUSES -->
+        <h2>✂️ 3. Rút Gọn Mệnh Đề Quan Hệ (Reduced Relative Clauses)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Rút gọn mệnh đề quan hệ</span> là <strong>dạng rút gọn của mệnh đề quan hệ bằng cách bỏ relative pronoun và sử dụng participles hoặc tính từ</strong>. Nó làm câu ngắn gọn hơn.</p>
+
+            <h3>II. Cách Rút Gọn Với Present Participle (V-ing)</h3>
+
+            <p><strong>Quy Tắc: Relative pronoun là SUBJECT + động từ ACTIVE</strong></p>
+
+            <div class="formula">
+                Relative clause: The people who are waiting outside are my friends<br>
+                Reduced: The people waiting outside are my friends
+            </div>
+
+            <div class="example">
+                • The students studying in the library are very quiet<br>
+                • The person sitting next to me is my teacher<br>
+                • The girl playing the piano is my sister<br>
+                • The house standing on the hill is very old<br>
+                • The man running in the park is an athlete
+            </div>
+
+            <h3>III. Cách Rút Gọn Với Past Participle (V-ed/V3)</h3>
+
+            <p><strong>Quy Tắc: Relative pronoun là SUBJECT + động từ PASSIVE hoặc PERFECT</strong></p>
+
+            <div class="formula">
+                Relative clause: The car which was damaged in the accident is mine<br>
+                Reduced: The car damaged in the accident is mine
+            </div>
+
+            <div class="example">
+                • The book written by Tolkien is famous<br>
+                • The houses built in 1990 are expensive<br>
+                • The students invited to the party are happy<br>
+                • The letter sent yesterday arrived today<br>
+                • The bridge damaged by the storm is closed
+            </div>
+
+            <h3>IV. Cách Rút Gọn Với To + Verb</h3>
+
+            <p><strong>Quy Tắc: Sau "the first/second/last/only" + "to + verb"</strong></p>
+
+            <div class="formula">
+                Relative clause: She was the first person who arrived<br>
+                Reduced: She was the first person to arrive
+            </div>
+
+            <div class="example">
+                • He was the last person to leave the office<br>
+                • The only way to solve this problem is to ask for help<br>
+                • The first student to finish the exam got a prize<br>
+                • She was the second person to understand the lesson<br>
+                • The best thing to do is to relax
+            </div>
+
+            <h3>V. Cách Rút Gọn Với Tính Từ (Adjectives)</h3>
+
+            <p><strong>Quy Tắc: Dùng tính từ thay thế cho mệnh đề quan hệ</strong></p>
+
+            <div class="formula">
+                Relative clause: The person who is responsible for this work is John<br>
+                Reduced: The responsible person for this work is John
+            </div>
+
+            <div class="example">
+                • The expensive car is mine (thay vì: the car which is expensive)<br>
+                • The old house needs repair (thay vì: the house which is old)<br>
+                • The talented musician performed at the concert<br>
+                • The difficult exercise confused everyone<br>
+                • The dangerous animal was caught
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Không phải mệnh đề quan hệ nào cũng có thể rút gọn<br>
+                ❌ The man who is tall (KHÔNG rút được nếu chỉ là tính từ)<br>
+                ✅ The tall man (dùng tính từ đơn giản)
+            </div>
+        </div>
+
+        <!-- RELATIVE ADVERBS -->
+        <h2>🕐 4. Trạng Từ Quan Hệ (Relative Adverbs)</h2>
+
+        <div class="card">
+            <h3>Relative Adverbs: WHERE, WHEN, WHY</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WHERE</strong></td>
+                        <td>Nơi chốn (chỉ địa điểm)</td>
+                        <td>The place where I was born is beautiful</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHEN</strong></td>
+                        <td>Thời gian (chỉ thời điểm)</td>
+                        <td>The day when I met her was unforgettable</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHY</strong></td>
+                        <td>Lý do, nguyên nhân</td>
+                        <td>The reason why I left was personal</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • This is the restaurant where we met<br>
+                • That was the moment when everything changed<br>
+                • Do you know the reason why she left?<br>
+                • The house where I lived is now a museum<br>
+                • The time when the sun rises is beautiful<br>
+                • The place where you can find peace is nature
+            </div>
+
+            <h3>Thay Thế Relative Adverbs Bằng Preposition + Which</h3>
+
+            <div class="example">
+                • The place where I live = The place in which I live<br>
+                • The day when I was born = The day on which I was born<br>
+                • The reason why I came = The reason for which I came<br>
+                • (Formal) The room where we studied = The room in which we studied
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng "that" trong non-defining relative clauses</p>
+            <div class="example">
+                ❌ My sister, that is a teacher, lives in Paris | ✅ My sister, who is a teacher, lives in Paris
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên dấu phẩy trong non-defining clauses</p>
+            <div class="example">
+                ❌ My brother who is a doctor lives here (sai - thiếu dấu phẩy) | ✅ My brother, who is a doctor, lives here
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Không thể bỏ relative pronoun trong non-defining clauses</p>
+            <div class="example">
+                ❌ The book, I read yesterday, was good | ✅ The book, which I read yesterday, was good
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng sai relative pronoun</p>
+            <div class="example">
+                ❌ The car which the man drive is red (sai động từ) | ✅ The car which the man drives is red<br>
+                ❌ The person who I met is here (should be whom) | ✅ The person whom I met is here (formal)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Không rút gọn đúng cách</p>
+            <div class="example">
+                ❌ The man who sitting here is tall | ✅ The man sitting here is tall<br>
+                ❌ The book writing by Tolkien is famous | ✅ The book written by Tolkien is famous
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Xác Định Subject Hay Object</strong></p>
+            <ul>
+                <li>Relative pronoun = Subject → KHÔNG thể bỏ, dùng V-ing để rút gọn</li>
+                <li>Relative pronoun = Object → Có thể bỏ, dùng V-ed để rút gọn</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Defining Vs Non-defining</strong></p>
+            <ul>
+                <li><strong>Defining:</strong> Không dấu phẩy, dùng "that", bỏ pronoun được</li>
+                <li><strong>Non-defining:</strong> Dấu phẩy, KHÔNG dùng "that", KHÔNG bỏ pronoun</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Chọn Relative Pronoun</strong></p>
+            <ul>
+                <li>Người + Subject: who | Người + Object: who/whom | Vật: which/that</li>
+                <li>Sở hữu (người/vật): whose | Nơi chốn: where | Thời gian: when | Lý do: why</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Rút Gọn Dễ Nhất</strong></p>
+            <ul>
+                <li>Active + Subject → V-ing (The student who studies → The student studying)</li>
+                <li>Passive + Subject → V-ed (The book which was written → The book written)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Quy Tắc</strong></p>
+            <ul>
+                <li>Viết câu gốc với relative clause đầy đủ</li>
+                <li>Xác định subject/object của relative clause</li>
+                <li>Thực hành bỏ pronoun (nếu có thể) hoặc rút gọn</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Mệnh Đề Quan Hệ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Dấu Phẩy</th>
+                        <th>Relative Pronoun</th>
+                        <th>Bỏ Pronoun</th>
+                        <th>Rút Gọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Defining</strong></td>
+                        <td>Không</td>
+                        <td>who, which, that, whose</td>
+                        <td>Có (nếu object)</td>
+                        <td>V-ing, V-ed, to+V</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Non-defining</strong></td>
+                        <td>Có</td>
+                        <td>who, which, whose (KHÔNG that)</td>
+                        <td>Không</td>
+                        <td>Hiếm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adverbs</strong></td>
+                        <td>Tùy</td>
+                        <td>where, when, why</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

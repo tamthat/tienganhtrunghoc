@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Have/Have Got & There is/are (Có & Tồn Tại)</h2>
+
+        <div class="card">
+            <h3>Hai Cách Nói "Có" Trong Tiếng Anh</h3>
+            <p><span class="highlight">Tiếng Anh có hai cách khác nhau để nói "có": "Have/Have Got" dùng để chỉ sở hữu (possession), còn "There is/are" dùng để chỉ sự tồn tại (existence) của cái gì đó ở một nơi nào đó</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Mặc dù cả hai đều có ý nghĩa "có", nhưng chúng có chức năng ngữ pháp hoàn toàn khác nhau. "Have/have got" nói về sở hữu của chủ ngữ, còn "There is/are" nói về sự tồn tại của một cái gì đó.
+            </div>
+
+            <h3>So Sánh Tổng Quát</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Cách Sử Dụng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HAVE/HAVE GOT</strong></td>
+                        <td>Sở hữu, có cái gì (ownership)</td>
+                        <td>S + have/have got + noun</td>
+                        <td>I have a dog / I've got a dog</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THERE IS/ARE</strong></td>
+                        <td>Tồn tại ở đâu đó (existence)</td>
+                        <td>There + be + noun + location</td>
+                        <td>There is a dog in the garden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- HAVE/HAVE GOT -->
+        <h2>👜 1. HAVE/HAVE GOT (Sở Hữu)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">HAVE/HAVE GOT được dùng để nói về sở hữu hoặc tình trạng của chủ ngữ</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> "Have got" phổ biến hơn trong lời nói (especially British), "have" phổ biến hơn trong viết (more formal) | Cả hai có cùng ý nghĩa | "Have got" chỉ dùng ở hiện tại
+            </div>
+
+            <h3>II. Công Thức & Hình Thức</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>HAVE/HAS</th>
+                        <th>HAVE GOT/HAS GOT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>I have a dog</td>
+                        <td>I've got a dog</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>I don't have a dog / I have no dog</td>
+                        <td>I haven't got a dog</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Do you have a dog? / Have you a dog? (formal)</td>
+                        <td>Have you got a dog?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Câu Trả Lời</strong></td>
+                        <td>Yes, I do / No, I don't</td>
+                        <td>Yes, I have / No, I haven't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Các Loại Sở Hữu</h3>
+
+            <p><strong>Possession - Tài Sản, Đồ Vật:</strong></p>
+            <div class="example">
+                • I have a new car (Tôi có một chiếc xe mới)<br>
+                • They've got two houses (Họ có hai ngôi nhà)<br>
+                • Do you have a pen? / Have you got a pen? (Bạn có một cây bút không?)<br>
+                • She doesn't have any money / She hasn't got any money (Cô ấy không có tiền)
+            </div>
+
+            <p><strong>Appearance - Ngoại Hình, Đặc Điểm:</strong></p>
+            <div class="example">
+                • I have brown hair (Tôi có tóc nâu)<br>
+                • He's got blue eyes (Anh ấy có mắt xanh)<br>
+                • Does she have long legs? / Has she got long legs? (Cô ấy có chân dài không?)<br>
+                • They don't have freckles / They haven't got freckles (Họ không có tàn nhang)
+            </div>
+
+            <p><strong>Family & Relations - Gia Đình, Mối Quan Hệ:</strong></p>
+            <div class="example">
+                • I have three siblings (Tôi có ba anh chị em)<br>
+                • She's got two children (Cô ấy có hai con)<br>
+                • Do you have a boyfriend? / Have you got a boyfriend? (Bạn có bạn trai không?)<br>
+                • He doesn't have many friends / He hasn't got many friends (Anh ấy không có nhiều bạn)
+            </div>
+
+            <p><strong>Illness & Emotions - Bệnh Tật, Cảm Xúc:</strong></p>
+            <div class="example">
+                • I have a headache (Tôi bị đau đầu)<br>
+                • She's got the flu (Cô ấy bị cúm)<br>
+                • Do you have a toothache? / Have you got a toothache? (Bạn bị đau răng không?)<br>
+                • They don't have any fears / They haven't got any fears (Họ không có sợ hãi gì)
+            </div>
+
+            <p><strong>Abstract Things & Ideas - Những Cái Trừu Tượng:</strong></p>
+            <div class="example">
+                • I have a good idea (Tôi có một ý tưởng tốt)<br>
+                • They've got a lot of experience (Họ có rất nhiều kinh nghiệm)<br>
+                • Does he have any plans? / Has he got any plans? (Anh ấy có kế hoạch không?)<br>
+                • She doesn't have time / She hasn't got time (Cô ấy không có thời gian)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ British vs American:</strong><br>
+                • <strong>British (phổ biến):</strong> Have you got a pen? | I've got a new car<br>
+                • <strong>American (phổ biến):</strong> Do you have a pen? | I have a new car<br>
+                • Cả hai đều đúng, chỉ khác phong cách
+            </div>
+        </div>
+
+        <!-- THERE IS/ARE -->
+        <h2>🌍 2. THERE IS/ARE (Tồn Tại)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">THERE IS/ARE được dùng để nói về sự tồn tại của cái gì đó ở một nơi nào đó hoặc một thời điểm nào đó</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: There + be + noun + (location/time) | Thể hiện sự tồn tại, không phải sở hữu | Danh từ theo sau "be" xác định số lượng
+            </div>
+
+            <h3>II. Công Thức & Hình Thức (Hiện Tại)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Singular (Số Ít)</th>
+                        <th>Plural (Số Nhiều)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>There is / There's a book</td>
+                        <td>There are books</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>There isn't a book / There's no book</td>
+                        <td>There aren't any books / There are no books</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Is there a book?</td>
+                        <td>Are there any books?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời</strong></td>
+                        <td>Yes, there is / No, there isn't</td>
+                        <td>Yes, there are / No, there aren't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Công Thức & Hình Thức (Quá Khứ)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Singular (Số Ít)</th>
+                        <th>Plural (Số Nhiều)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>There was a book</td>
+                        <td>There were books</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>There wasn't a book</td>
+                        <td>There weren't any books</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Was there a book?</td>
+                        <td>Were there any books?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời</strong></td>
+                        <td>Yes, there was / No, there wasn't</td>
+                        <td>Yes, there were / No, there weren't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>There Is/Are - Nói Về Sự Tồn Tại (Hiện Tại):</strong></p>
+            <div class="example">
+                • There is a book on the table (Có một cuốn sách trên bàn)<br>
+                • There are five students in the classroom (Có năm học sinh trong lớp học)<br>
+                • Is there a café near here? (Có quán cà phê gần đây không?)<br>
+                • How many books are there on your shelf? (Có bao nhiêu cuốn sách trên kệ của bạn?)<br>
+                • There isn't any milk left (Không còn sữa)<br>
+                • There aren't many cars on the street (Không có nhiều xe trên đường)
+            </div>
+
+            <p><strong>There Was/Were - Nói Về Sự Tồn Tại (Quá Khứ):</strong></p>
+            <div class="example">
+                • There was a party at my house yesterday (Có một bữa tiệc ở nhà tôi hôm qua)<br>
+                • There were many people at the concert (Có rất nhiều người ở buổi hòa nhạc)<br>
+                • Was there a museum in this town before? (Có bảo tàng ở thị trấn này trước đây không?)<br>
+                • How many people were there at the event? (Có bao nhiêu người ở sự kiện?)<br>
+                • There wasn't a supermarket here ten years ago (Không có siêu thị ở đây mười năm trước)<br>
+                • There were no restaurants in this area back then (Không có nhà hàng ở khu vực này lúc đó)
+            </div>
+
+            <p><strong>So Sánh: Have vs There is/are:</strong></p>
+            <div class="example">
+                • I have a dog (Tôi có một con chó - sở hữu)<br>
+                • There is a dog in the garden (Có một con chó ở vườn - tồn tại)<br>
+                • We have three cats (Chúng tôi có ba con mèo - sở hữu)<br>
+                • There are three cats in our neighborhood (Có ba con mèo ở khu phố chúng tôi - tồn tại)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong><br>
+                • KHÔNG dùng "There is" với danh từ xác định (definite nouns)<br>
+                ❌ There is the book on the table | ✅ The book is on the table<br>
+                ❌ There was James at the party | ✅ James was at the party<br>
+                ✅ There is a book on the table (undefined)
+            </div>
+        </div>
+
+        <!-- THERE HAS BEEN/HAVE BEEN -->
+        <h2>⏰ 3. THERE HAS BEEN/HAVE BEEN (Present Perfect)</h2>
+
+        <div class="card">
+            <h3>I. Công Thức & Ví Dụ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Singular</th>
+                        <th>Plural</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>There has been an accident</td>
+                        <td>There have been many accidents</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>There hasn't been an accident</td>
+                        <td>There haven't been any accidents</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Has there been an accident?</td>
+                        <td>Have there been any accidents?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Ví Dụ:</strong></p>
+            <div class="example">
+                • There has been a lot of progress this year (Đã có rất nhiều tiến bộ năm nay)<br>
+                • There have been three earthquakes in this region (Đã có ba trận động đất ở khu vực này)<br>
+                • Has there been any improvement? (Đã có cải thiện nào không?)<br>
+                • How many changes have there been? (Đã có bao nhiêu thay đổi?)<br>
+                • There hasn't been any rain for weeks (Không có mưa trong nhiều tuần)<br>
+                • There haven't been many opportunities (Không có nhiều cơ hội)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Nhầm "have" và "there is/are"</p>
+            <div class="example">
+                ❌ I have a book on the table | ✅ There is a book on the table (tồn tại)<br>
+                ❌ There is a dog in my house | ✅ I have a dog (sở hữu)<br>
+                ✅ I have a dog and there is a cat in the garden (cả hai đúng - hai ý khác nhau)
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Sai số (singular/plural) với "there is/are"</p>
+            <div class="example">
+                ❌ There is many people | ✅ There are many people<br>
+                ❌ There are a book on the table | ✅ There is a book on the table<br>
+                ❌ How many students there is? | ✅ How many students are there?
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng "there is/are" với danh từ xác định</p>
+            <div class="example">
+                ❌ There is my friend | ✅ My friend is here<br>
+                ❌ There was the man | ✅ The man was here<br>
+                ✅ There's a man outside (không xác định)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai thì trong "have got" (chỉ hiện tại)</p>
+            <div class="example">
+                ❌ I have got a new car yesterday | ✅ I had a new car / I got a new car<br>
+                ❌ Will you have got the tickets? | ✅ Will you have the tickets?
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Sai cấu trúc câu hỏi "Do you have vs Have you got"</p>
+            <div class="example">
+                ❌ You have a pen? (không đủ chính thức) | ✅ Do you have a pen?<br>
+                ❌ Have you got a pen? - Yes, I do (sai) | ✅ Have you got a pen? - Yes, I have
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Have = Sở Hữu, There is/are = Tồn Tại</strong></p>
+            <ul>
+                <li>"Have" nói về CHỦ NGỮ sở hữu cái gì</li>
+                <li>"There is/are" nói về CỤM TỪ tồn tại ở ĐÂU/WHEN</li>
+                <li>Ví dụ: I have a dog (tôi sở hữu) | There is a dog in the garden (tồn tại ở vườn)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Have Got Chỉ Dùng Hiện Tại</strong></p>
+            <ul>
+                <li>Have got = hiện tại | Have = bất kỳ thì nào</li>
+                <li>Quá khứ: I had (NOT I had got)</li>
+                <li>Tương lai: I will have (NOT I will have got)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: There is/are - Số Lượng Quyết Định</strong></p>
+            <ul>
+                <li>Một cái = There is / There was</li>
+                <li>Nhiều cái = There are / There were</li>
+                <li>Luôn nhìn vào danh từ sau để xác định</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Đừng Dùng "There is" Với Danh Từ Xác Định</strong></p>
+            <ul>
+                <li>❌ There is my friend | ✅ My friend is here</li>
+                <li>❌ There was the book | ✅ The book was there</li>
+                <li>✅ There is a friend (không xác định)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: British vs American</strong></p>
+            <ul>
+                <li>British: Have you got? (phổ biến)</li>
+                <li>American: Do you have? (phổ biến)</li>
+                <li>Cả hai đều đúng</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Practice - Conversion</strong></p>
+            <ul>
+                <li>Viết 5 câu với "have/have got" - sở hữu</li>
+                <li>Viết 5 câu với "there is/are" - tồn tại</li>
+                <li>Viết 5 câu phủ định và câu hỏi</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HAVE (Formal)</strong></td>
+                        <td>Sở hữu</td>
+                        <td>S + have/has + noun</td>
+                        <td>I have a dog</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HAVE GOT (Informal)</strong></td>
+                        <td>Sở hữu (hiện tại)</td>
+                        <td>S + have/has got + noun</td>
+                        <td>I've got a dog</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THERE IS</strong></td>
+                        <td>Tồn tại (số ít)</td>
+                        <td>There + is/was + noun</td>
+                        <td>There is a dog</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THERE ARE</strong></td>
+                        <td>Tồn tại (số nhiều)</td>
+                        <td>There + are/were + noun</td>
+                        <td>There are dogs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THERE HAS/HAVE BEEN</strong></td>
+                        <td>Tồn tại (hiện tại hoàn thành)</td>
+                        <td>There + has/have been + noun</td>
+                        <td>There has been a change</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Hiện Tại Tiếp Diễn Là Gì?</h3>
+            <p><span class="highlight">Present Continuous Tense</span> là thì được sử dụng để diễn tả các hành động đang diễn ra <strong>ngay bây giờ, ở thời điểm nói</strong>. Đó là các hoạt động chưa hoàn thành và đang tiếp tục trong khoảng thời gian hiện tại.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Present Continuous còn được gọi là <span class="highlight">Present Progressive Tense</span> vì nó diễn tả quá trình hoặc tiến trình của hành động đang diễn ra.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động đang xảy ra ngay tại thời điểm nói</li>
+                <li>Hành động chưa hoàn thành và đang tiếp tục</li>
+                <li>Thường đi kèm với từ chỉ hiện tại: now, right now, at the moment, at this moment</li>
+                <li>Cấu trúc: am/is/are + V-ing (động từ thêm -ing)</li>
+                <li>Nhấn mạnh tính quá trình, không phải kết quả</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + am/is/are + V-ing
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>To Be</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I</span></td>
+                        <td><span class="highlight">am</span></td>
+                        <td>I <span class="verb-form">am working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">You</span></td>
+                        <td><span class="highlight">are</span></td>
+                        <td>You <span class="verb-form">are working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">We</span></td>
+                        <td><span class="highlight">are</span></td>
+                        <td>We <span class="verb-form">are working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">They</span></td>
+                        <td><span class="highlight">are</span></td>
+                        <td>They <span class="verb-form">are working</span></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span class="verb-form">He/She/It</span></td>
+                        <td><span class="highlight">is</span></td>
+                        <td>He <span class="verb-form">is working</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>am reading</strong> a book<br>
+                • She <strong>is playing</strong> tennis<br>
+                • They <strong>are eating</strong> lunch<br>
+                • It <strong>is raining</strong> right now
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + am/is/are + NOT + V-ing
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Thêm "not" sau động từ to be</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td>am not</td>
+                        <td>I'm not</td>
+                        <td>I <strong>am not working</strong></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>You/We/They</td>
+                        <td>are not</td>
+                        <td>aren't</td>
+                        <td>They <strong>are not eating</strong></td>
+                    </tr>
+                    <tr>
+                        <td>He/She/It</td>
+                        <td>is not</td>
+                        <td>isn't</td>
+                        <td>She <strong>is not sleeping</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>am not eating</strong> cake<br>
+                • He <strong>isn't watching</strong> TV<br>
+                • They <strong>aren't studying</strong> English<br>
+                • She <strong>is not playing</strong> guitar
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Am/Is/Are + Subject + V-ing + ?
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Đặt động từ to be lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Am</span> I working?</td>
+                        <td>Yes, you are</td>
+                        <td>No, you are not</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>You/We/They</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Are</span> you eating?</td>
+                        <td>Yes, I am</td>
+                        <td>No, I am not</td>
+                    </tr>
+                    <tr>
+                        <td>He/She/It</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Is</span> she sleeping?</td>
+                        <td>Yes, she is</td>
+                        <td>No, she is not</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Are you</strong> studying? → Yes, I am<br>
+                • <strong>Is he</strong> playing football? → Yes, he is<br>
+                • <strong>Are they</strong> writing emails? → No, they aren't<br>
+                • <strong>Is she</strong> drinking coffee? → No, she isn't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + am/is/are + V-ing</td>
+                        <td>He is reading a book</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + am/is/are + NOT + V-ing</td>
+                        <td>He is not reading a book</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Am/Is/Are + S + V-ing + ?</td>
+                        <td>Is he reading a book?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + am/is/are</td>
+                        <td>Yes, he is</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SPELLING RULES -->
+        <h2>✏️ Quy Tắc Thêm -ING</h2>
+
+        <div class="card warning">
+            <h3>1. Quy Tắc Thêm -ING Cơ Bản</h3>
+
+            <p><strong>A) Động từ thông thường: Chỉ thêm -ing</strong></p>
+            <div class="example">
+                • read → <strong>reading</strong><br>
+                • write → <strong>writing</strong><br>
+                • play → <strong>playing</strong><br>
+                • work → <strong>working</strong><br>
+                • study → <strong>studying</strong>
+            </div>
+
+            <p><strong>B) Động từ kết thúc bằng e (câm): Bỏ e, thêm -ing</strong></p>
+            <div class="example">
+                • make → <strong>making</strong> (không phải "makeing")<br>
+                • take → <strong>taking</strong><br>
+                • come → <strong>coming</strong><br>
+                • live → <strong>living</strong><br>
+                • have → <strong>having</strong>
+            </div>
+
+            <p><strong>C) Động từ kết thúc bằng ie: Đổi ie → y, thêm -ing</strong></p>
+            <div class="example">
+                • lie → <strong>lying</strong><br>
+                • die → <strong>dying</strong><br>
+                • tie → <strong>tying</strong>
+            </div>
+
+            <p><strong>D) Động từ 1 âm tiết, kết thúc CVC (Consonant-Vowel-Consonant): Gấp đôi phụ âm cuối, thêm -ing</strong></p>
+            <div class="example">
+                • sit → <strong>sitting</strong> (s-i-t)<br>
+                • run → <strong>running</strong> (r-u-n)<br>
+                • swim → <strong>swimming</strong> (s-w-i-m)<br>
+                • stop → <strong>stopping</strong> (s-t-o-p)<br>
+                • cut → <strong>cutting</strong> (c-u-t)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Không gấp đôi nếu động từ kết thúc bằng -w, -x, -y:<br>
+                • fix → <strong>fixing</strong> (không phải "ffixing")<br>
+                • play → <strong>playing</strong> (không phải "pplaying")<br>
+                • sew → <strong>sewing</strong> (không phải "ssewing")
+            </div>
+
+            <p><strong>E) Động từ 2+ âm tiết, âm tiết cuối được nhấn, kết thúc CVC: Gấp đôi phụ âm cuối</strong></p>
+            <div class="example">
+                • prefer (pre-FER) → <strong>preferring</strong><br>
+                • begin (be-GIN) → <strong>beginning</strong><br>
+                • omit (o-MIT) → <strong>omitting</strong><br>
+                • occur (oc-CUR) → <strong>occurring</strong>
+            </div>
+
+            <p><strong>F) Động từ kết thúc bằng l: Gấp đôi l ở tiếng Anh Anh (British English)</strong></p>
+            <div class="example">
+                • travel → <strong>travelling</strong> (Anh Anh)<br>
+                • travel → <strong>traveling</strong> (Anh Mỹ)<br>
+                • cancel → <strong>cancelling</strong> (Anh Anh)
+            </div>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Hiện Tại Tiếp Diễn</h2>
+
+        <div class="card">
+            <h3>1. Hành Động Đang Diễn Ra Ngay Bây Giờ</h3>
+            <p>Diễn tả những gì đang xảy ra tại thời điểm nói</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>am eating</strong> breakfast<br>
+                • She <strong>is watching</strong> a movie<br>
+                • They <strong>are playing</strong> football<br>
+                • He <strong>is studying</strong> for the exam
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Quá Trình Tạm Thời (Temporary Situation)</h3>
+            <p>Diễn tả tình trạng hoặc quá trình đang diễn ra trong một khoảng thời gian giới hạn</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>am learning</strong> French this year<br>
+                • She <strong>is working</strong> in London at the moment<br>
+                • They <strong>are building</strong> a new house<br>
+                • He <strong>is reading</strong> a new book
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Simple Present:</strong> Simple Present (I learn French) có thể là hành động lâu dài, nhưng Present Continuous (I am learning French) nhấn mạnh đó là một quá trình tạm thời
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Những Sự Thay Đổi & Xu Hướng Hiện Tại</h3>
+            <p>Diễn tả những thay đổi đang xảy ra trong hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • The population <strong>is increasing</strong><br>
+                • The weather <strong>is getting</strong> colder<br>
+                • Technology <strong>is developing</strong> rapidly<br>
+                • More people <strong>are moving</strong> to cities
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Kế Hoạch Trong Tương Lai Gần (Near Future)</h3>
+            <p>Diễn tả kế hoạch hoặc sự kiện đã được sắp xếp cho tương lai gần</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>am meeting</strong> my friend tomorrow<br>
+                • She <strong>is traveling</strong> to Paris next week<br>
+                • They <strong>are getting married</strong> next month<br>
+                • He <strong>is arriving</strong> at 5 PM
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Phải là kế hoạch đã được quyết định rồi, không phải những sự tính toán hay lập kế hoạch chung chung
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Hành Động Theo Thời Gian (With Time Expressions)</h3>
+            <p>Diễn tả hành động đang xảy ra trong một khoảng thời gian cụ thể</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>am working</strong> on this project for a month<br>
+                • She <strong>is teaching</strong> English this semester<br>
+                • They <strong>are living</strong> with us during the summer<br>
+                • He <strong>is training</strong> for the race all week
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>6. Sự Khó Chịu với Hành Động Lặp Lại (Repeated Actions)</h3>
+            <p>Để diễn tả sự bực bội hoặc khó chịu với hành động lặp lại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • He <strong>is always forgetting</strong> his keys (anh ấy luôn quên chìa khóa - bực bội)<br>
+                • She <strong>is constantly complaining</strong> (cô ấy luôn than phiền - khó chịu)<br>
+                • They <strong>are always making</strong> noise (họ luôn làm ồn - khó chịu)
+            </div>
+
+            <div class="note">
+                <strong>📌 Ghi Nhớ:</strong> Cách dùng này thường đi kèm với "always", "constantly", "forever" để diễn tả sự bất hài lòng
+            </div>
+        </div>
+
+        <!-- EXCEPTIONS SECTION -->
+        <h2>⚡ Những Động Từ KHÔNG Dùng Present Continuous</h2>
+
+        <div class="card warning">
+            <h3>1. Stative Verbs (Động Từ Trạng Thái)</h3>
+            <p>Những động từ này diễn tả trạng thái, tình cảm, hay sở hữu, không thường được dùng ở Present Continuous</p>
+
+            <p><strong>A) Động từ chỉ cảm xúc & sở hữu:</strong></p>
+            <ul>
+                <li><span class="verb-form">like</span>, <span class="verb-form">love</span>, <span class="verb-form">hate</span>, <span class="verb-form">want</span>, <span class="verb-form">need</span>, <span class="verb-form">prefer</span></li>
+                <li><span class="verb-form">have</span>, <span class="verb-form">own</span>, <span class="verb-form">possess</span></li>
+                <li><span class="verb-form">believe</span>, <span class="verb-form">know</span>, <span class="verb-form">understand</span>, <span class="verb-form">forget</span></li>
+            </ul>
+
+            <div class="example">
+                <strong>❌ Sai:</strong> I am liking ice cream<br>
+                <strong>✅ Đúng:</strong> I like ice cream<br><br>
+                <strong>❌ Sai:</strong> She is owning a house<br>
+                <strong>✅ Đúng:</strong> She owns a house
+            </div>
+
+            <p><strong>B) Động từ chỉ cảm giác (một số trường hợp):</strong></p>
+            <ul>
+                <li><span class="verb-form">see</span>, <span class="verb-form">hear</span>, <span class="verb-form">smell</span>, <span class="verb-form">taste</span>, <span class="verb-form">feel</span></li>
+            </ul>
+
+            <div class="example">
+                <strong>❌ Sai:</strong> I am seeing the mountain<br>
+                <strong>✅ Đúng:</strong> I see the mountain<br><br>
+                <strong>Nhưng:</strong> I am tasting the soup (thử nếm) - có thể dùng được
+            </div>
+
+            <p><strong>C) Động từ chỉ suy nghĩ:</strong></p>
+            <ul>
+                <li><span class="verb-form">think</span>, <span class="verb-form">suppose</span>, <span class="verb-form">remember</span>, <span class="verb-form">forget</span></li>
+            </ul>
+
+            <div class="example">
+                <strong>❌ Sai:</strong> I am thinking that...<br>
+                <strong>✅ Đúng:</strong> I think that...<br><br>
+                <strong>Nhưng:</strong> I am thinking about you (suy nghĩ về) - có thể dùng được
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý Đặc Biệt:</strong> Một số stative verbs có thể dùng Present Continuous với nghĩa khác:<br>
+                • I think = Tôi nghĩ rằng (không dùng -ing)<br>
+                • I am thinking = Tôi đang suy nghĩ (có thể dùng -ing)<br>
+                • She has a car = Cô ấy có một chiếc xe (không dùng -ing)<br>
+                • She is having breakfast = Cô ấy đang ăn sáng (có thể dùng -ing)
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3>2. Danh Sách Stative Verbs Không Dùng Continuous</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Động Từ</th>
+                        <th>Ví Dụ (Simple Present)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cảm Xúc</strong></td>
+                        <td>like, love, hate, dislike, prefer</td>
+                        <td>I like coffee</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Muốn/Cần</strong></td>
+                        <td>want, need, wish, desire</td>
+                        <td>She wants a new phone</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sở Hữu</strong></td>
+                        <td>have, own, possess, belong</td>
+                        <td>He has two brothers</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Cảm Giác Vật Lý</strong></td>
+                        <td>hurt, ache, feel (cảm thấy)</td>
+                        <td>My head hurts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bề Ngoài</strong></td>
+                        <td>look, appear, seem, resemble</td>
+                        <td>This looks good</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Suy Nghĩ</strong></td>
+                        <td>think, believe, suppose, consider</td>
+                        <td>I think it's true</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nhớ/Quên</strong></td>
+                        <td>remember, forget, recall</td>
+                        <td>I remember her name</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Biết</strong></td>
+                        <td>know, understand, realize</td>
+                        <td>She knows French</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>am writing</strong> an email</li>
+                    <li>She <strong>is listening</strong> to music</li>
+                    <li>They <strong>are cooking</strong> dinner</li>
+                    <li>It <strong>is raining</strong> heavily</li>
+                    <li>We <strong>are watching</strong> a film</li>
+                    <li>He <strong>is running</strong> in the park</li>
+                    <li>The baby <strong>is sleeping</strong> now</li>
+                    <li>I <strong>am learning</strong> English</li>
+                    <li>She <strong>is drawing</strong> a picture</li>
+                    <li>They <strong>are traveling</strong> to Japan</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>am not sleeping</strong></li>
+                    <li>She <strong>is not reading</strong> now</li>
+                    <li>They <strong>are not playing</strong> football</li>
+                    <li>It <strong>is not snowing</strong> today</li>
+                    <li>We <strong>are not talking</strong> to him</li>
+                    <li>He <strong>is not working</strong> today</li>
+                    <li>The cat <strong>is not eating</strong></li>
+                    <li>I <strong>am not smoking</strong></li>
+                    <li>She <strong>is not drinking</strong> coffee</li>
+                    <li>They <strong>are not studying</strong> chemistry</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Are you studying?</td>
+                        <td>Yes, I am</td>
+                        <td>No, I'm not</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Is she sleeping?</td>
+                        <td>Yes, she is</td>
+                        <td>No, she isn't</td>
+                    </tr>
+                    <tr>
+                        <td>Are they working?</td>
+                        <td>Yes, they are</td>
+                        <td>No, they aren't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Is he eating?</td>
+                        <td>Yes, he is</td>
+                        <td>No, he isn't</td>
+                    </tr>
+                    <tr>
+                        <td>Is it raining?</td>
+                        <td>Yes, it is</td>
+                        <td>No, it isn't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Present Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lúc này</strong></td>
+                        <td>now, right now, at the moment, at this moment, at this second</td>
+                        <td>She is working <strong>right now</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hiện tại</strong></td>
+                        <td>today, tonight, this morning/afternoon/week/month/year</td>
+                        <td>We are building a house <strong>this month</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tương lai gần</strong></td>
+                        <td>tomorrow, next week, next month, soon, later</td>
+                        <td>I am meeting him <strong>tomorrow</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Quá trình</strong></td>
+                        <td>for, during, over, while</td>
+                        <td>She is studying <strong>for two hours</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Present Continuous với "tomorrow" hoặc "next week" để diễn tả kế hoạch đã sắp xếp, không phải dự đoán hay lập kế hoạch
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Present Continuous vs Simple Present</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Simple Present</th>
+                        <th>Present Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + V / V+s/es</td>
+                        <td>S + am/is/are + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời Gian</strong></td>
+                        <td>Thói quen, lặp lại</td>
+                        <td>Ngay bây giờ, đang diễn ra</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tính Chất</strong></td>
+                        <td>Thường xuyên, tổng quát</td>
+                        <td>Tạm thời, trong quá trình</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hoàn Thành</strong></td>
+                        <td>Hành động hoàn thành</td>
+                        <td>Hành động chưa hoàn thành</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ She <strong>reads</strong> books every day (Simple Present - thói quen)<br>
+                ✓ She <strong>is reading</strong> a book now (Present Continuous - đang diễn ra)<br><br>
+                ✓ I <strong>work</strong> as a teacher (Simple Present - công việc thường xuyên)<br>
+                ✓ I <strong>am working</strong> on this project (Present Continuous - quá trình tạm thời)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên thêm -ing vào động từ</p>
+            <div class="example">
+                ❌ She is study | ✅ She is studying
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng stative verbs với -ing</p>
+            <div class="example">
+                ❌ I am liking ice cream | ✅ I like ice cream
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Sai cách chia to be</p>
+            <div class="example">
+                ❌ He are playing | ✅ He is playing
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên bỏ e câm khi thêm -ing</p>
+            <div class="example">
+                ❌ She is makeing | ✅ She is making
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Không gấp đôi phụ âm cuối (CVC)</p>
+            <div class="example">
+                ❌ He is stoping | ✅ He is stopping
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ "Quá Trình" và "Ngay Bây Giờ"</strong></p>
+            <ul>
+                <li>Present Continuous = Hành động đang diễn ra = Quá trình</li>
+                <li>Tìm những signal: now, right now, at the moment, -ing form</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Quy Tắc Thêm -ING</strong></p>
+            <ul>
+                <li>Đa số chỉ thêm -ing: read → reading</li>
+                <li>Bỏ e câm: make → making</li>
+                <li>CVC → gấp đôi: sit → sitting</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Phân Biệt Simple Present & Present Continuous</strong></p>
+            <ul>
+                <li>Simple Present = Thường xuyên, thói quen (She reads books)</li>
+                <li>Present Continuous = Ngay bây giờ, đang diễn ra (She is reading a book)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: To Be Phải Khớp Với Chủ Ngữ</strong></p>
+            <ul>
+                <li>I → am | He/She/It → is | You/We/They → are</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động đang diễn ra ngay bây giờ hoặc trong quá trình</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + am/is/are + V-ing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + am/is/are + NOT + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Am/Is/Are + S + V-ing?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quy Tắc -ING</strong></td>
+                        <td>Thêm -ing, bỏ e câm, gấp đôi CVC</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Không Dùng -ING</strong></td>
+                        <td>Stative verbs (like, love, have, know, think...)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

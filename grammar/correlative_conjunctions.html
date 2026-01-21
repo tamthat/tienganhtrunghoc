@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Liên Từ Tương Quan (Correlative Conjunctions)</h2>
+
+        <div class="card">
+            <h3>Liên Từ Tương Quan Là Gì?</h3>
+            <p><span class="highlight">Liên Từ Tương Quan (Correlative Conjunctions)</span> là <strong>các cặp từ dùng để nối hai phần có cấu trúc ngữ pháp bằng nhau (parallel structure) để thể hiện mối quan hệ logic giữa chúng</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Liên từ tương quan luôn xuất hiện thành CẶP (hai từ). Chúng được dùng để nối những phần có cấu trúc bằng nhau, đảm bảo cấu trúc song song (parallelism) trong câu.
+            </div>
+
+            <h3>Các Liên Từ Tương Quan Phổ Biến</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cặp Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Loại</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>EITHER...OR</strong></td>
+                        <td>Một trong hai (lựa chọn tích cực)</td>
+                        <td>Choice/Selection</td>
+                        <td>Either coffee or tea</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NEITHER...NOR</strong></td>
+                        <td>Không cái nào (phủ định cả hai)</td>
+                        <td>Negative</td>
+                        <td>Neither coffee nor tea</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BOTH...AND</strong></td>
+                        <td>Cả hai (bao gồm cả hai)</td>
+                        <td>Inclusion</td>
+                        <td>Both coffee and tea</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NOT ONLY...BUT ALSO</strong></td>
+                        <td>Không những...mà còn (nhấn mạnh thêm)</td>
+                        <td>Addition/Emphasis</td>
+                        <td>Not only coffee but also tea</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHETHER...OR</strong></td>
+                        <td>Dù...hay (không quan tâm chọn cái nào)</td>
+                        <td>Alternatives</td>
+                        <td>Whether now or later</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- EITHER...OR -->
+        <h2>🔀 1. EITHER...OR (Một Trong Hai - Lựa Chọn)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">EITHER...OR dùng để nói rằng có một lựa chọn giữa hai điều, chỉ một trong hai được chọn (exclusive or)</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Thể hiện lựa chọn tích cực | Chỉ một cái được chọn | Verb agrees with NEAREST subject | Cấu trúc song song (parallel)
+            </div>
+
+            <h3>II. Ví Dụ & Cấu Trúc</h3>
+
+            <p><strong>Either...Or Với Danh Từ (Nối Danh Từ):</strong></p>
+            <div class="example">
+                • I'd like either coffee or tea (Tôi muốn hoặc cà phê hoặc trà)<br>
+                • You can choose either pizza or pasta (Bạn có thể chọn hoặc pizza hoặc mì ống)<br>
+                • Either my brother or my sister will help (Hoặc anh tôi hoặc chị tôi sẽ giúp)<br>
+                • Either the teacher or the students are responsible (Hoặc giáo viên hoặc học sinh có trách nhiệm)
+            </div>
+
+            <p><strong>Either...Or Với Động Từ (Nối Hành Động):</strong></p>
+            <div class="example">
+                • You can either stay here or leave now (Bạn có thể hoặc ở lại đây hoặc rời đi bây giờ)<br>
+                • She will either write a letter or call me (Cô ấy sẽ hoặc viết thư hoặc gọi cho tôi)<br>
+                • Either you finish your homework or you watch TV (Bạn hoặc hoàn thành bài tập về nhà hoặc xem TV)<br>
+                • I can either walk to work or take the bus (Tôi có thể hoặc đi bộ đến công việc hoặc đi xe buýt)
+            </div>
+
+            <p><strong>Subject-Verb Agreement Với Either...Or:</strong></p>
+            <div class="example">
+                • Either the boys or the girl is coming (Verb agrees with "girl" - singular)<br>
+                • Either John or Mary is responsible (Verb agrees with "Mary" - singular)<br>
+                • Either my sisters or my mother are helping (Verb agrees with "mother" - plural? NO! "mother" is singular, so "is")<br>
+                • Either the dogs or the cat is playing (Verb agrees with "cat" - singular, so "is")
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Verb agrees with the SUBJECT CLOSEST TO IT<br>
+                ✅ Either the teacher or the students are preparing (students = plural)<br>
+                ✅ Either the students or the teacher is preparing (teacher = singular)
+            </div>
+        </div>
+
+        <!-- NEITHER...NOR -->
+        <h2>❌ 2. NEITHER...NOR (Không Cái Nào - Phủ Định)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">NEITHER...NOR dùng để nói rằng không cái nào trong hai điều là đúng (phủ định cả hai)</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Phủ định cả hai | Thay thế cho "not...and not..." | LUÔN LUÔN dùng "nor", không phải "or" | Verb agrees with NEAREST subject | KHÔNG thêm "not" khác
+            </div>
+
+            <h3>II. Ví Dụ & Cấu Trúc</h3>
+
+            <p><strong>Neither...Nor Với Danh Từ (Nối Danh Từ):</strong></p>
+            <div class="example">
+                • I like neither coffee nor tea (Tôi không thích cà phê cũng không thích trà)<br>
+                • Neither John nor Mary was at the party (Không John cũng không Mary ở bữa tiệc)<br>
+                • She has neither a car nor a bike (Cô ấy không có xe ô tô cũng không có xe đạp)<br>
+                • Neither the boys nor the girls are interested (Không những bọn trai cũng không những bọn gái quan tâm)
+            </div>
+
+            <p><strong>Neither...Nor Với Động Từ (Nối Hành Động):</strong></p>
+            <div class="example">
+                • He neither walks nor runs to work (Anh ấy không đi bộ cũng không chạy đến công việc)<br>
+                • She neither sings nor dances (Cô ấy không hát cũng không nhảy)<br>
+                • They neither play football nor basketball (Họ không chơi bóng đá cũng không chơi bóng rổ)<br>
+                • I neither like nor dislike the idea (Tôi không thích cũng không không thích ý tưởng)
+            </div>
+
+            <p><strong>Subject-Verb Agreement Với Neither...Nor:</strong></p>
+            <div class="example">
+                • Neither the boys nor the girl is coming (Verb agrees with "girl" - singular, so "is")<br>
+                • Neither John nor Mary is responsible (Verb agrees with "Mary" - singular, so "is")<br>
+                • Neither my parents nor my brother is here (Verb agrees with "brother" - singular, so "is")<br>
+                • Neither the cats nor the dog is in the house (Verb agrees with "dog" - singular, so "is")
+            </div>
+
+            <p><strong>KHÔNG Dùng "Not" Với "Neither...Nor":</strong></p>
+            <div class="example">
+                ❌ I don't like neither coffee nor tea (sai - double negative)<br>
+                ✅ I like neither coffee nor tea (đúng)<br>
+                ❌ He is not neither good nor bad (sai)<br>
+                ✅ He is neither good nor bad (đúng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong><br>
+                • LUÔN dùng "NOR", không phải "OR"<br>
+                • KHÔNG kết hợp với "not"<br>
+                • Verb agrees with NEAREST subject
+            </div>
+        </div>
+
+        <!-- BOTH...AND -->
+        <h2>✅ 3. BOTH...AND (Cả Hai - Bao Gồm)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">BOTH...AND dùng để nói rằng cả hai điều đều đúng hoặc được bao gồm</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bao gồm cả hai | Verb LUÔN LUÔN plural (vì là hai cái) | Cấu trúc song song | Thường bắt đầu với chủ ngữ
+            </div>
+
+            <h3>II. Ví Dụ & Cấu Trúc</h3>
+
+            <p><strong>Both...And Với Danh Từ (Nối Danh Từ):</strong></p>
+            <div class="example">
+                • Both tea and coffee are delicious (Cả trà và cà phê đều ngon)<br>
+                • Both John and Mary are at the party (Cả John và Mary đều ở bữa tiệc)<br>
+                • She has both a car and a bike (Cô ấy có cả xe ô tô và xe đạp)<br>
+                • Both the boys and the girls are interested (Cả bọn trai và bọn gái đều quan tâm)
+            </div>
+
+            <p><strong>Both...And Với Động Từ (Nối Hành Động):</strong></p>
+            <div class="example">
+                • He both walks and runs to work (Anh ấy vừa đi bộ vừa chạy đến công việc)<br>
+                • She both sings and dances very well (Cô ấy vừa hát vừa nhảy rất tốt)<br>
+                • They both play football and basketball (Họ vừa chơi bóng đá vừa chơi bóng rổ)<br>
+                • I both like and respect her (Tôi vừa thích vừa tôn trọng cô ấy)
+            </div>
+
+            <p><strong>Subject-Verb Agreement Với Both...And - LUÔN PLURAL:</strong></p>
+            <div class="example">
+                • Both the boy and the girl are coming (PLURAL - "are")<br>
+                • Both John and Mary are responsible (PLURAL - "are")<br>
+                • Both my parents and my brother are here (PLURAL - "are")<br>
+                • Both the cat and the dog are playing (PLURAL - "are")
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Verb LUÔN LUÔN là PLURAL vì "both...and" bao gồm HAI cái<br>
+                ✅ Both he and she are teachers (PLURAL)<br>
+                ❌ Both he and she is a teacher (sai)
+            </div>
+        </div>
+
+        <!-- NOT ONLY...BUT ALSO -->
+        <h2>➕ 4. NOT ONLY...BUT ALSO (Không Những...Mà Còn - Nhấn Mạnh)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">NOT ONLY...BUT ALSO dùng để nhấn mạnh rằng ngoài điều đầu tiên, có thêm điều thứ hai nữa (thường bất ngờ hơn)</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Nhấn mạnh sự bổ sung | Verb agrees with NEAREST subject | Cấu trúc song song | Thường thêm surprise/emphasis vào câu thứ hai
+            </div>
+
+            <h3>II. Ví Dụ & Cấu Trúc</h3>
+
+            <p><strong>Not Only...But Also Với Danh Từ (Nối Danh Từ):</strong></p>
+            <div class="example">
+                • She is not only kind but also intelligent (Cô ấy không những tốt bụng mà còn thông minh)<br>
+                • Not only the teacher but also the students are responsible (Không những giáo viên mà còn học sinh có trách nhiệm)<br>
+                • The company let down not only shareholders but also employees (Công ty đã làm thất vọng không những cổ đông mà còn nhân viên)<br>
+                • Not only my parents but also my friends are supporting me (Không những cha mẹ tôi mà còn bạn bè tôi đang ủng hộ tôi)
+            </div>
+
+            <p><strong>Not Only...But Also Với Động Từ (Nối Hành Động):</strong></p>
+            <div class="example">
+                • She not only works hard but also studies every day (Cô ấy không những làm việc chăm chỉ mà còn học mỗi ngày)<br>
+                • He not only speaks English but also French (Anh ấy không những nói tiếng Anh mà còn tiếng Pháp)<br>
+                • They not only won the game but also broke the record (Họ không những thắng trận đấu mà còn phá kỷ lục)<br>
+                • I not only finished my homework but also helped my friend (Tôi không những hoàn thành bài tập về nhà mà còn giúp bạn)
+            </p>
+
+            <p><strong>Subject-Verb Agreement Với Not Only...But Also:</strong></p>
+            <div class="example">
+                • Not only the boys but also the girl is coming (Verb agrees with "girl" - singular)<br>
+                • Not only the teacher but also the students are preparing (Verb agrees with "students" - plural)<br>
+                • Not only my sister but also my brothers are helping (Verb agrees with "brothers" - plural)<br>
+                • Not only the dog but also the cat is playing (Verb agrees with "cat" - singular)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Verb agrees with NEAREST subject (như either...or và neither...nor)<br>
+                ✅ Not only he but also they are coming (nearest = they, plural)<br>
+                ✅ Not only they but also he is coming (nearest = he, singular)
+            </div>
+        </div>
+
+        <!-- PARALLEL STRUCTURE -->
+        <h2>⚖️ 5. Cấu Trúc Song Song (Parallel Structure)</h2>
+
+        <div class="card">
+            <h3>I. Nguyên Tắc Cấu Trúc Song Song</h3>
+
+            <p><span class="highlight">Khi dùng liên từ tương quan, hai phần được nối PHẢI có cấu trúc ngữ pháp BẰNG NHAU (parallel structure)</span>.</p>
+
+            <h3>II. Ví Dụ & Lỗi</h3>
+
+            <p><strong>Sai - Không Parallel:</strong></p>
+            <div class="example">
+                ❌ Either you study or going to bed<br>
+                (Phần đầu: "you study" = V, Phần hai: "going to bed" = V-ing → KHÁC NHAU)<br>
+                <br>
+                ❌ Not only is she smart but also working hard<br>
+                (Phần đầu: "is she smart" = S + be, Phần hai: "working hard" = V-ing → KHÁC NHAU)
+            </div>
+
+            <p><strong>Đúng - Parallel:</strong></p>
+            <div class="example">
+                ✅ Either you study or you go to bed<br>
+                (Cả hai: "you study" và "you go" = cùng cấu trúc V)<br>
+                <br>
+                ✅ Not only is she smart but also hardworking<br>
+                (Cả hai: "smart" và "hardworking" = cùng tính từ)<br>
+                <br>
+                ✅ She both sings well and dances well<br>
+                (Cả hai: "sings well" và "dances well" = cùng cấu trúc V + adv)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Parallel structure là RẤT QUAN TRỌNG<br>
+                • Nếu phần đầu là V, phần hai cũng phải V<br>
+                • Nếu phần đầu là Adj, phần hai cũng phải Adj<br>
+                • Nếu phần đầu là Noun, phần hai cũng phải Noun<br>
+                • Nếu phần đầu là Clause, phần hai cũng phải Clause
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Không song song (Not Parallel)</p>
+            <div class="example">
+                ❌ Either you study or go to bed | ✅ Either you study or you go to bed<br>
+                ❌ Both working hard and intelligent | ✅ Both hardworking and intelligent
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Sai verb agreement (Either/Or, Neither/Nor, Not Only/But Also)</p>
+            <div class="example">
+                ❌ Either the boys or the girl are coming | ✅ Either the boys or the girl is coming<br>
+                ❌ Neither my parents nor my brother are here | ✅ Neither my parents nor my brother is here
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng "or" thay vì "nor" với Neither</p>
+            <div class="example">
+                ❌ Neither coffee or tea | ✅ Neither coffee nor tea<br>
+                ❌ I like neither cats or dogs | ✅ I like neither cats nor dogs
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "not" thêm với "neither...nor"</p>
+            <div class="example">
+                ❌ I don't like neither coffee nor tea | ✅ I like neither coffee nor tea<br>
+                ❌ He is not neither good nor bad | ✅ He is neither good nor bad
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Verb không plural với "both...and"</p>
+            <div class="example">
+                ❌ Both he and she is coming | ✅ Both he and she are coming<br>
+                ❌ Both the cat and the dog is playing | ✅ Both the cat and the dog are playing
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ Cặp Liên Từ</strong></p>
+            <ul>
+                <li>Either...Or = Lựa chọn một (positive choice)</li>
+                <li>Neither...Nor = Không cái nào (negative - reject both)</li>
+                <li>Both...And = Cả hai (include both)</li>
+                <li>Not Only...But Also = Không những...mà còn (addition + emphasis)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Verb Agreement - Nearest Subject</strong></p>
+            <ul>
+                <li>Either...Or → Verb agrees with NEAREST subject</li>
+                <li>Neither...Nor → Verb agrees with NEAREST subject</li>
+                <li>Not Only...But Also → Verb agrees with NEAREST subject</li>
+                <li>Both...And → Verb LUÔN PLURAL</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Parallel Structure</strong></p>
+            <ul>
+                <li>Phần đầu và phần hai PHẢI cùng cấu trúc ngữ pháp</li>
+                <li>Verb + Verb | Noun + Noun | Adj + Adj | Clause + Clause</li>
+                <li>Kiểm tra xem hai phần có bằng nhau không</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Neither...Nor vs Either...Or</strong></p>
+            <ul>
+                <li>Neither...Nor = Phủ định (không cái nào) → dùng "nor", KHÔNG "or"</li>
+                <li>Either...Or = Tích cực (một trong hai) → dùng "or"</li>
+                <li>Neither luôn thêm "nor", Either thêm "or"</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 5 câu với mỗi cặp liên từ</li>
+                <li>Kiểm tra parallel structure</li>
+                <li>Kiểm tra verb agreement (nearest subject)</li>
+                <li>Đọc to để nghe tự nhiên</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liên Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Verb Agreement</th>
+                        <th>Lưu Ý</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Either...Or</strong></td>
+                        <td>Lựa chọn một</td>
+                        <td>Nearest subject</td>
+                        <td>Positive choice</td>
+                        <td>Either coffee or tea</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Neither...Nor</strong></td>
+                        <td>Không cái nào</td>
+                        <td>Nearest subject</td>
+                        <td>Phủ định, dùng "nor" không "or", KHÔNG "not"</td>
+                        <td>Neither coffee nor tea</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Both...And</strong></td>
+                        <td>Cả hai</td>
+                        <td>LUÔN PLURAL</td>
+                        <td>Bao gồm cả hai</td>
+                        <td>Both coffee and tea</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Not Only...But Also</strong></td>
+                        <td>Không những...mà còn</td>
+                        <td>Nearest subject</td>
+                        <td>Nhấn mạnh + bổ sung</td>
+                        <td>Not only coffee but also tea</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 20px;"><strong>Parallel Structure - Kiểm Tra:</strong></p>
+            <div class="example">
+                Sau liên từ tương quan, hai phần PHẢI có cấu trúc bằng nhau:<br>
+                • Nếu V + Noun, thì phần kia cũng V + Noun<br>
+                • Nếu Adj, thì phần kia cũng Adj<br>
+                • Nếu Clause, thì phần kia cũng Clause
+            </div>
+        </div>
+    </div>
+</body>
+</html>

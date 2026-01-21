@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Danh Từ Chi Tiết (Noun Details)</h2>
+
+        <div class="card">
+            <h3>Ba Loại Danh Từ Đặc Biệt</h3>
+            <p><span class="highlight">Ngoài danh từ thường (regular nouns), tiếng Anh còn có ba loại danh từ đặc biệt cần chú ý: danh từ số nhiều bất quy tắc (irregular plurals), danh từ tập hợp (collective nouns), và danh từ ghép (compound nouns)</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Ba loại danh từ này có những quy tắc riêng biệt và cách sử dụng khác nhau. Cần phải học kỹ để tránh sai lầm khi viết và nói tiếng Anh.
+            </div>
+
+            <h3>Phân Loại 3 Loại Danh Từ Đặc Biệt</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Danh Từ</th>
+                        <th>Đặc Điểm</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Irregular Plurals (Bất Quy Tắc)</strong></td>
+                        <td>Không thêm -s/-es, thay đổi nội bộ hoặc không thay đổi</td>
+                        <td>man→men, child→children, foot→feet, sheep→sheep</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Collective Nouns (Tập Hợp)</strong></td>
+                        <td>Một từ chỉ nhóm người hoặc vật, verb agreement tùy ngữ cảnh</td>
+                        <td>family, team, group, herd, flock, audience</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compound Nouns (Ghép)</strong></td>
+                        <td>Hai hay nhiều từ ghép lại, plural ở từ chính</td>
+                        <td>blackboard→blackboards, mother-in-law→mothers-in-law</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- IRREGULAR PLURALS -->
+        <h2>🔄 1. Danh Từ Số Nhiều Bất Quy Tắc (Irregular Plurals)</h2>
+
+        <div class="card">
+            <h3>I. Các Loại Biến Đổi</h3>
+
+            <p><span class="highlight">Danh từ bất quy tắc thay đổi theo nhiều cách khác nhau, không phải chỉ thêm -s/-es</span>:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Biến Đổi</th>
+                        <th>Cách Thay Đổi</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thay Đổi Nguyên Âm (Vowel Change)</strong></td>
+                        <td>Thay đổi chữ cái trong từ</td>
+                        <td>foot→feet, tooth→teeth, man→men, goose→geese, woman→women</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thêm -EN hoặc -REN</strong></td>
+                        <td>Thêm -en hay -ren vào cuối từ</td>
+                        <td>child→children, ox→oxen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thay -F/-FE Thành -VES</strong></td>
+                        <td>Thay f/fe thành ves</td>
+                        <td>leaf→leaves, knife→knives, life→lives, wife→wives, wolf→wolves</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Không Thay Đổi (Unchanged)</strong></td>
+                        <td>Singular = Plural</td>
+                        <td>sheep→sheep, fish→fish, deer→deer, moose→moose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Latin/Greek Plurals</strong></td>
+                        <td>Theo quy tắc Latin/Greek</td>
+                        <td>formula→formulae, criterion→criteria, phenomenon→phenomena</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hoàn Toàn Khác (Completely Different)</strong></td>
+                        <td>Từ hoàn toàn khác</td>
+                        <td>person→people, mouse→mice, die→dice</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Danh Sách Chi Tiết</h3>
+
+            <p><strong>Thay Đổi Nguyên Âm (Vowel Changes):</strong></p>
+            <div class="example">
+                • foot → feet (chân)<br>
+                • tooth → teeth (răng)<br>
+                • man → men (người đàn ông)<br>
+                • woman → women (người phụ nữ)<br>
+                • goose → geese (ngỗng)<br>
+                • mouse → mice (chuột)<br>
+                • louse → lice (chấy)<br>
+                • ooth → teeth
+            </div>
+
+            <p><strong>Thêm -EN hay -REN:</strong></p>
+            <div class="example">
+                • child → children (đứa trẻ)<br>
+                • ox → oxen (con bò)<br>
+                • brother → brethren (anh em - archaic/religious)
+            </div>
+
+            <p><strong>Thay -F/-FE Thành -VES:</strong></p>
+            <div class="example">
+                • leaf → leaves (lá cây)<br>
+                • knife → knives (dao)<br>
+                • life → lives (sự sống)<br>
+                • wife → wives (vợ)<br>
+                • wolf → wolves (sói)<br>
+                • half → halves (nửa)<br>
+                • loaf → loaves (ổ bánh)<br>
+                • sheaf → sheaves (bó)
+            </div>
+
+            <p><strong>Không Thay Đổi (Same Singular & Plural):</strong></p>
+            <div class="example">
+                • sheep → sheep (cừu)<br>
+                • fish → fish (cá)<br>
+                • deer → deer (nai)<br>
+                • moose → moose (hươu)<br>
+                • trout → trout (cá hồi)<br>
+                • salmon → salmon (cá hồi)<br>
+                • cod → cod (cá tuyết)<br>
+                • series → series (bộ)
+            </div>
+
+            <p><strong>Latin/Greek Plurals:</strong></p>
+            <div class="example">
+                • formula → formulae/formulas (công thức)<br>
+                • criterion → criteria (tiêu chí)<br>
+                • phenomenon → phenomena (hiện tượng)<br>
+                • analysis → analyses (phân tích)<br>
+                • basis → bases (cơ sở)<br>
+                • thesis → theses (luận án)<br>
+                • hypothesis → hypotheses (giả thuyết)<br>
+                • datum → data (dữ liệu)
+            </div>
+
+            <p><strong>Hoàn Toàn Khác (Completely Different):</strong></p>
+            <div class="example">
+                • person → people (người) / persons (nhiều người - formal)<br>
+                • die → dice (xúc sắc)<br>
+                • child → children (đứa trẻ)<br>
+                • goose → geese (ngỗng)<br>
+                • mouse → mice (chuột)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong><br>
+                • Fish thường không thay đổi, nhưng "fishes" dùng khi nói về nhiều loài cá khác nhau<br>
+                • Data là số nhiều (datum = số ít), nhưng thường được dùng với verb số ít ở Mỹ<br>
+                • Media là số nhiều (medium = số ít)
+            </div>
+        </div>
+
+        <!-- COLLECTIVE NOUNS -->
+        <h2>👥 2. Danh Từ Tập Hợp (Collective Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">Danh Từ Tập Hợp (Collective Nouns) là từ chỉ một nhóm người hoặc vật, nghe như số ít nhưng thực chất bao gồm nhiều thành viên</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Nghe như số ít (singular form) | Động từ phụ thuộc vào ngữ cảnh | Khi nhóm làm một việc chung → singular verb | Khi các thành viên làm việc riêng → plural verb
+            </div>
+
+            <h3>II. Danh Sách Collective Nouns Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chủ Đề</th>
+                        <th>Collective Nouns</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Người</strong></td>
+                        <td>family, team, group, committee, staff, crew, jury, audience, band, choir, orchestra, class, panel, board</td>
+                        <td>a family of five, a team of experts</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Động Vật</strong></td>
+                        <td>flock (chim, cừu), herd (bò, nai), pack (sói, chó), pride (sư tử), school (cá), pod (cá voi), swarm (ong, muỗi), colony (kiến)</td>
+                        <td>a flock of birds, a pack of wolves, a school of fish</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Đồ Vật</strong></td>
+                        <td>bunch, collection, set, fleet, fleet, bunch, pile, collection, kit</td>
+                        <td>a bunch of flowers, a fleet of ships, a collection of books</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Verb Agreement Với Collective Nouns</h3>
+
+            <p><strong>Quy Tắc 1: Khi Nhóm Làm Cùng Một Việc (Acting as Unit) → SINGULAR VERB:</strong></p>
+            <div class="example">
+                • The family is going on holiday together (Gia đình đang đi nghỉ cùng nhau)<br>
+                • The team is working well together (Đội đang làm việc tốt cùng nhau)<br>
+                • The herd is running across the field (Đàn vật đang chạy qua cánh đồng)<br>
+                • The jury has reached a decision (Bồi thẩm đoàn đã đưa ra quyết định)<br>
+                • The orchestra plays beautiful music (Dàn nhạc chơi nhạc tuyệt đẹp)<br>
+                • The government is investigating the issue (Chính phủ đang điều tra vấn đề)
+            </div>
+
+            <p><strong>Quy Tắc 2: Khi Các Thành Viên Làm Việc Khác Nhau (Acting as Individuals) → PLURAL VERB:</strong></p>
+            <div class="example">
+                • The family are doing different chores around the house (Các thành viên gia đình đang làm việc khác nhau trong nhà)<br>
+                • The team are discussing their individual strategies (Các thành viên đội đang thảo luận chiến lược của riêng họ)<br>
+                • The jury are divided on the verdict (Các bồi thẩm viên có ý kiến khác nhau về phán quyết)<br>
+                • The staff are working from different locations (Các nhân viên đang làm việc từ các nơi khác nhau)<br>
+                • The audience are applauding loudly (Khán giả đang vỗ tay to)<br>
+                • The class are presenting their projects (Học sinh đang trình bày dự án của họ)
+            </div>
+
+            <p><strong>Lưu Ý Khác Nhau: American English vs British English:</strong></p>
+            <div class="example">
+                • American English: The team is winning (singular verb - thường)<br>
+                • British English: The team are winning (plural verb - phổ biến hơn)<br>
+                • Cả hai đều chính xác, tùy theo lối nói của từng nước
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Mẹo Nhớ:</strong><br>
+                • Nếu bạn có thể thêm "members of" trước collective noun, thường dùng plural verb<br>
+                • The members of the family are doing chores (plural)<br>
+                • The family is going on holiday (singular - cùng làm một việc)
+            </div>
+        </div>
+
+        <!-- COMPOUND NOUNS -->
+        <h2>🔗 3. Danh Từ Ghép (Compound Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">Danh Từ Ghép (Compound Nouns) là sự kết hợp của hai hay nhiều từ để tạo thành một danh từ mới với ý nghĩa khác biệt</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Có thể viết tách rời (open), nối bằng gạch ngang (hyphenated), hoặc viết liền (closed) | Plural thêm -s vào từ chính (head noun) | Từ chính là từ có ý nghĩa chủ yếu
+            </div>
+
+            <h3>II. Các Loại Compound Nouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Định Nghĩa</th>
+                        <th>Ví Dụ</th>
+                        <th>Plural</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Open Compound</strong></td>
+                        <td>Viết tách rời</td>
+                        <td>ice cream, football, swimming pool, coffee cup</td>
+                        <td>ice creams, footballs, swimming pools, coffee cups</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hyphenated Compound</strong></td>
+                        <td>Viết nối bằng gạch ngang</td>
+                        <td>mother-in-law, brother-in-law, merry-go-round, well-being</td>
+                        <td>mothers-in-law, brothers-in-law, merry-go-rounds, well-beings</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Closed Compound</strong></td>
+                        <td>Viết liền</td>
+                        <td>blackboard, classroom, bedroom, notebook, toothbrush</td>
+                        <td>blackboards, classrooms, bedrooms, notebooks, toothbrushes</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Compound + -ful</strong></td>
+                        <td>Danh từ + -ful</td>
+                        <td>handful, mouthful, truckful, spoonful</td>
+                        <td>handfuls/handsful, mouthfuls/mouthsful, truckfuls/trucksful</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Noun + Preposition</strong></td>
+                        <td>Danh từ + giới từ + danh từ</td>
+                        <td>passer-by, hanger-on, runner-up, payer-off</td>
+                        <td>passers-by, hangers-on, runners-up, payers-off</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Open Compounds - Viết Tách Rời:</strong></p>
+            <div class="example">
+                • ice cream → ice creams (kem)<br>
+                • swimming pool → swimming pools (bể bơi)<br>
+                • coffee cup → coffee cups (tách cà phê)<br>
+                • football game → football games (trận bóng đá)<br>
+                • parking lot → parking lots (bãi đỗ xe)<br>
+                • high school → high schools (trường trung học)
+            </div>
+
+            <p><strong>Hyphenated Compounds - Nối Bằng Gạch Ngang:</strong></p>
+            <div class="example">
+                • mother-in-law → mothers-in-law (mẹ vợ/chồng)<br>
+                • sister-in-law → sisters-in-law (chị/em dâu)<br>
+                • brother-in-law → brothers-in-law (anh/em rể)<br>
+                • father-in-law → fathers-in-law (cha vợ/chồng)<br>
+                • merry-go-round → merry-go-rounds (ngựa gỗ quay)<br>
+                • runner-up → runners-up (á quân)
+            </div>
+
+            <p><strong>Closed Compounds - Viết Liền:</strong></p>
+            <div class="example">
+                • blackboard → blackboards (bảng đen)<br>
+                • classroom → classrooms (lớp học)<br>
+                • bedroom → bedrooms (phòng ngủ)<br>
+                • notebook → notebooks (vở ghi chép)<br>
+                • toothbrush → toothbrushes (bàn chải đánh răng)<br>
+                • sunflower → sunflowers (hoa hướng dương)
+            </div>
+
+            <p><strong>Compounds với -ful (Hai Cách Viết Plural):</strong></p>
+            <div class="example">
+                • handful → handfuls hoặc handsful (nắm đầy)<br>
+                • mouthful → mouthfuls hoặc mouthsful (miệng đầy)<br>
+                • truckful → truckfuls hoặc trucksful (xe tải đầy)<br>
+                • spoonful → spoonfuls hoặc spoonsful (muỗng đầy)<br>
+                • cupful → cupfuls hoặc cupsful (tách đầy)<br>
+                • Lưu Ý: handfuls là dạng phổ biến nhất hiện nay
+            </div>
+
+            <p><strong>Noun + Preposition (Plural Đặt Ở Danh Từ):</strong></p>
+            <div class="example">
+                • passer-by → passers-by (người đi ngang)<br>
+                • hanger-on → hangers-on (kẻ ăn bám)<br>
+                • runner-up → runners-up (á quân)<br>
+                • server-up → servers-up<br>
+                • stand-by → stand-bys (người/thứ chờ sẵn)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong><br>
+                • Plural luôn đặt ở từ chính (head noun), KHÔNG phải từ cuối cùng<br>
+                • mother-in-law → mothers-in-law (KHÔNG mother-in-laws)<br>
+                • Nếu không phải danh từ, thêm -s vào cuối: grown-up → grown-ups, check-out → check-outs
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Thêm -s vào cuối compound noun thay vì từ chính</p>
+            <div class="example">
+                ❌ mother-in-laws | ✅ mothers-in-law<br>
+                ❌ swimming-pools | ✅ swimming pools (hoặc nếu hyphenated: swimming-pools)<br>
+                ❌ coffee-cups | ✅ coffee cups
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng plural verb khi collective noun làm việc chung</p>
+            <div class="example">
+                ❌ The family are going on holiday (sai - cùng làm một việc)<br>
+                ✅ The family is going on holiday (đúng - cùng một hành động)<br>
+                ✅ The family are doing different chores (đúng - làm riêng lẻ)
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên học plural của bất quy tắc nouns</p>
+            <div class="example">
+                ❌ mans, childs, foots, tooths | ✅ men, children, feet, teeth<br>
+                ❌ sheeps, fishes (chung chung) | ✅ sheep, fish (hoặc fishes cho nhiều loài)<br>
+                ❌ mouses | ✅ mice
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Nhầm leaf/knife plurals</p>
+            <div class="example">
+                ❌ leafs, knifes | ✅ leaves, knives<br>
+                ❌ lifes, wifes | ✅ lives, wives<br>
+                ❌ wolfs, halfs | ✅ wolves, halves
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Không biết plural của compound -ful</p>
+            <div class="example">
+                ❌ handful (chỉ một dạng) | ✅ handfuls hoặc handsful (cả hai đúng)<br>
+                Lưu ý: handfuls phổ biến hơn handsful trong tiếng Anh hiện đại
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Irregular Plurals - Nhóm Theo Loại Biến Đổi</strong></p>
+            <ul>
+                <li>Vowel change: foot/feet, man/men, goose/geese, woman/women, mouse/mice</li>
+                <li>Add -en: child/children, ox/oxen</li>
+                <li>F/FE → VES: leaf/leaves, knife/knives, life/lives, wife/wives, wolf/wolves</li>
+                <li>No change: sheep/sheep, fish/fish, deer/deer</li>
+                <li>Completely different: person/people, die/dice</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Collective Nouns - Hỏi "Làm Gì?"</strong></p>
+            <ul>
+                <li>Nhóm làm CÙNG một việc → singular verb: The team is winning</li>
+                <li>Nhóm làm KHÁC nhau → plural verb: The team are doing their own things</li>
+                <li>Nếu không chắc, thêm "members of" + plural verb</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Compound Nouns - Tìm Từ Chính (Head Noun)</strong></p>
+            <ul>
+                <li>Từ chính là từ có ý nghĩa chủ yếu (từ được mô tả)</li>
+                <li>mother-in-law: từ chính là "mother" → mothers-in-law</li>
+                <li>swimming pool: từ chính là "pool" → swimming pools</li>
+                <li>coffee cup: từ chính là "cup" → coffee cups</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Các Quy Tắc Chính</strong></p>
+            <ul>
+                <li>Danh từ bất quy tắc: CẦN HỌC THUỘC LÒNG</li>
+                <li>Collective nouns: Phụ thuộc vào ngữ cảnh (singular/plural verb)</li>
+                <li>Compound nouns: Plural ở từ chính (head noun), không phải cuối cùng</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết danh sách 20+ irregular plurals</li>
+                <li>Viết 10 câu với collective nouns (singular & plural verb)</li>
+                <li>Viết 15 compound nouns ở dạng singular & plural</li>
+                <li>So sánh regular plurals (add -s/-es) vs irregular/compound</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Danh Từ</th>
+                        <th>Cách Tạo Plural</th>
+                        <th>Ví Dụ</th>
+                        <th>Verb Agreement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Irregular - Vowel Change</strong></td>
+                        <td>Thay đổi nguyên âm</td>
+                        <td>foot→feet, man→men, goose→geese</td>
+                        <td>Plural verb (many feet)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Irregular - Add -EN</strong></td>
+                        <td>Thêm -en/-ren</td>
+                        <td>child→children, ox→oxen</td>
+                        <td>Plural verb (children play)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Irregular - F/FE→VES</strong></td>
+                        <td>Thay f/fe thành ves</td>
+                        <td>leaf→leaves, knife→knives, wife→wives</td>
+                        <td>Plural verb</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Irregular - No Change</strong></td>
+                        <td>Không thay đổi</td>
+                        <td>sheep→sheep, fish→fish, deer→deer</td>
+                        <td>Singular hoặc plural tùy ngữ cảnh</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Irregular - Latin/Greek</strong></td>
+                        <td>Theo quy tắc Latin/Greek</td>
+                        <td>formula→formulae, criterion→criteria</td>
+                        <td>Plural verb (criteria are)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Collective Noun</strong></td>
+                        <td>Không thay đổi hình thức</td>
+                        <td>family, team, group, herd</td>
+                        <td>Singular (unit) hay Plural (individuals)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compound - Open</strong></td>
+                        <td>+s vào từ chính</td>
+                        <td>swimming pool→swimming pools</td>
+                        <td>Plural verb</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Compound - Hyphenated</strong></td>
+                        <td>+s vào từ chính (noun)</td>
+                        <td>mother-in-law→mothers-in-law</td>
+                        <td>Plural verb</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compound - Closed</strong></td>
+                        <td>+s vào từ chính</td>
+                        <td>classroom→classrooms, bedroom→bedrooms</td>
+                        <td>Plural verb</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

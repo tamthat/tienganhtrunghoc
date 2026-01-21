@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Câu Chủ Động & Bị Động (Active & Passive Voice)</h2>
+
+        <div class="card">
+            <h3>Câu Chủ Động Và Bị Động Là Gì?</h3>
+            <p><span class="highlight">Câu Chủ Động (Active Voice)</span> là <strong>câu mà chủ ngữ thực hiện hành động</strong>.</p>
+            <p><span class="highlight">Câu Bị Động (Passive Voice)</span> là <strong>câu mà chủ ngữ bị tác động bởi hành động, được thực hiện bởi người hoặc vật khác</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Cấu trúc bị động: Subject + be (conjugated) + Past Participle + (by + agent)
+            </div>
+
+            <h3>So Sánh Câu Chủ Động Và Bị Động</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>Câu Chủ Động</th>
+                        <th>Câu Bị Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chủ Ngữ</strong></td>
+                        <td>Người/vật thực hiện hành động</td>
+                        <td>Người/vật bị tác động</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Động Từ</strong></td>
+                        <td>V1 (hoặc các dạng khác tùy theo thì)</td>
+                        <td>be + V3 (Past Participle)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tân Ngữ</strong></td>
+                        <td>Vật bị tác động (object)</td>
+                        <td>Không có (hoặc "by + agent" nếu cần)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>She writes a letter</td>
+                        <td>A letter is written by her</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CONVERSION RULES -->
+        <h2>🔄 Quy Tắc Chuyển Đổi (Conversion Rules)</h2>
+
+        <div class="card">
+            <h3>5 Bước Chuyển Đổi Từ Chủ Động Sang Bị Động</h3>
+
+            <p><strong>Bước 1: Xác Định Chủ Ngữ, Động Từ Và Tân Ngữ</strong></p>
+            <div class="example">
+                Active: <strong>She</strong> (S) <strong>writes</strong> (V) <strong>a letter</strong> (O)
+            </div>
+
+            <p><strong>Bước 2: Hoán Đổi Chủ Ngữ Và Tân Ngữ</strong></p>
+            <div class="example">
+                A letter (S) ... she (O)
+            </div>
+
+            <p><strong>Bước 3: Chuyển Động Từ Thành Past Participle (V3)</strong></p>
+            <div class="example">
+                writes → written
+            </div>
+
+            <p><strong>Bước 4: Thêm "Be" Với Dạng Phù Hợp Theo Thì</strong></p>
+            <div class="example">
+                A letter <strong>is written</strong>
+            </div>
+
+            <p><strong>Bước 5: Thêm "By + Agent" Nếu Cần (Tuỳ Chọn)</strong></p>
+            <div class="example">
+                Passive: A letter <strong>is written by her</strong>
+            </div>
+        </div>
+
+        <!-- PASSIVE VOICE - PRESENT TENSES -->
+        <h2>⏰ Bị Động Trong Các Thì Hiện Tại</h2>
+
+        <div class="card">
+            <h3>1. Present Simple (Hiện Tại Đơn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + V1 (s/es) + Object</td>
+                        <td>Object + is/am/are + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She writes a letter</td>
+                        <td>A letter is written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They love this city</td>
+                        <td>This city is loved by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He reads books | Passive: Books are read by him<br>
+                • Active: I eat rice | Passive: Rice is eaten by me<br>
+                • Active: She teaches English | Passive: English is taught by her<br>
+                • Active: They build a house | Passive: A house is built by them
+            </div>
+
+            <h3>2. Present Continuous (Hiện Tại Tiếp Diễn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + is/am/are + V1-ing + Object</td>
+                        <td>Object + is/am/are + being + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She is writing a letter</td>
+                        <td>A letter is being written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They are building a house</td>
+                        <td>A house is being built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He is reading a book | Passive: A book is being read by him<br>
+                • Active: I am eating lunch | Passive: Lunch is being eaten by me<br>
+                • Active: She is painting the wall | Passive: The wall is being painted by her
+            </div>
+
+            <h3>3. Present Perfect (Hiện Tại Hoàn Thành)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + have/has + V3 + Object</td>
+                        <td>Object + have/has + been + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She has written a letter</td>
+                        <td>A letter has been written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They have built the house</td>
+                        <td>The house has been built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He has read the book | Passive: The book has been read by him<br>
+                • Active: I have eaten breakfast | Passive: Breakfast has been eaten by me<br>
+                • Active: She has finished the project | Passive: The project has been finished by her
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Present Perfect Continuous (Hiện Tại Hoàn Thành Tiếp Diễn) KHÔNG có dạng bị động
+            </div>
+        </div>
+
+        <!-- PASSIVE VOICE - PAST TENSES -->
+        <h2>📅 Bị Động Trong Các Thì Quá Khứ</h2>
+
+        <div class="card">
+            <h3>4. Past Simple (Quá Khứ Đơn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + V2 + Object</td>
+                        <td>Object + was/were + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She wrote a letter</td>
+                        <td>A letter was written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They built a house</td>
+                        <td>A house was built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He read a book yesterday | Passive: A book was read by him yesterday<br>
+                • Active: I ate lunch | Passive: Lunch was eaten by me<br>
+                • Active: She watched a movie | Passive: A movie was watched by her<br>
+                • Active: They visited the museum | Passive: The museum was visited by them
+            </div>
+
+            <h3>5. Past Continuous (Quá Khứ Tiếp Diễn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + was/were + V1-ing + Object</td>
+                        <td>Object + was/were + being + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She was writing a letter</td>
+                        <td>A letter was being written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They were building a house</td>
+                        <td>A house was being built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He was reading a book | Passive: A book was being read by him<br>
+                • Active: I was eating dinner | Passive: Dinner was being eaten by me<br>
+                • Active: She was painting the wall | Passive: The wall was being painted by her
+            </div>
+
+            <h3>6. Past Perfect (Quá Khứ Hoàn Thành)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + had + V3 + Object</td>
+                        <td>Object + had + been + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She had written the letter</td>
+                        <td>The letter had been written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They had built the house</td>
+                        <td>The house had been built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He had read the book before the exam | Passive: The book had been read by him before the exam<br>
+                • Active: I had finished the work | Passive: The work had been finished by me<br>
+                • Active: She had completed the project | Passive: The project had been completed by her
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Past Perfect Continuous (Quá Khứ Hoàn Thành Tiếp Diễn) KHÔNG có dạng bị động
+            </div>
+        </div>
+
+        <!-- PASSIVE VOICE - FUTURE TENSES -->
+        <h2>🔮 Bị Động Trong Các Thì Tương Lai</h2>
+
+        <div class="card">
+            <h3>7. Future Simple (Tương Lai Đơn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + will + V1 + Object</td>
+                        <td>Object + will + be + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She will write a letter</td>
+                        <td>A letter will be written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They will build a house</td>
+                        <td>A house will be built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He will read the book | Passive: The book will be read by him<br>
+                • Active: I will eat lunch | Passive: Lunch will be eaten by me<br>
+                • Active: She will paint the wall | Passive: The wall will be painted by her<br>
+                • Active: They will finish the project | Passive: The project will be finished by them
+            </div>
+
+            <h3>8. Future Continuous (Tương Lai Tiếp Diễn)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + will + be + V1-ing + Object</td>
+                        <td>Object + will + be + being + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She will be writing a letter</td>
+                        <td>A letter will be being written by her</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Future Continuous Passive rất hiếm khi được sử dụng trong tiếng Anh thực tế
+            </div>
+
+            <h3>9. Future Perfect (Tương Lai Hoàn Thành)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subject + will + have + V3 + Object</td>
+                        <td>Object + will + have + been + V3 + (by + Subject)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>She will have written the letter</td>
+                        <td>The letter will have been written by her</td>
+                    </tr>
+                    <tr>
+                        <td>They will have built the house</td>
+                        <td>The house will have been built by them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: He will have read the book by tomorrow | Passive: The book will have been read by him by tomorrow<br>
+                • Active: I will have finished the work | Passive: The work will have been finished by me<br>
+                • Active: She will have completed the project | Passive: The project will have been completed by her
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Future Perfect Continuous (Tương Lai Hoàn Thành Tiếp Diễn) KHÔNG có dạng bị động
+            </div>
+        </div>
+
+        <!-- PASSIVE VOICE WITH MODAL VERBS -->
+        <h2>🎯 Bị Động Với Động Từ Khiếm Khuyết (Modal Verbs)</h2>
+
+        <div class="card">
+            <h3>Công Thức: Subject + Modal Verb + be + V3 + (by + Agent)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modal Verb</th>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Can</strong></td>
+                        <td>He can do it</td>
+                        <td>It can be done by him</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Could</strong></td>
+                        <td>She could help us</td>
+                        <td>We could be helped by her</td>
+                    </tr>
+                    <tr>
+                        <td><strong>May</strong></td>
+                        <td>I may finish it</td>
+                        <td>It may be finished by me</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Might</strong></td>
+                        <td>He might solve it</td>
+                        <td>It might be solved by him</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Must</strong></td>
+                        <td>You must do it</td>
+                        <td>It must be done by you</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Should</strong></td>
+                        <td>They should repair it</td>
+                        <td>It should be repaired by them</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Would</strong></td>
+                        <td>She would buy it</td>
+                        <td>It would be bought by her</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Active: You must complete the project | Passive: The project must be completed by you<br>
+                • Active: We should help him | Passive: He should be helped by us<br>
+                • Active: I can fix it | Passive: It can be fixed by me<br>
+                • Active: They might invite us | Passive: We might be invited by them
+            </div>
+        </div>
+
+        <!-- SUMMARY TABLE -->
+        <h2>📊 Bảng Tóm Tắt 12 Thì - Chủ Động Vs Bị Động</h2>
+
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Chủ Động (Active)</th>
+                        <th>Bị Động (Passive)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Present Simple</strong></td>
+                        <td>S + V1 (s/es) + O</td>
+                        <td>O + is/am/are + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He reads books | Books are read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Present Continuous</strong></td>
+                        <td>S + is/am/are + V1-ing + O</td>
+                        <td>O + is/am/are + being + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He is reading a book | A book is being read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Present Perfect</strong></td>
+                        <td>S + have/has + V3 + O</td>
+                        <td>O + have/has + been + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He has read the book | The book has been read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Past Simple</strong></td>
+                        <td>S + V2 + O</td>
+                        <td>O + was/were + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He read a book | A book was read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Past Continuous</strong></td>
+                        <td>S + was/were + V1-ing + O</td>
+                        <td>O + was/were + being + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He was reading a book | A book was being read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Past Perfect</strong></td>
+                        <td>S + had + V3 + O</td>
+                        <td>O + had + been + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He had read the book | The book had been read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>7. Future Simple</strong></td>
+                        <td>S + will + V1 + O</td>
+                        <td>O + will + be + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He will read a book | A book will be read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>8. Future Continuous</strong></td>
+                        <td>S + will + be + V1-ing + O</td>
+                        <td>O + will + be + being + V3 (hiếm)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He will be reading a book | A book will be being read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>9. Future Perfect</strong></td>
+                        <td>S + will + have + V3 + O</td>
+                        <td>O + will + have + been + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td colspan="3"><em>He will have read the book | The book will have been read by him</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>⚠️ Không có Passive:</strong></td>
+                        <td colspan="2">Present Perfect Continuous, Past Perfect Continuous, Future Perfect Continuous</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên thay đổi động từ thành Past Participle (V3)</p>
+            <div class="example">
+                ❌ A letter is write by her | ✅ A letter is written by her<br>
+                ❌ The house was build by them | ✅ The house was built by them
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Sai dạng của "be" theo thì</p>
+            <div class="example">
+                ❌ She will written a letter | ✅ She will be written a letter<br>
+                ❌ The book are read by him | ✅ The book is read by him
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên thêm "being" trong các thì Continuous</p>
+            <div class="example">
+                ❌ A letter is written by her (Present Continuous) | ✅ A letter is being written by her<br>
+                ❌ The house was built by them (Past Continuous) | ✅ The house was being built by them
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng Passive cho câu không có tân ngữ</p>
+            <div class="example">
+                ❌ He sleeps (Intransitive - không có Passive)<br>
+                ✅ He is sleeping (Continuous - có Passive: He is being slept - sai)<br>
+                ✅ Chỉ dùng Passive với động từ ngoại động
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn vị trí của "been" và "being"</p>
+            <div class="example">
+                ❌ A letter have being written | ✅ A letter have been written<br>
+                ❌ The wall was being painted been by her | ✅ The wall was being painted by her
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ Công Thức Cơ Bản</strong></p>
+            <ul>
+                <li>Subject + be (conjugated) + Past Participle + (by + agent)</li>
+                <li>Thay đổi động từ "be" theo thì, giữ nguyên Past Participle</li>
+            </ul>
+
+            <p><strong>Mẹo 2: 5 Bước Chuyển Đổi</strong></p>
+            <ul>
+                <li>Xác định S, V, O</li>
+                <li>Hoán đổi O và S</li>
+                <li>Chuyển V thành V3</li>
+                <li>Thêm "be" với dạng phù hợp theo thì</li>
+                <li>Thêm "by + agent" (tuỳ chọn)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Học Quy Tắc "Being" Cho Continuous</strong></p>
+            <ul>
+                <li>Present Continuous: is/am/are + being + V3</li>
+                <li>Past Continuous: was/were + being + V3</li>
+                <li>Future Continuous: will + be + being + V3</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Perfect Tense - "Been" Không "Being"</strong></p>
+            <ul>
+                <li>Present Perfect: have/has + been + V3</li>
+                <li>Past Perfect: had + been + V3</li>
+                <li>Future Perfect: will + have + been + V3</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Thực Hành Với Một Câu</strong></p>
+            <ul>
+                <li>Lấy một câu chủ động đơn giản</li>
+                <li>Chuyển thành bị động cho 12 thì</li>
+                <li>So sánh kết quả với bảng tóm tắt</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Khi Nào Dùng Passive Voice?</h3>
+
+            <p><strong>✅ Dùng Passive khi:</strong></p>
+            <ul>
+                <li>Chủ ngữ của câu không quan trọng: The house was built 20 years ago</li>
+                <li>Muốn nhấn mạnh hành động hoặc kết quả: She was awarded a prize</li>
+                <li>Người thực hiện hành động không rõ: The letter was lost</li>
+                <li>Viết báo cáo chính thức hoặc khoa học: The experiment was conducted carefully</li>
+            </ul>
+
+            <p><strong>❌ Tránh Passive khi:</strong></p>
+            <ul>
+                <li>Chủ ngữ rõ ràng và quan trọng: She wrote the letter (tốt hơn "The letter was written by her")</li>
+                <li>Muốn câu đơn giản, rõ ràng: Use active voice for clarity</li>
+                <li>Động từ là nội động: He sleeps (KHÔNG có passive)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

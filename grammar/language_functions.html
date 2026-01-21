@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Chức Năng Ngôn Ngữ Phổ Biến (Language Functions)</h2>
+
+        <div class="card">
+            <h3>Chức Năng Ngôn Ngữ Là Gì?</h3>
+            <p><span class="highlight">Chức Năng Ngôn Ngữ (Language Functions) là cách chúng ta sử dụng tiếng Anh để đạt được các mục đích giao tiếp khác nhau như gợi ý, mời, xin phép, từ chối, đồng ý, than phiền, xin lỗi</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Language Functions tập trung vào VĂN HÓA GIA TIẾP và các CÂU NÓI ĐÚNG TRG ĐỂ DIỄN ĐẠT Ý MUỐN. Khác với ngữ pháp (grammar) tập trung vào cấu trúc câu, language functions tập trung vào cách DIỄN ĐẠT CÓ LỊ SUỰ - BỎ QUA QUÁ TRỰC TIẾP, BÔNG BÁCH, VÀ BẢO VỆ CẢM XÚC CỦA NGƯỜI KHÁC.
+            </div>
+
+            <h3>8 Chức Năng Ngôn Ngữ Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chức Năng</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Mục Đích</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Making Suggestions (Gợi Ý)</strong></td>
+                        <td>Đề nghị hoặc gợi ý ý tưởng</td>
+                        <td>Hướng dẫn lựa chọn khác</td>
+                        <td>What if we went out instead?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Invitations (Lời Mời)</strong></td>
+                        <td>Mời ai đó tham gia hoặc đến</td>
+                        <td>Xây dựng mối quan hệ xã hội</td>
+                        <td>Would you like to join us?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Asking Permission (Xin Phép)</strong></td>
+                        <td>Xin phép làm điều gì</td>
+                        <td>Tôn trọng ranh giới của người khác</td>
+                        <td>Do you mind if I open the window?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Refusing/Declining (Từ Chối)</strong></td>
+                        <td>Từ chối một lời mời hoặc yêu cầu</td>
+                        <td>Bảo vệ ranh giới cá nhân</td>
+                        <td>I'm afraid that's not possible</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Agreeing/Accepting (Đồng Ý)</strong></td>
+                        <td>Chấp nhận hoặc đồng ý</td>
+                        <td>Thể hiện sự hợp tác</td>
+                        <td>Yes, I'd love to!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Complaining (Than Phiền)</strong></td>
+                        <td>Bày tỏ không hài lòng</td>
+                        <td>Giải quyết vấn đề</td>
+                        <td>I have a complaint about...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apologising (Xin Lỗi)</strong></td>
+                        <td>Xin lỗi hoặc bày tỏ hối hận</td>
+                        <td>Sửa chữa sai lầm</td>
+                        <td>I'm really sorry for...</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Offering Help (Đề Nghị Giúp Đỡ)</strong></td>
+                        <td>Đề nghị giúp đỡ người khác</td>
+                        <td>Thể hiện sự hỗ trợ</td>
+                        <td>Can I help you with that?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MAKING SUGGESTIONS -->
+        <h2>💡 1. Gợi Ý (Making Suggestions)</h2>
+
+        <div class="card">
+            <h3>I. Cách Gợi Ý Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Gợi Ý</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>What if...?</strong></td>
+                        <td>Polite, indirect</td>
+                        <td>What if we went out for dinner instead?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Why don't you...?</strong></td>
+                        <td>Friendly, casual</td>
+                        <td>Why don't you try the fish?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>How about...?</strong></td>
+                        <td>Casual, open</td>
+                        <td>How about going to the cinema?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You could...?</strong></td>
+                        <td>Helpful, constructive</td>
+                        <td>You could call her and apologize</td>
+                    </tr>
+                    <tr>
+                        <td><strong>What about...?</strong></td>
+                        <td>Casual, open</td>
+                        <td>What about leaving early?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I suggest/recommend...</strong></td>
+                        <td>Formal, advisory</td>
+                        <td>I suggest taking the train instead</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Why not...?</strong></td>
+                        <td>Casual, encouraging</td>
+                        <td>Why not try the new restaurant?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Have you considered...?</strong></td>
+                        <td>Formal, thoughtful</td>
+                        <td>Have you considered going to university?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • What if we took a different route? (Nếu chúng ta đi con đường khác thì sao?)<br>
+                • Why don't you call your sister and ask her? (Tại sao bạn không gọi chị gái và hỏi cô ấy?)<br>
+                • How about lunch at that new Italian place? (Ăn trưa ở quán Ý mới được không?)<br>
+                • You could always try again tomorrow (Bạn luôn có thể thử lại vào ngày mai)<br>
+                • What about checking online first? (Bạn hãy kiểm tra trực tuyến trước được không?)<br>
+                • I'd recommend the chocolate cake (Tôi gợi ý bánh chocolate)<br>
+                • Have you thought about learning French? (Bạn đã từng nghĩ đến việc học tiếng Pháp không?)
+            </div>
+        </div>
+
+        <!-- INVITATIONS -->
+        <h2>🎉 2. Lời Mời (Invitations)</h2>
+
+        <div class="card">
+            <h3>I. Cách Mời Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Mời</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Would you like to...?</strong></td>
+                        <td>Polite, formal</td>
+                        <td>Would you like to come to the party?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Do you want to...?</strong></td>
+                        <td>Casual, informal</td>
+                        <td>Do you want to grab some coffee?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Can I invite you...?</strong></td>
+                        <td>Warm, friendly</td>
+                        <td>Can I invite you to dinner tonight?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You're welcome to...</strong></td>
+                        <td>Open, inclusive</td>
+                        <td>You're welcome to join us anytime</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feel free to...</strong></td>
+                        <td>Relaxed, open</td>
+                        <td>Feel free to bring a friend</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I was wondering if you'd like to...</strong></td>
+                        <td>Very polite, thoughtful</td>
+                        <td>I was wondering if you'd like to join me for lunch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Why don't you...?</strong></td>
+                        <td>Casual, encouraging</td>
+                        <td>Why don't you come over for dinner?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Would you like to join us for lunch? (Bạn có muốn tham gia bữa trưa cùng chúng tôi không?)<br>
+                • Do you want to go to the movies this weekend? (Bạn muốn đi xem phim cuối tuần này không?)<br>
+                • I'd love for you to attend my graduation party (Tôi muốn bạn tham dự bữa tiệc tốt nghiệp của tôi)<br>
+                • You're welcome to stay with us anytime (Bạn luôn được hoan nghênh ở lại với chúng tôi)<br>
+                • Feel free to bring your family (Tự do mời gia đình của bạn)<br>
+                • We'd be delighted if you could make it (Chúng tôi sẽ rất vui nếu bạn có thể đến)<br>
+                • Why don't you come around for tea tomorrow? (Tại sao bạn không qua uống trà vào ngày mai?)
+            </div>
+        </div>
+
+        <!-- ASKING PERMISSION -->
+        <h2>🔓 3. Xin Phép (Asking Permission)</h2>
+
+        <div class="card">
+            <h3>I. Cách Xin Phép Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Xin Phép</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Can I...?</strong></td>
+                        <td>Casual, informal</td>
+                        <td>Can I borrow your pen?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Could I...?</strong></td>
+                        <td>Polite, formal</td>
+                        <td>Could I use your phone?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>May I...?</strong></td>
+                        <td>Very formal, respectful</td>
+                        <td>May I ask you a question?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Do you mind if I...?</strong></td>
+                        <td>Polite, considerate</td>
+                        <td>Do you mind if I open the window?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Would you mind if I...?</strong></td>
+                        <td>Very polite, formal</td>
+                        <td>Would you mind if I left early?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Is it okay if...?</strong></td>
+                        <td>Casual, friendly</td>
+                        <td>Is it okay if I bring a friend?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I was wondering if I could...</strong></td>
+                        <td>Polite, indirect</td>
+                        <td>I was wondering if I could leave a bit early</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Can I borrow your car tonight? (Tôi có thể mượn xe của bạn tối nay không?)<br>
+                • Could I possibly use your bathroom? (Tôi có thể sử dụng phòng tắm của bạn được không?)<br>
+                • May I sit here? (Tôi có thể ngồi ở đây không?)<br>
+                • Do you mind if I smoke? (Bạn có phiền nếu tôi hút thuốc không?)<br>
+                • Would you mind if I switched the channel? (Bạn có phiền nếu tôi đổi kênh không?)<br>
+                • Is it okay if I take a photo? (Được phép tôi chụp ảnh không?)<br>
+                • I was wondering if I could ask you something (Tôi đang tự hỏi liệu tôi có thể hỏi bạn điều gì không?)
+            </div>
+        </div>
+
+        <!-- REFUSING/DECLINING -->
+        <h2>❌ 4. Từ Chối (Refusing/Declining)</h2>
+
+        <div class="card">
+            <h3>I. Cách Từ Chối Polite</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Từ Chối</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I'm afraid that's not possible</strong></td>
+                        <td>Polite, regretful</td>
+                        <td>I'm afraid that's not possible right now</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I'd love to, but...</strong></td>
+                        <td>Polite, regretful</td>
+                        <td>I'd love to come, but I have other plans</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I can't, I'm afraid</strong></td>
+                        <td>Polite, apologetic</td>
+                        <td>I can't attend, I'm afraid</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>That doesn't work for me</strong></td>
+                        <td>Neutral, professional</td>
+                        <td>That doesn't work for me</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'll have to pass</strong></td>
+                        <td>Casual, friendly</td>
+                        <td>I'll have to pass on the invitation</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Not this time, thanks</strong></td>
+                        <td>Casual, friendly</td>
+                        <td>Not this time, thanks for asking</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I appreciate the offer, but...</strong></td>
+                        <td>Formal, appreciative</td>
+                        <td>I appreciate the offer, but I can't commit</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I'm afraid I can't come tonight (Tôi e rằng tôi không thể đến tối nay)<br>
+                • I'd love to help, but I'm too busy at the moment (Tôi rất muốn giúp, nhưng tôi quá bận)<br>
+                • That's not possible for me, sorry (Điều đó không khả thi với tôi, xin lỗi)<br>
+                • I appreciate the invitation, but I have to decline (Tôi cảm ơn lời mời, nhưng tôi phải từ chối)<br>
+                • I'll have to pass on that offer (Tôi phải từ chối lời đề nghị đó)<br>
+                • Thanks, but it's not for me (Cảm ơn, nhưng nó không phải cho tôi)<br>
+                • I'm sorry, but I can't make it (Tôi xin lỗi, nhưng tôi không thể đến được)
+            </div>
+        </div>
+
+        <!-- AGREEING/ACCEPTING -->
+        <h2>✅ 5. Đồng Ý (Agreeing/Accepting)</h2>
+
+        <div class="card">
+            <h3>I. Cách Đồng Ý Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Đồng Ý</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yes, I'd love to</strong></td>
+                        <td>Enthusiastic, warm</td>
+                        <td>Yes, I'd love to join you!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Sure, of course</strong></td>
+                        <td>Casual, friendly</td>
+                        <td>Sure, of course I can help</td>
+                    </tr>
+                    <tr>
+                        <td><strong>That sounds great</strong></td>
+                        <td>Enthusiastic, positive</td>
+                        <td>That sounds great, count me in!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Definitely</strong></td>
+                        <td>Strong agreement</td>
+                        <td>Definitely, I'll be there</td>
+                    </tr>
+                    <tr>
+                        <td><strong>That would be wonderful</strong></td>
+                        <td>Formal, delighted</td>
+                        <td>That would be wonderful, thank you</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You're on</strong></td>
+                        <td>Casual, confident</td>
+                        <td>You're on! See you tonight</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'd be happy to</strong></td>
+                        <td>Polite, willing</td>
+                        <td>I'd be happy to assist you</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Yes, I'd absolutely love to come! (Vâng, tôi rất muốn đến!)<br>
+                • Sure, of course I'll help you (Chắc chắn, tôi sẽ giúp bạn)<br>
+                • That sounds like a great idea! (Điều đó nghe rất tuyệt!)<br>
+                • Definitely, I'm very interested (Chắc chắn, tôi rất quan tâm)<br>
+                • That would be absolutely wonderful (Điều đó sẽ tuyệt vời)<br>
+                • You're on! I'll see you then (Đóng thỏa thuận! Tôi sẽ gặp bạn)<br>
+                • I'd be delighted to (Tôi sẽ rất vui lòng)
+            </div>
+        </div>
+
+        <!-- COMPLAINING -->
+        <h2>😠 6. Than Phiền (Complaining)</h2>
+
+        <div class="card">
+            <h3>I. Cách Than Phiền Polite</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Than Phiền</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I'm sorry to bother you, but...</strong></td>
+                        <td>Polite, apologetic</td>
+                        <td>I'm sorry to bother you, but there's a problem</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I have a complaint about...</strong></td>
+                        <td>Direct, formal</td>
+                        <td>I have a complaint about the service</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'm not happy with...</strong></td>
+                        <td>Honest, clear</td>
+                        <td>I'm not happy with the quality</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>There seems to be a problem with...</strong></td>
+                        <td>Polite, indirect</td>
+                        <td>There seems to be a problem with this device</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'm afraid I'm disappointed with...</strong></td>
+                        <td>Formal, regretful</td>
+                        <td>I'm afraid I'm disappointed with your work</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Excuse me, but...</strong></td>
+                        <td>Polite, attention-getting</td>
+                        <td>Excuse me, but I ordered this 20 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'd like to complain about...</strong></td>
+                        <td>Direct, professional</td>
+                        <td>I'd like to complain about the noise</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I'm sorry to bother you, but this isn't what I ordered (Tôi xin lỗi vì làm phiền, nhưng đây không phải thứ tôi đã đặt)<br>
+                • I have a serious complaint about the service (Tôi có một than phiền nghiêm trọng về dịch vụ)<br>
+                • I'm not satisfied with the quality of this product (Tôi không hài lòng với chất lượng của sản phẩm này)<br>
+                • There's a problem with the heating system (Có vấn đề với hệ thống sưởi)<br>
+                • I'm disappointed by how this was handled (Tôi thất vọng vì cách điều này được xử lý)<br>
+                • Excuse me, but there's a stain on this table (Xin lỗi, nhưng có một vết bẩn trên bàn này)<br>
+                • I need to report a problem with your website (Tôi cần báo cáo một vấn đề với trang web của bạn)
+            </div>
+        </div>
+
+        <!-- APOLOGISING -->
+        <h2>😔 7. Xin Lỗi (Apologising)</h2>
+
+        <div class="card">
+            <h3>I. Cách Xin Lỗi Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Xin Lỗi</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I'm sorry</strong></td>
+                        <td>Simple, sincere</td>
+                        <td>I'm sorry for being late</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I'm really/so sorry</strong></td>
+                        <td>Sincere, emphatic</td>
+                        <td>I'm really sorry about that mistake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I apologize</strong></td>
+                        <td>Formal, sincere</td>
+                        <td>I sincerely apologize for the confusion</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>I shouldn't have...</strong></td>
+                        <td>Regretful, taking responsibility</td>
+                        <td>I shouldn't have yelled at you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>It was my fault</strong></td>
+                        <td>Direct, taking blame</td>
+                        <td>It was my fault, I accept full responsibility</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Please forgive me</strong></td>
+                        <td>Sincere, requesting forgiveness</td>
+                        <td>Please forgive me for my behavior</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I owe you an apology</strong></td>
+                        <td>Formal, sincere</td>
+                        <td>I owe you an apology for missing your party</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I'm sorry for taking so long (Tôi xin lỗi vì mất nhiều thời gian)<br>
+                • I'm really sorry for hurting your feelings (Tôi rất xin lỗi vì đã làm tổn thương cảm xúc của bạn)<br>
+                • I sincerely apologize for the inconvenience (Tôi xin chân thành xin lỗi vì sự bất tiện)<br>
+                • I shouldn't have spoken to you like that (Tôi không nên nói chuyện với bạn như vậy)<br>
+                • It was completely my fault (Đó là lỗi hoàn toàn của tôi)<br>
+                • Please forgive me, I was wrong (Vui lòng tha thứ cho tôi, tôi đã sai)<br>
+                • I owe you a sincere apology (Tôi nợ bạn một lời xin lỗi chân thành)
+            </div>
+
+            <h3>III. Cách Chấp Nhận Lời Xin Lỗi</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Chấp Nhận</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>It's okay / No worries</strong></td>
+                        <td>Don't worry about it</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>That's alright / No harm done</strong></td>
+                        <td>Forget about it</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apology accepted</strong></td>
+                        <td>I understand, let's move on</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>It's not a big deal</strong></td>
+                        <td>No problem at all</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- OFFERING HELP -->
+        <h2>🤝 8. Đề Nghị Giúp Đỡ (Offering Help)</h2>
+
+        <div class="card">
+            <h3>I. Cách Đề Nghị Giúp Đỡ Khác Nhau</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Đề Nghị</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Can I help you?</strong></td>
+                        <td>Casual, friendly</td>
+                        <td>Can I help you with anything?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Would you like some help?</strong></td>
+                        <td>Polite, offering</td>
+                        <td>Would you like some help with that?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Let me help you</strong></td>
+                        <td>Warm, generous</td>
+                        <td>Let me help you carry those bags</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Can I give you a hand?</strong></td>
+                        <td>Friendly, informal</td>
+                        <td>Can I give you a hand with that?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>I'd be happy to...</strong></td>
+                        <td>Polite, willing</td>
+                        <td>I'd be happy to help you move</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Do you need any help?</strong></td>
+                        <td>Considerate, open</td>
+                        <td>Do you need any help with the project?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>If you need anything, let me know</strong></td>
+                        <td>Supportive, available</td>
+                        <td>If you have any problems, just tell me</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Can I help you find something? (Tôi có thể giúp bạn tìm thứ gì đó không?)<br>
+                • Would you like me to help you with your homework? (Bạn có muốn tôi giúp bạn làm bài tập không?)<br>
+                • Let me carry your suitcase for you (Để tôi xách vali cho bạn)<br>
+                • Can I give you a hand with those boxes? (Tôi có thể giúp bạn với những chiếc hộp đó không?)<br>
+                • I'd be glad to assist you with anything (Tôi sẽ rất vui lòng giúp bạn với bất kỳ điều gì)<br>
+                • Do you need any help with the cooking? (Bạn có cần tôi giúp nấu ăn không?)<br>
+                • If you have any questions, just ask (Nếu bạn có bất kỳ câu hỏi nào, cứ hỏi đi)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quá trực tiếp, không polite khi gợi ý hay mời</p>
+            <div class="example">
+                ❌ Go out with me | ✅ Would you like to go out for dinner?<br>
+                ❌ Give me your pen | ✅ Could I borrow your pen, please?<br>
+                ❌ Do this for me | ✅ Would you mind doing this for me?
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên "please" hoặc "thank you" trong từ chối</p>
+            <div class="example">
+                ❌ No, I can't | ✅ I appreciate the offer, but I can't<br>
+                ❌ I refuse | ✅ I'm afraid that's not possible<br>
+                ❌ Not now | ✅ I'd love to, but I'm busy at the moment
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên thêm "I'm sorry" hay "Excuse me" trước than phiền</p>
+            <div class="example">
+                ❌ This coffee is cold | ✅ I'm sorry, but this coffee is cold<br>
+                ❌ You made a mistake | ✅ I'm afraid there's been a misunderstanding<br>
+                ❌ This is wrong | ✅ Excuse me, but I think there's a problem here
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Xin lỗi mà không giải thích hoặc nhận trách nhiệm</p>
+            <div class="example">
+                ❌ I'm sorry (không giải thích) | ✅ I'm sorry for being late, the traffic was terrible<br>
+                ❌ Sorry | ✅ I sincerely apologize for my behavior<br>
+                ❌ My bad | ✅ It was my fault, and I take full responsibility
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Không tôn trọng cảm xúc khi bị từ chối</p>
+            <div class="example">
+                ❌ You must come (bắt buộc) | ✅ Would you like to come?<br>
+                ❌ Why won't you help me? (buộc tội) | ✅ Is there any way you could help?<br>
+                ❌ You're not coming? (bất bình) | ✅ That's okay, I understand
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Luôn Sử Dụng Modal Verbs cho Politeness</strong></p>
+            <ul>
+                <li>Could, Would, Can, May - làm cho yêu cầu polite hơn</li>
+                <li>Could you...? vs Can you...? (Could more polite)</li>
+                <li>Would you mind...? vs Do you mind...?</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhớ 8 Chức Năng Chính</strong></p>
+            <ul>
+                <li>Making Suggestions: What if...? / Why don't you...?</li>
+                <li>Invitations: Would you like to...?</li>
+                <li>Asking Permission: Do you mind if...?</li>
+                <li>Refusing: I'm afraid that's not possible</li>
+                <li>Agreeing: Yes, I'd love to</li>
+                <li>Complaining: I have a complaint about...</li>
+                <li>Apologising: I'm sorry for...</li>
+                <li>Offering Help: Can I help you?</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Giảm Tính Trực Tiếp (Softening Techniques)</strong></p>
+            <ul>
+                <li>Thêm "I was wondering if..." (politer than just asking)</li>
+                <li>Dùng past tense: "I was wondering" vs "I wonder"</li>
+                <li>Thêm "possibly", "perhaps", "maybe"</li>
+                <li>Thêm "please", "thank you", "if you don't mind"</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Xin Lỗi & Chấp Nhận Lỗi</strong></p>
+            <ul>
+                <li>Always give a reason: "I'm sorry for..." (not just "sorry")</li>
+                <li>Take responsibility: "It was my fault"</li>
+                <li>Không make excuses: "I was sorry, but I had to work" (sounds like excuse)</li>
+                <li>Accept apologies gracefully: "It's okay, no worries"</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 30 câu với mỗi chức năng ngôn ngữ</li>
+                <li>Ghi âm các cách phát biểu khác nhau</li>
+                <li>Tập nói với native speakers</li>
+                <li>Theo dõi vai trò culturally appropriate responses</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết - 8 Chức Năng Ngôn Ngữ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chức Năng</th>
+                        <th>Cách Chính</th>
+                        <th>Polite/Casual</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Suggestions</strong></td>
+                        <td>What if...? / Why don't you...?</td>
+                        <td>Casual to Formal</td>
+                        <td>What if we tried a different approach?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Invitations</strong></td>
+                        <td>Would you like to...?</td>
+                        <td>Formal to Casual</td>
+                        <td>Would you like to join us?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Permission</strong></td>
+                        <td>Do you mind if I...?</td>
+                        <td>Polite</td>
+                        <td>Do you mind if I leave early?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Refusing</strong></td>
+                        <td>I'm afraid that's not possible</td>
+                        <td>Polite/Regretful</td>
+                        <td>I'd love to, but I'm busy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Agreeing</strong></td>
+                        <td>Yes, I'd love to</td>
+                        <td>Enthusiastic</td>
+                        <td>That sounds great!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Complaining</strong></td>
+                        <td>I have a complaint about...</td>
+                        <td>Polite/Direct</td>
+                        <td>I'm not satisfied with...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apologising</strong></td>
+                        <td>I'm sorry for...</td>
+                        <td>Sincere/Formal</td>
+                        <td>I sincerely apologize</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Offering Help</strong></td>
+                        <td>Can I help you?</td>
+                        <td>Friendly/Polite</td>
+                        <td>Would you like some help?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

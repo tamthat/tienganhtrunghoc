@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Danh Từ (Nouns)</h2>
+
+        <div class="card">
+            <h3>Danh Từ Là Gì?</h3>
+            <p><span class="highlight">Danh từ (Noun)</span> là một từ loại dùng để <strong>chỉ người, vật, địa điểm, hoặc khái niệm trừu tượng</strong>. Danh từ là một trong những thành phần cơ bản nhất của ngôn ngữ và xuất hiện trong hầu hết các câu tiếng Anh.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Danh từ có thể được phân loại theo nhiều cách khác nhau: đếm được/không đếm được, riêng/chung, đơn/ghép, cụ thể/trừu tượng, v.v.
+            </div>
+
+            <h3>Chức Năng Của Danh Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Chủ ngữ (Subject):</strong> The cat is sleeping</li>
+                <li><strong>Tân ngữ (Object):</strong> I love chocolate</li>
+                <li><strong>Bổ ngữ (Complement):</strong> She is a teacher</li>
+                <li><strong>Trong cụm giới từ:</strong> The book on the table</li>
+            </ul>
+        </div>
+
+        <!-- COUNTABLE NOUNS -->
+        <h2>1️⃣ Danh Từ Đếm Được (Countable Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh từ đếm được</span> là những danh từ <strong>có thể đếm được</strong> - có thể chia thành đơn vị riêng biệt và có cả dạng số ít (singular) và số nhiều (plural).</p>
+
+            <p><strong>Đặc Điểm Chính:</strong></p>
+            <ul>
+                <li>Có thể đếm được (one, two, three...)</li>
+                <li>Có dạng số ít và số nhiều</li>
+                <li>Có thể dùng với "a/an" (số ít)</li>
+                <li>Có thể dùng với "how many?"</li>
+                <li>Ví dụ: apple, book, chair, person, car</li>
+            </ul>
+
+            <h3>II. Cách Dùng Countable Nouns</h3>
+
+            <p><strong>1. Với Mạo Từ (Articles)</strong></p>
+            <div class="example">
+                ✅ A cat is sleeping<br>
+                ✅ An apple (bắt đầu bằng âm nguyên âm)<br>
+                ✅ The book is interesting<br>
+                ❌ Book is interesting (cần mạo từ hoặc số nhiều)
+            </div>
+
+            <p><strong>2. Dạng Số Nhiều</strong></p>
+            <div class="example">
+                • one cat, two cats, three cats<br>
+                • one book, five books<br>
+                • a person, several people/persons<br>
+                • an apple, many apples
+            </div>
+
+            <p><strong>3. Với Some/Any</strong></p>
+            <div class="example">
+                ✅ Some apples (dương/câu hỏi)<br>
+                ✅ Any books? (câu hỏi/phủ định)<br>
+                ✅ There are some chairs (dương)<br>
+                ✅ Are there any chairs? (câu hỏi)
+            </div>
+
+            <p><strong>4. Với How Many?</strong></p>
+            <div class="example">
+                ✅ How many books do you have?<br>
+                ✅ How many people are coming?<br>
+                ❌ How many water is there? (sai - nên dùng "how much")
+            </div>
+
+            <h3>III. Danh Sách Countable Nouns Phổ Biến</h3>
+            <div class="example">
+                <strong>Người:</strong> man, woman, child, student, teacher, doctor<br>
+                <strong>Động vật:</strong> cat, dog, bird, lion, elephant, fish<br>
+                <strong>Vật dụng:</strong> chair, table, car, phone, book, pen<br>
+                <strong>Thực phẩm:</strong> apple, banana, egg, bread, cake<br>
+                <strong>Địa điểm:</strong> city, country, school, hospital, restaurant
+            </div>
+        </div>
+
+        <!-- UNCOUNTABLE NOUNS -->
+        <h2>0️⃣ Danh Từ Không Đếm Được (Uncountable Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh từ không đếm được</span> (cũng gọi là Mass Nouns) là những danh từ <strong>không thể đếm được</strong> - không thể chia thành đơn vị riêng biệt và chỉ có một dạng duy nhất.</p>
+
+            <p><strong>Đặc Điểm Chính:</strong></p>
+            <ul>
+                <li>KHÔNG thể đếm được</li>
+                <li>Chỉ có một dạng (không có số nhiều)</li>
+                <li>KHÔNG dùng với "a/an"</li>
+                <li>Dùng với "some" hoặc "any"</li>
+                <li>Dùng với "how much?" (không phải "how many?")</li>
+                <li>Ví dụ: water, rice, information, music, furniture</li>
+            </ul>
+
+            <h3>II. Các Loại Uncountable Nouns</h3>
+
+            <p><strong>1. Chất Lỏng/Chất Rắn (Substances)</strong></p>
+            <div class="example">
+                • water, milk, tea, coffee, juice<br>
+                • oil, petrol, soap, shampoo<br>
+                • sand, salt, sugar, flour, butter
+            </div>
+
+            <p><strong>2. Thực Phẩm (Foods - Dạng Chung)</strong></p>
+            <div class="example">
+                • rice, bread, pasta, cheese, meat<br>
+                • fruit, vegetable, chocolate, honey<br>
+                • popcorn, ice cream
+            </div>
+
+            <p><strong>3. Khái Niệm Trừu Tượng (Abstract Concepts)</strong></p>
+            <div class="example">
+                • love, happiness, sadness, anger, beauty<br>
+                • information, advice, knowledge, wisdom<br>
+                • music, art, literature, education
+            </div>
+
+            <p><strong>4. Thiết Bị/Đồ Dùng (Items - Khối)</strong></p>
+            <div class="example">
+                • furniture, luggage, baggage, equipment<br>
+                • machinery, jewelry, clothing<br>
+                • money, currency
+            </div>
+
+            <p><strong>5. Hiện Tượng Tự Nhiên (Natural Phenomena)</strong></p>
+            <div class="example">
+                • weather, rain, snow, wind, thunder<br>
+                • sunshine, light, electricity<br>
+                • air, oxygen, gravity
+            </div>
+
+            <h3>III. Cách Dùng Uncountable Nouns</h3>
+
+            <p><strong>1. Với Some/Any</strong></p>
+            <div class="example">
+                ✅ Some water (dương)<br>
+                ✅ Any coffee? (câu hỏi)<br>
+                ✅ I need some advice (dương)<br>
+                ❌ Some waters (sai - không có dạng số nhiều)
+            </div>
+
+            <p><strong>2. Với How Much?</strong></p>
+            <div class="example">
+                ✅ How much water do you drink?<br>
+                ✅ How much money do you have?<br>
+                ❌ How many water? (sai - nên dùng "how much")
+            </div>
+
+            <p><strong>3. Để Đếm Uncountable Nouns</strong></p>
+            <div class="example">
+                ✅ Two cups of coffee (cups = đếm được)<br>
+                ✅ Three pieces of advice (pieces = đếm được)<br>
+                ✅ A loaf of bread (loaf = đếm được)<br>
+                ✅ Several items of furniture (items = đếm được)
+            </div>
+
+            <div class="note">
+                <strong>💡 Mẹo:</strong> Để đếm uncountable nouns, thêm một countable noun trước: "cup of", "piece of", "loaf of", "glass of", "spoon of"
+            </div>
+        </div>
+
+        <!-- PROPER vs COMMON NOUNS -->
+        <h2>🏛️ Danh Từ Riêng vs Danh Từ Chung</h2>
+
+        <div class="card">
+            <h3>I. Danh Từ Chung (Common Nouns)</h3>
+
+            <p><span class="highlight">Danh Từ Chung</span> là danh từ <strong>chỉ các vật hay người chung chung, không cụ thể</strong>.</p>
+
+            <p><strong>Đặc Điểm:</strong></p>
+            <ul>
+                <li>KHÔNG viết hoa (trừ khi ở đầu câu)</li>
+                <li>Chỉ loại/lớp vật hoặc người</li>
+                <li>Có thể dùng với mạo từ "a", "an", "the"</li>
+                <li>Ví dụ: teacher, city, dog, book, day</li>
+            </ul>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I have <strong>a teacher</strong> (ai đó là giáo viên)<br>
+                • The <strong>city</strong> is beautiful (một thành phố chung chung)<br>
+                • My <strong>brother</strong> lives here (anh trai tôi - không cụ thể tên)<br>
+                • I like <strong>chocolate</strong> (đồ chocolate chung chung)
+            </div>
+
+            <h3>II. Danh Từ Riêng (Proper Nouns)</h3>
+
+            <p><span class="highlight">Danh Từ Riêng</span> là danh từ <strong>chỉ một người, địa điểm, hoặc vật cụ thể</strong>.</p>
+
+            <p><strong>Đặc Điểm:</strong></p>
+            <ul>
+                <li>LUÔN viết hoa (chữ cái đầu)</li>
+                <li>Chỉ một thực thể cụ thể duy nhất</li>
+                <li>Thường KHÔNG dùng với mạo từ "a", "an" (dùng "the" trong một số trường hợp)</li>
+                <li>Ví dụ: John, Paris, Monday, Christmas</li>
+            </ul>
+
+            <p><strong>Các Loại Proper Nouns:</strong></p>
+            <div class="example">
+                <strong>Tên người:</strong> John, Mary, David, Sarah<br>
+                <strong>Địa điểm:</strong> Paris, London, Vietnam, China<br>
+                <strong>Tên công ty:</strong> Apple, Google, Nike, Samsung<br>
+                <strong>Thời gian:</strong> Monday, January, Christmas, Easter<br>
+                <strong>Sự kiện:</strong> World War II, Olympic Games
+            </div>
+
+            <div class="example">
+                <strong>Ví dụ So Sánh:</strong><br>
+                ✓ <strong>Tom</strong> is a <strong>teacher</strong> in <strong>London</strong><br>
+                (Proper noun: Tom, London | Common nouns: teacher)<br><br>
+                ✓ <strong>Monday</strong> is my favorite day<br>
+                (Proper noun: Monday)<br><br>
+                ✓ I love <strong>Christmas</strong> because I celebrate with my <strong>family</strong><br>
+                (Proper: Christmas | Common: family)
+            </div>
+
+            <h3>III. Mạo Từ Với Proper & Common Nouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Danh Từ</th>
+                        <th>Mạo Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Common</strong></td>
+                        <td>a, an, the</td>
+                        <td>a teacher, the book</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Proper</strong></td>
+                        <td>Không (hoặc "the" trong một số trường hợp)</td>
+                        <td>John, Paris (KHÔNG "a John", "a Paris")</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proper + địa điểm</strong></td>
+                        <td>"the" (một số trường hợp)</td>
+                        <td>the Philippines, the United States</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- COMPOUND NOUNS -->
+        <h2>🔗 Danh Từ Ghép (Compound Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">Danh Từ Ghép</span> là danh từ <strong>được tạo thành từ hai hoặc nhiều từ kết hợp lại</strong>.</p>
+
+            <p><strong>Ba Dạng Viết Danh Từ Ghép:</strong></p>
+            <ul>
+                <li><strong>Open (Rời Rạc):</strong> Hai từ viết riêng biệt: tennis shoe, ice cream, football field</li>
+                <li><strong>Hyphenated (Có Gạch Ngang):</strong> Hai từ nối bằng gạch ngang: mother-in-law, well-being, twenty-one</li>
+                <li><strong>Closed (Liền):</strong> Hai từ viết liền: bedroom, notebook, basketball</li>
+            </ul>
+
+            <h3>II. Cấu Trúc Danh Từ Ghép</h3>
+
+            <p><strong>1. Noun + Noun (Danh từ + Danh từ)</strong></p>
+            <div class="example">
+                • <strong>apple</strong> tree (cây táo)<br>
+                • <strong>tooth</strong> brush (bàn chải đánh răng)<br>
+                • <strong>sun</strong> flower (hoa hướng dương)<br>
+                • <strong>bed</strong> room (phòng ngủ)<br>
+                • <strong>water</strong> bottle (bình nước)
+            </div>
+
+            <p><strong>2. Adjective + Noun (Tính từ + Danh từ)</strong></p>
+            <div class="example">
+                • <strong>black</strong> board (bảng đen)<br>
+                • <strong>high</strong> way (đường cao tốc)<br>
+                • <strong>blue</strong> print (bản vẽ)<br>
+                • <strong>fire</strong> place (lò sưởi) - "fire" có thể là danh từ hoặc tính từ
+            </div>
+
+            <p><strong>3. Verb + Noun (Động từ + Danh từ)</strong></p>
+            <div class="example">
+                • <strong>wash</strong> room (phòng rửa)<br>
+                • <strong>break</strong> fast (bữa sáng)<br>
+                • <strong>play</strong> ground (sân chơi)<br>
+                • <strong>start</strong> up (công ty mới thành lập)
+            </div>
+
+            <p><strong>4. Verb + Preposition (Động từ + Giới từ)</strong></p>
+            <div class="example">
+                • <strong>look</strong> out (canh cánh)<br>
+                • <strong>pick</strong> up (đón)<br>
+                • <strong>break</strong> down (phân rã)<br>
+                • <strong>output</strong> (sản lượng)
+            </div>
+
+            <p><strong>5. Preposition + Noun (Giới từ + Danh từ)</strong></p>
+            <div class="example">
+                • <strong>under</strong> ground (dưới lòng đất)<br>
+                • <strong>over</strong> time (làm thêm giờ)<br>
+                • <strong>input</strong> (đầu vào)
+            </div>
+
+            <h3>III. Cách Tạo Dạng Số Nhiều</h3>
+
+            <p><strong>Quy Tắc Chung:</strong> Thêm "-s" vào danh từ chính (main noun)</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ (Số Ít)</th>
+                        <th>Ví Dụ (Số Nhiều)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Noun + Noun</strong></td>
+                        <td>apple tree</td>
+                        <td><strong>apple trees</strong> (s ở cuối)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Noun + Noun</strong></td>
+                        <td>tooth brush</td>
+                        <td><strong>tooth brushes</strong> (s ở cuối)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hyphenated</strong></td>
+                        <td>mother-in-law</td>
+                        <td><strong>mothers-in-law</strong> (s ở danh từ chính)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hyphenated</strong></td>
+                        <td>son-in-law</td>
+                        <td><strong>sons-in-law</strong> (s ở danh từ chính)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Closed</strong></td>
+                        <td>bedroom</td>
+                        <td><strong>bedrooms</strong> (s ở cuối)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Danh từ thứ nhất (noun 1) trong cấu trúc "noun + noun" acting như một tính từ, nên KHÔNG thêm "-s"<br>
+                ✅ apple trees (KHÔNG "apples trees")<br>
+                ✅ tooth brushes (KHÔNG "teeths brushes")
+            </div>
+
+            <h3>IV. Danh Sách Compound Nouns Phổ Biến</h3>
+
+            <div class="example">
+                <strong>Rời Rạc:</strong> ice cream, tennis shoe, football field, living room<br>
+                <strong>Gạch Ngang:</strong> well-being, mother-in-law, self-esteem, twenty-one<br>
+                <strong>Liền:</strong> bedroom, bathroom, notebook, basketball, classroom
+            </div>
+        </div>
+
+        <!-- COLLECTIVE NOUNS -->
+        <h2>👥 Danh Từ Tập Hợp (Collective Nouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">Danh Từ Tập Hợp</span> là danh từ <strong>chỉ một nhóm hoặc tập hợp của nhiều người hoặc vật</strong>.</p>
+
+            <p><strong>Đặc Điểm:</strong></p>
+            <ul>
+                <li>Số ít ở hình thức nhưng chỉ một nhóm</li>
+                <li>Có thể dùng động từ số ít hoặc số nhiều (tùy ngữ cảnh)</li>
+                <li>Ví dụ: family, team, class, group, committee</li>
+            </ul>
+
+            <h3>II. Danh Từ Tập Hợp Phổ Biến</h3>
+
+            <p><strong>1. Người (People)</strong></p>
+            <div class="example">
+                • <strong>family</strong> (gia đình)<br>
+                • <strong>class</strong> (lớp học)<br>
+                • <strong>team</strong> (đội)<br>
+                • <strong>committee</strong> (ủy ban)<br>
+                • <strong>staff</strong> (nhân viên)<br>
+                • <strong>crew</strong> (phi hành đoàn)<br>
+                • <strong>faculty</strong> (khoa/tập thể giáo viên)
+            </div>
+
+            <p><strong>2. Động Vật (Animals)</strong></p>
+            <div class="example">
+                • <strong>flock</strong> (đàn chim, đàn cừu)<br>
+                • <strong>herd</strong> (đàn gia súc)<br>
+                • <strong>swarm</strong> (đàn ong, bầy côn trùng)<br>
+                • <strong>school</strong> (bầy cá)<br>
+                • <strong>colony</strong> (bầy kiến, bầy chim)<br>
+                • <strong>pack</strong> (bầy sói, chó)
+            </div>
+
+            <p><strong>3. Vật (Objects)</strong></p>
+            <div class="example">
+                • <strong>bunch</strong> (cụm, chùm)<br>
+                • <strong>cluster</strong> (chùm)<br>
+                • <strong>pile</strong> (đống)<br>
+                • <strong>heap</strong> (núi, đống)
+            </div>
+
+            <h3>III. Cách Dùng Collective Nouns</h3>
+
+            <p><strong>1. Nhấn Mạn Sự Thống Nhất (British English)</strong></p>
+            <div class="example">
+                ✅ The team <strong>is</strong> playing well (nhóm như một đơn vị)<br>
+                ✅ The family <strong>is</strong> happy
+            </div>
+
+            <p><strong>2. Nhấn Mạn Các Thành Viên Riêng Lẻ (American English)</strong></p>
+            <div class="example">
+                ✅ The team <strong>are</strong> playing well (các thành viên riêng lẻ)<br>
+                ✅ The family <strong>are</strong> happy
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Tiếng Anh Anh thường dùng động từ số nhiều, tiếng Anh Mỹ thường dùng số ít
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Countable Nouns</h3>
+            <ul>
+                <li>I have <strong>five books</strong> (đếm được)</li>
+                <li>There are <strong>ten chairs</strong> in the classroom</li>
+                <li>How many <strong>students</strong> are in your class?</li>
+                <li>She bought <strong>three apples</strong> at the market</li>
+                <li>I see <strong>two cats</strong> in the yard</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Uncountable Nouns</h3>
+            <ul>
+                <li>I need <strong>some water</strong> (không đếm được)</li>
+                <li>She gave me <strong>good advice</strong></li>
+                <li>How much <strong>money</strong> do you need?</li>
+                <li>There is <strong>rice</strong> in the kitchen</li>
+                <li>I like <strong>chocolate</strong> very much</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Proper & Common Nouns</h3>
+            <ul>
+                <li><strong>John</strong> is a <strong>doctor</strong> in <strong>London</strong></li>
+                <li>My <strong>teacher</strong>'s name is <strong>Mrs. Smith</strong></li>
+                <li><strong>Christmas</strong> is celebrated in <strong>December</strong></li>
+                <li>The <strong>city</strong> of <strong>Paris</strong> is beautiful</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Compound Nouns</h3>
+            <ul>
+                <li>I sleep in my <strong>bedroom</strong> every night</li>
+                <li>We eat <strong>breakfast</strong> at 7 AM</li>
+                <li>My <strong>mother-in-law</strong> visits us every week</li>
+                <li>The <strong>playground</strong> is full of children</li>
+                <li>I drink <strong>coffee</strong> in the morning</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Collective Nouns</h3>
+            <ul>
+                <li>My <strong>family</strong> is very close</li>
+                <li>The <strong>team</strong> played well yesterday</li>
+                <li>A <strong>flock</strong> of birds flew across the sky</li>
+                <li>The <strong>class</strong> finished the project on time</li>
+                <li>A <strong>herd</strong> of elephants walked through the savanna</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai countable/uncountable</p>
+            <div class="example">
+                ❌ I want two coffees (nếu muốn nói về chất) | ✅ I want two cups of coffee<br>
+                ❌ How many water? | ✅ How much water?
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Không viết hoa danh từ riêng</p>
+            <div class="example">
+                ❌ I live in london | ✅ I live in London<br>
+                ❌ I met john yesterday | ✅ I met John yesterday
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Danh từ ghép - thêm s ở chỗ sai</p>
+            <div class="example">
+                ❌ apples trees | ✅ apple trees<br>
+                ❌ tooths brush | ✅ tooth brushes
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "a/an" với uncountable nouns</p>
+            <div class="example">
+                ❌ I need a information | ✅ I need some information<br>
+                ❌ Give me a advice | ✅ Give me some advice
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Proper nouns + mạo từ</p>
+            <div class="example">
+                ❌ I went to the Paris | ✅ I went to Paris<br>
+                ❌ I met the John | ✅ I met John
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Đếm Được hay Không Đếm Được?</strong></p>
+            <ul>
+                <li>Nếu có thể đếm: "How many apples?" → Countable</li>
+                <li>Nếu dùng "how much": "How much water?" → Uncountable</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Đếm Uncountable Nouns</strong></p>
+            <ul>
+                <li>cup of coffee, piece of advice, loaf of bread, glass of water</li>
+                <li>Thêm một countable noun trước để đếm</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Proper Nouns - Viết Hoa</strong></p>
+            <ul>
+                <li>Tên người, địa điểm, sự kiện, tháng, ngày, công ty → Viết hoa</li>
+                <li>Common nouns → Không viết hoa (trừ đầu câu)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Compound Nouns - Mạo Từ Chỉ 1 Lần</strong></p>
+            <ul>
+                <li>Dùng mạo từ với toàn bộ compound noun: "the basketball player" (KHÔNG "the basketball the player")</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Collective Nouns - Động Từ Chọn Lựa</strong></p>
+            <ul>
+                <li>Nhóm như 1 thể → động từ số ít: The team is playing</li>
+                <li>Nhóm như các cá nhân → động từ số nhiều: The team are playing</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Danh Từ</th>
+                        <th>Định Nghĩa</th>
+                        <th>Đặc Điểm</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Countable</strong></td>
+                        <td>Đếm được</td>
+                        <td>a/an, s/es, how many</td>
+                        <td>book, cat, chair</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Uncountable</strong></td>
+                        <td>Không đếm được</td>
+                        <td>some, any, how much</td>
+                        <td>water, rice, advice</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proper</strong></td>
+                        <td>Riêng, cụ thể</td>
+                        <td>Viết hoa, KHÔNG a/an</td>
+                        <td>John, Paris, Monday</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Common</strong></td>
+                        <td>Chung, chung chung</td>
+                        <td>Không viết hoa, dùng a/an</td>
+                        <td>teacher, city, day</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compound</strong></td>
+                        <td>Ghép từ 2+ từ</td>
+                        <td>Open/hyphenated/closed</td>
+                        <td>bedroom, ice cream</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Collective</strong></td>
+                        <td>Nhóm/tập hợp</td>
+                        <td>Số ít hình thức, chỉ nhiều cá nhân</td>
+                        <td>family, team, class</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

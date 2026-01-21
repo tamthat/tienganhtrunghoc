@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Trạng Từ (Adverbs)</h2>
+
+        <div class="card">
+            <h3>Trạng Từ Là Gì?</h3>
+            <p><span class="highlight">Trạng từ (Adverb)</span> là một từ loại dùng để <strong>mô tả hoặc chỉnh sửa động từ, tính từ, hoặc những trạng từ khác, giúp cung cấp thêm thông tin về cách thức, thời gian, nơi chốn, tần suất, mức độ, hoặc chắc chắn</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Hầu hết trạng từ được tạo thành bằng cách thêm "-ly" vào cuối tính từ, nhưng có nhiều trạng từ bất thường không tuân theo quy tắc này.
+            </div>
+
+            <h3>Chức Năng Của Trạng Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Mô Tả Động Từ:</strong> She runs quickly (cô ấy chạy nhanh)</li>
+                <li><strong>Mô Tả Tính Từ:</strong> It is very beautiful (nó rất đẹp)</li>
+                <li><strong>Mô Tả Trạng Từ Khác:</strong> He works very hard (anh ấy làm việc rất chăm chỉ)</li>
+                <li><strong>Mô Tả Toàn Bộ Câu:</strong> Unfortunately, he is late (không may là anh ấy bị trễ)</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION OF ADVERBS -->
+        <h2>🔧 Cách Tạo Trạng Từ (Formation of Adverbs)</h2>
+
+        <div class="card">
+            <h3>I. Quy Tắc Thêm "-ly"</h3>
+
+            <p><strong>Quy Tắc 1: Thêm "-ly" Trực Tiếp</strong></p>
+            <div class="example">
+                • quick → <strong>quickly</strong> (nhanh chóng)<br>
+                • slow → <strong>slowly</strong> (chậm rãi)<br>
+                • careful → <strong>carefully</strong> (cẩn thận)<br>
+                • beautiful → <strong>beautifully</strong> (xinh đẹp)
+            </div>
+
+            <p><strong>Quy Tắc 2: Tính Từ Kết Thúc Bằng "-y" - Đổi "y" Thành "i" Rồi Thêm "-ly"</strong></p>
+            <div class="example">
+                • happy → <strong>happily</strong> (vui vẻ)<br>
+                • angry → <strong>angrily</strong> (tức giận)<br>
+                • easy → <strong>easily</strong> (dễ dàng)<br>
+                • lucky → <strong>luckily</strong> (may mắn)
+            </div>
+
+            <p><strong>Quy Tắc 3: Tính Từ Kết Thúc Bằng "-le" - Đổi "-le" Thành "-ly"</strong></p>
+            <div class="example">
+                • terrible → <strong>terribly</strong> (khủng khiếp)<br>
+                • possible → <strong>possibly</strong> (có thể)<br>
+                • horrible → <strong>horribly</strong> (kinh khủng)
+            </div>
+
+            <p><strong>Quy Tắc 4: Tính Từ Kết Thúc Bằng "-ic" - Thêm "-ally"</strong></p>
+            <div class="example">
+                • automatic → <strong>automatically</strong> (tự động)<br>
+                • basic → <strong>basically</strong> (cơ bản)<br>
+                • economic → <strong>economically</strong> (kinh tế)
+            </div>
+
+            <p><strong>Quy Tắc 5: Tính Từ Kết Thúc Bằng "-e" - Bỏ "e" Rồi Thêm "-ly"</strong></p>
+            <div class="example">
+                • true → <strong>truly</strong> (thực sự)<br>
+                • whole → <strong>wholly</strong> (toàn bộ)<br>
+                • ⚠️ Nhưng: nice → nicely (KHÔNG bỏ "e")
+            </div>
+
+            <h3>II. Trạng Từ Bất Thường (Irregular Adverbs)</h3>
+
+            <div class="example">
+                • good → <strong>well</strong> (tốt)<br>
+                • fast → <strong>fast</strong> (nhanh - không thay đổi)<br>
+                • hard → <strong>hard</strong> (chăm chỉ - không thay đổi)<br>
+                • early → <strong>early</strong> (sớm - không thay đổi)<br>
+                • late → <strong>late</strong> (muộn - không thay đổi)<br>
+                • daily → <strong>daily</strong> (hàng ngày - không thay đổi)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Không phải tất cả từ kết thúc "-ly" đều là trạng từ<br>
+                • friendly (thân thiện) - tính từ, KHÔNG phải trạng từ<br>
+                • lovely (đáng yêu) - tính từ, KHÔNG phải trạng từ<br>
+                • lonely (cô đơn) - tính từ, KHÔNG phải trạng từ
+            </div>
+        </div>
+
+        <!-- ADVERBS OF MANNER -->
+        <h2>❓ 1. Trạng Từ Cách Thức (Adverbs of Manner)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ cách thức</span> là những trạng từ <strong>chỉ cách thức hoặc phương pháp mà một hành động được thực hiện</strong>. Chúng trả lời câu hỏi "HOW?" (Như thế nào?).</p>
+
+            <h3>II. Danh Sách Trạng Từ Cách Thức</h3>
+
+            <div class="example">
+                <strong>Tích Cực:</strong> well (tốt), quickly (nhanh), slowly (chậm), carefully (cẩn thận), beautifully (xinh đẹp), loudly (to), softly (nhẹ nhàng), happily (vui vẻ), cheerfully (vui tươi)<br>
+                <strong>Tiêu Cực:</strong> badly (tệ), carelessly (bất cẩn), rudely (thô lỗ), roughly (thô ráp), harshly (khắc nghiệt)<br>
+                <strong>Khác:</strong> easily (dễ dàng), difficultly (khó khăn), suddenly (đột ngột), gradually (dần dần)
+            </div>
+
+            <h3>III. Cách Sử Dụng & Vị Trí</h3>
+
+            <p><strong>Vị Trí 1: Đặt Ngay Sau Động Từ (Thường Dùng)</strong></p>
+            <div class="example">
+                • She spoke <strong>softly</strong> to the baby<br>
+                • He drove <strong>carefully</strong> on the wet road<br>
+                • They worked <strong>diligently</strong> on the project<br>
+                • She sang <strong>beautifully</strong>
+            </div>
+
+            <p><strong>Vị Trí 2: Ở Cuối Câu</strong></p>
+            <div class="example">
+                • I did my homework <strong>carefully</strong><br>
+                • She finished the race <strong>quickly</strong><br>
+                • They cleaned the house <strong>thoroughly</strong>
+            </div>
+
+            <p><strong>Vị Trí 3: Ở Đầu Câu (Ít Thường)</strong></p>
+            <div class="example">
+                • <strong>Quickly</strong>, she grabbed her bag and left<br>
+                • <strong>Carefully</strong>, he placed the vase on the shelf
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Không đặt trạng từ cách thức giữa động từ và tân ngữ<br>
+                ❌ She speaks softly English | ✅ She speaks English softly
+            </div>
+        </div>
+
+        <!-- ADVERBS OF TIME -->
+        <h2>⏰ 2. Trạng Từ Thời Gian (Adverbs of Time)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ thời gian</span> là những trạng từ <strong>chỉ khi một hành động xảy ra</strong>. Chúng trả lời câu hỏi "WHEN?" (Khi nào?).</p>
+
+            <h3>II. Danh Sách Trạng Từ Thời Gian</h3>
+
+            <div class="example">
+                <strong>Xác Định:</strong> today (hôm nay), tomorrow (ngày mai), yesterday (hôm qua), tonight (tối nay), soon (sắp), now (bây giờ), then (lúc đó)<br>
+                <strong>Không Xác Định:</strong> later (sau), earlier (trước), recently (gần đây), soon (sắp tới), last week (tuần trước), next month (tháng tới)<br>
+                <strong>Thời Kỳ:</strong> always (luôn luôn), just (vừa mới), already (đã), yet (vẫn còn), still (còn)
+            </div>
+
+            <h3>III. Cách Sử Dụng & Vị Trí</h3>
+
+            <p><strong>Vị Trí 1: Ở Đầu Câu</strong></p>
+            <div class="example">
+                • <strong>Tomorrow</strong>, I will go to the beach<br>
+                • <strong>Yesterday</strong>, we had a great party<br>
+                • <strong>Today</strong>, I finished my project
+            </div>
+
+            <p><strong>Vị Trí 2: Ở Cuối Câu (Thường Dùng)</strong></p>
+            <div class="example">
+                • I will see you <strong>tomorrow</strong><br>
+                • We met him <strong>last week</strong><br>
+                • She arrives <strong>today</strong>
+            </div>
+
+            <p><strong>Vị Trí 3: Giữa Câu (Với "Already", "Just", "Yet")</strong></p>
+            <div class="example">
+                • I have <strong>already</strong> finished<br>
+                • She has <strong>just</strong> arrived<br>
+                • Have they <strong>yet</strong> come?
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Trạng từ thời gian thường đặt ở đầu hoặc cuối câu, rất hiếm khi giữa (trừ "already", "just", "yet")
+            </div>
+        </div>
+
+        <!-- ADVERBS OF PLACE -->
+        <h2>📍 3. Trạng Từ Nơi Chốn (Adverbs of Place)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ nơi chốn</span> là những trạng từ <strong>chỉ nơi mà một hành động xảy ra</strong>. Chúng trả lời câu hỏi "WHERE?" (Ở đâu?).</p>
+
+            <h3>II. Danh Sách Trạng Từ Nơi Chốn</h3>
+
+            <div class="example">
+                <strong>Gần - Xa:</strong> here (ở đây), there (ở đó), everywhere (ở khắp nơi), nowhere (không ở đâu)<br>
+                <strong>Hướng:</strong> up (lên), down (xuống), forward (tiến lên), backward (lùi lại), left (trái), right (phải)<br>
+                <strong>Khác:</strong> inside (bên trong), outside (bên ngoài), above (trên), below (dưới), behind (phía sau), in front (phía trước), around (xung quanh)
+            </div>
+
+            <h3>III. Cách Sử Dụng & Vị Trí</h3>
+
+            <div class="example">
+                • The children are playing <strong>outside</strong><br>
+                • He looked <strong>everywhere</strong> for his keys<br>
+                • We went <strong>there</strong> last summer<br>
+                • Come <strong>here</strong>!<br>
+                • The car is parked <strong>behind</strong> the house
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Trạng từ nơi chốn thường đặt ở cuối câu
+            </div>
+        </div>
+
+        <!-- ADVERBS OF FREQUENCY -->
+        <h2>🔄 4. Trạng Từ Tần Suất (Adverbs of Frequency)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ tần suất</span> là những trạng từ <strong>chỉ bao nhiêu lần một hành động xảy ra</strong>. Chúng trả lời câu hỏi "HOW OFTEN?" (Bao lâu một lần? Bao nhiêu lần?).</p>
+
+            <h3>II. Bảng Tần Suất (Từ Ít Đến Nhiều)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ</th>
+                        <th>Mức Độ</th>
+                        <th>Phần Trăm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>never</strong></td>
+                        <td>Không bao giờ</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>hardly ever</strong></td>
+                        <td>Hiếm khi</td>
+                        <td>5-10%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>rarely</strong></td>
+                        <td>Ít khi</td>
+                        <td>10-20%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>seldom</strong></td>
+                        <td>Hiếm</td>
+                        <td>20-30%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>occasionally</strong></td>
+                        <td>Thỉnh thoảng</td>
+                        <td>30-40%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>sometimes</strong></td>
+                        <td>Đôi khi</td>
+                        <td>40-60%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>often</strong></td>
+                        <td>Thường xuyên</td>
+                        <td>60-70%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>frequently</strong></td>
+                        <td>Thường xuyên</td>
+                        <td>70-80%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>usually</strong></td>
+                        <td>Thường</td>
+                        <td>80-90%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>always</strong></td>
+                        <td>Luôn luôn</td>
+                        <td>100%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Vị Trí Trong Câu</h3>
+
+            <p><strong>Vị Trí 1: Giữa Câu (Tần Suất Thông Thường)</strong></p>
+            <div class="example">
+                • I <strong>always</strong> wake up early<br>
+                • She <strong>usually</strong> drinks coffee<br>
+                • They <strong>often</strong> go to the cinema<br>
+                • He <strong>sometimes</strong> forgets his keys
+            </div>
+
+            <p><strong>Vị Trí 2: Sau "To Be"</strong></p>
+            <div class="example">
+                • I am <strong>always</strong> happy<br>
+                • She is <strong>usually</strong> late<br>
+                • They are <strong>often</strong> busy
+            </div>
+
+            <p><strong>Vị Trí 3: Ở Đầu Câu (Ít Thường)</strong></p>
+            <div class="example">
+                • <strong>Always</strong> do your best<br>
+                • <strong>Sometimes</strong> I feel tired
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Đặt tần suất giữa chủ ngữ và động từ (hoặc sau to be)<br>
+                ✅ I always eat breakfast | ✅ I am always happy | ❌ I eat always breakfast
+            </div>
+        </div>
+
+        <!-- ADVERBS OF DEGREE -->
+        <h2>📊 5. Trạng Từ Mức Độ (Adverbs of Degree)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ mức độ</span> là những trạng từ <strong>chỉ mức độ hay cường độ của một hành động hoặc tính chất</strong>. Chúng trả lời câu hỏi "HOW MUCH?" hoặc "TO WHAT EXTENT?" (Đến mức nào?).</p>
+
+            <h3>II. Danh Sách Trạng Từ Mức Độ</h3>
+
+            <div class="example">
+                <strong>Cường Độ Cao:</strong> very (rất), extremely (cực kỳ), incredibly (không thể tin được), absolutely (hoàn toàn), completely (hoàn toàn)<br>
+                <strong>Cường Độ Trung Bình:</strong> quite (khá), rather (khá), fairly (tương đối), pretty (khá)<br>
+                <strong>Cường Độ Thấp:</strong> slightly (hơi), a bit (một chút), a little (một chút), hardly (hầu như không)<br>
+                <strong>Mức Độ Đủ:</strong> enough (đủ), too (quá), almost (gần như), nearly (gần như)
+            </div>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>Mô Tả Tính Từ:</strong></p>
+            <div class="example">
+                • The weather is <strong>very</strong> sunny<br>
+                • She is <strong>extremely</strong> intelligent<br>
+                • The task is <strong>quite</strong> difficult<br>
+                • He is <strong>rather</strong> tired
+            </div>
+
+            <p><strong>Mô Tả Trạng Từ:</strong></p>
+            <div class="example">
+                • She drives <strong>very</strong> carefully<br>
+                • He runs <strong>incredibly</strong> fast<br>
+                • They work <strong>fairly</strong> well<br>
+                • It rained <strong>quite</strong> heavily
+            </div>
+
+            <p><strong>Mô Tả Động Từ:</strong></p>
+            <div class="example">
+                • I <strong>almost</strong> fell asleep<br>
+                • She <strong>hardly</strong> eats anything<br>
+                • They <strong>completely</strong> finished the project<br>
+                • He <strong>nearly</strong> missed the train
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Enough" đặt AFTER tính từ/trạng từ, nhưng "too" đặt BEFORE<br>
+                ✅ He is tall enough | ❌ He is enough tall<br>
+                ✅ It's too hot | ❌ It's hot too
+            </div>
+        </div>
+
+        <!-- ADVERBS OF CERTAINTY -->
+        <h2>✅ 6. Trạng Từ Chắc Chắn (Adverbs of Certainty)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trạng từ chắc chắn</span> là những trạng từ <strong>chỉ mức độ chắc chắn hoặc xác suất của một hành động</strong>. Chúng chỉ ra người nói có bao nhiêu tin tưởng vào sự thật của điều gì đó.</p>
+
+            <h3>II. Danh Sách Trạng Từ Chắc Chắn</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chắc Chắn</th>
+                        <th>Mức Độ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>definitely</strong></td>
+                        <td>Chắc chắn 100%</td>
+                        <td>I will definitely come</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>certainly</strong></td>
+                        <td>Chắc chắn 95%</td>
+                        <td>She is certainly right</td>
+                    </tr>
+                    <tr>
+                        <td><strong>obviously</strong></td>
+                        <td>Rõ ràng 90%</td>
+                        <td>He is obviously tired</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>clearly</strong></td>
+                        <td>Rõ ràng 85%</td>
+                        <td>It's clearly a mistake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>probably</strong></td>
+                        <td>Có thể 70%</td>
+                        <td>He will probably come</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>perhaps</strong></td>
+                        <td>Có thể 50%</td>
+                        <td>Perhaps she knows</td>
+                    </tr>
+                    <tr>
+                        <td><strong>maybe</strong></td>
+                        <td>Có thể 50%</td>
+                        <td>Maybe it will rain</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>possibly</strong></td>
+                        <td>Có thể 40%</td>
+                        <td>It's possibly true</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Vị Trí Trong Câu</h3>
+
+            <p><strong>Vị Trí 1: Giữa Câu (Definite Adverbs)</strong></p>
+            <div class="example">
+                • She will <strong>definitely</strong> come<br>
+                • He is <strong>certainly</strong> right<br>
+                • They have <strong>obviously</strong> left<br>
+                • It will <strong>probably</strong> rain
+            </div>
+
+            <p><strong>Vị Trí 2: Ở Đầu Câu (Maybe, Perhaps)</strong></p>
+            <div class="example">
+                • <strong>Maybe</strong> she will come<br>
+                • <strong>Perhaps</strong> he knows<br>
+                • <strong>Possibly</strong>, it might work
+            </div>
+
+            <p><strong>Vị Trí 3: Sau "To Be"</strong></p>
+            <div class="example">
+                • She is <strong>probably</strong> right<br>
+                • It is <strong>certainly</strong> cold<br>
+                • They are <strong>obviously</strong> happy
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Các trạng từ chắc chắn đặt giữa chủ ngữ và động từ hoặc sau to be<br>
+                ✅ He probably knows | ✅ He is probably right | ❌ He knows probably
+            </div>
+        </div>
+
+        <!-- POSITION OF ADVERBS -->
+        <h2>📍 Thứ Tự Trạng Từ Trong Câu (Adverb Position)</h2>
+
+        <div class="card">
+            <h3>Quy Tắc MPT (Manner - Place - Time)</h3>
+
+            <p>Khi có nhiều trạng từ trong một câu, thứ tự là:</p>
+            <div class="formula">
+                MANNER (Cách thức) - PLACE (Nơi chốn) - TIME (Thời gian)
+            </div>
+
+            <div class="example">
+                • They had dinner <strong>leisurely</strong> (manner) <strong>in the restaurant</strong> (place) <strong>last night</strong> (time)<br>
+                • She sang <strong>beautifully</strong> (manner) <strong>at the concert</strong> (place) <strong>yesterday</strong> (time)<br>
+                • He studied <strong>carefully</strong> (manner) <strong>in the library</strong> (place) <strong>this morning</strong> (time)
+            </div>
+
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> MPT = Manner, Place, Time<br>
+                Nếu chỉ có 2 trạng từ, cũng tuân theo thứ tự này
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Adverbs of Manner</h3>
+            <ul>
+                <li>She speaks <strong>softly</strong> to everyone</li>
+                <li>He drives <strong>carefully</strong> on the highway</li>
+                <li>They played <strong>beautifully</strong> in the concert</li>
+                <li>I work <strong>hard</strong> every day</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Adverbs of Time</h3>
+            <ul>
+                <li>I will see you <strong>tomorrow</strong></li>
+                <li>We met him <strong>last week</strong></li>
+                <li>She has <strong>already</strong> arrived</li>
+                <li><strong>Today</strong>, I finished my project</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Adverbs of Place</h3>
+            <ul>
+                <li>The children are playing <strong>outside</strong></li>
+                <li>Come <strong>here</strong> immediately</li>
+                <li>We looked <strong>everywhere</strong> for it</li>
+                <li>The book is <strong>on the table</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Adverbs of Frequency</h3>
+            <ul>
+                <li>I <strong>always</strong> wake up early</li>
+                <li>She <strong>usually</strong> drinks tea</li>
+                <li>They <strong>sometimes</strong> go to the beach</li>
+                <li>He <strong>never</strong> eats vegetables</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Adverbs of Degree</h3>
+            <ul>
+                <li>The weather is <strong>very</strong> sunny</li>
+                <li>She is <strong>extremely</strong> intelligent</li>
+                <li>The task is <strong>quite</strong> difficult</li>
+                <li>I <strong>almost</strong> fell asleep</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Adverbs of Certainty</h3>
+            <ul>
+                <li>I will <strong>definitely</strong> come to the party</li>
+                <li>She is <strong>probably</strong> right</li>
+                <li><strong>Maybe</strong> he will call you</li>
+                <li>He is <strong>certainly</strong> intelligent</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng tính từ thay vì trạng từ</p>
+            <div class="example">
+                ❌ She speaks softly and careful | ✅ She speaks softly and carefully<br>
+                ❌ He drives slow | ✅ He drives slowly
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Đặt sai vị trí trạng từ tần suất</p>
+            <div class="example">
+                ❌ I eat usually breakfast | ✅ I usually eat breakfast<br>
+                ❌ She often goes to there | ✅ She often goes there
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên "-ly" khi tạo trạng từ</p>
+            <div class="example">
+                ❌ He works hard diligent | ✅ He works hard diligently<br>
+                ❌ She spoke slow | ✅ She spoke slowly
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Đặt sai vị trí "enough" và "too"</p>
+            <div class="example">
+                ❌ He is enough tall | ✅ He is tall enough<br>
+                ❌ It's hot too | ✅ It's too hot
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Sai thứ tự nhiều trạng từ</p>
+            <div class="example">
+                ❌ She sang at the concert beautifully yesterday | ✅ She sang beautifully at the concert yesterday
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Ghi Nhớ Quy Tắc "-ly"</strong></p>
+            <ul>
+                <li>Hầu hết trạng từ được tạo bằng cách thêm "-ly" vào cuối tính từ</li>
+                <li>Học các quy tắc đặc biệt (y→i, le→ly, ic→ically)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Phân Biệt Tính Từ & Trạng Từ</strong></p>
+            <ul>
+                <li>Tính từ mô tả danh từ: a quick car (một chiếc xe nhanh)</li>
+                <li>Trạng từ mô tả động từ: He drives quickly (anh ấy lái xe nhanh)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Nhớ MPT</strong></p>
+            <ul>
+                <li>Khi có nhiều trạng từ: Manner → Place → Time</li>
+                <li>Ví dụ: She works hard (manner) in the office (place) every day (time)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Vị Trí Trạng Từ Tần Suất</strong></p>
+            <ul>
+                <li>Đặt giữa chủ ngữ và động từ: I always eat breakfast</li>
+                <li>Đặt sau "to be": I am always happy</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Ghi Nhớ Từ Kết Thúc "-ly" Không Phải Trạng Từ</strong></p>
+            <ul>
+                <li>friendly (thân thiện) - tính từ</li>
+                <li>lovely (đáng yêu) - tính từ</li>
+                <li>lonely (cô đơn) - tính từ</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Trạng Từ</th>
+                        <th>Định Nghĩa</th>
+                        <th>Câu Hỏi</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Manner</strong></td>
+                        <td>Cách thức</td>
+                        <td>How?</td>
+                        <td>quickly, carefully, well</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Time</strong></td>
+                        <td>Thời gian</td>
+                        <td>When?</td>
+                        <td>today, tomorrow, soon</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Place</strong></td>
+                        <td>Nơi chốn</td>
+                        <td>Where?</td>
+                        <td>here, there, outside</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Frequency</strong></td>
+                        <td>Tần suất</td>
+                        <td>How often?</td>
+                        <td>always, sometimes, never</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Degree</strong></td>
+                        <td>Mức độ</td>
+                        <td>How much?</td>
+                        <td>very, quite, extremely</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Certainty</strong></td>
+                        <td>Chắc chắn</td>
+                        <td>How sure?</td>
+                        <td>definitely, probably, maybe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

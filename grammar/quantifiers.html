@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Lượng Từ (Quantifiers)</h2>
+
+        <div class="card">
+            <h3>Lượng Từ Là Gì?</h3>
+            <p><span class="highlight">Lượng Từ (Quantifiers)</span> là <strong>các từ hoặc cụm từ dùng trước danh từ để chỉ ra lượng hoặc số lượng của cái gì đó</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Lượng từ phụ thuộc vào loại danh từ (countable hay uncountable), và ngữ cảnh (affirmative, negative, hay question). Đây là những từ rất quan trọng và thường xuyên dùng trong tiếng Anh.
+            </div>
+
+            <h3>Phân Loại Lượng Từ</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Lượng Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Countable</th>
+                        <th>Uncountable</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lượng Lớn</strong></td>
+                        <td>Nhiều, rất nhiều</td>
+                        <td>many, a lot of</td>
+                        <td>much, a lot of</td>
+                        <td>many books / much time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Lượng Nhỏ</strong></td>
+                        <td>Ít, không nhiều</td>
+                        <td>few, a few</td>
+                        <td>little, a little</td>
+                        <td>a few books / a little time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lượng Không Xác Định</strong></td>
+                        <td>Một vài, bất kỳ</td>
+                        <td>some, any</td>
+                        <td>some, any</td>
+                        <td>some books / some time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Lượng Đủ</strong></td>
+                        <td>Vừa đủ, đủ</td>
+                        <td>enough, all, most</td>
+                        <td>enough, all, most</td>
+                        <td>enough books / all time</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SOME/ANY -->
+        <h2>🎲 1. SOME / ANY (Một Vài, Bất Kỳ)</h2>
+
+        <div class="card">
+            <h3>I. Cách Sử Dụng</h3>
+
+            <p><span class="highlight">SOME được dùng trong câu khẳng định, yêu cầu polite và lời mời; ANY được dùng trong câu phủ định và câu hỏi</span>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dùng Với</th>
+                        <th>SOME</th>
+                        <th>ANY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Countable (Số Nhiều)</strong></td>
+                        <td>some books, some people</td>
+                        <td>any books?, not any books</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Uncountable</strong></td>
+                        <td>some water, some time</td>
+                        <td>any water?, not any time</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>SOME - Câu Khẳng Định:</strong></p>
+            <div class="example">
+                • I have some books on the shelf (Tôi có một số cuốn sách trên kệ)<br>
+                • She drinks some coffee in the morning (Cô ấy uống một chút cà phê vào buổi sáng)<br>
+                • There are some people in the park (Có một vài người trong công viên)<br>
+                • We have some time to relax (Chúng tôi có một chút thời gian để thư giãn)
+            </div>
+
+            <p><strong>SOME - Yêu Cầu Polite & Lời Mời:</strong></p>
+            <div class="example">
+                • Could I have some water, please? (Tôi có thể có nước không?)<br>
+                • Would you like some tea? (Bạn muốn chút trà không?)<br>
+                • Can you give me some advice? (Bạn có thể cho tôi một lời khuyên không?)<br>
+                • Would you like some cookies? (Bạn có muốn ăn bánh quy không?)
+            </div>
+
+            <p><strong>ANY - Câu Hỏi (Chung Chung):</strong></p>
+            <div class="example">
+                • Do you have any books? (Bạn có cuốn sách nào không?) - chung chung<br>
+                • Is there any milk left? (Còn sữa không?)<br>
+                • Did they give you any advice? (Họ có cho bạn lời khuyên nào không?)<br>
+                • Can you speak any foreign languages? (Bạn có thể nói bất kỳ ngôn ngữ nước ngoài nào không?)
+            </div>
+
+            <p><strong>ANY - Câu Phủ Định:</strong></p>
+            <div class="example">
+                • I don't have any books (Tôi không có cuốn sách nào)<br>
+                • There isn't any milk left (Không còn sữa)<br>
+                • She doesn't speak any foreign languages (Cô ấy không nói bất kỳ ngôn ngữ nước ngoài nào)<br>
+                • We haven't got any information (Chúng tôi không có thông tin nào)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong><br>
+                • SOME trong khẳng định, yêu cầu polite, lời mời<br>
+                • ANY trong phủ định, câu hỏi chung chung<br>
+                • Tuy nhiên, ANY cũng có thể dùng trong khẳng định với ý nghĩa "bất kỳ cái nào" → Any student can attend (Bất kỳ học sinh nào cũng có thể tham gia)
+            </div>
+        </div>
+
+        <!-- MUCH/MANY -->
+        <h2>📊 2. MUCH / MANY (Nhiều)</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ</th>
+                        <th>Dùng Với</th>
+                        <th>Câu Khẳng Định</th>
+                        <th>Câu Phủ Định/Hỏi</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MUCH</strong></td>
+                        <td>Uncountable (Danh từ không đếm được)</td>
+                        <td>Hiếm (formal)</td>
+                        <td>Phổ biến</td>
+                        <td>not much water, how much time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MANY</strong></td>
+                        <td>Countable Plural (Danh từ số nhiều đếm được)</td>
+                        <td>Phổ biến</td>
+                        <td>Phổ biến</td>
+                        <td>many students, not many books</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>MUCH - Danh Từ Không Đếm Được:</strong></p>
+            <div class="example">
+                • How much water do you need? (Bạn cần bao nhiêu nước?)<br>
+                • There isn't much time left (Không còn nhiều thời gian)<br>
+                • She doesn't spend much money on clothes (Cô ấy không tiêu nhiều tiền cho quần áo)<br>
+                • There was so much noise at the party (Có rất nhiều tiếng ồn ở bữa tiệc)
+            </div>
+
+            <p><strong>MANY - Danh Từ Số Nhiều Đếm Được:</strong></p>
+            <div class="example">
+                • How many students are in your class? (Có bao nhiêu học sinh trong lớp của bạn?)<br>
+                • There are many books in the library (Có nhiều cuốn sách ở thư viện)<br>
+                • Not many people came to the event (Không nhiều người đến sự kiện)<br>
+                • I've made so many mistakes (Tôi đã mắc rất nhiều lỗi)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Trong câu khẳng định, người ta thường dùng "a lot of" thay vì "much" hoặc "many"<br>
+                ✅ I have a lot of friends (Tôi có rất nhiều bạn) - phổ biến<br>
+                ❌ I have many friends (Tôi có nhiều bạn) - formal/ít dùng
+            </div>
+        </div>
+
+        <!-- A FEW / A LITTLE -->
+        <h2>🤏 3. A FEW / A LITTLE (Một Ít, Một Chút)</h2>
+
+        <div class="card">
+            <h3>I. Phân Biệt FEW vs A FEW, LITTLE vs A LITTLE</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ</th>
+                        <th>Dùng Với</th>
+                        <th>Tone</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>FEW</strong></td>
+                        <td>Countable (Số Nhiều)</td>
+                        <td>Tiêu cực (không đủ)</td>
+                        <td>Không nhiều, gần như không</td>
+                        <td>few books (rất ít sách)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>A FEW</strong></td>
+                        <td>Countable (Số Nhiều)</td>
+                        <td>Tích cực (đủ)</td>
+                        <td>Một vài, một số</td>
+                        <td>a few books (vài cuốn sách)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LITTLE</strong></td>
+                        <td>Uncountable</td>
+                        <td>Tiêu cực (không đủ)</td>
+                        <td>Không nhiều, gần như không</td>
+                        <td>little time (rất ít thời gian)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>A LITTLE</strong></td>
+                        <td>Uncountable</td>
+                        <td>Tích cực (đủ)</td>
+                        <td>Một ít, một chút</td>
+                        <td>a little time (một chút thời gian)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>FEW vs A FEW:</strong></p>
+            <div class="example">
+                • Few students passed the exam (Không nhiều học sinh đạt kỳ thi - tiêu cực)<br>
+                • A few students passed the exam (Một vài học sinh đạt kỳ thi - tích cực)<br>
+                • Few people showed interest (Không nhiều người quan tâm - tiêu cực)<br>
+                • A few people showed interest (Một vài người quan tâm - tích cực)
+            </div>
+
+            <p><strong>LITTLE vs A LITTLE:</strong></p>
+            <div class="example">
+                • There is little hope for recovery (Có ít hy vọng phục hồi - tiêu cực)<br>
+                • There is a little hope for recovery (Có một chút hy vọng phục hồi - tích cực)<br>
+                • He has little experience with computers (Anh ấy có ít kinh nghiệm với máy tính - tiêu cực)<br>
+                • He has a little experience with computers (Anh ấy có một chút kinh nghiệm với máy tính - tích cực)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong><br>
+                • FEW = gần như không (tiêu cực) | A FEW = một số (tích cực)<br>
+                • LITTLE = gần như không (tiêu cực) | A LITTLE = một chút (tích cực)<br>
+                ✅ She has a few ideas (cô ấy có một vài ý tưởng - tốt)<br>
+                ✅ She has few ideas (cô ấy không có nhiều ý tưởng - xấu)
+            </div>
+        </div>
+
+        <!-- A LOT OF / LOTS OF / PLENTY OF -->
+        <h2>📈 4. A LOT OF / LOTS OF / PLENTY OF (Rất Nhiều)</h2>
+
+        <div class="card">
+            <h3>I. So Sánh & Cách Sử Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ</th>
+                        <th>Dùng Với</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A LOT OF</strong></td>
+                        <td>Cả countable & uncountable</td>
+                        <td>Trung lập, phổ biến</td>
+                        <td>a lot of books, a lot of time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LOTS OF</strong></td>
+                        <td>Cả countable & uncountable</td>
+                        <td>Informal, nói chuyện</td>
+                        <td>lots of people, lots of money</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PLENTY OF</strong></td>
+                        <td>Cả countable & uncountable</td>
+                        <td>Formal, đủ và dư</td>
+                        <td>plenty of food, plenty of time</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>A LOT OF - Trung Lập, Phổ Biến:</strong></p>
+            <div class="example">
+                • I have a lot of friends (Tôi có rất nhiều bạn)<br>
+                • There's a lot of traffic on the highway (Có rất nhiều xe cộ trên đường cao tốc)<br>
+                • We spent a lot of money on the vacation (Chúng tôi tiêu rất nhiều tiền cho kỳ nghỉ)<br>
+                • She has a lot of experience in teaching (Cô ấy có rất nhiều kinh nghiệm giảng dạy)
+            </div>
+
+            <p><strong>LOTS OF - Informal, Nói Chuyện:</strong></p>
+            <div class="example">
+                • There are lots of people at the concert (Có rất nhiều người ở buổi hòa nhạc)<br>
+                • She drinks lots of coffee every day (Cô ấy uống rất nhiều cà phê mỗi ngày)<br>
+                • We have lots of time to finish the project (Chúng tôi có rất nhiều thời gian để hoàn thành dự án)<br>
+                • He makes lots of mistakes in his writing (Anh ấy mắc rất nhiều lỗi trong bài viết)
+            </div>
+
+            <p><strong>PLENTY OF - Formal, Đủ & Dư:</strong></p>
+            <div class="example">
+                • There is plenty of food for everyone (Có đủ và dư thức ăn cho tất cả mọi người)<br>
+                • We have plenty of time before the deadline (Chúng tôi có nhiều thời gian trước hạn chót)<br>
+                • She has plenty of options to choose from (Cô ấy có rất nhiều lựa chọn để chọn)<br>
+                • There's plenty of space in the parking lot (Có rất nhiều chỗ đỗ xe)
+            </div>
+        </div>
+
+        <!-- ALL / MOST / ENOUGH -->
+        <h2>✅ 5. ALL / MOST / ENOUGH (Tất Cả, Hầu Hết, Đủ)</h2>
+
+        <div class="card">
+            <h3>I. Cách Sử Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ</th>
+                        <th>Tỷ Lệ</th>
+                        <th>Dùng Với</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ALL</strong></td>
+                        <td>100% - Tất Cả</td>
+                        <td>Cả countable & uncountable</td>
+                        <td>all books, all time</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MOST</strong></td>
+                        <td>>50% - Hầu Hết</td>
+                        <td>Cả countable & uncountable</td>
+                        <td>most people, most water</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ENOUGH</strong></td>
+                        <td>Vừa Đủ - Đủ</td>
+                        <td>Cả countable & uncountable</td>
+                        <td>enough books, enough time</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>ALL - Tất Cả (100%):</strong></p>
+            <div class="example">
+                • All students must attend the class (Tất cả học sinh phải tham gia lớp)<br>
+                • She ate all the cake (Cô ấy ăn hết cả chiếc bánh)<br>
+                • I spent all my money on books (Tôi tiêu hết tất cả tiền của mình vào sách)<br>
+                • All the people left the building (Tất cả mọi người rời khỏi tòa nhà)
+            </div>
+
+            <p><strong>MOST - Hầu Hết (>50%):</strong></p>
+            <div class="example">
+                • Most students passed the exam (Hầu hết học sinh đạt kỳ thi)<br>
+                • Most of the cake was eaten (Phần lớn chiếc bánh đã được ăn)<br>
+                • She enjoys most types of music (Cô ấy thích hầu hết các loại nhạc)<br>
+                • Most people prefer coffee to tea (Hầu hết mọi người thích cà phê hơn trà)
+            </div>
+
+            <p><strong>ENOUGH - Đủ, Vừa Đủ:</strong></p>
+            <div class="example">
+                • Do we have enough books for everyone? (Chúng ta có đủ sách cho mọi người không?)<br>
+                • She has enough money to buy a car (Cô ấy có đủ tiền để mua một chiếc xe)<br>
+                • We have enough time to finish the project (Chúng ta có đủ thời gian để hoàn thành dự án)<br>
+                • Is there enough food for the party? (Có đủ thức ăn cho bữa tiệc không?)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng many với uncountable hoặc much với countable</p>
+            <div class="example">
+                ❌ much students | ✅ many students<br>
+                ❌ many water | ✅ much water<br>
+                ✅ a lot of students / a lot of water (cả hai đều được)
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Nhầm few và a few, little và a little</p>
+            <div class="example">
+                ❌ Few students passed (có thể sai ngữ cảnh) | ✅ A few students passed (tích cực)<br>
+                ❌ I have little experience (tiêu cực) | ✅ I have a little experience (tích cực)
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng much trong câu khẳng định</p>
+            <div class="example">
+                ❌ I have much friends | ✅ I have a lot of friends / I have many friends<br>
+                ✅ I don't have much money (phủ định OK)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Nhầm some và any</p>
+            <div class="example">
+                ❌ Do you have some books? (nên dùng any) | ✅ Do you have any books?<br>
+                ❌ I don't have any books (nên dùng some) | ✅ I don't have any books (any đúng)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Quên "of" khi dùng với determiner</p>
+            <div class="example">
+                ❌ most the students | ✅ most of the students<br>
+                ❌ all my friends | ✅ all of my friends (hoặc just "all my friends")
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Countable vs Uncountable</strong></p>
+            <ul>
+                <li>Countable: many, a few, few, several, each, every</li>
+                <li>Uncountable: much, a little, little</li>
+                <li>Cả hai: some, any, a lot of, lots of, plenty of, all, most, enough</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Tone - Positive vs Negative</strong></p>
+            <ul>
+                <li>Few, Little = tiêu cực (không đủ)</li>
+                <li>A few, A little = tích cực (đủ)</li>
+                <li>Lots of, A lot of, Plenty of = tích cực (nhiều)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Some vs Any</strong></p>
+            <ul>
+                <li>SOME: khẳng định, yêu cầu polite, lời mời</li>
+                <li>ANY: phủ định, câu hỏi chung chung</li>
+                <li>ANY cũng: bất kỳ cái nào (Any student can attend)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Trong Câu Khẳng Định</strong></p>
+            <ul>
+                <li>❌ many books | ✅ a lot of books / many books (formal)</li>
+                <li>❌ much water | ✅ a lot of water / much water (formal)</li>
+                <li>✅ Hầu như luôn dùng "a lot of" trong câu khẳng định</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Các Tỷ Lệ</strong></p>
+            <ul>
+                <li>All = 100% | Most = &gt;50% | Some = 25-50% | Few/Little = &lt;25% | None=0%</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 10 câu với các lượng từ khác nhau</li>
+                <li>Xác định countable vs uncountable cho mỗi danh từ</li>
+                <li>So sánh các lượng từ tương tự (few vs a few, much vs many, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lượng Từ</th>
+                        <th>Countable</th>
+                        <th>Uncountable</th>
+                        <th>Tone</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SOME</strong></td>
+                        <td>✅ some books</td>
+                        <td>✅ some water</td>
+                        <td>Trung lập</td>
+                        <td>Khẳng định, yêu cầu</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ANY</strong></td>
+                        <td>✅ any books?</td>
+                        <td>✅ any water?</td>
+                        <td>Trung lập</td>
+                        <td>Phủ định, câu hỏi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MANY</strong></td>
+                        <td>✅ many books</td>
+                        <td>❌</td>
+                        <td>Formal</td>
+                        <td>many students</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MUCH</strong></td>
+                        <td>❌</td>
+                        <td>✅ much water</td>
+                        <td>Formal</td>
+                        <td>not much time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A FEW</strong></td>
+                        <td>✅ a few books</td>
+                        <td>❌</td>
+                        <td>Tích cực</td>
+                        <td>a few people</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FEW</strong></td>
+                        <td>✅ few books</td>
+                        <td>❌</td>
+                        <td>Tiêu cực</td>
+                        <td>few choices</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A LITTLE</strong></td>
+                        <td>❌</td>
+                        <td>✅ a little time</td>
+                        <td>Tích cực</td>
+                        <td>a little money</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>LITTLE</strong></td>
+                        <td>❌</td>
+                        <td>✅ little hope</td>
+                        <td>Tiêu cực</td>
+                        <td>little chance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A LOT OF</strong></td>
+                        <td>✅ a lot of books</td>
+                        <td>✅ a lot of water</td>
+                        <td>Trung lập</td>
+                        <td>Phổ biến nhất</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ALL</strong></td>
+                        <td>✅ all books</td>
+                        <td>✅ all water</td>
+                        <td>Trung lập</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MOST</strong></td>
+                        <td>✅ most books</td>
+                        <td>✅ most water</td>
+                        <td>Trung lập</td>
+                        <td>Hơn 50%</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ENOUGH</strong></td>
+                        <td>✅ enough books</td>
+                        <td>✅ enough time</td>
+                        <td>Trung lập</td>
+                        <td>Vừa đủ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Phân Từ (Participles)</h2>
+
+        <div class="card">
+            <h3>Phân Từ Là Gì?</h3>
+            <p><span class="highlight">Phân Từ (Participles) là dạng động từ đặc biệt được dùng làm động từ trong các thì phức hợp, làm tính từ mô tả danh từ, hoặc rút gọn mệnh đề. Có hai loại: Present Participles (V-ing) và Past Participles (V3/ed)</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Phân từ là cầu nối giữa động từ và tính từ. Present participles luôn có hình thức -ing, còn past participles thay đổi tùy theo động từ (regular: -ed, irregular: V3). Phân từ rất hữu ích để rút gọn câu và làm cho văn viết dịu dàng hơn.
+            </div>
+
+            <h3>Hai Loại Phân Từ Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Phân Từ</th>
+                        <th>Hình Thức</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Participle (Hiện Tại Phân Từ)</strong></td>
+                        <td>V + -ing</td>
+                        <td>Hành động đang diễn ra hoặc liên tục, tính từ chủ động</td>
+                        <td>running, playing, studying, working</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Participle (Quá Khứ Phân Từ)</strong></td>
+                        <td>Regular: V + -ed | Irregular: V3</td>
+                        <td>Hành động hoàn thành, tính từ bị động hoặc cảm xúc</td>
+                        <td>played, studied, broken, written, excited</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3 Cách Sử Dụng Phân Từ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Sử Dụng</th>
+                        <th>Present Participle (-ing)</th>
+                        <th>Past Participle (-ed/V3)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Trong Các Thì Phức Hợp</strong></td>
+                        <td>Continuous tenses: am/is/are + V-ing</td>
+                        <td>Perfect tenses: have/has/had + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2. Làm Tính Từ (Adjective)</strong></td>
+                        <td>Mô tả hành động đang xảy ra, chủ động</td>
+                        <td>Mô tả cảm xúc, bị động, hoặc trạng thái</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Rút Gọn Mệnh Đề</strong></td>
+                        <td>Rút gọn active relative clause</td>
+                        <td>Rút gọn passive relative clause</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PRESENT PARTICIPLES -->
+        <h2>🔄 1. Hiện Tại Phân Từ (Present Participles - V-ing)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Hình Thức</h3>
+
+            <p><span class="highlight">Present Participles được tạo bằng cách thêm -ing vào động từ nguyên mẫu</span>. Dùng để chỉ hành động đang diễn ra, liên tục, hoặc hành động chủ động.</p>
+
+            <div class="note">
+                <strong>📌 Lưu Ý Tạo Hình Thức:</strong><br>
+                • Thêm -ing: play → playing, study → studying<br>
+                • Động từ tận cùng là -e: bỏ -e rồi thêm -ing: make → making, write → writing<br>
+                • Động từ 1 âm tiết có 1 nguyên âm + 1 phụ âm: gấp đôi phụ âm cuối: sit → sitting, run → running<br>
+                • Động từ tận cùng là -ie: thay -ie thành -ying: lie → lying, die → dying
+            </div>
+
+            <h3>II. 3 Cách Sử Dụng Present Participles</h3>
+
+            <p><strong>Cách 1: Trong Continuous Tenses (Thì Tiếp Diễn):</strong></p>
+            <div class="example">
+                • am/is/are + V-ing (Present Continuous)<br>
+                She is studying for the exam (Cô ấy đang học cho bài thi)<br>
+                They are playing football (Họ đang chơi bóng đá)<br>
+                I am working on the project (Tôi đang làm việc trên dự án)<br>
+                • was/were + V-ing (Past Continuous)<br>
+                He was reading when I called (Anh ấy đang đọc khi tôi gọi)<br>
+                • will be + V-ing (Future Continuous)<br>
+                We will be having dinner at 7 (Chúng tôi sẽ đang ăn tối lúc 7 giờ)
+            </div>
+
+            <p><strong>Cách 2: Làm Tính Từ (Adjective) - Mô Tả Hành Động Chủ Động:</strong></p>
+            <div class="example">
+                • a running water (nước chảy) - hành động chủ động<br>
+                • an exciting movie (bộ phim thú vị) - bộ phim gây hứng thú<br>
+                • a sleeping baby (em bé đang ngủ) - em bé đang ngủ<br>
+                • a boring class (lớp học nhàm chán) - lớp học gây buồn tẻ<br>
+                • a confusing instruction (hướng dẫn gây nhầm lẫn) - hướng dẫn gây khó hiểu<br>
+                • a challenging task (nhiệm vụ khó khăn) - nhiệm vụ gây thử thách
+            </div>
+
+            <p><strong>Cách 3: Rút Gọn Mệnh Đề Active Relative Clause:</strong></p>
+            <div class="example">
+                Đầy đủ: The students who are studying in the library are quiet<br>
+                Rút gọn: The students studying in the library are quiet (Những sinh viên đang học ở thư viện rất yên tĩnh)<br>
+                <br>
+                Đầy đủ: The man who was waiting at the door looked angry<br>
+                Rút gọn: The man waiting at the door looked angry (Người đàn ông đang chờ ở cửa trông rất tức giận)<br>
+                <br>
+                Đầy đủ: Children who play outside are healthy<br>
+                Rút gọn: Children playing outside are healthy (Trẻ em chơi ngoài trời rất khỏe mạnh)
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Present Participles Làm Tính Từ:</strong></p>
+            <div class="example">
+                • an interesting book (cuốn sách thú vị) - cuốn sách làm cho ta hứng thú<br>
+                • a disappointing result (kết quả thất vọng) - kết quả gây thất vọng<br>
+                • a relaxing vacation (kỳ nghỉ thư giãn) - kỳ nghỉ làm ta thư giãn<br>
+                • a growing problem (vấn đề ngày càng lớn) - vấn đề đang phát triển<br>
+                • a surprising discovery (phát hiện bất ngờ) - phát hiện gây bất ngờ<br>
+                • a frightening experience (trải nghiệm đáng sợ) - trải nghiệm gây sợ hãi
+            </div>
+        </div>
+
+        <!-- PAST PARTICIPLES -->
+        <h2>⏳ 2. Quá Khứ Phân Từ (Past Participles - V3/ed)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Hình Thức</h3>
+
+            <p><span class="highlight">Past Participles là dạng thứ ba của động từ. Cho động từ thường: thêm -ed vào động từ nguyên mẫu. Cho động từ bất quy tắc: sử dụng dạng V3</span>.</p>
+
+            <div class="note">
+                <strong>📌 Lưu Ý Tạo Hình Thức (Regular Verbs):</strong><br>
+                • Thêm -ed: play → played, study → studied, work → worked<br>
+                • Động từ tận cùng là -e: chỉ thêm -d: live → lived, love → loved<br>
+                • Động từ tận cùng là -y: đổi -y thành -ied: carry → carried, try → tried<br>
+                • Động từ 1 âm tiết có 1 nguyên âm + 1 phụ âm: gấp đôi phụ âm cuối: stop → stopped<br>
+                • Irregular verbs: learn irregular verb forms (go → gone, eat → eaten, break → broken)
+            </div>
+
+            <h3>II. 3 Cách Sử Dụng Past Participles</h3>
+
+            <p><strong>Cách 1: Trong Perfect Tenses (Thì Hoàn Thành):</strong></p>
+            <div class="example">
+                • have/has + V3 (Present Perfect)<br>
+                She has finished her homework (Cô ấy đã hoàn thành bài tập)<br>
+                They have lived in London for 5 years (Họ đã sống ở London 5 năm)<br>
+                • had + V3 (Past Perfect)<br>
+                He had left before I arrived (Anh ấy đã rời đi trước khi tôi đến)<br>
+                • will have + V3 (Future Perfect)<br>
+                We will have completed the project by Friday (Chúng tôi sẽ hoàn thành dự án vào thứ Sáu)
+            </div>
+
+            <p><strong>Cách 2: Làm Tính Từ (Adjective) - Mô Tả Cảm Xúc hoặc Trạng Thái Bị Động:</strong></p>
+            <div class="example">
+                • Cảm Xúc:<br>
+                She is interested in music (Cô ấy quan tâm đến âm nhạc)<br>
+                I am tired of working (Tôi mệt mỏi vì làm việc)<br>
+                He is worried about the exam (Anh ấy lo lắng về bài thi)<br>
+                They are excited about the trip (Họ hào hứng về chuyến đi)<br>
+                • Trạng Thái Bị Động:<br>
+                The broken window needs repair (Cửa sổ bị vỡ cần sửa chữa)<br>
+                A written agreement is binding (Thỏa thuận bằng văn bản có tính ràng buộc)<br>
+                The stolen goods were returned (Hàng hóa bị ăn cắp đã được trả lại)<br>
+                The damaged car was sold (Chiếc xe bị hư hại đã được bán)
+            </div>
+
+            <p><strong>Cách 3: Rút Gọn Mệnh Đề Passive Relative Clause:</strong></p>
+            <div class="example">
+                Đầy đủ: The book which was written by Mark Twain is famous<br>
+                Rút gọn: The book written by Mark Twain is famous (Cuốn sách được viết bởi Mark Twain rất nổi tiếng)<br>
+                <br>
+                Đầy đủ: The students who were invited to the event were happy<br>
+                Rút gọn: The students invited to the event were happy (Những sinh viên được mời tới sự kiện rất vui)<br>
+                <br>
+                Đầy đủ: The people who were injured in the accident went to the hospital<br>
+                Rút gọn: The people injured in the accident went to the hospital (Những người bị thương trong tai nạn đã đi bệnh viện)
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết - Past Participle Adjectives</h3>
+
+            <p><strong>Feeling/Emotion Adjectives (Tính Từ Về Cảm Xúc):</strong></p>
+            <div class="example">
+                • interested/interesting: She is interested in art (cô ấy quan tâm) vs The class is interesting (lớp học thú vị)<br>
+                • excited/exciting: I am excited about the party vs The party is exciting<br>
+                • tired/tiring: He is tired of his job vs The job is tiring<br>
+                • worried/worrying: She is worried about the result vs The result is worrying<br>
+                • surprised/surprising: I am surprised at the news vs The news is surprising<br>
+                • disappointed/disappointing: He is disappointed with the movie vs The movie is disappointing<br>
+                • scared/scaring: They are scared of the dog vs The dog is scaring<br>
+                • confused/confusing: I am confused by the instructions vs The instructions are confusing
+            </div>
+
+            <p><strong>Past Participle Mô Tả Trạng Thái (State/Condition):</strong></p>
+            <div class="example">
+                • The door is locked (Cửa bị khóa)<br>
+                • The milk is spilled (Sữa bị đổ)<br>
+                • The window is broken (Cửa sổ bị vỡ)<br>
+                • The document is signed (Văn bản được ký)<br>
+                • The bridge is damaged (Cây cầu bị hư hại)<br>
+                • The case is closed (Trường hợp đã đóng)<br>
+                • The decision is made (Quyết định đã được đưa ra)
+            </div>
+        </div>
+
+        <!-- REDUCING CLAUSES -->
+        <h2>✂️ 3. Rút Gọn Mệnh Đề (Reducing Relative Clauses)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Mục Đích</h3>
+
+            <p><span class="highlight">Rút Gọn Mệnh Đề là quá trình chuyển đổi relative clauses (mệnh đề quan hệ) thành các cụm phân từ ngắn gọn hơn, làm cho câu dịu dàng và đơn giản hơn</span>.</p>
+
+            <div class="note">
+                <strong>📌 Mục Đích:</strong> Làm câu ngắn gọn hơn, dễ đọc hơn, phong phú câu văn | Rất phổ biến trong tiếng Anh học thuật (academic writing) và tiếng Anh chính thức (formal writing)
+            </div>
+
+            <h3>II. 4 Loại Rút Gọn</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Rút Gọn</th>
+                        <th>Quy Tắc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Active Relative Clause (Tiếp Diễn)</strong></td>
+                        <td>Bỏ relative pronoun + "is/are/was/were" + V-ing; giữ V-ing</td>
+                        <td>Students who are studying hard → Students studying hard</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2. Passive Relative Clause (Thông Thường)</strong></td>
+                        <td>Bỏ relative pronoun + "is/are/was/were/be" + V3; giữ V3</td>
+                        <td>Books which are written by the author → Books written by the author</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Perfect Tense</strong></td>
+                        <td>Bỏ relative pronoun + "have/has/had" + V3; giữ "having" + V3</td>
+                        <td>People who had arrived early → People having arrived early</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>4. To + Verb (Superlatives/First/Last/Only)</strong></td>
+                        <td>Dùng sau "the first/last/only" + to + verb</td>
+                        <td>She is the first person who finished → She is the first person to finish</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết - Rút Gọn Mệnh Đề</h3>
+
+            <p><strong>Loại 1: Active Relative Clause (Rút Gọn Bằng V-ing):</strong></p>
+            <div class="example">
+                Đầy đủ: The children who are playing in the park are happy<br>
+                Rút gọn: The children playing in the park are happy (Những đứa trẻ đang chơi ở công viên rất vui)<br>
+                <br>
+                Đầy đủ: The employees who are working overtime are exhausted<br>
+                Rút gọn: The employees working overtime are exhausted (Những nhân viên làm thêm giờ đều kiệt sức)<br>
+                <br>
+                Đầy đủ: The students who were waiting outside were excited<br>
+                Rút gọn: The students waiting outside were excited (Những sinh viên đang chờ ở ngoài rất hào hứng)
+            </div>
+
+            <p><strong>Loại 2: Passive Relative Clause (Rút Gọn Bằng V3/ed):</strong></p>
+            <div class="example">
+                Đầy đủ: The letter which was sent yesterday arrived today<br>
+                Rút gọn: The letter sent yesterday arrived today (Lá thư được gửi hôm qua đã đến hôm nay)<br>
+                <br>
+                Đầy đủ: The book which was written by Jane Austen is a masterpiece<br>
+                Rút gọn: The book written by Jane Austen is a masterpiece (Cuốn sách được viết bởi Jane Austen là một kiệt tác)<br>
+                <br>
+                Đầy đủ: The employees who were hired last month are doing well<br>
+                Rút gọn: The employees hired last month are doing well (Những nhân viên được thuê tháng trước làm rất tốt)
+            </div>
+
+            <p><strong>Loại 3: Perfect Tense (Rút Gọn Bằng Having + V3):</strong></p>
+            <div class="example">
+                Đầy đủ: The MPs who had voted decided to leave parliament<br>
+                Rút gọn: The MPs having voted decided to leave parliament (Những nghị sĩ đã bỏ phiếu quyết định rời khỏi quốc hội)<br>
+                <br>
+                Đầy đủ: The students who have completed their work can go home<br>
+                Rút gọn: The students having completed their work can go home (Những sinh viên đã hoàn thành công việc có thể về nhà)<br>
+                <br>
+                Đầy đủ: Passengers who had finished checking in waited in the lounge<br>
+                Rút gọn: Passengers having finished checking in waited in the lounge (Những hành khách đã hoàn thành check-in chờ ở phòng chờ)
+            </div>
+
+            <p><strong>Loại 4: To + Verb (Với Superlatives/First/Last/Only):</strong></p>
+            <div class="example">
+                Đầy đủ: She was the first person who arrived<br>
+                Rút gọn: She was the first person to arrive (Cô ấy là người đầu tiên đến)<br>
+                <br>
+                Đầy đủ: He was the last person who left the office<br>
+                Rút gọn: He was the last person to leave the office (Anh ấy là người cuối cùng rời khỏi văn phòng)<br>
+                <br>
+                Đầy đủ: This is the only way which can solve the problem<br>
+                Rút gọn: This is the only way to solve the problem (Đây là cách duy nhất để giải quyết vấn đề)<br>
+                <br>
+                Đầy đủ: He is the best student who can speak English<br>
+                Rút gọn: He is the best student to speak English (Anh ấy là sinh viên giỏi nhất nói tiếng Anh)
+            </div>
+
+            <h3>IV. Vị Trí Của Reduced Clause</h3>
+
+            <p><strong>Participle Phrase Ở Đầu Câu:</strong></p>
+            <div class="example">
+                • Having finished the work, she went home (Đã hoàn thành công việc, cô ấy đi về nhà)<br>
+                • Looking at the clock, he realized he was late (Nhìn vào đồng hồ, anh ấy nhận ra mình bị muộn)<br>
+                • Exhausted after the meeting, they sat down to rest (Kiệt sức sau cuộc họp, họ ngồi xuống để nghỉ ngơi)
+            </div>
+
+            <p><strong>Participle Phrase Ở Cuối Câu:</strong></p>
+            <div class="example">
+                • The girl sitting in the corner is my friend (Cô gái ngồi ở góc là bạn của tôi)<br>
+                • The books written by this author are popular (Những cuốn sách được viết bởi tác giả này rất phổ biến)<br>
+                • The letter sent yesterday arrived today (Lá thư được gửi hôm qua đã đến hôm nay)
+            </div>
+
+            <p><strong>Participle Phrase Ở Giữa Câu (Cơm Than):</strong></p>
+            <div class="example">
+                • My friend, working as a doctor, helps many people (Bạn tôi, làm việc như một bác sĩ, giúp đỡ nhiều người)<br>
+                • The house, built in 1950, is very old now (Ngôi nhà, được xây dựng năm 1950, rất cũ bây giờ)<br>
+                • The proposal, discussed at the meeting, was accepted (Đề xuất, được thảo luận ở cuộc họp, đã được chấp nhận)
+            </div>
+        </div>
+
+        <!-- GERUNDS vs PARTICIPLES -->
+        <h2>⚖️ 4. Gerunds vs Participles - Khác Biệt Quan Trọng</h2>
+
+        <div class="card">
+            <h3>I. Cách Phân Biệt</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Yếu Tố</th>
+                        <th>Gerunds (V-ing)</th>
+                        <th>Present Participles (V-ing)</th>
+                        <th>Past Participles (V3/ed)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hình Thức</strong></td>
+                        <td>V + -ing</td>
+                        <td>V + -ing</td>
+                        <td>V + -ed hoặc V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Chức Năng</strong></td>
+                        <td>Danh từ (Noun)</td>
+                        <td>Động từ hoặc Tính từ</td>
+                        <td>Động từ hoặc Tính từ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ý Nghĩa</strong></td>
+                        <td>Hành động như một khái niệm</td>
+                        <td>Hành động đang xảy ra (chủ động)</td>
+                        <td>Hành động hoàn thành (bị động)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>Swimming is fun (Bơi lội là vui vẻ)</td>
+                        <td>The swimming boy looks happy (Cậu bé đang bơi trông rất vui)</td>
+                        <td>The excited boy ran fast (Cậu bé hào hứng chạy nhanh)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Phân Biệt</h3>
+
+            <p><strong>Gerund (V-ing Làm Danh Từ):</strong></p>
+            <div class="example">
+                • Swimming is a good exercise (Bơi lội là một bài tập tốt) - swimming là danh từ, chủ ngữ<br>
+                • I enjoy reading (Tôi thích đọc) - reading là danh từ, tân ngữ<br>
+                • Playing video games is his hobby (Chơi trò chơi video là sở thích của anh ấy) - playing là danh từ, chủ ngữ<br>
+                • She's interested in learning languages (Cô ấy quan tâm đến việc học ngôn ngữ) - learning là danh từ, tân ngữ
+            </div>
+
+            <p><strong>Present Participle (V-ing Làm Tính Từ):</strong></p>
+            <div class="example">
+                • The swimming boy looks happy (Cậu bé đang bơi trông rất vui) - swimming mô tả cậu bé, tính từ<br>
+                • I'm reading a book (Tôi đang đọc một cuốn sách) - reading là phần của động từ, thì tiếp diễn<br>
+                • An exciting movie makes people happy (Một bộ phim thú vị làm cho người ta vui) - exciting mô tả bộ phim, tính từ<br>
+                • Running water is fresh (Nước chảy là tươi) - running mô tả nước, tính từ
+            </div>
+
+            <p><strong>Past Participle (V3/ed Làm Tính Từ):</strong></p>
+            <div class="example">
+                • The excited boy ran fast (Cậu bé hào hứng chạy nhanh) - excited mô tả cảm xúc của cậu bé, tính từ<br>
+                • She has finished her work (Cô ấy đã hoàn thành công việc) - finished là phần của động từ, thì hoàn thành<br>
+                • A broken window needs repair (Cửa sổ bị vỡ cần sửa) - broken mô tả trạng thái của cửa sổ, tính từ<br>
+                • They were surprised at the result (Họ bất ngờ trước kết quả) - surprised mô tả cảm xúc, tính từ
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Nhầm Present Participle và Gerund</p>
+            <div class="example">
+                ❌ Reading is he doing (sai - gerund hoặc present participle)<br>
+                ✅ Reading is what he's doing (he's doing = present participle)<br>
+                ✅ Reading is his hobby (reading = gerund)<br>
+                ❌ I enjoy to read | ✅ I enjoy reading (gerund, không to + V)
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Sai Past Participle với Irregular Verbs</p>
+            <div class="example">
+                ❌ break → braked | ✅ break → broken<br>
+                ❌ eat → eated | ✅ eat → eaten<br>
+                ❌ write → writed | ✅ write → written<br>
+                ❌ go → goed | ✅ go → gone
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Lạc đề Participle Phrase (Dangling Participles)</strong></p>
+            <div class="example">
+                ❌ Walking in the park, the dog followed me (đối tượng của participle không rõ)<br>
+                ✅ Walking in the park, I saw a dog (tôi và "I" phù hợp)<br>
+                ❌ Finishing the work, the office was empty (dangling - sai)<br>
+                ✅ Finishing the work, she left the office (cô ấy và "she" phù hợp)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng Present Participle thay vì Past Participle Adjective</p>
+            <div class="example">
+                ❌ I am interesting in art | ✅ I am interested in art (cảm xúc của tôi)<br>
+                ❌ The movie is bored | ✅ The movie is boring (bộ phim gây buồn tẻ)<br>
+                ❌ She is excited about the work | ✅ She is excited about the work (đúng)<br>
+                ❌ This task is confused | ✅ This task is confusing (nhiệm vụ gây nhầm lẫn)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Rút gọn mệnh đề sai</p>
+            <div class="example">
+                ❌ The students who study hard passed → The students studying hard passed (thiếu "are")<br>
+                ✅ The students who are studying hard passed → The students studying hard passed<br>
+                ❌ The book was written by the author → The book written the author (thiếu "by")<br>
+                ✅ The book written by the author is famous
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ 3 Cách Sử Dụng Participles</strong></p>
+            <ul>
+                <li>Trong thì phức hợp: Present Participle (continuous), Past Participle (perfect)</li>
+                <li>Làm tính từ: Present Participle = chủ động (interesting, exciting), Past Participle = bị động/cảm xúc (interested, excited)</li>
+                <li>Rút gọn mệnh đề: Active (V-ing), Passive (V3), Perfect (having + V3)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Phân Biệt -ing vs -ed Adjectives</strong></p>
+            <ul>
+                <li>-ing (Present Participle): mô tả cái gì gây ra cảm xúc → The movie is interesting (bộ phim thú vị - gây hứng thú)</li>
+                <li>-ed (Past Participle): mô tả cảm xúc của người → I am interested (tôi quan tâm - cảm xúc của tôi)</li>
+                <li>Mẹo nhớ: người có cảm xúc (interested, excited, tired), cái gây cảm xúc (-ing)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Rút Gọn Mệnh Đề - 4 Công Thức</strong></p>
+            <ul>
+                <li>Active (tiếp diễn): Bỏ relative pronoun + "is/are" → giữ V-ing</li>
+                <li>Passive (đơn): Bỏ relative pronoun + "is/are" + "been" → giữ V3</li>
+                <li>Perfect: Bỏ relative pronoun + "have/has" → "having" + V3</li>
+                <li>To + Verb: Dùng sau "the first/last/only" → To + V</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Tạo Hình Thức V-ing (Present Participle)</strong></p>
+            <ul>
+                <li>Thêm -ing: play → playing, study → studying</li>
+                <li>Bỏ -e + ing: make → making, write → writing</li>
+                <li>Gấp đôi phụ âm cuối + ing: sit → sitting, run → running</li>
+                <li>-ie → ying: lie → lying, die → dying</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Tạo Hình Thức V3/ed (Past Participle)</strong></p>
+            <ul>
+                <li>Regular: V + ed (play → played, study → studied)</li>
+                <li>Bỏ -e + d: live → lived (chỉ thêm d, không ed)</li>
+                <li>y → ied: carry → carried, try → tried</li>
+                <li>Irregular: học thuộc lòng (go→gone, eat→eaten, break→broken)</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Luyện Tập</strong></p>
+            <ul>
+                <li>Viết 20 câu với Present Participles (trong thi tiếp diễn, làm tính từ, rút gọn)</li>
+                <li>Viết 20 câu với Past Participles (trong thì hoàn thành, làm tính từ, rút gọn)</li>
+                <li>Phân biệt -ing vs -ed adjectives với 20 cặp từ</li>
+                <li>Rút gọn 20 relative clauses bằng participles</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Hình Thức</th>
+                        <th>Chức Năng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Participle - Tense</strong></td>
+                        <td>V-ing</td>
+                        <td>Continuous tenses (be + V-ing)</td>
+                        <td>She is studying (Cô ấy đang học)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Participle - Adjective (Active)</strong></td>
+                        <td>V-ing</td>
+                        <td>Mô tả hành động chủ động, gây cảm xúc</td>
+                        <td>an interesting book (cuốn sách thú vị)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Participle - Reduced Clause</strong></td>
+                        <td>V-ing</td>
+                        <td>Rút gọn active relative clause</td>
+                        <td>students studying in the library (học sinh đang học ở thư viện)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Participle - Tense</strong></td>
+                        <td>V3/ed</td>
+                        <td>Perfect tenses (have + V3)</td>
+                        <td>She has finished (Cô ấy đã hoàn thành)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Past Participle - Adjective (Emotion/State)</strong></td>
+                        <td>V3/ed</td>
+                        <td>Mô tả cảm xúc hoặc trạng thái bị động</td>
+                        <td>I am interested / The broken window (tôi quan tâm / cửa sổ bị vỡ)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Participle - Reduced Clause</strong></td>
+                        <td>V3/ed</td>
+                        <td>Rút gọn passive relative clause</td>
+                        <td>books written by the author (cuốn sách được viết bởi tác giả)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gerund</strong></td>
+                        <td>V-ing</td>
+                        <td>Danh từ</td>
+                        <td>Swimming is fun (Bơi lội là vui vẻ)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

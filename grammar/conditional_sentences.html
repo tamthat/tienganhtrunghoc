@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Câu Điều Kiện (Conditional Sentences)</h2>
+
+        <div class="card">
+            <h3>Câu Điều Kiện Là Gì?</h3>
+            <p><span class="highlight">Câu Điều Kiện (Conditional Sentence)</span> là <strong>câu được tạo thành bởi hai phần: mệnh đề if (điều kiện) và mệnh đề chính (hệ quả), dùng để diễn tả những tình huống có thể xảy ra hoặc không thể xảy ra</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Câu điều kiện có 4 loại cơ bản (Type 0, 1, 2, 3), ngoài ra còn có Mixed Conditional và Inverted Conditional.
+            </div>
+
+            <h3>Cấu Trúc Cơ Bản</h3>
+            <ul>
+                <li><strong>Mệnh Đề If (Condition):</strong> Diễn tả điều kiện</li>
+                <li><strong>Mệnh Đề Chính (Result):</strong> Diễn tả hệ quả</li>
+                <li><strong>Vị Trí:</strong> If-clause có thể ở đầu hoặc cuối câu</li>
+                <li><strong>Dấu Phẩy:</strong> Cần dấu phẩy nếu if-clause ở đầu</li>
+            </ul>
+        </div>
+
+        <!-- ZERO CONDITIONAL -->
+        <h2>0️⃣ Loại 0: Zero Conditional (Điều Kiện Kiểu 0)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Zero Conditional</span> dùng để <strong>diễn tả những sự thật luôn luôn đúng, sự kiện khoa học, hoặc những thói quen lặp lại</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>If + Present Simple, Present Simple</strong><br>
+                Nếu + Hiện Tại Đơn, Hiện Tại Đơn
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • If you heat water to 100°C, it boils<br>
+                • If you mix red and blue, you get purple<br>
+                • If it rains, the ground gets wet<br>
+                • If I eat too much, I get sick<br>
+                • If you don't water plants, they die<br>
+                • If I am hungry, I eat<br>
+                • If she sees a spider, she screams
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Zero Conditional dùng cho sự thật không thay đổi, không phụ thuộc vào thời gian
+            </div>
+        </div>
+
+        <!-- FIRST CONDITIONAL -->
+        <h2>1️⃣ Loại 1: First Conditional (Điều Kiện Kiểu 1)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">First Conditional</span> dùng để <strong>diễn tả những tình huống có thể xảy ra trong hiện tại hoặc tương lai, khả năng thực tế</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>If + Present Simple, will + V1 (Base Verb)</strong><br>
+                Nếu + Hiện Tại Đơn, will + Động từ nguyên thể
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • If you study hard, you will pass the exam<br>
+                • If it rains tomorrow, we will cancel the trip<br>
+                • If you are late, she will be angry<br>
+                • If you don't hurry, you will miss the bus<br>
+                • If I see her, I will tell her the news<br>
+                • If we arrive on time, we can watch the movie<br>
+                • If they win, we will celebrate
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Có thể dùng modal verbs khác thay cho "will": can, may, might, must<br>
+                ✅ If you see her, you can tell her | ✅ If he studies, he may pass
+            </div>
+        </div>
+
+        <!-- SECOND CONDITIONAL -->
+        <h2>2️⃣ Loại 2: Second Conditional (Điều Kiện Kiểu 2)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Second Conditional</span> dùng để <strong>diễn tả những tình huống không thực tế, khó có khả năng xảy ra, hoặc mâu thuẫn với hiện tại</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>If + Past Simple, would + V1 (Base Verb)</strong><br>
+                Nếu + Quá Khứ Đơn, would + Động từ nguyên thể
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • If I had more time, I would learn French<br>
+                • If I were rich, I would travel around the world<br>
+                • If she knew the truth, she would be shocked<br>
+                • If we had a bigger house, we would invite more friends<br>
+                • If you were taller, you could play basketball<br>
+                • If he studied more, he would get better grades<br>
+                • If they had a car, they would visit us more often
+            </div>
+
+            <h3>IV. Cách Sử Dụng Đặc Biệt: "If I were you..."</h3>
+
+            <p><strong>Dùng để đưa lời khuyên:</strong></p>
+            <div class="example">
+                • If I were you, I'd apologize to her<br>
+                • If I were you, I wouldn't trust him<br>
+                • If I were you, I'd ask for help<br>
+                • If I were you, I'd take that job
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Dùng "were" không phải "was" cho tất cả chủ ngữ (I/he/she/it were)<br>
+                ✅ If I were you | ✅ If he were rich | ❌ If I was you
+            </div>
+        </div>
+
+        <!-- THIRD CONDITIONAL -->
+        <h2>3️⃣ Loại 3: Third Conditional (Điều Kiện Kiểu 3)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Third Conditional</span> dùng để <strong>diễn tả những tình huống không thể xảy ra trong quá khứ, hay những sự hối tiếc</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>If + Past Perfect, would have + V3 (Past Participle)</strong><br>
+                Nếu + Quá Khứ Hoàn Thành, would have + Động từ quá khứ phân từ
+            </div>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • If I had studied harder, I would have passed the exam<br>
+                • If you had told me, I would have helped you<br>
+                • If she had worn a coat, she wouldn't have caught a cold<br>
+                • If we had left earlier, we would have caught the train<br>
+                • If they had booked in advance, they could have found better seats<br>
+                • If I hadn't forgotten my umbrella, I wouldn't have got wet<br>
+                • If you had listened to me, you wouldn't have made that mistake
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Third Conditional thường dùng để diễn tả tiếc nuối hoặc những điều đáng lẽ nên làm nhưng đã quá muộn
+            </div>
+        </div>
+
+        <!-- MIXED CONDITIONAL -->
+        <h2>🔄 Loại 4: Mixed Conditional (Điều Kiện Hỗn Hợp)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Mixed Conditional</span> là <strong>sự kết hợp của Second và Third Conditional, khi điều kiện ở quá khứ nhưng hệ quả ở hiện tại, hoặc ngược lại</strong>.</p>
+
+            <h3>II. Hai Loại Mixed Conditional</h3>
+
+            <p><strong>Mixed Conditional Type 1: Quá Khứ → Hiện Tại</strong></p>
+            <div class="formula">
+                <strong>If + Past Perfect, would + V1 (Base Verb)</strong><br>
+                Điều kiện quá khứ, hệ quả hiện tại
+            </div>
+
+            <div class="example">
+                • If you had studied harder, you would be at university now<br>
+                • If I had listened to my parents, I would have a better job now<br>
+                • If we had saved money back then, we would be rich now<br>
+                • If she had learned English, she would speak it fluently now<br>
+                • If you had taken the job, you would be working here now
+            </div>
+
+            <p><strong>Mixed Conditional Type 2: Hiện Tại → Quá Khứ</strong></p>
+            <div class="formula">
+                <strong>If + Past Simple, would have + V3 (Past Participle)</strong><br>
+                Điều kiện hiện tại, hệ quả quá khứ
+            </div>
+
+            <div class="example">
+                • If I were smarter, I would have got that job<br>
+                • If I had a car, I would have driven to the beach last week<br>
+                • If she were braver, she would have asked him out<br>
+                • If we had more money, we would have bought a house<br>
+                • If he were taller, he could have been a basketball player
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Mixed Conditional ít được sử dụng hơn 4 loại cơ bản, nhưng rất hữu ích để diễn tả mối quan hệ giữa quá khứ và hiện tại
+            </div>
+        </div>
+
+        <!-- INVERTED CONDITIONALS -->
+        <h2>📍 Loại 5: Inverted Conditionals (Đảo Ngữ Điều Kiện)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Inverted Conditional</span> là <strong>dạng chính thức của câu điều kiện, bỏ từ "if" và đảo ngữ (đảo chủ ngữ với trợ động từ) để tạo câu trang trọng hơn</strong>.</p>
+
+            <h3>II. Ba Loại Inverted Conditional</h3>
+
+            <p><strong>Inverted First Conditional: Should</strong></p>
+            <div class="formula">
+                <strong>Should + Subject + V1, ...</strong><br>
+                Thay vì: If you book with us again...
+            </div>
+
+            <div class="example">
+                • Should you need any help, please contact us<br>
+                • Should you change your mind, let me know<br>
+                • Should you visit our city, call me<br>
+                • Should you require further information, email us<br>
+                • Should a customer wish to cancel, they must notify us
+            </div>
+
+            <p><strong>Inverted Second Conditional: Were</strong></p>
+            <div class="formula">
+                <strong>Were + Subject + ..., ...</strong><br>
+                Thay vì: If I were rich...
+            </div>
+
+            <div class="example">
+                • Were I rich, I would travel the world<br>
+                • Were she here, she would help us<br>
+                • Were I you, I'd apologize<br>
+                • Were they to offer me the job, I'd accept<br>
+                • Were we to lose this match, it would be a disaster
+            </div>
+
+            <p><strong>Inverted Third Conditional: Had</strong></p>
+            <div class="formula">
+                <strong>Had + Subject + V3, ...</strong><br>
+                Thay vì: If we had left earlier...
+            </div>
+
+            <div class="example">
+                • Had I known the truth, I would have acted differently<br>
+                • Had we arrived earlier, we wouldn't have missed the train<br>
+                • Had she studied harder, she would have passed<br>
+                • Had they been careful, the accident wouldn't have happened<br>
+                • Had I known you were coming, I would have prepared dinner
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Inverted Conditional thường dùng trong viết chính thức, báo cáo, hoặc lời nói trang trọng
+            </div>
+        </div>
+
+        <!-- SUMMARY TABLE -->
+        <h2>📊 Bảng Tóm Tắt 5 Loại Câu Điều Kiện</h2>
+
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Công Thức</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zero</strong></td>
+                        <td>If + Present, Present</td>
+                        <td>Sự thật luôn đúng</td>
+                        <td>If you heat ice, it melts</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>First</strong></td>
+                        <td>If + Present, will + V1</td>
+                        <td>Khả năng thực tế tương lai</td>
+                        <td>If it rains, we'll stay home</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Second</strong></td>
+                        <td>If + Past, would + V1</td>
+                        <td>Không thực tế hiện tại</td>
+                        <td>If I were rich, I'd travel</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Third</strong></td>
+                        <td>If + Past Perfect, would have + V3</td>
+                        <td>Không thể xảy ra quá khứ</td>
+                        <td>If I had studied, I would have passed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mixed</strong></td>
+                        <td>If + Past Perfect, would + V1<br>If + Past, would have + V3</td>
+                        <td>Quá khứ → Hiện tại<br>Hiện tại → Quá khứ</td>
+                        <td>If you'd studied, you'd be smart now<br>If I were rich, I would have bought it</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Inverted</strong></td>
+                        <td>Should + S + V<br>Were + S + ...<br>Had + S + V3</td>
+                        <td>Trang trọng hơn</td>
+                        <td>Should you need help, call us<br>Were I you, I'd apologize<br>Had I known, I'd have helped</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai thì trong First Conditional</p>
+            <div class="example">
+                ❌ If you will study, you will pass | ✅ If you study, you will pass<br>
+                ❌ If it will rain, we will stay home | ✅ If it rains, we will stay home
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng "was" thay vì "were" trong Second Conditional</p>
+            <div class="example">
+                ❌ If I was you | ✅ If I were you<br>
+                ❌ If he was rich | ✅ If he were rich
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên "have" trong Third Conditional</p>
+            <div class="example">
+                ❌ If I studied hard, I would passed | ✅ If I had studied hard, I would have passed<br>
+                ❌ If she had came, we would went | ✅ If she had come, we would have gone
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "will" trong mệnh đề if</p>
+            <div class="example">
+                ❌ If you will come, I will be happy | ✅ If you come, I will be happy<br>
+                ❌ If she will help, we will succeed | ✅ If she helps, we will succeed
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn loại conditional</p>
+            <div class="example">
+                ❌ If I have more time, I would learn French (nên dùng Second Conditional: If I had...)<br>
+                ❌ If I had money, I will buy a car (nên dùng Second Conditional: If I had..., I would buy)
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ Thứ Tự Thì - 0, 1, 2, 3</strong></p>
+            <ul>
+                <li><strong>Zero:</strong> Hiện tại → Hiện tại (sự thật)</li>
+                <li><strong>First:</strong> Hiện tại → Tương lai (khả năng)</li>
+                <li><strong>Second:</strong> Quá khứ → Hiện tại (không thực tế)</li>
+                <li><strong>Third:</strong> Quá khứ → Quá khứ (tiếc nuối)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: KHÔNG Dùng "Will" Trong Mệnh Đề If</strong></p>
+            <ul>
+                <li>If-clause luôn dùng thì đơn: Present, Past, hoặc Past Perfect</li>
+                <li>"Will" chỉ xuất hiện trong mệnh đề chính</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Second Conditional - Luôn Dùng "Were"</strong></p>
+            <ul>
+                <li>Ngay cả với I, he, she, it đều dùng "were"</li>
+                <li>If I were..., If he were..., If it were...</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Phân Biệt Second & Third Bằng Thời Gian</strong></p>
+            <ul>
+                <li><strong>Second:</strong> Nói về hiện tại hoặc tương lai (ước muốn bây giờ)</li>
+                <li><strong>Third:</strong> Nói về quá khứ (tiếc nuối sự kiện đã xảy ra)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Với Một Câu Duy Nhất</strong></p>
+            <ul>
+                <li>Lấy một câu đơn: "I study hard"</li>
+                <li>Tạo 4 loại conditional từ nó</li>
+                <li>Zero: If I study hard, I learn well</li>
+                <li>First: If I study hard, I will pass</li>
+                <li>Second: If I studied hard, I would pass</li>
+                <li>Third: If I had studied hard, I would have passed</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Khi Nào Dùng Mỗi Loại Conditional?</h3>
+
+            <p><strong>Zero Conditional:</strong> Diễn tả sự thật khoa học, quy luật tự nhiên, thói quen</p>
+            <ul>
+                <li>Ngôn ngữ khoa học, hướng dẫn, công thức</li>
+            </ul>
+
+            <p><strong>First Conditional:</strong> Nói về tương lai có khả năng xảy ra</p>
+            <ul>
+                <li>Dự đoán, hứa hẹn, cảnh báo, lời mời</li>
+            </ul>
+
+            <p><strong>Second Conditional:</strong> Nói về ước muốn, ý tưởng không thực tế</p>
+            <ul>
+                <li>Lời khuyên ("If I were you..."), ước mơ, tình huống giả định</li>
+            </ul>
+
+            <p><strong>Third Conditional:</strong> Nói về quá khứ với tiếc nuối</p>
+            <ul>
+                <li>Hối tiếc, giải thích kết quả xảy ra, phân tích lịch sử</li>
+            </ul>
+
+            <p><strong>Mixed Conditional:</strong> Liên kết quá khứ với hiện tại hoặc ngược lại</p>
+            <ul>
+                <li>Giải thích tình trạng hiện tại do quá khứ, hoặc câu chuyện giả định</li>
+            </ul>
+
+            <p><strong>Inverted Conditional:</strong> Viết chính thức, trang trọng</p>
+            <ul>
+                <li>Báo cáo kinh doanh, thư chính thức, văn học</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

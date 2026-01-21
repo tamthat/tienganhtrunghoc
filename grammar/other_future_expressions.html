@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Các Cách Diễn Đạt Tương Lai Khác</h2>
+
+        <div class="card">
+            <h3>Ngoài "Will" - Các Cách Diễn Tả Tương Lai Khác</h3>
+            <p>Tiếng Anh có nhiều cách để diễn tả tương lai, không chỉ dùng "will" hay các thì tương lai tiêu chuẩn. Những cách này thường được sử dụng khi nói về <strong>kế hoạch, dự định, lịch trình, hoặc sự kiện sắp xảy ra</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Các cách diễn đạt tương lai này rất phổ biến trong tiếng nói hàng ngày và có các nuances (sắc thái) khác nhau tùy theo ngữ cảnh.
+            </div>
+
+            <h3>Năm Cách Diễn Đạt Tương Lai Chính</h3>
+            <ul>
+                <li><strong>Be Going To:</strong> Dự định hoặc kế hoạch đã quyết định từ trước</li>
+                <li><strong>Be About To:</strong> Sự kiện sắp xảy ra ngay lập tức (trong vài phút)</li>
+                <li><strong>Be To:</strong> Kế hoạch chính thức, lịch trình, hoặc mệnh lệnh</li>
+                <li><strong>Present Continuous:</strong> Kế hoạch đã xác nhận, sắp xếp cụ thể</li>
+                <li><strong>Present Simple:</strong> Lịch trình, thời gian biểu, sự kiện được lên kế hoạch</li>
+            </ul>
+        </div>
+
+        <!-- BE GOING TO SECTION -->
+        <h2>🎯 1. Be Going To</h2>
+
+        <div class="card">
+            <h3>I. Cấu Trúc & Định Nghĩa</h3>
+            
+            <div class="formula">
+                am/is/are + going to + Base Verb
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Be Going To</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td><span class="highlight">am going to</span></td>
+                        <td>I am going to visit Paris</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>He/She/It</td>
+                        <td><span class="highlight">is going to</span></td>
+                        <td>She is going to study medicine</td>
+                    </tr>
+                    <tr>
+                        <td>You/We/They</td>
+                        <td><span class="highlight">are going to</span></td>
+                        <td>They are going to arrive tomorrow</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Cách Sử Dụng Be Going To</h3>
+
+            <p><strong>1. Dự Định Hoặc Kế Hoạch Đã Quyết Định</strong></p>
+            <div class="example">
+                • I <strong>am going to buy</strong> a new car next month<br>
+                • She <strong>is going to graduate</strong> this year<br>
+                • We <strong>are going to take</strong> a vacation in summer<br>
+                • They <strong>are going to get married</strong> next year
+            </div>
+
+            <p><strong>2. Dự Đoán Dựa Trên Bằng Chứng Hiện Tại</strong></p>
+            <div class="example">
+                • Look at the sky! It <strong>is going to rain</strong> (mây đen)<br>
+                • She looks tired. She <strong>is going to fall</strong> asleep<br>
+                • That building <strong>is going to collapse</strong> (có dấu hiệu)<br>
+                • He has a fever. He <strong>is going to be</strong> sick
+            </div>
+
+            <p><strong>3. Phủ Định & Câu Hỏi</strong></p>
+            <div class="example">
+                ❌ <strong>I'm not going to</strong> go to the party<br>
+                ❌ <strong>She isn't going to</strong> come tomorrow<br>
+                ❓ <strong>Are you going to</strong> visit me?<br>
+                ❓ <strong>Is he going to</strong> help us?
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Will:</strong> "Going to" = Quyết định từ trước | "Will" = Quyết định tức thì
+            </div>
+        </div>
+
+        <!-- BE ABOUT TO SECTION -->
+        <h2>⚡ 2. Be About To</h2>
+
+        <div class="card">
+            <h3>I. Cấu Trúc & Định Nghĩa</h3>
+            
+            <div class="formula">
+                am/is/are + about to + Base Verb
+            </div>
+
+            <p><span class="highlight">Ý Nghĩa:</span> Sự kiện sẽ xảy ra <strong>trong vài phút, ngay lập tức, hoặc rất gần</strong></p>
+
+            <div class="example">
+                • The train <strong>is about to</strong> leave. Hurry up!<br>
+                • I <strong>am about to</strong> go to bed<br>
+                • She <strong>is about to</strong> start the meeting<br>
+                • We <strong>are about to</strong> begin the exam
+            </div>
+
+            <h3>II. Cách Sử Dụng Be About To</h3>
+
+            <p><strong>1. Thời Gian Rất Gần (Immediate Future)</strong></p>
+            <div class="example">
+                • The film <strong>is about to</strong> start (trong vài giây)<br>
+                • The plane <strong>is about to</strong> take off (ngay bây giờ)<br>
+                • I <strong>am about to</strong> leave my house (đang chuẩn bị rời đi)<br>
+                • They <strong>are about to</strong> announce the winner (sắp tuyên bố)
+            </div>
+
+            <p><strong>2. Với "Just" Để Nhấn Mạn Sự Khẩn Cấp</strong></p>
+            <div class="example">
+                • Sit down! It's <strong>just about to</strong> start!<br>
+                • I was <strong>just about to</strong> call you when you rang<br>
+                • She was <strong>just about to</strong> leave when it rained<br>
+                • We were <strong>just about to</strong> give up when help arrived
+            </div>
+
+            <p><strong>3. Phủ Định (Unwillingness - Không Sẵn Lòng)</strong></p>
+            <div class="example">
+                • I'm <strong>not about to</strong> admit my mistake (không muốn)<br>
+                • They're <strong>not about to</strong> give up (không có ý định)<br>
+                • He's <strong>not about to</strong> spend all his money (không sẵn lòng)<br>
+                • We're <strong>not about to</strong> let them win (không chịu để họ thắng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG dùng "be about to" cho hành động cách xa trong tương lai<br>
+                ❌ I am about to visit Paris (trong 6 tháng)<br>
+                ✅ I am about to leave for Paris
+            </div>
+        </div>
+
+        <!-- BE TO SECTION -->
+        <h2>📋 3. Be To</h2>
+
+        <div class="card">
+            <h3>I. Cấu Trúc & Định Nghĩa</h3>
+            
+            <div class="formula">
+                am/is/are + to + Base Verb
+            </div>
+
+            <p><span class="highlight">Ý Nghĩa:</span> Kế hoạch chính thức, lịch trình, hoặc mệnh lệnh ở tương lai</p>
+
+            <div class="example">
+                • The president <strong>is to visit</strong> Paris next month<br>
+                • You <strong>are to</strong> report to my office at 9 AM<br>
+                • The meeting <strong>is to take</strong> place tomorrow<br>
+                • They <strong>are to sign</strong> the contract on Friday
+            </div>
+
+            <h3>II. Cách Sử Dụng Be To</h3>
+
+            <p><strong>1. Lịch Trình Hoặc Kế Hoạch Chính Thức</strong></p>
+            <div class="example">
+                • The show <strong>is to start</strong> at 8 PM<br>
+                • The announcement <strong>is to be made</strong> today<br>
+                • The conference <strong>is to be held</strong> in June<br>
+                • The project <strong>is to be completed</strong> by December
+            </div>
+
+            <p><strong>2. Mệnh Lệnh Hoặc Hướng Dẫn</strong></p>
+            <div class="example">
+                • You <strong>are to report</strong> to the manager<br>
+                • All students <strong>are to submit</strong> their homework on time<br>
+                • Visitors <strong>are to wear</strong> protective clothing<br>
+                • Employees <strong>are to follow</strong> the safety guidelines
+            </div>
+
+            <p><strong>3. Sự Kiện Đã Được Xác Định Hoặc Định Mệnh</strong></p>
+            <div class="example">
+                • They <strong>were to be married</strong> in June (nhưng sau đó hủy)<br>
+                • He <strong>was to become</strong> a famous actor<br>
+                • The ship <strong>was to sink</strong> the following year<br>
+                • She <strong>was to inherit</strong> the estate
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Be to" thường nghe hình thức và lạnh lẽo hơn "be going to"<br>
+                Thường dùng trong bối cảnh chính thức, tin tức, hoặc lịch sử
+            </div>
+        </div>
+
+        <!-- PRESENT CONTINUOUS FOR FUTURE -->
+        <h2>🗓️ 4. Present Continuous Cho Tương Lai</h2>
+
+        <div class="card">
+            <h3>I. Cấu Trúc & Định Nghĩa</h3>
+            
+            <div class="formula">
+                am/is/are + V-ing
+            </div>
+
+            <p><span class="highlight">Ý Nghĩa:</span> Kế hoạch đã được xác nhận, sắp xếp cụ thể, hoặc arrangement</p>
+
+            <div class="example">
+                • I <strong>am meeting</strong> Jane at 8 o'clock on Saturday<br>
+                • We <strong>are having</strong> a party next weekend<br>
+                • She <strong>is traveling</strong> to Paris tomorrow<br>
+                • They <strong>are visiting</strong> their grandparents next week
+            </div>
+
+            <h3>II. Cách Sử Dụng Present Continuous Cho Tương Lai</h3>
+
+            <p><strong>1. Kế Hoạch Đã Confirm Với Người Khác</strong></p>
+            <div class="example">
+                • We <strong>are meeting</strong> at the café (đã nói chuyện qua)<br>
+                • They <strong>are coming</strong> to my house tomorrow (đã được mời)<br>
+                • I <strong>am attending</strong> the conference (đã đăng ký)<br>
+                • She <strong>is presenting</strong> her project tomorrow (đã sắp xếp)
+            </div>
+
+            <p><strong>2. Kế Hoạch Cố Định, Không Dễ Thay Đổi</strong></p>
+            <div class="example">
+                • We <strong>are leaving</strong> at 6 tonight (quyết định rồi)<br>
+                • I <strong>am graduating</strong> next year (chắc chắn)<br>
+                • The wedding <strong>is taking</strong> place in June (đã đặt địa điểm)<br>
+                • I <strong>am starting</strong> my new job on Monday (đã ký hợp đồng)
+            </div>
+
+            <p><strong>3. Kế Hoạch Gần, Chắc Chắn Sẽ Xảy Ra</strong></p>
+            <div class="example">
+                • The film <strong>is starting</strong> in five minutes<br>
+                • They <strong>are boarding</strong> the flight soon<br>
+                • The ceremony <strong>is beginning</strong> now<br>
+                • The show <strong>is closing</strong> on Friday
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với "Going To":</strong><br>
+                Present Continuous = Arrangement đã confirm | Going To = Kế hoạch còn là ý định
+            </div>
+        </div>
+
+        <!-- PRESENT SIMPLE FOR FUTURE -->
+        <h2>📅 5. Present Simple Cho Tương Lai</h2>
+
+        <div class="card">
+            <h3>I. Cấu Trúc & Định Nghĩa</h3>
+            
+            <div class="formula">
+                Subject + Base Verb (hoặc + s/es cho he/she/it)
+            </div>
+
+            <p><span class="highlight">Ý Nghĩa:</span> Lịch trình, thời gian biểu, hoặc sự kiện được lên kế hoạch chính thức</p>
+
+            <div class="example">
+                • The train <strong>leaves</strong> at 6 PM (theo lịch biểu)<br>
+                • My birthday <strong>is</strong> on June 1st<br>
+                • The class <strong>starts</strong> at 9 AM tomorrow<br>
+                • Christmas <strong>falls</strong> on Monday this year
+            </div>
+
+            <h3>II. Cách Sử Dụng Present Simple Cho Tương Lai</h3>
+
+            <p><strong>1. Lịch Trình Giao Thông, Thời Gian Biểu</strong></p>
+            <div class="example">
+                • The flight <strong>departs</strong> at 10 AM<br>
+                • The bus <strong>arrives</strong> at 3 PM<br>
+                • The train <strong>leaves</strong> every hour<br>
+                • The meeting <strong>starts</strong> at 2 o'clock
+            </div>
+
+            <p><strong>2. Sự Kiện Trên Lịch Hoặc Lịch Năm</strong></p>
+            <div class="example">
+                • My exam <strong>is</strong> on Friday<br>
+                • New Year <strong>falls</strong> on Monday<br>
+                • The festival <strong>takes</strong> place in May<br>
+                • The concert <strong>is</strong> next Saturday
+            </div>
+
+            <p><strong>3. Trong Mệnh Đề Phụ (When/If)</strong></p>
+            <div class="example">
+                • We'll clean the house <strong>before Mom visits</strong> (KHÔNG "will visit")<br>
+                • If it <strong>rains</strong> tomorrow, we'll stay home (KHÔNG "will rain")<br>
+                • Call me <strong>when he arrives</strong> (KHÔNG "will arrive")<br>
+                • I'll go out <strong>after I finish</strong> work (KHÔNG "will finish")
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Quy Tắc Quan Trọng:</strong> Trong mệnh đề when, if, before, after, dùng Simple Present (KHÔNG dùng will/future tense)
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Năm Cách Diễn Đạt Tương Lai</h2>
+
+        <div class="card">
+            <h3>Bảng So Sánh Chi Tiết</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Diễn Đạt</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa Chính</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Be Going To</strong></td>
+                        <td>be + going to + V</td>
+                        <td>Kế hoạch quyết định</td>
+                        <td>I'm going to buy a car</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Be About To</strong></td>
+                        <td>be + about to + V</td>
+                        <td>Ngay lập tức (phút tới)</td>
+                        <td>I'm about to leave</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Be To</strong></td>
+                        <td>be + to + V</td>
+                        <td>Chính thức/Mệnh lệnh</td>
+                        <td>You are to report at 9 AM</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Continuous</strong></td>
+                        <td>be + V-ing</td>
+                        <td>Arrangement confirm</td>
+                        <td>I'm meeting Jane at 8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Simple</strong></td>
+                        <td>V / V-s/es</td>
+                        <td>Lịch trình/Thời gian biểu</td>
+                        <td>The train leaves at 6 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>So Sánh Thực Tế</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tình Huống</th>
+                        <th>Cách Diễn Đạt</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kế hoạch tại nhà (tự quyết định)</strong></td>
+                        <td>Going To</td>
+                        <td>I'm going to paint my room this weekend</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Kế hoạch với người khác (đã xác nhận)</strong></td>
+                        <td>Present Continuous</td>
+                        <td>I'm meeting John at 3 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sắp xảy ra ngay (vài phút tới)</strong></td>
+                        <td>About To</td>
+                        <td>The train is about to depart</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trên lịch biểu hoặc lịch</strong></td>
+                        <td>Present Simple</td>
+                        <td>The flight leaves at 10 AM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mệnh lệnh hoặc chính thức</strong></td>
+                        <td>Be To</td>
+                        <td>You are to complete the task by 5 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Be Going To</h3>
+            <ul>
+                <li>I <strong>am going to</strong> study medicine at university</li>
+                <li>She <strong>is going to</strong> start a new job next month</li>
+                <li>They <strong>are going to</strong> move to a new house</li>
+                <li>We <strong>are going to</strong> have a meeting tomorrow</li>
+                <li>It <strong>is going to rain</strong> (có dấu hiệu)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Be About To</h3>
+            <ul>
+                <li>The film <strong>is about to</strong> start</li>
+                <li>I <strong>am about to</strong> leave the house</li>
+                <li>She <strong>is about to</strong> make an announcement</li>
+                <li>They <strong>are about to</strong> close the doors</li>
+                <li>He was <strong>just about to</strong> call me when I arrived</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Be To</h3>
+            <ul>
+                <li>The president <strong>is to visit</strong> our city next week</li>
+                <li>You <strong>are to report</strong> to the principal</li>
+                <li>The meeting <strong>is to be held</strong> on Friday</li>
+                <li>All staff <strong>are to attend</strong> the training</li>
+                <li>The ceremony <strong>is to take</strong> place at noon</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Present Continuous</h3>
+            <ul>
+                <li>I <strong>am meeting</strong> the dentist at 3 PM</li>
+                <li>She <strong>is traveling</strong> to London tomorrow</li>
+                <li>We <strong>are having</strong> dinner with friends tonight</li>
+                <li>They <strong>are getting married</strong> in June</li>
+                <li>The conference <strong>is taking</strong> place next month</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Present Simple</h3>
+            <ul>
+                <li>The train <strong>leaves</strong> at 6 PM</li>
+                <li>My birthday <strong>is</strong> on December 25th</li>
+                <li>The class <strong>starts</strong> at 9 AM tomorrow</li>
+                <li>The bus <strong>arrives</strong> in 10 minutes</li>
+                <li>Our flight <strong>departs</strong> early in the morning</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng "will" trong mệnh đề when/if</p>
+            <div class="example">
+                ❌ When it will rain, we'll stay home | ✅ When it rains, we'll stay home
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Nhầm lẫn Present Continuous và Going To</p>
+            <div class="example">
+                ❌ I'm going to meet John (nếu chưa xác nhận) | ✅ I'm meeting John (đã xác nhận)
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng Present Simple với kế hoạch cá nhân</p>
+            <div class="example">
+                ❌ I go to Paris next month (nếu là kế hoạch cá nhân) | ✅ I'm going to go to Paris next month
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "about to" cho hành động cách xa</p>
+            <div class="example">
+                ❌ I'm about to graduate (trong 1 năm) | ✅ I'm about to leave (trong vài phút)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng "be to" trong tiếng nói hàng ngày (thường quá hình thức)</p>
+            <div class="example">
+                ❌ I am to go to Paris (không tự nhiên) | ✅ I'm going to go to Paris
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ Mục Đích & Sắc Thái</strong></p>
+            <ul>
+                <li>Going To = Kế hoạch đã quyết định (nhưng chưa arranged)</li>
+                <li>Present Continuous = Kế hoạch đã confirm với người khác</li>
+                <li>About To = Sắp xảy ra ngay (phút tới)</li>
+                <li>Present Simple = Trên lịch/thời gian biểu</li>
+                <li>Be To = Hình thức, chính thức, mệnh lệnh</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Quy Tắc When/If</strong></p>
+            <ul>
+                <li>Khi thấy "when", "if", "before", "after" → dùng Simple Present (KHÔNG will/future)</li>
+                <li>I'll call you <strong>when I arrive</strong> (KHÔNG "when I will arrive")</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Phân Biệt Going To vs Present Continuous</strong></p>
+            <ul>
+                <li>Going To: I'm going to buy a car (chưa chắc, còn trong quá trình quyết định)</li>
+                <li>Present Continuous: I'm buying a car (đã gửi tiền cọc, đã confirm với người bán)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Present Simple = Lịch Trình</strong></p>
+            <ul>
+                <li>Nếu nói về thời gian biểu, lịch bay, lịch học → dùng Present Simple</li>
+                <li>The lesson starts at 9 AM (không phải "is going to start")</li>
+            </ul>
+
+            <p><strong>Mẹo 5: About To = Ngay Bây Giờ</strong></p>
+            <ul>
+                <li>Chỉ dùng cho hành động trong vài phút tới, không phải ngày mai</li>
+                <li>I'm about to leave ≠ I'm about to leave tomorrow</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cách Diễn Đạt</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Thời Gian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Will</strong></td>
+                        <td>will + V</td>
+                        <td>Quyết định tức thì</td>
+                        <td>Vô định</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Going To</strong></td>
+                        <td>be + going to + V</td>
+                        <td>Kế hoạch quyết định</td>
+                        <td>Vừa qua gần đây</td>
+                    </tr>
+                    <tr>
+                        <td><strong>About To</strong></td>
+                        <td>be + about to + V</td>
+                        <td>Ngay sắp xảy ra</td>
+                        <td>Vài phút tới</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Be To</strong></td>
+                        <td>be + to + V</td>
+                        <td>Chính thức/Mệnh lệnh</td>
+                        <td>Xác định (lịch)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Continuous</strong></td>
+                        <td>be + V-ing</td>
+                        <td>Arrangement confirm</td>
+                        <td>Gần (đã arrange)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Simple</strong></td>
+                        <td>V / V-s/es</td>
+                        <td>Lịch/Thời gian biểu</td>
+                        <td>Trên lịch</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

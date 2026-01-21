@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Các Dạng Câu Hỏi (Question Forms)</h2>
+
+        <div class="card">
+            <h3>Các Dạng Câu Hỏi Là Gì?</h3>
+            <p><span class="highlight">Câu Hỏi (Questions)</span> là <strong>câu dùng để xin thông tin từ người khác. Tiếng Anh có bốn dạng câu hỏi chính: Yes/No questions, Wh-questions, Tag questions, và Indirect questions</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Câu hỏi thường dùng inversion (đảo chủ ngữ với động từ), ngoại trừ indirect questions.
+            </div>
+
+            <h3>Các Dạng Câu Hỏi Chính</h3>
+            <ul>
+                <li><strong>Yes/No Questions:</strong> Chỉ có hai câu trả lời (Yes hoặc No)</li>
+                <li><strong>Wh-Questions:</strong> Dùng để hỏi thông tin cụ thể (Who, What, Where, When, Why, How)</li>
+                <li><strong>Tag Questions:</strong> Câu hỏi đuôi, dùng để xác nhận thông tin</li>
+                <li><strong>Indirect Questions:</strong> Câu hỏi gián tiếp, nhúng trong câu khác</li>
+            </ul>
+        </div>
+
+        <!-- YES/NO QUESTIONS -->
+        <h2>✅ 1. Yes/No Questions (Câu Hỏi Có/Không)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Yes/No questions</span> là <strong>câu hỏi có câu trả lời là "Yes" hoặc "No", còn được gọi là closed questions</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> PHẢI có auxiliary verb (be, do, have, hoặc modal verbs) | Dùng inversion (Aux + S + V)
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>Auxiliary Verb + Subject + Main Verb + ...?</strong>
+            </div>
+
+            <h3>III. Các Auxiliary Verbs Cho Yes/No Questions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Auxiliary Verb</th>
+                        <th>Thì</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BE (is/are/was/were)</strong></td>
+                        <td>Present / Past Simple</td>
+                        <td>Are you happy? | Was she at home?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>DO (do/does/did)</strong></td>
+                        <td>Present / Past Simple</td>
+                        <td>Do you like coffee? | Did they go out?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HAVE (have/has/had)</strong></td>
+                        <td>Present / Past Perfect</td>
+                        <td>Have you finished? | Had they arrived?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WILL/WOULD</strong></td>
+                        <td>Future / Conditional</td>
+                        <td>Will you come? | Would you help me?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAN/COULD</strong></td>
+                        <td>Khả năng</td>
+                        <td>Can you swim? | Could you help?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MAY/MIGHT</strong></td>
+                        <td>Khả năng / Phép phép</td>
+                        <td>May I sit here? | Might they come?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MUST/SHOULD</strong></td>
+                        <td>Bắt buộc / Nên</td>
+                        <td>Must I go? | Should we wait?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Với BE:</strong></p>
+            <div class="example">
+                • Are you ready? (Yes, I am / No, I'm not)<br>
+                • Is she at work? (Yes, she is / No, she isn't)<br>
+                • Were they happy? (Yes, they were / No, they weren't)
+            </div>
+
+            <p><strong>Với DO:</strong></p>
+            <div class="example">
+                • Do you like music? (Yes, I do / No, I don't)<br>
+                • Does he work here? (Yes, he does / No, he doesn't)<br>
+                • Did you see the movie? (Yes, I did / No, I didn't)
+            </div>
+
+            <p><strong>Với HAVE:</strong></p>
+            <div class="example">
+                • Have you eaten? (Yes, I have / No, I haven't)<br>
+                • Has she left? (Yes, she has / No, she hasn't)<br>
+                • Had they finished? (Yes, they had / No, they hadn't)
+            </div>
+
+            <p><strong>Với Modal Verbs:</strong></p>
+            <div class="example">
+                • Will you come tomorrow? (Yes, I will / No, I won't)<br>
+                • Can you help me? (Yes, I can / No, I can't)<br>
+                • Should we go? (Yes, we should / No, we shouldn't)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Sau DO không đặt "to" trước main verb<br>
+                ❌ Do you to like coffee? | ✅ Do you like coffee?<br>
+                ❌ Does she to work? | ✅ Does she work?
+            </div>
+        </div>
+
+        <!-- WH-QUESTIONS -->
+        <h2>❓ 2. Wh-Questions (Câu Hỏi Wh)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Wh-questions</span> dùng để <strong>hỏi thông tin cụ thể (Who, What, Where, When, Why, How), câu trả lời không phải là Yes hoặc No</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bắt đầu bằng question word | Dùng inversion (Wh + Aux + S + V)
+            </div>
+
+            <h3>II. Các Question Words</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question Word</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WHO</strong></td>
+                        <td>Ai (subject)</td>
+                        <td>Who called you?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHOM</strong></td>
+                        <td>Ai (object - formal)</td>
+                        <td>Whom did you see?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHOSE</strong></td>
+                        <td>Của ai (sở hữu)</td>
+                        <td>Whose book is this?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHAT</strong></td>
+                        <td>Cái gì</td>
+                        <td>What did you see?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHICH</strong></td>
+                        <td>Cái nào (lựa chọn)</td>
+                        <td>Which book do you prefer?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHERE</strong></td>
+                        <td>Ở đâu (địa điểm)</td>
+                        <td>Where do you live?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WHEN</strong></td>
+                        <td>Khi nào (thời gian)</td>
+                        <td>When will you arrive?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WHY</strong></td>
+                        <td>Tại sao (lý do)</td>
+                        <td>Why did you leave?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HOW</strong></td>
+                        <td>Như thế nào (cách thức)</td>
+                        <td>How do you know him?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HOW MUCH/MANY</strong></td>
+                        <td>Bao nhiêu (số lượng)</td>
+                        <td>How much does it cost?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Công Thức & Ví Dụ</h3>
+
+            <div class="formula">
+                <strong>Question Word + Auxiliary Verb + Subject + Main Verb + ...?</strong>
+            </div>
+
+            <div class="example">
+                • What are you doing? | Where do you work? | When will they arrive?<br>
+                • Why did she leave? | How does he know? | Which book do you like?<br>
+                • Who called you? | Whose car is that? | How much does it cost?
+            </div>
+
+            <h3>IV. Trường Hợp Đặc Biệt: Who/What Làm Subject</h3>
+
+            <p><strong>Khi Who/What làm subject, KHÔNG dùng inversion:</strong></p>
+
+            <div class="example">
+                • Who called you? (Who = subject, không cần inversion)<br>
+                • What happened? (What = subject, không cần inversion)<br>
+                • Which book is on the table? (Which = subject)<br>
+                ❌ Who did call you? | ✅ Who called you?<br>
+                ❌ What did happen? | ✅ What happened?
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> So sánh "Who called?" (ai gọi - subject) vs "Who did you call?" (ai mà bạn gọi - object)
+            </div>
+        </div>
+
+        <!-- TAG QUESTIONS -->
+        <h2>🏷️ 3. Tag Questions (Câu Hỏi Đuôi)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tag questions</span> là <strong>câu hỏi có thêm một "đuôi" hỏi ngắn ở cuối, dùng để xác nhận thông tin hoặc yêu cầu sự đồng ý</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Positive + Negative tag HOẶC Negative + Positive tag | Dùng auxiliary verb từ câu chính
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>Positive Statement, + Negative Tag?</strong> (hay ngược lại)<br>
+                <strong>You like coffee, don't you?</strong><br>
+                <strong>She doesn't like coffee, does she?</strong>
+            </div>
+
+            <h3>III. Các Quy Tắc Tạo Tag Questions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì/Động Từ</th>
+                        <th>Ví Dụ Câu</th>
+                        <th>Tag Question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Simple</strong></td>
+                        <td>She likes coffee</td>
+                        <td>She likes coffee, doesn't she?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Present Continuous</strong></td>
+                        <td>They are studying</td>
+                        <td>They are studying, aren't they?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Perfect</strong></td>
+                        <td>You have finished</td>
+                        <td>You have finished, haven't you?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Simple</strong></td>
+                        <td>He went home</td>
+                        <td>He went home, didn't he?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Past Continuous</strong></td>
+                        <td>She was working</td>
+                        <td>She was working, wasn't she?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Future (will)</strong></td>
+                        <td>You will come</td>
+                        <td>You will come, won't you?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modal Verbs</strong></td>
+                        <td>They can swim</td>
+                        <td>They can swim, can't they?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Positive Statement + Negative Tag:</strong></p>
+            <div class="example">
+                • You're a student, aren't you? (Bạn là học sinh, phải không?)<br>
+                • She works here, doesn't she? (Cô ấy làm việc ở đây, phải không?)<br>
+                • They will come tomorrow, won't they? (Họ sẽ đến ngày mai, phải không?)<br>
+                • You have seen the movie, haven't you? (Bạn đã xem bộ phim, phải không?)
+            </div>
+
+            <p><strong>Negative Statement + Positive Tag:</strong></p>
+            <div class="example">
+                • You're not sick, are you? (Bạn không bị bệnh, đúng không?)<br>
+                • She doesn't work here, does she? (Cô ấy không làm việc ở đây, đúng không?)<br>
+                • They won't come tomorrow, will they? (Họ sẽ không đến ngày mai, đúng không?)<br>
+                • You haven't finished, have you? (Bạn chưa hoàn thành, đúng không?)
+            </div>
+
+            <h3>V. Các Trường Hợp Đặc Biệt</h3>
+
+            <p><strong>With "Let's":</strong></p>
+            <div class="example">
+                • Let's go to the beach, shall we?
+            </div>
+
+            <p><strong>With "There is/are":</strong></p>
+            <div class="example">
+                • There's a problem, isn't there?<br>
+                • There are two options, aren't there?
+            </div>
+
+            <p><strong>Với I am:</strong></p>
+            <div class="example">
+                • I am right, aren't I? (KHÔNG "am I not?")<br>
+                • I am late, aren't I?
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Phải sử dụng auxiliary verb từ câu chính trong tag<br>
+                ✅ She likes coffee, doesn't she? | ❌ She likes coffee, isn't she?<br>
+                ✅ They are coming, aren't they? | ❌ They are coming, don't they?
+            </div>
+        </div>
+
+        <!-- INDIRECT QUESTIONS -->
+        <h2>💭 4. Indirect Questions (Câu Hỏi Gián Tiếp)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Indirect questions (Embedded questions)</span> là <strong>câu hỏi nhúng trong một mệnh đề khác, không dùng question form mà dùng statement form</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> KHÔNG dùng inversion (S + V) | KHÔNG dùng dấu chấm hỏi trong phần hỏi | Kết hợp với các cụm "Can you tell me...", "Do you know...", v.v.
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>Can you tell me + question word + S + V + ...?</strong><br>
+                (hoặc: Do you know / Could you tell me / I'd like to know...)
+            </div>
+
+            <h3>III. So Sánh Direct Vs Indirect Questions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Direct Yes/No</strong></td>
+                        <td>Aux + S + V?</td>
+                        <td>Will you come?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Indirect Yes/No</strong></td>
+                        <td>...if/whether + S + V</td>
+                        <td>Can you tell me if you will come?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Direct Wh-</strong></td>
+                        <td>Wh + Aux + S + V?</td>
+                        <td>Where do you live?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Indirect Wh-</strong></td>
+                        <td>...Wh + S + V</td>
+                        <td>Can you tell me where you live?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Indirect Yes/No Questions (Dùng if/whether):</strong></p>
+            <div class="example">
+                • Direct: Do you speak French? | Indirect: Can you tell me if you speak French?<br>
+                • Direct: Have they left? | Indirect: Do you know if they have left?<br>
+                • Direct: Will you come? | Indirect: I'd like to know whether you will come
+            </div>
+
+            <p><strong>Indirect Wh-Questions:</strong></p>
+            <div class="example">
+                • Direct: Where is the station? | Indirect: Can you tell me where the station is?<br>
+                • Direct: What time does it start? | Indirect: Do you know what time it starts?<br>
+                • Direct: Why did she leave? | Indirect: I wonder why she left<br>
+                • Direct: How much does it cost? | Indirect: Could you tell me how much it costs?
+            </div>
+
+            <h3>V. Các Cụm Mở Đầu Indirect Questions</h3>
+
+            <div class="example">
+                • Can you tell me...? | Could you tell me...?<br>
+                • Do you know...? | I'd like to know...<br>
+                • I wonder... | I'd appreciate if you could tell me...<br>
+                • Please tell me... | Would you mind telling me...?<br>
+                • Let me know if... | Excuse me, could you tell me...?
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG dùng inversion hoặc question mark trong phần indirect<br>
+                ❌ Can you tell me where is the station? | ✅ Can you tell me where the station is?<br>
+                ❌ Do you know if will he come? | ✅ Do you know if he will come?
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai inversion trong Yes/No questions</p>
+            <div class="example">
+                ❌ You are happy? | ✅ Are you happy?<br>
+                ❌ She likes coffee? | ✅ Does she like coffee?
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng sai inversion trong Wh-questions</p>
+            <div class="example">
+                ❌ Where you live? | ✅ Where do you live?<br>
+                ❌ Why she left? | ✅ Why did she leave?
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên rằng Who/What làm subject KHÔNG dùng inversion</p>
+            <div class="example">
+                ❌ Who did call you? | ✅ Who called you?<br>
+                ❌ What did happen? | ✅ What happened?
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng sai auxiliary verb trong tag questions</p>
+            <div class="example">
+                ❌ She likes coffee, isn't she? | ✅ She likes coffee, doesn't she?<br>
+                ❌ They are coming, don't they? | ✅ They are coming, aren't they?
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng question form trong indirect questions</p>
+            <div class="example">
+                ❌ Can you tell me where is the station? | ✅ Can you tell me where the station is?<br>
+                ❌ Do you know if will he come? | ✅ Do you know if he will come?
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Yes/No Questions - LUÔN Có Auxiliary Verb</strong></p>
+            <ul>
+                <li>Cần be, do, have, hoặc modal verbs</li>
+                <li>Quy tắc: Aux + S + V?</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Wh-Questions - Quy Tắc Inversion</strong></p>
+            <ul>
+                <li>Nếu Wh = subject: KHÔNG inversion (Who called?)</li>
+                <li>Nếu Wh ≠ subject: Dùng inversion (Where do you live?)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Tag Questions - Đối Lập Với Câu Chính</strong></p>
+            <ul>
+                <li>Positive statement → Negative tag</li>
+                <li>Negative statement → Positive tag</li>
+                <li>Dùng auxiliary verb từ câu chính</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Indirect Questions - Statement Form</strong></p>
+            <ul>
+                <li>KHÔNG inversion (S + V)</li>
+                <li>Yes/No: if/whether + S + V</li>
+                <li>Wh-: Wh-word + S + V</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Nhớ Các Question Words</strong></p>
+            <ul>
+                <li>Who (ai - người) | What (cái gì) | Which (cái nào)</li>
+                <li>Where (ở đâu) | When (khi nào) | Why (tại sao) | How (như thế nào)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng So Sánh 4 Dạng Câu Hỏi</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Công Thức</th>
+                        <th>Inversion</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yes/No</strong></td>
+                        <td>Aux + S + V?</td>
+                        <td>Có</td>
+                        <td>Are you ready?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Wh-</strong></td>
+                        <td>Wh + Aux + S + V?</td>
+                        <td>Có (nếu Wh ≠ subject)</td>
+                        <td>Where do you live?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tag</strong></td>
+                        <td>Statement + Tag?</td>
+                        <td>Không (câu chính)</td>
+                        <td>You're ready, aren't you?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Indirect</strong></td>
+                        <td>...if/whether + S + V</td>
+                        <td>Không</td>
+                        <td>Can you tell me where you live?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

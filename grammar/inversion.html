@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Đảo Ngữ (Inversion)</h2>
+
+        <div class="card">
+            <h3>Đảo Ngữ Là Gì?</h3>
+            <p><span class="highlight">Đảo Ngữ (Inversion)</span> là <strong>cách thay đổi thứ tự thông thường của câu bằng cách đặt auxiliary verb trước subject thay vì sau, hoặc đặt một phần khác ở đầu câu để nhấn mạnh hoặc làm trang trọng hơn</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Đảo ngữ có ba dạng chính: đảo ngữ với trạng từ phủ định, đảo ngữ với điều kiện, và đảo ngữ với so sánh.
+            </div>
+
+            <h3>Đặc Điểm Của Đảo Ngữ</h3>
+            <ul>
+                <li><strong>Nhấn Mạnh:</strong> Giúp làm nổi bật một phần cụ thể của câu</li>
+                <li><strong>Trang Trọng:</strong> Làm câu nghe chính thức, trang trọng hơn</li>
+                <li><strong>Thay Đổi Thứ Tự:</strong> Đảo chủ ngữ và auxiliary verb</li>
+                <li><strong>Phổ Biến Trong Viết:</strong> Thường dùng trong viết chính thức, báo cáo, văn học</li>
+            </ul>
+        </div>
+
+        <!-- INVERSION WITH NEGATIVE ADVERBIALS -->
+        <h2>❌ 1. Đảo Ngữ Với Trạng Từ Phủ Định (Inversion with Negative Adverbials)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đảo ngữ với trạng từ phủ định</span> dùng để <strong>nhấn mạnh tuyên bố phủ định, làm câu nghe trang trọng và có cảm xúc hơn</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Trạng từ phủ định ở đầu câu | Auxiliary verb đảo lên trước subject | Dùng để nhấn mạnh
+            </div>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>Negative Adverbial + Auxiliary Verb + Subject + Main Verb + ...</strong>
+            </div>
+
+            <h3>III. Các Trạng Từ Phủ Định Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ Phủ Định</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ Đảo Ngữ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NEVER</strong></td>
+                        <td>Không bao giờ</td>
+                        <td>Never have I seen such chaos</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>RARELY</strong></td>
+                        <td>Hiếm khi</td>
+                        <td>Rarely does he make mistakes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SELDOM</strong></td>
+                        <td>Ít khi</td>
+                        <td>Seldom have I met such a generous person</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>HARDLY</strong></td>
+                        <td>Hầu như không</td>
+                        <td>Hardly had he started when it began to rain</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SCARCELY</strong></td>
+                        <td>Hầu như không</td>
+                        <td>Scarcely had she finished when the phone rang</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BARELY</strong></td>
+                        <td>Vừa mới, hầu như không</td>
+                        <td>Barely had they sat down to eat</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LITTLE</strong></td>
+                        <td>Rất ít, không nhiều</td>
+                        <td>Little did he know the truth</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NOT ONLY</strong></td>
+                        <td>Không những, không chỉ</td>
+                        <td>Not only was it cold, but it rained too</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NO SOONER</strong></td>
+                        <td>Vừa mới, ngay sau đó</td>
+                        <td>No sooner had he left than it started raining</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>UNDER NO CIRCUMSTANCES</strong></td>
+                        <td>Dưới mọi hoàn cảnh không</td>
+                        <td>Under no circumstances will I accept this</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Với Never, Rarely, Seldom:</strong></p>
+            <div class="example">
+                • Standard: I have never seen such a beautiful view<br>
+                • Inverted: Never have I seen such a beautiful view<br>
+                • Standard: She rarely makes mistakes<br>
+                • Inverted: Rarely does she make mistakes<br>
+                • Standard: I seldom feel so motivated<br>
+                • Inverted: Seldom have I felt so motivated
+            </div>
+
+            <p><strong>Với Hardly, Scarcely, Barely:</strong></p>
+            <div class="example">
+                • Standard: He had hardly started speaking when the alarm rang<br>
+                • Inverted: Hardly had he started speaking when the alarm rang<br>
+                • Standard: We had scarcely sat down to eat when the phone rang<br>
+                • Inverted: Scarcely had we sat down to eat when the phone rang<br>
+                • Standard: She had barely closed the book when the lecture ended<br>
+                • Inverted: Barely had she closed the book when the lecture ended
+            </div>
+
+            <p><strong>Với Not Only, No Sooner:</strong></p>
+            <div class="example">
+                • Standard: It was not only cold, but it rained too<br>
+                • Inverted: Not only was it cold, but it rained too<br>
+                • Standard: He had no sooner left than it started raining<br>
+                • Inverted: No sooner had he left than it started raining
+            </div>
+
+            <p><strong>Với Negative Only-phrases:</strong></p>
+            <div class="example">
+                • Only when we arrived home did I feel calm<br>
+                • Only by working hard could we afford to eat<br>
+                • Only after she left did I realize her importance<br>
+                • Only if you study will you pass the exam
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Đảo ngữ chỉ xảy ra khi trạng từ phủ định đặt ở ĐẦU câu<br>
+                ✅ Never have I seen | ❌ I have never seen (không đảo)<br>
+                ✅ Rarely does she make | ❌ She rarely makes (không đảo)
+            </div>
+        </div>
+
+        <!-- INVERSION WITH CONDITIONALS -->
+        <h2>🔄 2. Đảo Ngữ Với Điều Kiện (Inversion with Conditionals)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đảo ngữ với điều kiện</span> dùng để <strong>tạo ra dạng chính thức của câu điều kiện bằng cách bỏ "if" và đảo auxiliary verb (had, were, should) lên trước subject</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Bỏ từ "if" | Đảo auxiliary verb lên đầu | Ba loại: Had (Third), Were (Second), Should (First)
+            </div>
+
+            <h3>II. Ba Loại Đảo Ngữ Điều Kiện</h3>
+
+            <p><strong>1. Had - Third Conditional (Quá Khứ Không Thực)</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard (if)</strong></td>
+                        <td>If I had known, I would have acted differently</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Inverted (had)</strong></td>
+                        <td>Had I known, I would have acted differently</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Standard: If we had arrived sooner, we could have prevented the accident<br>
+                • Inverted: Had we arrived sooner, we could have prevented the accident<br>
+                • Standard: If I had studied more, I would have passed<br>
+                • Inverted: Had I studied more, I would have passed<br>
+                • Standard: If they had known the truth, they would have reacted differently<br>
+                • Inverted: Had they known the truth, they would have reacted differently
+            </div>
+
+            <p><strong>2. Were - Second Conditional (Hiện Tại/Tương Lai Không Thực)</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard (if)</strong></td>
+                        <td>If I were you, I wouldn't do that</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Inverted (were)</strong></td>
+                        <td>Were I you, I wouldn't do that</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Standard: If she were here, we could begin<br>
+                • Inverted: Were she here, we could begin<br>
+                • Standard: If I were to go back in time, I would change everything<br>
+                • Inverted: Were I to go back in time, I would change everything<br>
+                • Standard: If he were available, he would help us<br>
+                • Inverted: Were he available, he would help us
+            </div>
+
+            <p><strong>3. Should - First Conditional (Tương Lai Có Khả Năng)</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard (if)</strong></td>
+                        <td>If you should need help, call me</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Inverted (should)</strong></td>
+                        <td>Should you need help, call me</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • Standard: If a customer wishes to cancel, they should notify us<br>
+                • Inverted: Should a customer wish to cancel, they should notify us<br>
+                • Standard: If you have any questions, please let me know<br>
+                • Inverted: Should you have any questions, please let me know<br>
+                • Standard: If you require assistance, don't hesitate to ask<br>
+                • Inverted: Should you require assistance, don't hesitate to ask
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Quan Trọng:</strong> Khi đảo ngữ, bỏ "if" không được để lại<br>
+                ✅ Had I known | ❌ If had I known<br>
+                ✅ Were she here | ❌ If were she here<br>
+                ✅ Should you need | ❌ If should you need
+            </div>
+        </div>
+
+        <!-- INVERSION WITH COMPARATIVES -->
+        <h2>⚖️ 3. Đảo Ngữ Với So Sánh (Inversion with Comparatives)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đảo ngữ với so sánh</span> dùng để <strong>nhấn mạnh sự so sánh bằng cách đảo thứ tự của auxiliary verb và subject trong các cấu trúc so sánh</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Dùng trong các cấu trúc so sánh (comparative structures) | Để nhấn mạnh sự khác biệt
+            </div>
+
+            <h3>II. Công Thức & Ví Dụ</h3>
+
+            <p><strong>So Sánh Bằng "Than":</strong></p>
+
+            <div class="formula">
+                <strong>Comparative + than + Auxiliary Verb + Subject + Verb</strong>
+            </div>
+
+            <div class="example">
+                • Standard: She runs faster than he runs<br>
+                • Inverted: She runs faster than he does<br>
+                • Standard: John earns more than the manager earns<br>
+                • Inverted: John earns more than does the manager<br>
+                • Standard: This year's sales are better than last year's sales were<br>
+                • Inverted: This year's sales are better than were last year's sales
+            </div>
+
+            <p><strong>So Sánh "The...The":</strong></p>
+
+            <div class="example">
+                • Standard: The more you practice, the better you get<br>
+                • Inverted (rarer): The more you practice, the better do you get<br>
+                • Standard: The harder you study, the higher your grades are<br>
+                • Inverted (rarer): The harder you study, the higher are your grades
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Đảo ngữ trong so sánh không phổ biến như trong trạng từ phủ định hoặc điều kiện<br>
+                Thường chỉ dùng để nhấn mạnh hoặc tạo hiệu ứng văn học
+            </div>
+        </div>
+
+        <!-- OTHER INVERSIONS -->
+        <h2>✨ 4. Các Dạng Đảo Ngữ Khác</h2>
+
+        <div class="card">
+            <h3>I. Đảo Ngữ Với Trạng Từ Địa Điểm (Place Adverbials)</h3>
+
+            <div class="example">
+                • Here comes the sun! (Mặt trời lên rồi!)<br>
+                • There goes my chance! (Cơ hội của tôi đã mất!)<br>
+                • Down the stairs came the bride<br>
+                • In the distance appeared the mountains
+            </div>
+
+            <h3>II. Đảo Ngữ Với "So" & "Neither"</h3>
+
+            <div class="example">
+                • She loves ice cream. So do I (Cô ấy thích kem. Tôi cũng vậy)<br>
+                • I don't like coffee. Neither do I (Tôi không thích cà phê. Tôi cũng không)<br>
+                • John passed the exam. So did Mary<br>
+                • They haven't arrived. Neither has he
+            </div>
+
+            <h3>III. Đảo Ngữ Với "Not Only...But Also"</h3>
+
+            <div class="example">
+                • Standard: It was not only cold, but it also rained<br>
+                • Inverted: Not only was it cold, but it also rained<br>
+                • Standard: He is not only intelligent, but also hardworking<br>
+                • Inverted: Not only is he intelligent, but he is also hardworking
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên đảo auxiliary verb</p>
+            <div class="example">
+                ❌ Never I have seen such chaos | ✅ Never have I seen such chaos<br>
+                ❌ Rarely she makes mistakes | ✅ Rarely does she make mistakes
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Để lại "if" khi dùng inverted conditionals</p>
+            <div class="example">
+                ❌ If had I known, I would have acted | ✅ Had I known, I would have acted<br>
+                ❌ If were she here | ✅ Were she here
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng sai auxiliary verb</p>
+            <div class="example">
+                ❌ Never I do see | ✅ Never do I see<br>
+                ❌ Rarely she has made | ✅ Rarely has she made
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Áp dụng inversion ở giữa câu</p>
+            <div class="example">
+                ❌ I have never seen such a beautiful view, never have I (sai vị trí) | ✅ Never have I seen such a beautiful view
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Sai thứ tự với trạng từ địa điểm</p>
+            <div class="example">
+                ❌ Here the sun comes | ✅ Here comes the sun<br>
+                ❌ There goes my chance away | ✅ There goes my chance
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Đảo Ngữ Với Trạng Từ Phủ Định</strong></p>
+            <ul>
+                <li>Bước 1: Xác định trạng từ phủ định (never, rarely, seldom, ...)</li>
+                <li>Bước 2: Đặt nó ở đầu câu</li>
+                <li>Bước 3: Đảo auxiliary verb lên trước subject</li>
+                <li>Nhớ: Never have I... | Rarely does he... | Hardly had she...</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Đảo Ngữ Điều Kiện - Ba Loại</strong></p>
+            <ul>
+                <li><strong>Had:</strong> Third Conditional (quá khứ), Had I known...</li>
+                <li><strong>Were:</strong> Second Conditional (hiện tại), Were I you...</li>
+                <li><strong>Should:</strong> First Conditional (tương lai), Should you need...</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Quy Tắc "Nếu Đầu Câu"</strong></p>
+            <ul>
+                <li>Nếu trạng từ phủ định ở ĐẦU → PHẢI đảo</li>
+                <li>Nếu trạng từ ở GIỮA HOẶC CUỐI → KHÔNG đảo</li>
+                <li>✅ Never have I seen | ❌ I have never seen (không đảo)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Như Đặt Câu Hỏi</strong></p>
+            <ul>
+                <li>Đảo ngữ giống như đặt câu hỏi - auxiliary verb lên trước subject</li>
+                <li>Question: Do you like coffee? | Inversion: Rarely do I like coffee</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Nghe Từng Câu Để Quen</strong></p>
+            <ul>
+                <li>Nghe và lặp lại các câu với inversion</li>
+                <li>Đọc văn học để thấy inversion được sử dụng</li>
+                <li>Luyện tập viết các câu đảo ngữ</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Ba Loại Đảo Ngữ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                        <th>Ý Nghĩa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phủ Định</strong></td>
+                        <td>Negative Adv + Aux + S + V</td>
+                        <td>Never have I seen</td>
+                        <td>Nhấn mạnh tuyên bố phủ định</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Điều Kiện</strong></td>
+                        <td>Had/Were/Should + S + V</td>
+                        <td>Had I known...</td>
+                        <td>Thay thế "if" - trang trọng hơn</td>
+                    </tr>
+                    <tr>
+                        <td><strong>So Sánh</strong></td>
+                        <td>Comparative + than + Aux + S</td>
+                        <td>Faster than does he</td>
+                        <td>Nhấn mạnh so sánh (hiếm)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Địa Điểm</strong></td>
+                        <td>Place Adv + V + S</td>
+                        <td>Here comes the sun</td>
+                        <td>Nhấn mạnh vị trí</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

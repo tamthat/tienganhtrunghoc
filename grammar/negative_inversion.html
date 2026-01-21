@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Đảo Ngữ Với Trạng Từ Phủ Định (Negative Inversion)</h2>
+
+        <div class="card">
+            <h3>Đảo Ngữ Phủ Định Là Gì?</h3>
+            <p><span class="highlight">Đảo Ngữ Với Trạng Từ Phủ Định (Negative Inversion)</span> là <strong>cách đảo ngược thứ tự chủ-động từ thông thường bằng cách đặt trạng từ phủ định hoặc giới hạn ở đầu câu, để tạo ra sự nhấn mạnh (emphasis) và tone chính thức (formal tone)</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Đảo ngữ phủ định chỉ dùng trong tiếng Anh chính thức (formal English) như bài phát biểu, viết lách, hoặc để tạo hiệu ứng kịch tính. Nó KHÔNG phổ biến trong hội thoại hàng ngày.
+            </div>
+
+            <h3>Các Trạng Từ Phủ Định Phổ Biến</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Loại</th>
+                        <th>Ví Dụ Đảo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NEVER</strong></td>
+                        <td>Không bao giờ (phủ định hoàn toàn)</td>
+                        <td>Negative adverb</td>
+                        <td>Never have I seen</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>RARELY/SELDOM</strong></td>
+                        <td>Hiếm khi, ít khi</td>
+                        <td>Limiting adverb</td>
+                        <td>Rarely have we spoken</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HARDLY/BARELY/SCARCELY</strong></td>
+                        <td>Gần như không, vừa mới</td>
+                        <td>Negative adverb (+ when)</td>
+                        <td>Hardly had I left when</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NO SOONER</strong></td>
+                        <td>Vừa mới, ngay sau đó</td>
+                        <td>Negative adverb (+ than)</td>
+                        <td>No sooner had I arrived than</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LITTLE</strong></td>
+                        <td>Không (khi mang ý phủ định)</td>
+                        <td>Limiting adverb</td>
+                        <td>Little did I know</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NOT ONLY</strong></td>
+                        <td>Không những (+ but also)</td>
+                        <td>Correlative conjunction</td>
+                        <td>Not only did they</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NOT UNTIL</strong></td>
+                        <td>Cho đến khi (mới)</td>
+                        <td>Limiting adverb</td>
+                        <td>Not until I left did I</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>IN NO WAY/UNDER NO CIRCUMSTANCES</strong></td>
+                        <td>Không có cách nào, dưới không trường hợp nào</td>
+                        <td>Formal phrase</td>
+                        <td>In no way did we agree</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NEVER/RARELY/SELDOM -->
+        <h2>❌ 1. NEVER, RARELY, SELDOM (Không Bao Giờ, Hiếm Khi)</h2>
+
+        <div class="card">
+            <h3>I. Công Thức & Hình Thức</h3>
+
+            <p><span class="highlight">Khi NEVER/RARELY/SELDOM ở đầu câu, thứ tự là: TRẠNG TỪ + AUXILIARY VERB + SUBJECT + V</span>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Công Thức Đảo</th>
+                        <th>Công Thức Thường</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present Perfect</strong></td>
+                        <td>Never + have/has + S + V3</td>
+                        <td>S + have/has never + V3</td>
+                        <td>Never have I seen / I have never seen</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Perfect</strong></td>
+                        <td>Never + had + S + V3</td>
+                        <td>S + had never + V3</td>
+                        <td>Never had he known / He had never known</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Present Simple</strong></td>
+                        <td>Rarely + do/does + S + V1</td>
+                        <td>S + rarely + V1</td>
+                        <td>Rarely do we find / We rarely find</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past Simple</strong></td>
+                        <td>Seldom + did + S + V1</td>
+                        <td>S + seldom + V1</td>
+                        <td>Seldom did she work / She seldom worked</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modal Verb</strong></td>
+                        <td>Never + modal + S + V1</td>
+                        <td>S + modal never + V1</td>
+                        <td>Never can a patient recover / A patient can never recover</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Never - Không Bao Giờ:</strong></p>
+            <div class="example">
+                • Never have I felt so relieved (Tôi chưa bao giờ cảm thấy nhẹ nhõm như vậy)<br>
+                • Normal: I have never felt so relieved<br>
+                <br>
+                • Never had the town seen such a large celebration<br>
+                • Normal: The town had never seen such a large celebration<br>
+                <br>
+                • Never will I forget this moment<br>
+                • Normal: I will never forget this moment
+            </div>
+
+            <p><strong>Rarely - Hiếm Khi:</strong></p>
+            <div class="example">
+                • Rarely do we find such talent (Chúng ta hiếm khi tìm thấy tài năng như vậy)<br>
+                • Normal: We rarely find such talent<br>
+                <br>
+                • Rarely has she taken a day off work<br>
+                • Normal: She has rarely taken a day off work
+            </div>
+
+            <p><strong>Seldom - Ít Khi:</strong></p>
+            <div class="example">
+                • Seldom did she work very hard (Cô ấy ít khi làm việc chăm chỉ)<br>
+                • Normal: She seldom worked very hard<br>
+                <br>
+                • Seldom can one appreciate what one has<br>
+                • Normal: One can seldom appreciate what one has
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Nếu không có auxiliary verb, bạn PHẢI thêm "do/did" (cho present/past simple)<br>
+                ✅ Rarely do museums open before 10 a.m. (thêm "do")<br>
+                ✅ Never have I seen (have = auxiliary)
+            </div>
+        </div>
+
+        <!-- HARDLY/BARELY/SCARCELY & NO SOONER -->
+        <h2>⚡ 2. HARDLY, BARELY, SCARCELY & NO SOONER (Gần Như Không, Vừa Mới)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">HARDLY/BARELY/SCARCELY và NO SOONER được dùng để nói về một sự kiện lần lượt diễn ra sau sự kiện khác trong quá khứ, thường dùng với Past Perfect</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Hardly/Barely/Scarcely + when | No sooner + than | Thường Past Perfect | Nhấn mạnh sự nhanh chóng trong quá khứ
+            </div>
+
+            <h3>II. Công Thức & Hình Thức</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ</th>
+                        <th>Công Thức Đảo</th>
+                        <th>Công Thức Thường</th>
+                        <th>Từ Nối</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HARDLY</strong></td>
+                        <td>Hardly + had + S + V3 + when</td>
+                        <td>S + had hardly + V3 + when</td>
+                        <td>WHEN</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BARELY</strong></td>
+                        <td>Barely + had + S + V3 + when</td>
+                        <td>S + had barely + V3 + when</td>
+                        <td>WHEN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SCARCELY</strong></td>
+                        <td>Scarcely + had + S + V3 + when</td>
+                        <td>S + had scarcely + V3 + when</td>
+                        <td>WHEN</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NO SOONER</strong></td>
+                        <td>No sooner + had + S + V3 + than</td>
+                        <td>S + had no sooner + V3 + than (rare)</td>
+                        <td>THAN</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Hardly/Barely/Scarcely + When:</strong></p>
+            <div class="example">
+                • Hardly had I left the bank when there was a robbery<br>
+                (Vừa rời ngân hàng, tôi gặp vụ cướp)<br>
+                • Normal: I had hardly left the bank when there was a robbery<br>
+                <br>
+                • Barely had we arrived at the hotel when we were told to leave<br>
+                (Vừa tới khách sạn, chúng tôi được bảo rời đi)<br>
+                • Normal: We had barely arrived when we were told to leave<br>
+                <br>
+                • Scarcely had he got off the train when someone stole his suitcase<br>
+                (Vừa xuống tàu, ai đó đánh cắp vali của anh ấy)<br>
+                • Normal: He had scarcely got off the train when someone stole his suitcase
+            </div>
+
+            <p><strong>No Sooner + Than:</strong></p>
+            <div class="example">
+                • No sooner had the movie started than the power went out<br>
+                (Vừa phim bắt đầu, điện tắt)<br>
+                • Normal: The movie had no sooner started than the power went out<br>
+                <br>
+                • No sooner had she opened the door than the cat rushed out<br>
+                (Vừa mở cửa, con mèo chạy ra)<br>
+                • Normal: She had no sooner opened the door than the cat rushed out<br>
+                <br>
+                • No sooner had the bell rung than the students rushed out<br>
+                (Vừa chuông rung, học sinh chạy ra)<br>
+                • Normal: The bell had no sooner rung than the students rushed out
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong><br>
+                • Hardly/Barely/Scarcely = dùng "WHEN" để nối<br>
+                • No sooner = dùng "THAN" để nối<br>
+                • KHÔNG lẫn lộn: ❌ No sooner...when | ✅ No sooner...than
+            </div>
+        </div>
+
+        <!-- LITTLE -->
+        <h2>🤐 3. LITTLE (Không, Khi Mang Ý Phủ Định)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">LITTLE ở đầu câu mang ý phủ định "không hề, chẳng" và được dùng để nhấn mạnh sự ngạc nhiên hoặc bất ngờ</span>.</p>
+
+            <h3>II. Công Thức & Ví Dụ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Công Thức Đảo</th>
+                        <th>Công Thức Thường</th>
+                        <th>Ý Nghĩa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Little + did/do/does + S + V</td>
+                        <td>S + did/do/does little (V)</td>
+                        <td>Không hề, không chút nào</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Ví Dụ:</strong></p>
+            <div class="example">
+                • Little did she dream of becoming famous (Cô ấy không hề mơ ước trở thành nổi tiếng)<br>
+                • Normal: She little dreamed of becoming famous<br>
+                <br>
+                • Little did anyone know how much work had gone into the preparations<br>
+                (Không ai biết có bao nhiêu công sức đã được bỏ ra chuẩn bị)<br>
+                • Normal: No one knew how much work had gone into the preparations<br>
+                <br>
+                • Little did he suspect that his invention would change the world<br>
+                (Anh ấy không hề ngờ phát minh của anh sẽ thay đổi thế giới)<br>
+                • Normal: He didn't suspect that his invention would change the world
+            </div>
+        </div>
+
+        <!-- NOT ONLY & NOT UNTIL -->
+        <h2>➕ 4. NOT ONLY & NOT UNTIL (Không Những & Cho Đến Khi)</h2>
+
+        <div class="card">
+            <h3>I. NOT ONLY...BUT ALSO</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Công Thức Đảo</th>
+                        <th>Công Thức Thường</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Not only + did/does + S + V, but + S + V</td>
+                        <td>S + not only + V, but also + V</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Ví Dụ:</strong></p>
+            <div class="example">
+                • Not only did she finish the race, but she also set a new record<br>
+                (Cô ấy không những hoàn thành cuộc đua, mà còn lập kỷ lục mới)<br>
+                • Normal: She not only finished the race but also set a new record<br>
+                <br>
+                • Not only did they forget to bring the tickets, but they also missed the show<br>
+                (Họ không những quên mang vé, mà còn bỏ lỡ buổi diễn)<br>
+                • Normal: They not only forgot to bring the tickets but also missed the show
+            </div>
+
+            <h3>II. NOT UNTIL</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Công Thức Đảo</th>
+                        <th>Công Thức Thường</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Not until + time/clause + did/do + S + V</td>
+                        <td>S + did/do not V + until + time/clause</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Ví Dụ:</strong></p>
+            <div class="example">
+                • Not until I spoke to her did I realize my mistake<br>
+                (Cho đến khi tôi nói chuyện với cô ấy, tôi mới nhận ra sai lầm)<br>
+                • Normal: I didn't realize my mistake until I spoke to her<br>
+                <br>
+                • Not until the game was over did they relax<br>
+                (Cho đến khi trận đấu kết thúc, họ mới thư giãn)<br>
+                • Normal: They didn't relax until the game was over
+            </div>
+        </div>
+
+        <!-- FORMAL PHRASES WITH NO/NOT -->
+        <h2>🎓 5. Các Cụm Từ Hình Thức Với NO/NOT</h2>
+
+        <div class="card">
+            <h3>I. Các Cụm Từ Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cụm Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ Đảo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IN NO WAY</strong></td>
+                        <td>Không có cách nào</td>
+                        <td>In no way did we agree</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>UNDER NO CIRCUMSTANCES</strong></td>
+                        <td>Dưới không trường hợp nào</td>
+                        <td>Under no circumstances should children travel alone</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT NO TIME</strong></td>
+                        <td>Không lúc nào</td>
+                        <td>At no time were they allowed to leave</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON NO ACCOUNT</strong></td>
+                        <td>Trên cơ sở nào, không lý do gì</td>
+                        <td>On no account should you speak to strangers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NOWHERE</strong></td>
+                        <td>Không ở nơi nào</td>
+                        <td>Nowhere has she seen such beauty</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>In No Way, Under No Circumstances, At No Time:</strong></p>
+            <div class="example">
+                • In no way did they approve the changes<br>
+                (Họ không theo cách nào phê duyệt những thay đổi)<br>
+                <br>
+                • Under no circumstances should children travel without an adult<br>
+                (Dưới không trường hợp nào, trẻ em nên du hành mà không có người lớn)<br>
+                <br>
+                • At no time were they allowed to leave the building<br>
+                (Không lúc nào họ được phép rời khỏi tòa nhà)<br>
+                <br>
+                • Nowhere had she seen such a beautiful sunset<br>
+                (Cô ấy không ở đâu thấy mặt trời lặn đẹp như vậy)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên thêm auxiliary verb (do/did) khi không có aux</p>
+            <div class="example">
+                ❌ Rarely we find such talent | ✅ Rarely do we find such talent<br>
+                ❌ Never I seen | ✅ Never have I seen
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Nhầm "when" và "than" với hardly/no sooner</p>
+            <div class="example">
+                ❌ Hardly had I left than there was robbery | ✅ Hardly had I left when there was robbery<br>
+                ❌ No sooner had I arrived when it rained | ✅ No sooner had I arrived than it rained
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng Present Simple khi nên dùng Past Perfect</p>
+            <div class="example">
+                ❌ Hardly do I leave when something happens | ✅ Hardly had I left when something happened<br>
+                ❌ No sooner will I arrive than we leave | ✅ No sooner had I arrived than we left
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai thứ tự từ</p>
+            <div class="example">
+                ❌ Never I have seen | ✅ Never have I seen<br>
+                ❌ Not only did finish they | ✅ Not only did they finish
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng đảo ngữ trong lời nói thường ngày</p>
+            <div class="example">
+                ❌ (informal) Never have I seen / Rarely do we go (thường tự nhiên không dùng đảo)<br>
+                ✅ (formal/written) Never have I felt so relieved
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Thứ Tự Đảo Cơ Bản</strong></p>
+            <ul>
+                <li>Thứ tự thường: Subject + Verb</li>
+                <li>Thứ tự đảo: Negative Adverb + Auxiliary Verb + Subject + Main Verb</li>
+                <li>Nếu không có auxiliary, thêm do/did (present/past simple)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhớ Các Cụm Từ Nối</strong></p>
+            <ul>
+                <li>Hardly/Barely/Scarcely + WHEN</li>
+                <li>No sooner + THAN</li>
+                <li>Not until + DID (main clause)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Xác Định Auxiliary Verb Đúng</strong></p>
+            <ul>
+                <li>Present Perfect: have/has</li>
+                <li>Past Perfect: had</li>
+                <li>Present Simple: do/does</li>
+                <li>Past Simple: did</li>
+                <li>Modal: modal verb (can, could, would, will)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Ngữ Cảnh Sử Dụng</strong></p>
+            <ul>
+                <li>Đảo ngữ = FORMAL/WRITTEN English</li>
+                <li>Thường dùng trong: bài phát biểu, viết lách, IELTS/TOEFL</li>
+                <li>KHÔNG dùng trong lời nói bình thường</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Chuyển Đổi</strong></p>
+            <ul>
+                <li>Viết câu thường → Đảo đến câu đảo ngữ</li>
+                <li>Never I saw → Never have I seen</li>
+                <li>They didn't leave until → Not until did they leave</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trạng Từ</th>
+                        <th>Công Thức Đảo</th>
+                        <th>Từ Nối</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Never</strong></td>
+                        <td>Never + have/had/do + S + V</td>
+                        <td>-</td>
+                        <td>Không bao giờ</td>
+                        <td>Never have I seen</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Rarely/Seldom</strong></td>
+                        <td>Rarely + do/does/did + S + V</td>
+                        <td>-</td>
+                        <td>Hiếm khi, ít khi</td>
+                        <td>Rarely do we find</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hardly/Barely/Scarcely</strong></td>
+                        <td>Hardly + had + S + V3</td>
+                        <td>WHEN</td>
+                        <td>Gần như không, vừa mới</td>
+                        <td>Hardly had I left when</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>No sooner</strong></td>
+                        <td>No sooner + had + S + V3</td>
+                        <td>THAN</td>
+                        <td>Vừa mới, ngay sau</td>
+                        <td>No sooner had I arrived than</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Little</strong></td>
+                        <td>Little + did/do + S + V</td>
+                        <td>-</td>
+                        <td>Không hề, không chút</td>
+                        <td>Little did she know</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Not only</strong></td>
+                        <td>Not only + did + S + V, but also</td>
+                        <td>BUT ALSO</td>
+                        <td>Không những...mà còn</td>
+                        <td>Not only did she, but also</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Not until</strong></td>
+                        <td>Not until + time + did + S + V</td>
+                        <td>-</td>
+                        <td>Cho đến khi...mới</td>
+                        <td>Not until I left did I</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

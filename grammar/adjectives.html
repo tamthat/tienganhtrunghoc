@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Tính Từ (Adjectives)</h2>
+
+        <div class="card">
+            <h3>Tính Từ Là Gì?</h3>
+            <p><span class="highlight">Tính từ (Adjective)</span> là một từ loại dùng để <strong>mô tả hoặc chỉnh sửa danh từ, giúp cung cấp thêm thông tin về chất lượng, đặc điểm, hoặc thuộc tính của danh từ</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Tính từ làm cho ngôn ngữ của chúng ta phong phú hơn bằng cách cung cấp chi tiết chi tiết về người, sự vật, hay khái niệm.
+            </div>
+
+            <h3>Chức Năng Của Tính Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Mô Tả Danh Từ (Attributive Position):</strong> a beautiful garden (một khu vườn đẹp)</li>
+                <li><strong>Sau Động Từ Liên Kết (Predicative Position):</strong> The garden is beautiful</li>
+                <li><strong>So Sánh (Comparative):</strong> This garden is more beautiful than that one</li>
+                <li><strong>Tối Đa (Superlative):</strong> This is the most beautiful garden</li>
+            </ul>
+        </div>
+
+        <!-- DESCRIPTIVE ADJECTIVES -->
+        <h2>🎨 1. Tính Từ Mô Tả (Descriptive Adjectives)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Tính từ mô tả</span> là những tính từ <strong>chỉ ra chất lượng, đặc điểm, hoặc thuộc tính của danh từ</strong>.</p>
+
+            <p><strong>Các Loại Tính Từ Mô Tả:</strong></p>
+            <ul>
+                <li><strong>Kích Thước (Size):</strong> big, small, tiny, huge, enormous</li>
+                <li><strong>Màu Sắc (Color):</strong> red, blue, green, yellow, black, white</li>
+                <li><strong>Tính Cách (Personality):</strong> friendly, shy, brave, kind, rude</li>
+                <li><strong>Chất Lượng (Quality):</strong> good, excellent, poor, bad, beautiful, ugly</li>
+                <li><strong>Tuổi Tác (Age):</strong> young, old, new, ancient, modern</li>
+                <li><strong>Hình Dạng (Shape):</strong> round, square, triangular, flat, curved</li>
+                <li><strong>Nguồn Gốc (Origin):</strong> French, American, Italian, Chinese</li>
+                <li><strong>Chất Liệu (Material):</strong> wooden, plastic, metal, leather, silk</li>
+            </ul>
+
+            <h3>II. Vị Trí Tính Từ Trong Câu</h3>
+
+            <p><strong>1. Trước Danh Từ (Attributive Position) - Thường Dùng Nhất</strong></p>
+            <div class="example">
+                • a <strong>beautiful</strong> flower (một bông hoa đẹp)<br>
+                • an <strong>interesting</strong> book (một cuốn sách thú vị)<br>
+                • the <strong>friendly</strong> teacher (cô giáo thân thiện)<br>
+                • a <strong>small</strong> dog (một con chó nhỏ)
+            </div>
+
+            <p><strong>2. Sau Động Từ Liên Kết (Predicative Position)</strong></p>
+            <div class="example">
+                • The flower is <strong>beautiful</strong><br>
+                • The book seems <strong>interesting</strong><br>
+                • The teacher is <strong>friendly</strong><br>
+                • The dog is <strong>small</strong>
+            </div>
+
+            <p><strong>3. Sau Danh Từ (Postpositive - Hiếm)</strong></p>
+            <div class="example">
+                • The people <strong>present</strong> (những người có mặt)<br>
+                • The problem <strong>in question</strong> (vấn đề đó)<br>
+                • The price <strong>current</strong> (giá hiện tại)
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Hầu hết tính từ đặt trước danh từ để tạo ra cụm danh từ tự nhiên
+            </div>
+        </div>
+
+        <!-- ADJECTIVE ORDER OSASCOMP -->
+        <h2>📋 2. Quy Tắc Sắp Xếp Tính Từ - OSASCOMP</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa OSASCOMP</h3>
+            
+            <p><span class="highlight">OSASCOMP</span> là một quy tắc <strong>giúp sắp xếp nhiều tính từ trước danh từ theo thứ tự tự nhiên</strong>.</p>
+
+            <p><strong>OSASCOMP Viết Tắt Của:</strong></p>
+            <ul>
+                <li><strong>O</strong>pinion - Ý kiến (chủ quan)</li>
+                <li><strong>S</strong>ize - Kích thước</li>
+                <li><strong>A</strong>ge - Tuổi tác</li>
+                <li><strong>S</strong>hape - Hình dạng</li>
+                <li><strong>C</strong>olor - Màu sắc</li>
+                <li><strong>O</strong>rigin - Nguồn gốc</li>
+                <li><strong>M</strong>aterial - Chất liệu</li>
+                <li><strong>P</strong>urpose - Mục đích</li>
+            </ul>
+
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Quy tắc này tính từ CHỦUAN (subjective) sang KHÁCH QUAN (objective)
+            </div>
+
+            <h3>II. Bảng Chi Tiết Các Loại Tính Từ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thứ Tự</th>
+                        <th>Loại</th>
+                        <th>Độ Chủ Quan</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td><strong>Opinion</strong></td>
+                        <td>10% (Hoàn toàn chủ quan)</td>
+                        <td>beautiful, wonderful, lovely, horrible, terrible</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2</strong></td>
+                        <td><strong>Size</strong></td>
+                        <td>30% (Hơi chủ quan)</td>
+                        <td>big, small, tiny, huge, enormous, long</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td><strong>Age</strong></td>
+                        <td>50% (Trung bình)</td>
+                        <td>young, old, new, ancient, modern, vintage</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>4</strong></td>
+                        <td><strong>Shape</strong></td>
+                        <td>70% (Khách quan)</td>
+                        <td>round, square, triangular, flat, curved, oval</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td><strong>Color</strong></td>
+                        <td>80% (Rất khách quan)</td>
+                        <td>red, blue, green, yellow, black, white</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>6</strong></td>
+                        <td><strong>Origin</strong></td>
+                        <td>90% (Gần như khách quan)</td>
+                        <td>French, American, Italian, Japanese, British</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7</strong></td>
+                        <td><strong>Material</strong></td>
+                        <td>95% (Rất khách quan)</td>
+                        <td>wooden, plastic, metal, leather, silk, cotton</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>8</strong></td>
+                        <td><strong>Purpose</strong></td>
+                        <td>100% (Hoàn toàn khách quan)</td>
+                        <td>carving, cooking, sleeping, running (danh từ được dùng như tính từ)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Áp Dụng OSASCOMP</h3>
+
+            <p><strong>1. Hai Tính Từ - Opinion + Size</strong></p>
+            <div class="example">
+                ✅ a <strong>wonderful</strong> <strong>big</strong> house<br>
+                ❌ a <strong>big</strong> <strong>wonderful</strong> house (sai)
+            </div>
+
+            <p><strong>2. Ba Tính Từ - Opinion + Size + Age</strong></p>
+            <div class="example">
+                ✅ a <strong>lovely</strong> <strong>small</strong> <strong>old</strong> cottage<br>
+                ❌ a <strong>lovely</strong> <strong>old</strong> <strong>small</strong> cottage (sai)
+            </div>
+
+            <p><strong>3. Bốn Tính Từ - Opinion + Size + Age + Color</strong></p>
+            <div class="example">
+                ✅ a <strong>beautiful</strong> <strong>small</strong> <strong>new</strong> <strong>red</strong> car<br>
+                ❌ a <strong>small</strong> <strong>beautiful</strong> <strong>red</strong> <strong>new</strong> car (sai)
+            </div>
+
+            <p><strong>4. Năm Tính Từ - Opinion + Size + Age + Color + Origin</strong></p>
+            <div class="example">
+                ✅ a <strong>stunning</strong> <strong>large</strong> <strong>antique</strong> <strong>blue</strong> <strong>Chinese</strong> vase<br>
+                ❌ a <strong>Chinese</strong> <strong>antique</strong> <strong>large</strong> <strong>blue</strong> <strong>stunning</strong> vase (sai)
+            </div>
+
+            <p><strong>5. Hoàn Chỉnh - Opinion + Size + Age + Shape + Color + Origin + Material + Purpose</strong></p>
+            <div class="example">
+                ✅ a <strong>beautiful</strong> <strong>small</strong> <strong>antique</strong> <strong>round</strong> <strong>green</strong> <strong>French</strong> <strong>silver</strong> <strong>carving</strong> knife<br>
+                (một cái dao khắc bằng bạc Pháp xanh lục tròn cổ nhỏ xinh đẹp)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Nếu bạn vi phạm quy tắc OSASCOMP, câu sẽ nghe lạ lùng và không tự nhiên cho người bản xứ
+            </div>
+        </div>
+
+        <!-- COMPARATIVE ADJECTIVES -->
+        <h2>⚖️ 3. So Sánh Tính Từ - Comparative</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Comparative Adjectives</span> dùng để <strong>so sánh hai người hoặc hai vật</strong>.</p>
+
+            <p><strong>Công Thức Cơ Bản:</strong></p>
+            <div class="formula">
+                Subject + verb + comparative adjective + than + object
+            </div>
+
+            <h3>II. Cách Tạo Comparative Adjectives</h3>
+
+            <p><strong>1. Tính Từ Một Âm - Thêm "-er"</strong></p>
+            <div class="example">
+                • tall → <strong>taller</strong> (cao hơn)<br>
+                • big → <strong>bigger</strong> (lớn hơn)<br>
+                • small → <strong>smaller</strong> (nhỏ hơn)<br>
+                • young → <strong>younger</strong> (trẻ hơn)<br>
+                • old → <strong>older</strong> (cũ hơn)
+            </div>
+
+            <p><strong>2. Tính Từ Hai Âm Kết Thúc Bằng "y" - Đổi "y" Thành "i" Rồi Thêm "-er"</strong></p>
+            <div class="example">
+                • happy → <strong>happier</strong> (vui vẻ hơn)<br>
+                • busy → <strong>busier</strong> (bận rộn hơn)<br>
+                • easy → <strong>easier</strong> (dễ hơn)<br>
+                • pretty → <strong>prettier</strong> (xinh đẹp hơn)
+            </div>
+
+            <p><strong>3. Tính Từ Hai Âm Trở Lên (Không Kết Thúc Bằng "y") - Thêm "more"</strong></p>
+            <div class="example">
+                • beautiful → <strong>more beautiful</strong> (đẹp hơn)<br>
+                • interesting → <strong>more interesting</strong> (thú vị hơn)<br>
+                • expensive → <strong>more expensive</strong> (đắt tiền hơn)<br>
+                • comfortable → <strong>more comfortable</strong> (thoải mái hơn)
+            </div>
+
+            <p><strong>4. Tính Từ Bất Thường</strong></p>
+            <div class="example">
+                • good → <strong>better</strong> (tốt hơn)<br>
+                • bad → <strong>worse</strong> (tệ hơn)<br>
+                • far → <strong>farther / further</strong> (xa hơn)<br>
+                • little → <strong>less</strong> (ít hơn)<br>
+                • much/many → <strong>more</strong> (nhiều hơn)
+            </div>
+
+            <h3>III. Cách Sử Dụng Comparative Adjectives</h3>
+
+            <div class="example">
+                • Tom is <strong>taller than</strong> Jerry<br>
+                • This book is <strong>more interesting than</strong> that one<br>
+                • She is <strong>happier than</strong> her sister<br>
+                • Our house is <strong>bigger than</strong> theirs<br>
+                • This movie is <strong>better than</strong> that one
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Much", "far", "a lot", "even" có thể dùng để nhấn mạnh comparative<br>
+                • This book is <strong>much more interesting than</strong> that one
+            </div>
+        </div>
+
+        <!-- SUPERLATIVE ADJECTIVES -->
+        <h2>🏆 4. So Sánh Tính Từ - Superlative</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Superlative Adjectives</span> dùng để <strong>so sánh một người hoặc vật với tất cả những người hoặc vật khác trong nhóm</strong>.</p>
+
+            <p><strong>Công Thức Cơ Bản:</strong></p>
+            <div class="formula">
+                the + superlative adjective + noun (+ in/of + group)
+            </div>
+
+            <h3>II. Cách Tạo Superlative Adjectives</h3>
+
+            <p><strong>1. Tính Từ Một Âm - Thêm "-est"</strong></p>
+            <div class="example">
+                • tall → <strong>the tallest</strong> (cao nhất)<br>
+                • big → <strong>the biggest</strong> (lớn nhất)<br>
+                • small → <strong>the smallest</strong> (nhỏ nhất)<br>
+                • young → <strong>the youngest</strong> (trẻ nhất)<br>
+                • old → <strong>the oldest</strong> (cũ nhất / già nhất)
+            </div>
+
+            <p><strong>2. Tính Từ Hai Âm Kết Thúc Bằng "y" - Đổi "y" Thành "i" Rồi Thêm "-est"</strong></p>
+            <div class="example">
+                • happy → <strong>the happiest</strong> (vui vẻ nhất)<br>
+                • busy → <strong>the busiest</strong> (bận rộn nhất)<br>
+                • easy → <strong>the easiest</strong> (dễ nhất)<br>
+                • pretty → <strong>the prettiest</strong> (xinh đẹp nhất)
+            </div>
+
+            <p><strong>3. Tính Từ Hai Âm Trở Lên (Không Kết Thúc Bằng "y") - Thêm "most"</strong></p>
+            <div class="example">
+                • beautiful → <strong>the most beautiful</strong> (đẹp nhất)<br>
+                • interesting → <strong>the most interesting</strong> (thú vị nhất)<br>
+                • expensive → <strong>the most expensive</strong> (đắt tiền nhất)<br>
+                • comfortable → <strong>the most comfortable</strong> (thoải mái nhất)
+            </div>
+
+            <p><strong>4. Tính Từ Bất Thường</strong></p>
+            <div class="example">
+                • good → <strong>the best</strong> (tốt nhất)<br>
+                • bad → <strong>the worst</strong> (tệ nhất)<br>
+                • far → <strong>the farthest / the furthest</strong> (xa nhất)<br>
+                • little → <strong>the least</strong> (ít nhất)<br>
+                • much/many → <strong>the most</strong> (nhiều nhất)
+            </div>
+
+            <h3>III. Cách Sử Dụng Superlative Adjectives</h3>
+
+            <div class="example">
+                • Tom is <strong>the tallest</strong> in his class<br>
+                • This book is <strong>the most interesting</strong> I've ever read<br>
+                • She is <strong>the happiest</strong> person I know<br>
+                • Our house is <strong>the biggest</strong> on the street<br>
+                • This is <strong>the best</strong> movie I've seen<br>
+                • London is <strong>the most expensive</strong> city in England
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Superlative luôn cần "the" trước nó<br>
+                ✅ Tom is the tallest | ❌ Tom is tallest
+            </div>
+        </div>
+
+        <!-- COMPARISON RULES -->
+        <h2>📊 5. Bảng So Sánh Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Positive vs Comparative vs Superlative</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tính Từ</th>
+                        <th>Số Âm</th>
+                        <th>Positive</th>
+                        <th>Comparative</th>
+                        <th>Superlative</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>tall</td>
+                        <td>1</td>
+                        <td>tall</td>
+                        <td>taller</td>
+                        <td>the tallest</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>big</td>
+                        <td>1</td>
+                        <td>big</td>
+                        <td>bigger</td>
+                        <td>the biggest</td>
+                    </tr>
+                    <tr>
+                        <td>happy</td>
+                        <td>2 (y)</td>
+                        <td>happy</td>
+                        <td>happier</td>
+                        <td>the happiest</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>beautiful</td>
+                        <td>3+</td>
+                        <td>beautiful</td>
+                        <td>more beautiful</td>
+                        <td>the most beautiful</td>
+                    </tr>
+                    <tr>
+                        <td>good</td>
+                        <td>Irregular</td>
+                        <td>good</td>
+                        <td>better</td>
+                        <td>the best</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>bad</td>
+                        <td>Irregular</td>
+                        <td>bad</td>
+                        <td>worse</td>
+                        <td>the worst</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Descriptive Adjectives</h3>
+            <ul>
+                <li>a <strong>beautiful</strong> flower (một bông hoa đẹp)</li>
+                <li>a <strong>small</strong> dog (một con chó nhỏ)</li>
+                <li>an <strong>interesting</strong> book (một cuốn sách thú vị)</li>
+                <li>The weather is <strong>sunny</strong></li>
+                <li>She is <strong>friendly</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>OSASCOMP - Adjective Order</h3>
+            <ul>
+                <li>a <strong>wonderful big</strong> house (opinion + size)</li>
+                <li>a <strong>lovely small old</strong> cottage (opinion + size + age)</li>
+                <li>a <strong>beautiful small new red</strong> car (opinion + size + age + color)</li>
+                <li>a <strong>stunning large antique blue Chinese</strong> vase (opinion + size + age + color + origin)</li>
+                <li>a <strong>beautiful small antique round green French silver carving</strong> knife (full OSASCOMP)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Comparative Adjectives</h3>
+            <ul>
+                <li>Tom is <strong>taller than</strong> Jerry</li>
+                <li>This book is <strong>more interesting than</strong> that one</li>
+                <li>She is <strong>happier than</strong> her sister</li>
+                <li>Our house is <strong>bigger than</strong> theirs</li>
+                <li>This movie is <strong>better than</strong> that one</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Superlative Adjectives</h3>
+            <ul>
+                <li>Tom is <strong>the tallest</strong> in his class</li>
+                <li>This book is <strong>the most interesting</strong> I've ever read</li>
+                <li>She is <strong>the happiest</strong> person I know</li>
+                <li>Our house is <strong>the biggest</strong> on the street</li>
+                <li>This is <strong>the best</strong> movie I've seen</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Vi Phạm Quy Tắc OSASCOMP</p>
+            <div class="example">
+                ❌ a big wonderful house | ✅ a wonderful big house<br>
+                ❌ a old small house | ✅ a small old house
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng Comparative Thay Vì Superlative</p>
+            <div class="example">
+                ❌ Tom is taller of all (sai) | ✅ Tom is the tallest<br>
+                ❌ This is more beautiful (không đủ) | ✅ This is the most beautiful
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên "the" Với Superlative</p>
+            <div class="example">
+                ❌ Tom is tallest | ✅ Tom is the tallest<br>
+                ❌ This is most interesting | ✅ This is the most interesting
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng Sai "-er" Với Tính Từ Hai Âm Trở Lên</p>
+            <div class="example">
+                ❌ more beautiful or beautifuler? | ✅ more beautiful<br>
+                ❌ more interested or interesteder? | ✅ more interested
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng Cả "more" Và "-er"</strong></p>
+            <div class="example">
+                ❌ more taller | ✅ taller<br>
+                ❌ more happier | ✅ happier
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Ghi Nhớ OSASCOMP</strong></p>
+            <ul>
+                <li>Từ CHỦ QUAN sang KHÁCH QUAN: Opinion → Size → Age → Shape → Color → Origin → Material → Purpose</li>
+                <li>Hãy tưởng tượng một vật thể và mô tả nó theo thứ tự này</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Phân Biệt Comparative & Superlative</strong></p>
+            <ul>
+                <li>Comparative: So sánh HAI (than = "hơn")</li>
+                <li>Superlative: So sánh NHÓM (the = "là ... nhất")</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Đếm Âm Tiết Của Tính Từ</strong></p>
+            <ul>
+                <li>1 âm: -er / -est (tall, big, small)</li>
+                <li>2+ âm (không kết thúc "y"): more / most (beautiful, interesting)</li>
+                <li>Kết thúc "y": -ier / -iest (happy, busy, easy)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Ghi Nhớ Tính Từ Bất Thường</strong></p>
+            <ul>
+                <li>good → better → best</li>
+                <li>bad → worse → worst</li>
+                <li>far → farther/further → farthest/furthest</li>
+                <li>much/many → more → most</li>
+                <li>little → less → least</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Thực Hành Với OSASCOMP</strong></p>
+            <ul>
+                <li>Viết ra nhiều cụm danh từ với tính từ theo đúng trật tự</li>
+                <li>Nghe người bản xứ nói để làm quen với thứ tự tự nhiên</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Descriptive Adjectives</strong></td>
+                        <td>Mô tả chất lượng, đặc điểm của danh từ</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>OSASCOMP</strong></td>
+                        <td>Opinion, Size, Age, Shape, Color, Origin, Material, Purpose</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comparative (-er/more)</strong></td>
+                        <td>So sánh HAI thứ: subject + verb + adj + than + object</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Superlative (the -est/most)</strong></td>
+                        <td>So sánh NHÓM: the + adj + noun (+ in/of + group)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1 Âm Tiết</strong></td>
+                        <td>-er / the -est (tall, big, small)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2+ Âm Tiết</strong></td>
+                        <td>more / the most (beautiful, interesting, expensive)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

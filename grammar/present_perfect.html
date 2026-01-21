@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Hiện Tại Hoàn Thành Là Gì?</h3>
+            <p><span class="highlight">Present Perfect Tense</span> là thì được sử dụng để diễn tả các hành động <strong>đã hoàn thành trong quá khứ nhưng có liên hệ với hiện tại</strong>. Đó là những hoạt động xảy ra ở thời điểm không xác định trong quá khứ hoặc bắt đầu từ quá khứ và tiếp tục đến hiện tại.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Present Perfect nhấn mạn <strong>kết quả hoặc tác động</strong> của hành động đến thời điểm hiện tại, không phải thời gian cụ thể khi hành động xảy ra.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động đã xảy ra trong quá khứ nhưng có kết quả ở hiện tại</li>
+                <li>Thời gian không xác định hoặc không quan trọng</li>
+                <li>Hành động có thể đã hoàn thành hoặc vẫn đang tiếp tục từ quá khứ</li>
+                <li>Cấu trúc: have/has + Past Participle (V3)</li>
+                <li>Thường đi kèm với: just, already, yet, ever, never, since, for</li>
+                <li>Nhấn mạn kết quả, không khoảng thời gian cụ thể</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + have/has + Past Participle (V3)
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Have/Has</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I</span></td>
+                        <td><span class="highlight">have</span></td>
+                        <td>I <span class="verb-form">have worked</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">You</span></td>
+                        <td><span class="highlight">have</span></td>
+                        <td>You <span class="verb-form">have worked</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">We</span></td>
+                        <td><span class="highlight">have</span></td>
+                        <td>We <span class="verb-form">have worked</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">They</span></td>
+                        <td><span class="highlight">have</span></td>
+                        <td>They <span class="verb-form">have worked</span></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span class="verb-form">He/She/It</span></td>
+                        <td><span class="highlight">has</span></td>
+                        <td>He <span class="verb-form">has worked</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>have finished</strong> my homework<br>
+                • She <strong>has visited</strong> Paris<br>
+                • They <strong>have eaten</strong> lunch<br>
+                • It <strong>has stopped</strong> raining
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + have/has + NOT + Past Participle (V3)
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Thêm "not" sau have/has</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td>have not</td>
+                        <td>haven't</td>
+                        <td>I <strong>have not worked</strong></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td>has not</td>
+                        <td>hasn't</td>
+                        <td>She <strong>has not eaten</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>have not finished</strong> my work<br>
+                • He <strong>hasn't arrived</strong> yet<br>
+                • They <strong>haven't studied</strong> English<br>
+                • She <strong>has not replied</strong> to my email
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Have/Has + Subject + Past Participle (V3) + ?
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Đặt have/has lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Have</span> you worked?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Has</span> she arrived?</td>
+                        <td>Yes, she has</td>
+                        <td>No, she hasn't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Have you</strong> finished? → Yes, I have<br>
+                • <strong>Has he</strong> ever been to Japan? → No, he hasn't<br>
+                • <strong>Have they</strong> completed the project? → Yes, they have<br>
+                • <strong>Has she</strong> called you? → No, she hasn't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + have/has + V3</td>
+                        <td>She has completed her work</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + have/has + NOT + V3</td>
+                        <td>She has not completed her work</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Have/Has + S + V3 + ?</td>
+                        <td>Has she completed her work?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + have/has</td>
+                        <td>Yes, she has</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PAST PARTICIPLE SECTION -->
+        <h2>✏️ Past Participle (V3)</h2>
+
+        <div class="card warning">
+            <h3>1. Động Từ Thường (Regular Verbs)</h3>
+
+            <p><strong>A) Động từ thông thường: Thêm -ed vào base form</strong></p>
+            <div class="example">
+                • work → <strong>worked</strong><br>
+                • play → <strong>played</strong><br>
+                • finish → <strong>finished</strong><br>
+                • study → <strong>studied</strong><br>
+                • want → <strong>wanted</strong>
+            </div>
+
+            <p><strong>B) Quy tắc viết:</strong></p>
+            <ul>
+                <li>Động từ kết thúc bằng e: Thêm -d (e.g., live → lived)</li>
+                <li>Động từ kết thúc bằng y: Đổi y → i, thêm -ed (e.g., study → studied)</li>
+                <li>Động từ 1 âm tiết, CVC: Gấp đôi phụ âm cuối, thêm -ed (e.g., stop → stopped)</li>
+            </ul>
+
+            <div class="example">
+                ✓ love → loved | ✓ try → tried | ✓ plan → planned
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3>2. Động Từ Bất Thường (Irregular Verbs)</h3>
+
+            <p>Những động từ này có dạng Past Participle không tuân theo quy tắc thêm -ed</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Form</th>
+                        <th>Simple Past</th>
+                        <th>Past Participle</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>be</td>
+                        <td>was/were</td>
+                        <td><strong>been</strong></td>
+                        <td>I have been busy</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>have</td>
+                        <td>had</td>
+                        <td><strong>had</strong></td>
+                        <td>She has had a cold</td>
+                    </tr>
+                    <tr>
+                        <td>do</td>
+                        <td>did</td>
+                        <td><strong>done</strong></td>
+                        <td>They have done their work</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>go</td>
+                        <td>went</td>
+                        <td><strong>gone</strong></td>
+                        <td>He has gone to the shop</td>
+                    </tr>
+                    <tr>
+                        <td>see</td>
+                        <td>saw</td>
+                        <td><strong>seen</strong></td>
+                        <td>I have seen that film</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>eat</td>
+                        <td>ate</td>
+                        <td><strong>eaten</strong></td>
+                        <td>She has eaten lunch</td>
+                    </tr>
+                    <tr>
+                        <td>drink</td>
+                        <td>drank</td>
+                        <td><strong>drunk</strong></td>
+                        <td>They have drunk coffee</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>come</td>
+                        <td>came</td>
+                        <td><strong>come</strong></td>
+                        <td>He has come home</td>
+                    </tr>
+                    <tr>
+                        <td>speak</td>
+                        <td>spoke</td>
+                        <td><strong>spoken</strong></td>
+                        <td>She has spoken English</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>write</td>
+                        <td>wrote</td>
+                        <td><strong>written</strong></td>
+                        <td>I have written a letter</td>
+                    </tr>
+                    <tr>
+                        <td>give</td>
+                        <td>gave</td>
+                        <td><strong>given</strong></td>
+                        <td>They have given him a book</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>take</td>
+                        <td>took</td>
+                        <td><strong>taken</strong></td>
+                        <td>She has taken my pen</td>
+                    </tr>
+                    <tr>
+                        <td>break</td>
+                        <td>broke</td>
+                        <td><strong>broken</strong></td>
+                        <td>He has broken his arm</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td>know</td>
+                        <td>knew</td>
+                        <td><strong>known</strong></td>
+                        <td>I have known her for years</td>
+                    </tr>
+                    <tr>
+                        <td>begin</td>
+                        <td>began</td>
+                        <td><strong>begun</strong></td>
+                        <td>We have begun the project</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Cần học thuộc các bất quy tắc này vì chúng rất phổ biến trong tiếng Anh
+            </div>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Hiện Tại Hoàn Thành</h2>
+
+        <div class="card">
+            <h3>1. Hành Động Vừa Hoàn Thành (Recently Completed Actions)</h3>
+            <p>Diễn tả hành động mới xảy ra và có kết quả ở hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have finished</strong> my homework<br>
+                • She <strong>has just arrived</strong><br>
+                • They <strong>have completed</strong> the project<br>
+                • He <strong>has called</strong> me
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Kinh Nghiệm Sống (Life Experience)</h3>
+            <p>Diễn tả những trải nghiệm xảy ra bất kỳ lúc nào trong quá khứ, nhưng người phải còn sống</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have been</strong> to Paris<br>
+                • She <strong>has never seen</strong> a ghost<br>
+                • Have you <strong>ever met</strong> a celebrity?<br>
+                • They <strong>have visited</strong> ten countries
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Simple Past:</strong> I have been to Paris (quá khứ không xác định) ≠ I went to Paris in 2020 (thời gian cụ thể)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Hành Động Lặp Lại (Repeated Actions)</h3>
+            <p>Diễn tả hành động xảy ra nhiều lần trong quá khứ</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have watched</strong> this film three times<br>
+                • She <strong>has been</strong> to the dentist many times<br>
+                • They <strong>have failed</strong> the exam twice<br>
+                • He <strong>has called</strong> me several times
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Hành Động Bắt Đầu Từ Quá Khứ & Tiếp Tục Đến Hiện Tại (Unfinished Actions)</h3>
+            <p>Diễn tả hành động bắt đầu trong quá khứ và vẫn tiếp tục ở hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have lived</strong> here for 10 years<br>
+                • She <strong>has worked</strong> at this company since 2015<br>
+                • They <strong>have known</strong> each other for a long time<br>
+                • He <strong>has been</strong> a teacher for 20 years
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Thường dùng với "for" (khoảng thời gian) hoặc "since" (từ thời điểm nào)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Sự Thay Đổi & Tiến Triển Hiện Tại (Current Changes)</h3>
+            <p>Diễn tả sự thay đổi hoặc phát triển từ quá khứ đến hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • The population <strong>has increased</strong> significantly<br>
+                • Technology <strong>has developed</strong> rapidly<br>
+                • She <strong>has grown</strong> taller<br>
+                • They <strong>have improved</strong> their English
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>6. Kết Quả Hiện Tại Từ Hành Động Quá Khứ (Present Result)</h3>
+            <p>Diễn tả hành động quá khứ mà kết quả vẫn còn tác động đến hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • He <strong>has broken</strong> his leg (chân còn gãy)<br>
+                • She <strong>has lost</strong> her keys (chìa khóa vẫn mất)<br>
+                • I <strong>have caught</strong> a cold (vẫn đang cảm lạnh)<br>
+                • They <strong>have had</strong> an accident (vẫn còn ảnh hưởng)
+            </div>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Present Perfect</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Vừa xong</strong></td>
+                        <td>just, recently, lately</td>
+                        <td>I have <strong>just</strong> finished</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Đã xảy ra</strong></td>
+                        <td>already, so far, up to now</td>
+                        <td>She has <strong>already</strong> eaten</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chưa xảy ra</strong></td>
+                        <td>yet, still</td>
+                        <td>They haven't arrived <strong>yet</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Kinh nghiệm</strong></td>
+                        <td>ever, never</td>
+                        <td>Have you <strong>ever</strong> been to Paris?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Khoảng thời gian</strong></td>
+                        <td>for, during, over</td>
+                        <td>I have lived here <strong>for</strong> 10 years</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ thời điểm</strong></td>
+                        <td>since, from</td>
+                        <td>She has worked here <strong>since</strong> 2015</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Số lần</strong></td>
+                        <td>once, twice, three times, many times</td>
+                        <td>I have visited <strong>three times</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Gần đây</strong></td>
+                        <td>this week, this month, this year, today</td>
+                        <td>We have met <strong>this week</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Quan Trọng:</strong> Không dùng Present Perfect với thời gian cụ thể (yesterday, last week, in 2020, at 3 PM)
+            </div>
+        </div>
+
+        <!-- JUST, YET, ALREADY, STILL SECTION -->
+        <h2>🎯 Từ Đặc Biệt: Just, Yet, Already, Still</h2>
+
+        <div class="card">
+            <h3>1. JUST (vừa mới)</h3>
+            <p>Diễn tả hành động xảy ra <strong>rất gần đây</strong>, chỉ vài giây hoặc vài phút trước</p>
+
+            <p><span class="highlight">Vị trí:</span> Đặt giữa have/has và Past Participle</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have just</strong> arrived<br>
+                • She <strong>has just</strong> finished her work<br>
+                • They <strong>have just</strong> left<br>
+                • He <strong>has just</strong> called me
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. YET (chưa)</h3>
+            <p>Dùng trong <strong>câu phủ định và câu hỏi</strong> để diễn tả hành động <strong>chưa xảy ra</strong> nhưng mong đợi nó sẽ xảy ra</p>
+
+            <p><span class="highlight">Vị trí:</span> Đặt cuối câu</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>haven't finished</strong> my homework <strong>yet</strong><br>
+                • Have you arrived <strong>yet</strong>?<br>
+                • They <strong>haven't started</strong> the meeting <strong>yet</strong><br>
+                • Has she replied <strong>yet</strong>?
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. ALREADY (đã)</h3>
+            <p>Diễn tả hành động <strong>đã xảy ra</strong>, thường <strong>sớm hơn dự kiến</strong></p>
+
+            <p><span class="highlight">Vị trí:</span> Đặt giữa have/has và Past Participle hoặc cuối câu</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have already</strong> eaten dinner<br>
+                • She <strong>has already</strong> seen that film<br>
+                • They've <strong>already</strong> left (cuối câu)<br>
+                • He <strong>has already</strong> finished the project
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. STILL (vẫn còn - trong phủ định)</h3>
+            <p>Dùng trong <strong>câu phủ định</strong> để diễn tả hành động <strong>vẫn chưa xảy ra</strong>, <strong>muộn hơn dự kiến</strong></p>
+
+            <p><span class="highlight">Vị trí:</span> Đặt giữa chủ ngữ và haven't/hasn't</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>still haven't</strong> finished my work<br>
+                • She <strong>still hasn't</strong> replied to my email<br>
+                • They <strong>still haven't</strong> arrived<br>
+                • He <strong>still hasn't</strong> called me (tôi đã mong đợi lâu rồi)
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>So Sánh: Just vs Yet vs Already vs Still</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Từ</th>
+                        <th>Nghĩa</th>
+                        <th>Vị Trí</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Just</strong></td>
+                        <td>Vừa mới (rất gần đây)</td>
+                        <td>Giữa have/has & V3</td>
+                        <td>I've just arrived</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Yet</strong></td>
+                        <td>Chưa (dùng trong phủ định/câu hỏi)</td>
+                        <td>Cuối câu</td>
+                        <td>Haven't you finished yet?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Already</strong></td>
+                        <td>Đã (sớm hơn dự kiến)</td>
+                        <td>Giữa have/has hoặc cuối</td>
+                        <td>I've already eaten</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Still</strong></td>
+                        <td>Vẫn chưa (muộn hơn dự kiến)</td>
+                        <td>Giữa S & haven't/hasn't</td>
+                        <td>I still haven't finished</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Present Perfect vs Simple Past</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Present Perfect</th>
+                        <th>Simple Past</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + have/has + V3</td>
+                        <td>S + V2 (Past)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời Gian</strong></td>
+                        <td>Không xác định / Vừa xong</td>
+                        <td>Thời gian cụ thể</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liên Hệ Hiện Tại</strong></td>
+                        <td>Có kết quả/tác động ở hiện tại</td>
+                        <td>Hoàn toàn ở quá khứ</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ý Nhấn</strong></td>
+                        <td>Kết quả của hành động</td>
+                        <td>Hành động đã hoàn thành</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>just, yet, already, since, for</td>
+                        <td>yesterday, last week, in 2020</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ I <strong>have visited</strong> Paris (thời gian không xác định)<br>
+                ✓ I <strong>visited</strong> Paris in 2020 (thời gian cụ thể)<br><br>
+                ✓ She <strong>has broken</strong> her arm (vẫn còn gãy - kết quả hiện tại)<br>
+                ✓ She <strong>broke</strong> her arm last month (sự kiện ở quá khứ)<br><br>
+                ✓ They <strong>have lived</strong> here for 5 years (vẫn sống - hành động tiếp tục)<br>
+                ✓ They <strong>lived</strong> here in 2020 (đã từng sống - thời gian cụ thể)
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>have completed</strong> my project</li>
+                    <li>She <strong>has visited</strong> many countries</li>
+                    <li>They <strong>have finished</strong> their work</li>
+                    <li>It <strong>has stopped</strong> raining</li>
+                    <li>We <strong>have learned</strong> English</li>
+                    <li>He <strong>has lived</strong> here for 10 years</li>
+                    <li>The baby <strong>has fallen</strong> asleep</li>
+                    <li>I <strong>have never seen</strong> such a thing</li>
+                    <li>She <strong>has just</strong> arrived</li>
+                    <li>They <strong>have already</strong> eaten</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>have not finished</strong> my work</li>
+                    <li>She <strong>has not</strong> called me</li>
+                    <li>They <strong>have not completed</strong> the project</li>
+                    <li>It <strong>hasn't stopped</strong> raining</li>
+                    <li>We <strong>haven't learned</strong> this yet</li>
+                    <li>He <strong>hasn't arrived</strong> yet</li>
+                    <li>The cat <strong>hasn't eaten</strong> anything</li>
+                    <li>I <strong>have never been</strong> to London</li>
+                    <li>She <strong>still hasn't</strong> replied</li>
+                    <li>They <strong>haven't finished</strong> studying</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Have you finished?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Has she arrived?</td>
+                        <td>Yes, she has</td>
+                        <td>No, she hasn't</td>
+                    </tr>
+                    <tr>
+                        <td>Have they eaten?</td>
+                        <td>Yes, they have</td>
+                        <td>No, they haven't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Has he called you?</td>
+                        <td>Yes, he has</td>
+                        <td>No, he hasn't</td>
+                    </tr>
+                    <tr>
+                        <td>Have you ever been to Paris?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên chia have/has</p>
+            <div class="example">
+                ❌ He have finished | ✅ He has finished
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng Simple Past form thay vì Past Participle</p>
+            <div class="example">
+                ❌ I have went | ✅ I have gone
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng thời gian cụ thể với Present Perfect</p>
+            <div class="example">
+                ❌ I have finished yesterday | ✅ I finished yesterday
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên Past Participle</p>
+            <div class="example">
+                ❌ She has write | ✅ She has written
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn just/yet/already/still</p>
+            <div class="example">
+                ❌ Have you finished yet already? | ✅ Have you finished yet?
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ "Quá Khứ Nhưng Liên Hệ Hiện Tại"</strong></p>
+            <ul>
+                <li>Present Perfect = Hành động quá khứ + kết quả hiện tại</li>
+                <li>Simple Past = Chỉ sự kiện ở quá khứ, hoàn toàn tách biệt hiện tại</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Phân Biệt just/yet/already/still</strong></p>
+            <ul>
+                <li>Just = Vừa mới xong (The action just happened)</li>
+                <li>Already = Đã xảy ra (The action happened earlier than expected)</li>
+                <li>Yet = Chưa xảy ra (In questions/negatives, waiting for the action)</li>
+                <li>Still = Vẫn chưa (In negatives, happened later than expected)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Have/Has Phải Khớp Với Chủ Ngữ</strong></p>
+            <ul>
+                <li>I/You/We/They → have | He/She/It → has</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Học Bất Quy Tắc</strong></p>
+            <ul>
+                <li>Ghi chép danh sách irregular verbs</li>
+                <li>Chia thành nhóm: go-went-gone, eat-ate-eaten, v.v.</li>
+                <li>Luyện tập thường xuyên</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Xác Định Thời Gian</strong></p>
+            <ul>
+                <li>Nếu có "yesterday, last week, in 2020" → Simple Past</li>
+                <li>Nếu không xác định thời gian → Present Perfect</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động quá khứ có liên hệ/kết quả ở hiện tại</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + have/has + V3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + have/has + NOT + V3</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Have/Has + S + V3?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Past Participle</strong></td>
+                        <td>Thêm -ed (regular) hoặc bất quy tắc</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>just, yet, already, still, ever, never, since, for</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Khác Với Simple Past</strong></td>
+                        <td>Không dùng thời gian cụ thể (yesterday, in 2020)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

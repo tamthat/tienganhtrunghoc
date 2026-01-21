@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Quá Khứ Hoàn Thành Tiếp Diễn Là Gì?</h3>
+            <p><span class="highlight">Past Perfect Continuous Tense</span> (cũng gọi là Past Perfect Progressive) là thì được sử dụng để diễn tả các hành động <strong>đang diễn ra trong quá khứ và tiếp tục cho đến một hành động quá khứ khác hoặc một thời điểm cụ thể trong quá khứ</strong>. Đó là những hoạt động nhấn mạn <strong>quá trình và khoảng thời gian</strong> diễn ra ở "quá khứ trong quá khứ".</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Past Perfect Continuous nhấn mạn <strong>khoảng thời gian hoặc quá trình</strong> mà hành động đang diễn ra trước một sự kiện quá khứ khác, không phải sự hoàn thành của hành động.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động đang diễn ra trước một hành động quá khứ khác</li>
+                <li>Nhấn mạn quá trình, khoảng thời gian, không phải kết quả</li>
+                <li>Hành động có thể vẫn đang diễn ra hoặc vừa dừng lại ở thời điểm khác</li>
+                <li>Cấu trúc: had + been + V-ing</li>
+                <li>Thường đi kèm với: for, since, before, when, how long</li>
+                <li>Nhấn mạn sự tiếp diễn và khoảng thời gian</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + had + been + V-ing
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chủ Ngữ</th>
+                        <th>Had Been</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I/You/He/She/It/We/They</span></td>
+                        <td><span class="highlight">had been</span></td>
+                        <td>I <span class="verb-form">had been studying</span></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td colspan="3"><span class="highlight">Lưu Ý:</span> "Had been" giống cho tất cả các ngôi - không phân biệt số lượng hoặc người</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>had been studying</strong> for hours before he arrived<br>
+                • She <strong>had been working</strong> at the company for 5 years when she quit<br>
+                • They <strong>had been playing</strong> football all day<br>
+                • He <strong>had been waiting</strong> for the bus for 30 minutes
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Past Perfect Continuous luôn xuất hiện cùng với một hành động quá khứ khác để làm rõ thứ tự và khoảng thời gian
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + had + NOT + been + V-ing
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Thêm "not" sau "had" hoặc rút gọn thành "hadn't been"</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chủ Ngữ</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/He/She/It/We/They</td>
+                        <td>had not been</td>
+                        <td>hadn't been</td>
+                        <td>I <strong>had not been studying</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>hadn't been studying</strong> long when he arrived<br>
+                • She <strong>had not been working</strong> there long when she quit<br>
+                • They <strong>hadn't been playing</strong> long before it rained<br>
+                • He <strong>hadn't been waiting</strong> long when the bus came
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Had + Subject + been + V-ing + ?
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Đặt "Had" lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Had</span> you been studying?</td>
+                        <td>Yes, I had</td>
+                        <td>No, I hadn't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span style="color: #32b8c6; font-weight: bold;">Had</span> she been working?</td>
+                        <td>Yes, she had</td>
+                        <td>No, she hadn't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Had you</strong> been waiting long? → Yes, I had<br>
+                • <strong>Had she</strong> been working here? → No, she hadn't<br>
+                • <strong>Had they</strong> been playing football? → Yes, they had<br>
+                • <strong>Had he</strong> been waiting when I arrived? → No, he hadn't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + had + been + V-ing</td>
+                        <td>She had been working hard</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + had + NOT + been + V-ing</td>
+                        <td>She had not been working hard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Had + S + been + V-ing + ?</td>
+                        <td>Had she been working hard?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + had/hadn't</td>
+                        <td>Yes, she had</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SPELLING RULES -->
+        <h2>✏️ Quy Tắc Thêm -ING</h2>
+
+        <div class="card warning">
+            <h3>Quy Tắc Thêm -ING Cơ Bản</h3>
+
+            <p><strong>A) Động từ thông thường: Chỉ thêm -ing</strong></p>
+            <div class="example">
+                • read → <strong>reading</strong><br>
+                • write → <strong>writing</strong><br>
+                • play → <strong>playing</strong><br>
+                • work → <strong>working</strong><br>
+                • study → <strong>studying</strong>
+            </div>
+
+            <p><strong>B) Động từ kết thúc bằng e (câm): Bỏ e, thêm -ing</strong></p>
+            <div class="example">
+                • make → <strong>making</strong> (không phải "makeing")<br>
+                • take → <strong>taking</strong><br>
+                • come → <strong>coming</strong><br>
+                • live → <strong>living</strong><br>
+                • have → <strong>having</strong>
+            </div>
+
+            <p><strong>C) Động từ kết thúc bằng ie: Đổi ie → y, thêm -ing</strong></p>
+            <div class="example">
+                • lie → <strong>lying</strong><br>
+                • die → <strong>dying</strong><br>
+                • tie → <strong>tying</strong>
+            </div>
+
+            <p><strong>D) Động từ 1 âm tiết, kết thúc CVC: Gấp đôi phụ âm cuối, thêm -ing</strong></p>
+            <div class="example">
+                • sit → <strong>sitting</strong> (s-i-t)<br>
+                • run → <strong>running</strong> (r-u-n)<br>
+                • swim → <strong>swimming</strong> (s-w-i-m)<br>
+                • stop → <strong>stopping</strong> (s-t-o-p)<br>
+                • cut → <strong>cutting</strong> (c-u-t)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Không gấp đôi nếu động từ kết thúc bằng -w, -x, -y:<br>
+                • fix → <strong>fixing</strong> (không phải "ffixing")<br>
+                • play → <strong>playing</strong> (không phải "pplaying")<br>
+                • sew → <strong>sewing</strong> (không phải "ssewing")
+            </div>
+
+            <p><strong>E) Động từ 2+ âm tiết, âm tiết cuối được nhấn, kết thúc CVC: Gấp đôi phụ âm cuối</strong></p>
+            <div class="example">
+                • prefer (pre-FER) → <strong>preferring</strong><br>
+                • begin (be-GIN) → <strong>beginning</strong><br>
+                • omit (o-MIT) → <strong>omitting</strong><br>
+                • occur (oc-CUR) → <strong>occurring</strong>
+            </div>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Quá Khứ Hoàn Thành Tiếp Diễn</h2>
+
+        <div class="card">
+            <h3>1. Nhấn Mạn Khoảng Thời Gian Trước Một Hành Động Quá Khứ Khác</h3>
+            <p>Diễn tả hành động đang diễn ra và khoảng thời gian của nó trước khi một hành động quá khứ khác xảy ra</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>had been studying</strong> for three hours when he arrived<br>
+                • She <strong>had been working</strong> there for 5 years before she quit<br>
+                • They <strong>had been waiting</strong> for 30 minutes when the bus came<br>
+                • He <strong>had been running</strong> for an hour when he got tired
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Past Perfect:</strong> I had finished (Past Perfect - kết quả) ≠ I had been finishing (Past Perfect Continuous - quá trình)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Giải Thích Lý Do Hoặc Nguyên Nhân Của Hành Động Quá Khứ</h3>
+            <p>Dùng Past Perfect Continuous để giải thích lý do hoặc nguyên nhân của hành động hoặc trạng thái ở quá khứ</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • She was exhausted because she <strong>had been working</strong> all day<br>
+                • He was out of breath because he <strong>had been running</strong><br>
+                • They were hungry because they <strong>had been playing</strong> for hours<br>
+                • I was tired because I <strong>had been studying</strong> all night
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Kết quả còn rõ ràng - cơ thể, tinh thần, hay tình huống vẫn chịu ảnh hưởng của hành động vừa xong
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Hành Động Lặp Lại Hoặc Liên Tục Trong Quá Khứ</h3>
+            <p>Diễn tả hành động xảy ra liên tục hoặc lặp lại trong một khoảng thời gian ở quá khứ</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>had been visiting</strong> the gym three times a week before I got injured<br>
+                • She <strong>had been meeting</strong> him every day before they broke up<br>
+                • They <strong>had been calling</strong> me repeatedly before I finally answered<br>
+                • He <strong>had been practicing</strong> the piano daily for months
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Hành Động Bị Gián Đoạn Trong Quá Khứ</h3>
+            <p>Diễn tả hành động đang diễn ra thì bị gián đoạn bởi hành động hoặc sự kiện quá khứ khác</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>had been reading</strong> when the power went out<br>
+                • She <strong>had been sleeping</strong> when the earthquake happened<br>
+                • They <strong>had been dancing</strong> when the music stopped<br>
+                • He <strong>had been cooking</strong> when I arrived at the house
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Tình Trạng Tạm Thời Kéo Dài Trong Quá Khứ</h3>
+            <p>Diễn tả tình trạng hoặc quá trình tạm thời kéo dài từ quá khứ đến một thời điểm khác</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • By the time I got married, I <strong>had been living</strong> with my parents for 5 years<br>
+                • When he finally called, I <strong>had been waiting</strong> for weeks<br>
+                • By the time she got the job, she <strong>had been applying</strong> to companies for months<br>
+                • They <strong>had been traveling</strong> for three weeks when they reached home
+            </div>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Past Perfect Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khoảng thời gian</strong></td>
+                        <td>for (suốt, trong)</td>
+                        <td>I had been working <strong>for</strong> 5 hours</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ thời điểm</strong></td>
+                        <td>since (từ lúc)</td>
+                        <td>She had been studying <strong>since</strong> morning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trước khi</strong></td>
+                        <td>before, when, as soon as</td>
+                        <td>I had been waiting <strong>before</strong> he arrived</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Quá trình</strong></td>
+                        <td>throughout, during, over</td>
+                        <td>They had been working <strong>throughout</strong> the day</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lâu rồi</strong></td>
+                        <td>by the time, by then, for hours/days/years</td>
+                        <td>By noon, she had been waiting <strong>for</strong> 3 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Quan Trọng:</strong> <strong>For</strong> dùng với khoảng thời gian (2 hours, 3 days, 5 years), <strong>Since</strong> dùng với thời điểm cụ thể (morning, 2 PM, Monday)
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Past Perfect Continuous vs Past Perfect Simple</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Past Perfect Simple</th>
+                        <th>Past Perfect Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + had + V3</td>
+                        <td>S + had + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ý Nhấn</strong></td>
+                        <td>Sự hoàn thành của hành động</td>
+                        <td>Quá trình và khoảng thời gian</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tập Trung Vào</strong></td>
+                        <td>Điều gì được hoàn thành</td>
+                        <td>Bao lâu hoặc quá trình thế nào</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I had finished (đã xong)</td>
+                        <td>I had been finishing (đang làm)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ She <strong>had painted</strong> the room by 5 PM (Past Perfect - hoàn thành)<br>
+                ✓ She <strong>had been painting</strong> the room for 3 hours (Past Perfect Continuous - quá trình)<br><br>
+                ✓ I <strong>had read</strong> three books before the exam (Past Perfect - số lượng hoàn thành)<br>
+                ✓ I <strong>had been reading</strong> all day before the exam (Past Perfect Continuous - khoảng thời gian)<br><br>
+                ✓ They <strong>had completed</strong> the project (Past Perfect - xong rồi)<br>
+                ✓ They <strong>had been working</strong> on the project for weeks (Past Perfect Continuous - bao lâu)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>So Sánh: Past Perfect Continuous vs Present Perfect Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Present Perfect Continuous</th>
+                        <th>Past Perfect Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + have/has + been + V-ing</td>
+                        <td>S + had + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời Gian Kết Thúc</strong></td>
+                        <td>Kéo dài đến hiện tại</td>
+                        <td>Kết thúc ở một điểm quá khứ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I have been reading (vẫn đang đọc)</td>
+                        <td>I had been reading (đã đọc, xong rồi)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>had been working</strong> for hours</li>
+                    <li>She <strong>had been sleeping</strong> all night</li>
+                    <li>They <strong>had been playing</strong> football for two hours</li>
+                    <li>It <strong>had been raining</strong> for days</li>
+                    <li>We <strong>had been studying</strong> for the exam</li>
+                    <li>He <strong>had been waiting</strong> for the bus</li>
+                    <li>The baby <strong>had been crying</strong> for an hour</li>
+                    <li>I <strong>had been running</strong> for miles</li>
+                    <li>She <strong>had been working</strong> on the project for weeks</li>
+                    <li>They <strong>had been traveling</strong> for months</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>hadn't been working</strong> long</li>
+                    <li>She <strong>had not been sleeping</strong> well</li>
+                    <li>They <strong>hadn't been playing</strong> long</li>
+                    <li>It <strong>hadn't been raining</strong> long</li>
+                    <li>We <strong>hadn't been studying</strong> hard</li>
+                    <li>He <strong>hadn't been waiting</strong> long</li>
+                    <li>The cat <strong>hadn't been eating</strong> properly</li>
+                    <li>I <strong>hadn't been exercising</strong> regularly</li>
+                    <li>She <strong>hadn't been practicing</strong> much</li>
+                    <li>They <strong>hadn't been living</strong> there long</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Had you been working?</td>
+                        <td>Yes, I had</td>
+                        <td>No, I hadn't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Had she been sleeping?</td>
+                        <td>Yes, she had</td>
+                        <td>No, she hadn't</td>
+                    </tr>
+                    <tr>
+                        <td>Had they been playing?</td>
+                        <td>Yes, they had</td>
+                        <td>No, they hadn't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Had it been raining long?</td>
+                        <td>Yes, it had</td>
+                        <td>No, it hadn't</td>
+                    </tr>
+                    <tr>
+                        <td>Had you been waiting long?</td>
+                        <td>Yes, I had</td>
+                        <td>No, I hadn't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên "been" trong cấu trúc</p>
+            <div class="example">
+                ❌ I had working | ✅ I had been working
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên thêm -ing vào động từ</p>
+            <div class="example">
+                ❌ She had been work | ✅ She had been working
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Nhầm lẫn với Past Perfect Simple</p>
+            <div class="example">
+                ❌ I had been finished (sai) | ✅ I had finished (Past Perfect Simple)<br>
+                ✅ I had been finishing (Past Perfect Continuous)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai cách chia -ing (gấp đôi, bỏ e)</p>
+            <div class="example">
+                ❌ She had been stoping | ✅ She had been stopping
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng Past Perfect Continuous một mình mà không có bối cảnh</strong></p>
+            <div class="example">
+                ❌ I had been working (không rõ bao lâu, trước cái gì) | ✅ I had been working for 5 hours when he arrived
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ "Quá Trình" & "Khoảng Thời Gian"</strong></p>
+            <ul>
+                <li>Past Perfect Continuous = Quá trình + Khoảng thời gian</li>
+                <li>Tìm "for" hoặc "since" - dấu hiệu của Past Perfect Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 2: So Sánh 4 Thì Quá Khứ</strong></p>
+            <ul>
+                <li>Simple Past: Đã xảy ra (hoàn thành)</li>
+                <li>Past Continuous: Đang xảy ra (tại một thời điểm)</li>
+                <li>Past Perfect: Đã xảy ra trước sự kiện quá khứ khác (thứ tự)</li>
+                <li>Past Perfect Continuous: Đang diễn ra trước sự kiện quá khứ khác (quá trình + khoảng thời gian)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: "Had Been" Là Chìa Khóa</strong></p>
+            <ul>
+                <li>had + been + V-ing = Past Perfect Continuous</li>
+                <li>Nếu không có "been" thì không phải Past Perfect Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 4: For Vs Since</strong></p>
+            <ul>
+                <li>For = Khoảng thời gian (2 hours, 3 days, 5 years)</li>
+                <li>Since = Thời điểm cụ thể (morning, 2 PM, Monday)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Past Perfect Continuous Cần Bối Cảnh</strong></p>
+            <ul>
+                <li>Luôn có một hành động quá khứ khác để so sánh</li>
+                <li>Cần có "for", "since", hoặc một sự kiện quá khứ khác</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động đang diễn ra trước một hành động quá khứ khác, nhấn mạn quá trình</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + had + been + V-ing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + had + NOT + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Had + S + been + V-ing + ?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quy Tắc -ING</strong></td>
+                        <td>Thêm -ing, bỏ e câm, gấp đôi CVC</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>for, since, before, when, by the time, throughout</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cách Sử Dụng Chính</strong></td>
+                        <td>Nhấn mạn quá trình và khoảng thời gian trước sự kiện quá khứ khác</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Khác Với Past Perfect Simple</strong></td>
+                        <td>Nhấn mạn quá trình, không phải hoàn thành</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

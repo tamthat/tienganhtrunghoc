@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Đại Từ (Pronouns)</h2>
+
+        <div class="card">
+            <h3>Đại Từ Là Gì?</h3>
+            <p><span class="highlight">Đại từ (Pronoun)</span> là một từ loại dùng để <strong>thay thế cho danh từ trong câu để tránh lặp lại</strong>. Đại từ giúp làm cho câu văn mềm mại hơn và tránh sự lặp lại không cần thiết.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Đại từ có nhiều loại khác nhau, mỗi loại có chức năng riêng. Chúng ta sẽ học 9 loại đại từ chính trong tiếng Anh.
+            </div>
+
+            <h3>Chức Năng Của Đại Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Chủ ngữ (Subject):</strong> She is a teacher (She thay cho "Maria")</li>
+                <li><strong>Tân ngữ (Object):</strong> I saw him yesterday (him thay cho "John")</li>
+                <li><strong>Bổ ngữ (Complement):</strong> It is mine (mine chỉ sở hữu)</li>
+                <li><strong>Trong cụm giới từ:</strong> This book is for them (them thay cho "the students")</li>
+            </ul>
+        </div>
+
+        <!-- PERSONAL PRONOUNS -->
+        <h2>👤 1. Đại Từ Nhân Xưng (Personal Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ nhân xưng</span> là những đại từ <strong>chỉ người hoặc vật cụ thể</strong>. Chúng thay thế cho danh từ và có dạng chủ ngữ (subject) hoặc tân ngữ (object).</p>
+
+            <p><strong>Đặc Điểm Chính:</strong></p>
+            <ul>
+                <li>Có dạng chủ ngữ (I, you, he, she, it, we, they)</li>
+                <li>Có dạng tân ngữ (me, you, him, her, it, us, them)</li>
+                <li>Thay đổi theo người (1st, 2nd, 3rd person)</li>
+                <li>Thay đổi theo số (singular, plural)</li>
+                <li>He, she, him, her có giới tính (gender)</li>
+            </ul>
+
+            <h3>II. Bảng Personal Pronouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Người</th>
+                        <th>Số</th>
+                        <th>Chủ Ngữ</th>
+                        <th>Tân Ngữ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1st</strong></td>
+                        <td>Singular</td>
+                        <td>I</td>
+                        <td>me</td>
+                        <td>I like coffee / John helped me</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2nd</strong></td>
+                        <td>Singular/Plural</td>
+                        <td>you</td>
+                        <td>you</td>
+                        <td>You are smart / I like you</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3rd</strong></td>
+                        <td>Singular (M)</td>
+                        <td>he</td>
+                        <td>him</td>
+                        <td>He is tall / I saw him</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>3rd</strong></td>
+                        <td>Singular (F)</td>
+                        <td>she</td>
+                        <td>her</td>
+                        <td>She is smart / I like her</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3rd</strong></td>
+                        <td>Singular (N)</td>
+                        <td>it</td>
+                        <td>it</td>
+                        <td>It is big / I see it</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>1st</strong></td>
+                        <td>Plural</td>
+                        <td>we</td>
+                        <td>us</td>
+                        <td>We are happy / He helped us</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3rd</strong></td>
+                        <td>Plural</td>
+                        <td>they</td>
+                        <td>them</td>
+                        <td>They are here / I like them</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>Dạng Chủ Ngữ (Subject Form):</strong></p>
+            <div class="example">
+                • <strong>I</strong> am a student<br>
+                • <strong>You</strong> are intelligent<br>
+                • <strong>He</strong> works in an office<br>
+                • <strong>She</strong> likes reading<br>
+                • <strong>It</strong> is raining<br>
+                • <strong>We</strong> are friends<br>
+                • <strong>They</strong> are in the park
+            </div>
+
+            <p><strong>Dạng Tân Ngữ (Object Form):</strong></p>
+            <div class="example">
+                • She helped <strong>me</strong> with homework<br>
+                • I saw <strong>you</strong> at the store<br>
+                • Can you tell <strong>him</strong> a secret?<br>
+                • I gave <strong>her</strong> a gift<br>
+                • The dog ate <strong>it</strong> quickly<br>
+                • They invited <strong>us</strong> to the party<br>
+                • I love <strong>them</strong> very much
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Dạng chủ ngữ đứng trước động từ, dạng tân ngữ đứng sau động từ hoặc giới từ
+            </div>
+        </div>
+
+        <!-- POSSESSIVE PRONOUNS -->
+        <h2>🏠 2. Đại Từ Sở Hữu (Possessive Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ sở hữu</span> là những đại từ <strong>chỉ sở hữu hoặc quyền sở hữu</strong>. Chúng thay thế cho possessive adjective + noun.</p>
+
+            <p><strong>Hai Loại Possessive Pronouns:</strong></p>
+            <ul>
+                <li><strong>Possessive Adjectives:</strong> my, your, his, her, its, our, their (luôn kèm theo danh từ)</li>
+                <li><strong>True Possessive Pronouns:</strong> mine, yours, his, hers, ours, theirs (thay thế cho danh từ)</li>
+            </ul>
+
+            <h3>II. Bảng Possessive Pronouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Người</th>
+                        <th>Sở Hữu Adjective</th>
+                        <th>True Possessive Pronoun</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>my</td>
+                        <td>mine</td>
+                        <td>My book / The book is mine</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>you</strong></td>
+                        <td>your</td>
+                        <td>yours</td>
+                        <td>Your pen / The pen is yours</td>
+                    </tr>
+                    <tr>
+                        <td><strong>he</strong></td>
+                        <td>his</td>
+                        <td>his</td>
+                        <td>His car / The car is his</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>she</strong></td>
+                        <td>her</td>
+                        <td>hers</td>
+                        <td>Her bag / The bag is hers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>it</strong></td>
+                        <td>its</td>
+                        <td>—</td>
+                        <td>Its color / (không thường dùng)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>we</strong></td>
+                        <td>our</td>
+                        <td>ours</td>
+                        <td>Our house / The house is ours</td>
+                    </tr>
+                    <tr>
+                        <td><strong>they</strong></td>
+                        <td>their</td>
+                        <td>theirs</td>
+                        <td>Their books / The books are theirs</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>Possessive Adjectives (Kèm Danh Từ):</strong></p>
+            <div class="example">
+                • This is <strong>my</strong> book<br>
+                • Where is <strong>your</strong> phone?<br>
+                • <strong>His</strong> father is a doctor<br>
+                • <strong>Her</strong> sister lives in Paris<br>
+                • <strong>Our</strong> team won the game<br>
+                • <strong>Their</strong> house is big
+            </div>
+
+            <p><strong>True Possessive Pronouns (Thay Thế Danh Từ):</strong></p>
+            <div class="example">
+                • This book is <strong>mine</strong> (thay cho "my book")<br>
+                • Is this phone <strong>yours</strong>?<br>
+                • The car is <strong>his</strong><br>
+                • That bag is <strong>hers</strong><br>
+                • The house is <strong>ours</strong><br>
+                • Those books are <strong>theirs</strong>
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG thêm apostrophe vào possessive pronouns (its, hers, theirs, etc.)<br>
+                ❌ The book is it's mine | ✅ The book is mine
+            </div>
+        </div>
+
+        <!-- REFLEXIVE PRONOUNS -->
+        <h2>🪞 3. Đại Từ Phản Thân (Reflexive Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ phản thân</span> là những đại từ <strong>dùng khi chủ ngữ và tân ngữ là một đối tượng</strong>. Chúng chỉ ra hành động của chủ ngữ tác động lên chính nó.</p>
+
+            <p><strong>Hai Cách Sử Dụng:</strong></p>
+            <ul>
+                <li><strong>Reflexive Use:</strong> Hành động của chủ ngữ tác động lên chính nó</li>
+                <li><strong>Intensive/Emphatic Use:</strong> Nhấn mạnh hoặc tăng cường hành động</li>
+            </ul>
+
+            <h3>II. Bảng Reflexive Pronouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Người</th>
+                        <th>Số</th>
+                        <th>Reflexive Pronoun</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td>Singular</td>
+                        <td>myself</td>
+                        <td>I hurt myself</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>you</td>
+                        <td>Singular</td>
+                        <td>yourself</td>
+                        <td>You should help yourself</td>
+                    </tr>
+                    <tr>
+                        <td>he</td>
+                        <td>Singular</td>
+                        <td>himself</td>
+                        <td>He taught himself guitar</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>she</td>
+                        <td>Singular</td>
+                        <td>herself</td>
+                        <td>She introduced herself</td>
+                    </tr>
+                    <tr>
+                        <td>it</td>
+                        <td>Singular</td>
+                        <td>itself</td>
+                        <td>The software updates itself</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>we</td>
+                        <td>Plural</td>
+                        <td>ourselves</td>
+                        <td>We enjoyed ourselves</td>
+                    </tr>
+                    <tr>
+                        <td>you</td>
+                        <td>Plural</td>
+                        <td>yourselves</td>
+                        <td>Help yourselves to food</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>they</td>
+                        <td>Plural</td>
+                        <td>themselves</td>
+                        <td>They bought it for themselves</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <p><strong>Reflexive Use (Phản Xạ):</strong></p>
+            <div class="example">
+                • I cut <strong>myself</strong> when making dinner<br>
+                • She taught <strong>herself</strong> Spanish<br>
+                • They found <strong>themselves</strong> in a tough situation<br>
+                • The child looked at <strong>himself</strong> in the mirror
+            </div>
+
+            <p><strong>Intensive Use (Nhấn Mạnh):</strong></p>
+            <div class="example">
+                • I <strong>myself</strong> saw the accident (chính tôi)<br>
+                • She <strong>herself</strong> wrote the book (chính cô ấy)<br>
+                • The president <strong>himself</strong> attended the meeting<br>
+                • They <strong>themselves</strong> agreed to the plan
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Nhấn mạn "by + reflexive pronoun" = một mình<br>
+                • I did it <strong>by myself</strong> (tôi làm nó một mình)<br>
+                • She lives <strong>by herself</strong> (cô ấy sống một mình)
+            </div>
+        </div>
+
+        <!-- DEMONSTRATIVE PRONOUNS -->
+        <h2>👉 4. Đại Từ Chỉ Định (Demonstrative Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ chỉ định</span> là những đại từ <strong>chỉ hoặc trỏ tới người hoặc vật cụ thể</strong>.</p>
+
+            <p><strong>Bốn Đại Từ Chỉ Định:</strong></p>
+            <ul>
+                <li><strong>this:</strong> cái này (gần)</li>
+                <li><strong>that:</strong> cái kia (xa)</li>
+                <li><strong>these:</strong> những cái này (gần, số nhiều)</li>
+                <li><strong>those:</strong> những cái kia (xa, số nhiều)</li>
+            </ul>
+
+            <h3>II. Bảng Demonstrative Pronouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khoảng Cách</th>
+                        <th>Số Ít</th>
+                        <th>Số Nhiều</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gần</strong></td>
+                        <td>this</td>
+                        <td>these</td>
+                        <td><strong>This</strong> is beautiful / <strong>These</strong> are nice</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Xa</strong></td>
+                        <td>that</td>
+                        <td>those</td>
+                        <td><strong>That</strong> is tall / <strong>Those</strong> are huge</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Cách Sử Dụng</h3>
+
+            <div class="example">
+                • <strong>This</strong> is a lovely painting (số ít, gần)<br>
+                • <strong>These</strong> are lovely paintings (số nhiều, gần)<br>
+                • <strong>That</strong> is a tall building (số ít, xa)<br>
+                • <strong>Those</strong> are tall buildings (số nhiều, xa)<br>
+                • I like <strong>this</strong> one better than <strong>that</strong><br>
+                • Look at <strong>these</strong> flowers! And look at <strong>those</strong> over there
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Demonstrative Pronoun vs Adjective:</strong><br>
+                • <strong>This</strong> is my book (pronoun - đứng một mình)<br>
+                • <strong>This book</strong> is mine (adjective - kèm danh từ)
+            </div>
+        </div>
+
+        <!-- INTERROGATIVE PRONOUNS -->
+        <h2>❓ 5. Đại Từ Nghi Vấn (Interrogative Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ nghi vấn</span> là những đại từ <strong>dùng để hỏi câu hỏi</strong>.</p>
+
+            <p><strong>Năm Đại Từ Nghi Vấn:</strong></p>
+            <ul>
+                <li><strong>who:</strong> ai (chủ ngữ)</li>
+                <li><strong>whom:</strong> ai (tân ngữ)</li>
+                <li><strong>whose:</strong> của ai (sở hữu)</li>
+                <li><strong>what:</strong> cái gì (vật)</li>
+                <li><strong>which:</strong> cái nào (lựa chọn)</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Interrogative Pronouns</h3>
+
+            <p><strong>Who (Ai - Chủ Ngữ):</strong></p>
+            <div class="example">
+                • <strong>Who</strong> is that man?<br>
+                • <strong>Who</strong> will volunteer?<br>
+                • <strong>Who</strong> are you?
+            </div>
+
+            <p><strong>Whom (Ai - Tân Ngữ):</strong></p>
+            <div class="example">
+                • <strong>Whom</strong> did you see?<br>
+                • <strong>Whom</strong> does she like?<br>
+                • To <strong>whom</strong> did you give the book?
+            </div>
+
+            <p><strong>Whose (Của Ai - Sở Hữu):</strong></p>
+            <div class="example">
+                • <strong>Whose</strong> is this book?<br>
+                • <strong>Whose</strong> car is parked outside?<br>
+                • <strong>Whose</strong> coat is this?
+            </div>
+
+            <p><strong>What (Cái Gì - Vật):</strong></p>
+            <div class="example">
+                • <strong>What</strong> are you doing?<br>
+                • <strong>What</strong> is this?<br>
+                • <strong>What</strong> time is it?
+            </div>
+
+            <p><strong>Which (Cái Nào - Lựa Chọn):</strong></p>
+            <div class="example">
+                • <strong>Which</strong> do you prefer?<br>
+                • <strong>Which</strong> of these books is yours?<br>
+                • <strong>Which</strong> one is better?
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Whom" ít được dùng trong tiếng nói hàng ngày, người ta thường dùng "who"
+            </div>
+        </div>
+
+        <!-- RELATIVE PRONOUNS -->
+        <h2>🔗 6. Đại Từ Quan Hệ (Relative Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ quan hệ</span> là những đại từ <strong>dùng để nối hai mệnh đề lại</strong>. Chúng giới thiệu mệnh đề quan hệ.</p>
+
+            <p><strong>Các Đại Từ Quan Hệ:</strong></p>
+            <ul>
+                <li><strong>who:</strong> người (chủ ngữ)</li>
+                <li><strong>whom:</strong> người (tân ngữ)</li>
+                <li><strong>whose:</strong> của ai</li>
+                <li><strong>that:</strong> cái mà (người/vật)</li>
+                <li><strong>which:</strong> cái mà (vật)</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Relative Pronouns</h3>
+
+            <div class="example">
+                • The woman <strong>who</strong> called you is my sister<br>
+                • The man <strong>whom</strong> I met was kind<br>
+                • The book <strong>which</strong> you gave me is interesting<br>
+                • The student <strong>whose</strong> project won is here<br>
+                • The cat <strong>that</strong> is sleeping is mine<br>
+                • I know the person <strong>who</strong> owns this house
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Relative pronouns thường theo sau danh từ họ đề cập<br>
+                ❌ The woman who is my sister called → sai<br>
+                ✅ The woman who called you is my sister → đúng
+            </div>
+        </div>
+
+        <!-- INDEFINITE PRONOUNS -->
+        <h2>❔ 7. Đại Từ Bất Định (Indefinite Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ bất định</span> là những đại từ <strong>chỉ người hoặc vật không xác định cụ thể</strong>.</p>
+
+            <p><strong>Các Đại Từ Bất Định Phổ Biến:</strong></p>
+            <ul>
+                <li><strong>someone, somebody:</strong> ai đó</li>
+                <li><strong>something:</strong> cái gì đó</li>
+                <li><strong>everyone, everybody:</strong> mọi người</li>
+                <li><strong>everything:</strong> mọi cái</li>
+                <li><strong>no one, nobody:</strong> không ai</li>
+                <li><strong>nothing:</strong> không cái gì</li>
+                <li><strong>anyone, anybody:</strong> ai cũng được</li>
+                <li><strong>anything:</strong> cái gì cũng được</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Indefinite Pronouns</h3>
+
+            <div class="example">
+                • <strong>Someone</strong> left their bag here<br>
+                • <strong>Everyone</strong> attended the meeting<br>
+                • I don't know <strong>anyone</strong> at this party<br>
+                • <strong>Nothing</strong> is impossible<br>
+                • <strong>Something</strong> smells good<br>
+                • <strong>Nobody</strong> knows the answer<br>
+                • <strong>Anything</strong> can happen<br>
+                • <strong>Everything</strong> will be fine
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Indefinite pronouns thường dùng với động từ số ít<br>
+                • <strong>Everyone</strong> <strong>is</strong> happy (KHÔNG "are")<br>
+                • <strong>Something</strong> <strong>is</strong> missing (KHÔNG "are")
+            </div>
+        </div>
+
+        <!-- RECIPROCAL PRONOUNS -->
+        <h2>🔄 8. Đại Từ Hỗ Tương (Reciprocal Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ hỗ tương</span> là những đại từ <strong>chỉ sự tương tác lẫn nhau giữa hai hoặc nhiều đối tượng</strong>.</p>
+
+            <p><strong>Hai Đại Từ Hỗ Tương:</strong></p>
+            <ul>
+                <li><strong>each other:</strong> nhau (thường dùng cho 2 người/vật)</li>
+                <li><strong>one another:</strong> lẫn nhau (thường dùng cho nhiều hơn 2 người/vật)</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Reciprocal Pronouns</h3>
+
+            <div class="example">
+                • Tom and Jerry love <strong>each other</strong><br>
+                • The two friends helped <strong>each other</strong><br>
+                • All the students greeted <strong>one another</strong><br>
+                • The members of the team congratulated <strong>one another</strong> on their success<br>
+                • We always support <strong>each other</strong> in difficult times
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Each other" và "one another" có thể sử dụng thay thế cho nhau trong hầu hết các trường hợp<br>
+                ✅ They look at each other ✅ They look at one another
+            </div>
+        </div>
+
+        <!-- DISTRIBUTIVE PRONOUNS -->
+        <h2>🎯 9. Đại Từ Phân Phối (Distributive Pronouns)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Đại từ phân phối</span> là những đại từ <strong>chỉ các thành viên của một nhóm một cách riêng lẻ</strong>.</p>
+
+            <p><strong>Các Đại Từ Phân Phối:</strong></p>
+            <ul>
+                <li><strong>each:</strong> mỗi cái (từng cái)</li>
+                <li><strong>either:</strong> một trong hai</li>
+                <li><strong>neither:</strong> không cái nào (trong hai)</li>
+                <li><strong>any:</strong> cái nào cũng được</li>
+                <li><strong>none:</strong> không cái nào</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Distributive Pronouns</h3>
+
+            <p><strong>Each (Mỗi):</strong></p>
+            <div class="example">
+                • <strong>Each</strong> of the students received a certificate<br>
+                • <strong>Each</strong> one is special<br>
+                • I gave them a prize. <strong>Each</strong> was happy
+            </div>
+
+            <p><strong>Either (Một Trong Hai):</strong></p>
+            <div class="example">
+                • <strong>Either</strong> of these books is good<br>
+                • You can choose <strong>either</strong> one<br>
+                • <strong>Either</strong> is suitable
+            </div>
+
+            <p><strong>Neither (Không Cái Nào):</strong></p>
+            <div class="example">
+                • <strong>Neither</strong> of them came<br>
+                • <strong>Neither</strong> is wrong<br>
+                • I like <strong>neither</strong> of these options
+            </div>
+
+            <p><strong>Any (Cái Nào Cũng Được):</strong></p>
+            <div class="example">
+                • <strong>Any</strong> of these choices is fine<br>
+                • <strong>Any</strong> would work<br>
+                • You can pick <strong>any</strong>
+            </div>
+
+            <p><strong>None (Không Cái Nào):</strong></p>
+            <div class="example">
+                • <strong>None</strong> of them attended the meeting<br>
+                • <strong>None</strong> were interested<br>
+                • I asked several people but <strong>none</strong> knew the answer
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Distributive pronouns thường dùng với động từ số ít<br>
+                • <strong>Each</strong> <strong>is</strong> special | <strong>Neither</strong> <strong>is</strong> wrong | <strong>None</strong> <strong>is</strong> broken
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>9 Loại Đại Từ - Ví Dụ</h3>
+            <ul>
+                <li><strong>Personal:</strong> I love you / She helped him</li>
+                <li><strong>Possessive:</strong> This is mine / The book is theirs</li>
+                <li><strong>Reflexive:</strong> I hurt myself / She dressed herself</li>
+                <li><strong>Demonstrative:</strong> This is nice / Those are beautiful</li>
+                <li><strong>Interrogative:</strong> Who is that? / What do you want?</li>
+                <li><strong>Relative:</strong> The girl who called / The book which you gave me</li>
+                <li><strong>Indefinite:</strong> Everyone is here / Something happened</li>
+                <li><strong>Reciprocal:</strong> They love each other / The group helped one another</li>
+                <li><strong>Distributive:</strong> Each student got a prize / Neither was wrong</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Nhầm who và whom</p>
+            <div class="example">
+                ❌ Whom is at the door? | ✅ Who is at the door?<br>
+                ❌ I saw who yesterday | ✅ I saw whom yesterday
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng apostrophe ở possessive pronouns</p>
+            <div class="example">
+                ❌ It's is broken | ✅ Its is broken<br>
+                ❌ The book is her's | ✅ The book is hers
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Sai động từ với indefinite pronouns</p>
+            <div class="example">
+                ❌ Everyone are happy | ✅ Everyone is happy<br>
+                ❌ Nothing are missing | ✅ Nothing is missing
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng demonstrative adjective thay vì pronoun</p>
+            <div class="example">
+                ❌ This are mine | ✅ This is mine<br>
+                ❌ These is pretty | ✅ These are pretty
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn subject và object pronouns</p>
+            <div class="example">
+                ❌ Me and you are friends | ✅ You and I are friends<br>
+                ❌ He gave she a gift | ✅ He gave her a gift
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Subject vs Object Pronouns</strong></p>
+            <ul>
+                <li>Subject: I, you, he, she, it, we, they (đứng trước động từ)</li>
+                <li>Object: me, you, him, her, it, us, them (đứng sau động từ/giới từ)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Who vs Whom</strong></p>
+            <ul>
+                <li>Who = chủ ngữ (he/she thay thế được)</li>
+                <li>Whom = tân ngữ (him/her thay thế được)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Possessive Adjective vs Pronoun</strong></p>
+            <ul>
+                <li>Adjective: my book, your pen, his car (kèm danh từ)</li>
+                <li>Pronoun: This is mine, That is yours, The book is his (không kèm danh từ)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Demonstratives - Gần Xa</strong></p>
+            <ul>
+                <li>This/these = gần (close)</li>
+                <li>That/those = xa (far)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Indefinite Pronouns = Động Từ Số Ít</strong></p>
+            <ul>
+                <li>Everyone, someone, anyone, no one, nothing → động từ số ít</li>
+                <li>Everyone IS here (KHÔNG are)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Đại Từ</th>
+                        <th>Định Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Personal</strong></td>
+                        <td>Chỉ người/vật</td>
+                        <td>I, me, he, she, it, we, they</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Possessive</strong></td>
+                        <td>Chỉ sở hữu</td>
+                        <td>mine, yours, his, hers, ours, theirs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reflexive</strong></td>
+                        <td>Hành động về chính nó</td>
+                        <td>myself, yourself, himself, herself</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Demonstrative</strong></td>
+                        <td>Chỉ/trỏ tới</td>
+                        <td>this, that, these, those</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interrogative</strong></td>
+                        <td>Hỏi câu hỏi</td>
+                        <td>who, whom, whose, what, which</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Relative</strong></td>
+                        <td>Nối hai mệnh đề</td>
+                        <td>who, whom, whose, that, which</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indefinite</strong></td>
+                        <td>Không xác định</td>
+                        <td>someone, everyone, nothing, anything</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Reciprocal</strong></td>
+                        <td>Lẫn nhau</td>
+                        <td>each other, one another</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Distributive</strong></td>
+                        <td>Riêng lẻ trong nhóm</td>
+                        <td>each, either, neither, any, none</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Động Từ (Verbs)</h2>
+
+        <div class="card">
+            <h3>Động Từ Là Gì?</h3>
+            <p><span class="highlight">Động từ (Verb)</span> là một từ loại dùng để <strong>biểu thị hành động, sự kiện, hoặc trạng thái</strong>. Động từ là một trong những thành phần quan trọng nhất của câu vì nó cho biết điều gì đang xảy ra.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Động từ có nhiều loại khác nhau: động từ thường, động từ tobe, trợ động từ, và động từ khuyết thiếu (modal verbs).
+            </div>
+
+            <h3>Chức Năng Của Động Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Biểu Thị Hành Động:</strong> She runs in the morning</li>
+                <li><strong>Biểu Thị Trạng Thái:</strong> He is happy</li>
+                <li><strong>Biểu Thị Sự Tồn Tại:</strong> There is a book on the table</li>
+                <li><strong>Tạo Thì Hoàn Thành:</strong> I have finished my work</li>
+            </ul>
+        </div>
+
+        <!-- REGULAR VERBS -->
+        <h2>✅ 1. Động Từ Thường (Regular Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Động từ thường</span> là những động từ <strong>tuân theo một mô hình quy tắc khi chia</strong>. Chúng thêm "-ed" vào cuối để tạo thì quá khứ và past participle.</p>
+
+            <p><strong>Đặc Điểm Chính:</strong></p>
+            <ul>
+                <li>Thêm "-ed" để tạo quá khứ đơn (simple past)</li>
+                <li>Thêm "-ed" để tạo past participle</li>
+                <li>Dễ nhớ vì tuân theo quy tắc</li>
+                <li>Ví dụ: play → played, walk → walked, help → helped</li>
+            </ul>
+
+            <h3>II. Cách Chia Regular Verbs</h3>
+
+            <p><strong>Công Thức Cơ Bản:</strong></p>
+            <div class="formula">
+                Base Verb + -ed = Simple Past & Past Participle
+            </div>
+
+            <p><strong>1. Động Từ Bình Thường - Thêm "-ed"</strong></p>
+            <div class="example">
+                • play → played | paint → painted | watch → watched<br>
+                • help → helped | ask → asked | cook → cooked<br>
+                • walk → walked | talk → talked | love → loved
+            </div>
+
+            <p><strong>2. Động Từ Kết Thúc Bằng "-e" - Thêm "-d"</strong></p>
+            <div class="example">
+                • use → used | like → liked | bake → baked<br>
+                • die → died | live → lived | close → closed
+            </div>
+
+            <p><strong>3. Động Từ Kết Thúc Bằng "Consonant + y" - Đổi "y" Thành "i" Rồi Thêm "-ed"</strong></p>
+            <div class="example">
+                • study → studied | try → tried | cry → cried<br>
+                • marry → married | carry → carried | worry → worried
+            </div>
+
+            <p><strong>4. Động Từ Kết Thúc Bằng "Consonant + Vowel + Consonant" - Gấp Đôi Consonant Cuối Rồi Thêm "-ed"</strong></p>
+            <div class="example">
+                • plan → planned | stop → stopped | drop → dropped<br>
+                • wag → wagged | occur → occurred | permit → permitted
+            </div>
+
+            <h3>III. Bảng Regular Verbs Thông Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Verb</th>
+                        <th>Simple Past</th>
+                        <th>Past Participle</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>walk</td>
+                        <td>walked</td>
+                        <td>walked</td>
+                        <td>I walked to school</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>play</td>
+                        <td>played</td>
+                        <td>played</td>
+                        <td>She played piano</td>
+                    </tr>
+                    <tr>
+                        <td>work</td>
+                        <td>worked</td>
+                        <td>worked</td>
+                        <td>They worked all day</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>study</td>
+                        <td>studied</td>
+                        <td>studied</td>
+                        <td>I studied for the exam</td>
+                    </tr>
+                    <tr>
+                        <td>stop</td>
+                        <td>stopped</td>
+                        <td>stopped</td>
+                        <td>The bus stopped</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Regular verbs luôn có cùng dạng cho simple past và past participle
+            </div>
+        </div>
+
+        <!-- IRREGULAR VERBS -->
+        <h2>❌ Động Từ Bất Thường (Irregular Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Động từ bất thường</span> là những động từ <strong>KHÔNG tuân theo mô hình quy tắc</strong>. Chúng có các dạng bất thường riêng mà phải ghi nhớ.</p>
+
+            <p><strong>Đặc Điểm Chính:</strong></p>
+            <ul>
+                <li>KHÔNG thêm "-ed"</li>
+                <li>Có dạng riêng cho simple past</li>
+                <li>Có dạng riêng cho past participle</li>
+                <li>Phải ghi nhớ từng cái</li>
+                <li>Ví dụ: go → went → gone, eat → ate → eaten</li>
+            </ul>
+
+            <h3>II. Các Loại Irregular Verbs</h3>
+
+            <p><strong>1. Ba Dạng Khác Nhau</strong></p>
+            <div class="example">
+                • go → went → gone<br>
+                • eat → ate → eaten<br>
+                • begin → began → begun<br>
+                • ring → rang → rung
+            </div>
+
+            <p><strong>2. Base Verb & Simple Past Giống Nhau</strong></p>
+            <div class="example">
+                • cut → cut → cut<br>
+                • put → put → put<br>
+                • hit → hit → hit<br>
+                • let → let → let
+            </div>
+
+            <p><strong>3. Tất Cả Ba Dạng Giống Nhau</strong></p>
+            <div class="example">
+                • bet → bet → bet<br>
+                • cost → cost → cost<br>
+                • fit → fit → fit<br>
+                • hurt → hurt → hurt
+            </div>
+
+            <h3>III. Bảng Irregular Verbs Thông Dụng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base Verb</th>
+                        <th>Simple Past</th>
+                        <th>Past Participle</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>be</td>
+                        <td>was/were</td>
+                        <td>been</td>
+                        <td>I was happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>have</td>
+                        <td>had</td>
+                        <td>had</td>
+                        <td>She had a book</td>
+                    </tr>
+                    <tr>
+                        <td>do</td>
+                        <td>did</td>
+                        <td>done</td>
+                        <td>They did homework</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>go</td>
+                        <td>went</td>
+                        <td>gone</td>
+                        <td>I went to Paris</td>
+                    </tr>
+                    <tr>
+                        <td>eat</td>
+                        <td>ate</td>
+                        <td>eaten</td>
+                        <td>He ate lunch</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>see</td>
+                        <td>saw</td>
+                        <td>seen</td>
+                        <td>I saw her</td>
+                    </tr>
+                    <tr>
+                        <td>make</td>
+                        <td>made</td>
+                        <td>made</td>
+                        <td>She made a cake</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>come</td>
+                        <td>came</td>
+                        <td>come</td>
+                        <td>They came late</td>
+                    </tr>
+                    <tr>
+                        <td>take</td>
+                        <td>took</td>
+                        <td>taken</td>
+                        <td>I took a photo</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>know</td>
+                        <td>knew</td>
+                        <td>known</td>
+                        <td>I knew the answer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- VERB TO BE -->
+        <h2>👤 2. Động Từ Tobe (Verb To Be)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Động từ "to be"</span> là một trong những <strong>động từ quan trọng nhất trong tiếng Anh</strong>. Nó có thể dùng làm động từ chính (main verb) hoặc trợ động từ (auxiliary verb).</p>
+
+            <p><strong>Hai Cách Sử Dụng Chính:</strong></p>
+            <ul>
+                <li><strong>Main Verb:</strong> She is a teacher (cô ấy là giáo viên)</li>
+                <li><strong>Auxiliary Verb:</strong> I am studying (tôi đang học)</li>
+            </ul>
+
+            <h3>II. Chia "To Be" - Present Tense</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Người</th>
+                        <th>Số</th>
+                        <th>Hiện Tại</th>
+                        <th>Viết Tắt</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>Singular</td>
+                        <td>am</td>
+                        <td>'m</td>
+                        <td>I am happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You</strong></td>
+                        <td>Singular</td>
+                        <td>are</td>
+                        <td>'re</td>
+                        <td>You are smart</td>
+                    </tr>
+                    <tr>
+                        <td><strong>He/She/It</strong></td>
+                        <td>Singular</td>
+                        <td>is</td>
+                        <td>'s</td>
+                        <td>He is tall</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>We</strong></td>
+                        <td>Plural</td>
+                        <td>are</td>
+                        <td>'re</td>
+                        <td>We are friends</td>
+                    </tr>
+                    <tr>
+                        <td><strong>You</strong></td>
+                        <td>Plural</td>
+                        <td>are</td>
+                        <td>'re</td>
+                        <td>You are students</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>They</strong></td>
+                        <td>Plural</td>
+                        <td>are</td>
+                        <td>'re</td>
+                        <td>They are here</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Chia "To Be" - Past Tense</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Người</th>
+                        <th>Số</th>
+                        <th>Quá Khứ</th>
+                        <th>Viết Tắt</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>Singular</td>
+                        <td>was</td>
+                        <td>'s (hiếm)</td>
+                        <td>I was tired</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You</strong></td>
+                        <td>Singular</td>
+                        <td>were</td>
+                        <td>'re (hiếm)</td>
+                        <td>You were great</td>
+                    </tr>
+                    <tr>
+                        <td><strong>He/She/It</strong></td>
+                        <td>Singular</td>
+                        <td>was</td>
+                        <td>'s (hiếm)</td>
+                        <td>She was beautiful</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>We</strong></td>
+                        <td>Plural</td>
+                        <td>were</td>
+                        <td>'re (hiếm)</td>
+                        <td>We were happy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>You</strong></td>
+                        <td>Plural</td>
+                        <td>were</td>
+                        <td>'re (hiếm)</td>
+                        <td>You were late</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>They</strong></td>
+                        <td>Plural</td>
+                        <td>were</td>
+                        <td>'re (hiếm)</td>
+                        <td>They were kind</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Cách Sử Dụng Verb To Be</h3>
+
+            <p><strong>1. Chỉ Danh Tính (Adjectives)</strong></p>
+            <div class="example">
+                • The weather <strong>is</strong> sunny<br>
+                • She <strong>is</strong> intelligent<br>
+                • They <strong>are</strong> happy
+            </div>
+
+            <p><strong>2. Chỉ Nghề Nghiệp (Profession)</strong></p>
+            <div class="example">
+                • I <strong>am</strong> a teacher<br>
+                • He <strong>is</strong> a doctor<br>
+                • We <strong>are</strong> engineers
+            </div>
+
+            <p><strong>3. Chỉ Quốc Tịch (Nationality)</strong></p>
+            <div class="example">
+                • I <strong>am</strong> Vietnamese<br>
+                • She <strong>is</strong> French<br>
+                • They <strong>are</strong> Japanese
+            </div>
+
+            <p><strong>4. Tạo Present Continuous</strong></p>
+            <div class="example">
+                • I <strong>am</strong> studying<br>
+                • She <strong>is</strong> reading<br>
+                • They <strong>are</strong> playing
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> "To be" là động từ bất thường<br>
+                Present: am, are, is | Past: was, were | Future: will be
+            </div>
+        </div>
+
+        <!-- AUXILIARY VERBS -->
+        <h2>🤝 3. Trợ Động Từ (Auxiliary/Helping Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Trợ động từ (Auxiliary Verbs)</span> là những động từ <strong>kèm theo động từ chính để tạo thì, hình thức, hoặc phủ định</strong>. Chúng không có nghĩa độc lập mà phải đi kèm với động từ khác.</p>
+
+            <p><strong>Ba Trợ Động Từ Chính:</strong></p>
+            <ul>
+                <li><strong>be:</strong> Tạo continuous tenses và passive voice</li>
+                <li><strong>have:</strong> Tạo perfect tenses</li>
+                <li><strong>do:</strong> Tạo phủ định và câu hỏi</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Auxiliary Verbs</h3>
+
+            <p><strong>Be - Tạo Continuous Tenses</strong></p>
+            <div class="example">
+                • I <strong>am</strong> reading a book (Present Continuous)<br>
+                • She <strong>is</strong> cooking dinner<br>
+                • They <strong>were</strong> playing football (Past Continuous)<br>
+                • We <strong>will be</strong> waiting for you (Future Continuous)
+            </div>
+
+            <p><strong>Be - Tạo Passive Voice</strong></p>
+            <div class="example">
+                • The book <strong>is</strong> written by John (Present Passive)<br>
+                • The house <strong>was</strong> built in 1990 (Past Passive)<br>
+                • The project <strong>will be</strong> completed next week (Future Passive)
+            </div>
+
+            <p><strong>Have - Tạo Perfect Tenses</strong></p>
+            <div class="example">
+                • I <strong>have</strong> finished my work (Present Perfect)<br>
+                • She <strong>has</strong> gone home<br>
+                • They <strong>had</strong> left when I arrived (Past Perfect)<br>
+                • We <strong>will have</strong> completed the project by Friday (Future Perfect)
+            </div>
+
+            <p><strong>Do - Tạo Câu Hỏi & Phủ Định</strong></p>
+            <div class="example">
+                • <strong>Do</strong> you like coffee? (Question)<br>
+                • She <strong>does</strong> not know him (Negative)<br>
+                • <strong>Did</strong> they go to the party? (Past Question)<br>
+                • I <strong>didn't</strong> see the film (Past Negative)
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Trợ động từ phải được theo sau bởi một động từ chính<br>
+                ✅ I am studying | ✅ I have finished | ✅ Do you know?
+            </div>
+        </div>
+
+        <!-- MODAL VERBS -->
+        <h2>⚡ 4. Động Từ Khuyết Thiếu (Modal Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Động từ khuyết thiếu (Modal Verbs)</span> là những động từ <strong>biểu thị khả năng, khả năng có, yêu cầu, lời khuyên, hoặc hành động có thể xảy ra</strong>.</p>
+
+            <p><strong>Các Động Từ Khuyết Thiếu Chính:</strong></p>
+            <ul>
+                <li><strong>can:</strong> có thể, biết</li>
+                <li><strong>could:</strong> có thể (quá khứ/lịch sự)</li>
+                <li><strong>may:</strong> có thể (được phép)</li>
+                <li><strong>might:</strong> có thể (khả năng thấp)</li>
+                <li><strong>must:</strong> phải, chắc chắn</li>
+                <li><strong>should:</strong> nên, được khuyên</li>
+                <li><strong>would:</strong> sẽ (lịch sự/điều kiện)</li>
+                <li><strong>will:</strong> sẽ</li>
+                <li><strong>shall:</strong> sẽ (hiếm, chính thức)</li>
+                <li><strong>ought to:</strong> nên, phải</li>
+            </ul>
+
+            <h3>II. Cách Sử Dụng Modal Verbs</h3>
+
+            <p><strong>Can (Có Thể/Biết)</strong></p>
+            <div class="example">
+                • I <strong>can</strong> swim (tôi biết bơi)<br>
+                • <strong>Can</strong> you help me? (bạn có thể giúp tôi không?)<br>
+                • You <strong>can</strong> go now (bạn có thể đi bây giờ)
+            </div>
+
+            <p><strong>Could (Có Thể - Quá Khứ/Lịch Sự)</strong></p>
+            <div class="example">
+                • I <strong>could</strong> swim when I was young (tôi biết bơi khi nhỏ)<br>
+                • <strong>Could</strong> you help me? (bạn có thể giúp tôi không? - lịch sự)<br>
+                • She <strong>could</strong> have done it (cô ấy có thể đã làm điều đó)
+            </div>
+
+            <p><strong>May/Might (Có Thể/Được Phép)</strong></p>
+            <div class="example">
+                • <strong>May</strong> I come in? (tôi có thể vào không?)<br>
+                • She <strong>might</strong> come tomorrow (cô ấy có thể sẽ đến ngày mai)<br>
+                • It <strong>may</strong> rain later (trời có thể sẽ mưa)
+            </div>
+
+            <p><strong>Must (Phải/Chắc Chắn)</strong></p>
+            <div class="example">
+                • I <strong>must</strong> go now (tôi phải đi bây giờ)<br>
+                • You <strong>must</strong> study hard (bạn phải học kỹ)<br>
+                • It <strong>must</strong> be true (nó chắc chắn là đúng)
+            </div>
+
+            <p><strong>Should (Nên/Được Khuyên)</strong></p>
+            <div class="example">
+                • You <strong>should</strong> eat healthy (bạn nên ăn lành mạnh)<br>
+                • I <strong>should</strong> study more (tôi nên học thêm)<br>
+                • He <strong>should</strong> apologize (anh ấy nên xin lỗi)
+            </div>
+
+            <p><strong>Would (Sẽ - Lịch Sự/Điều Kiện)</strong></p>
+            <div class="example">
+                • <strong>Would</strong> you like coffee? (bạn muốn cà phê không? - lịch sự)<br>
+                • I <strong>would</strong> come if I could (tôi sẽ đến nếu tôi có thể)<br>
+                • She <strong>would</strong> help (cô ấy sẽ giúp)
+            </div>
+
+            <p><strong>Will (Sẽ)</strong></p>
+            <div class="example">
+                • I <strong>will</strong> go tomorrow<br>
+                • She <strong>will</strong> help you<br>
+                • They <strong>will</strong> arrive soon
+            </div>
+
+            <h3>III. Đặc Điểm Của Modal Verbs</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tính Chất</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Không Thay Đổi Theo Chủ Ngữ</strong></td>
+                        <td>I can | He can | They can (KHÔNG "he cans")</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>2. Luôn Được Theo Bởi Base Verb</strong></td>
+                        <td>can go | must study | should help (KHÔNG "can goes")</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. KHÔNG Có "-s" Ở Thứ 3 Người Số Ít</strong></td>
+                        <td>She can (KHÔNG "she cans")</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>4. Tạo Phủ Định & Câu Hỏi Không Cần "Do"</strong></td>
+                        <td>Can you? | I can't | Must go? (KHÔNG "Do I can?")</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Modal verbs là động từ bất thường - phải ghi nhớ các dạng quá khứ và cách dùng
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Regular Verbs</h3>
+            <ul>
+                <li>I <strong>play</strong> football every day</li>
+                <li>She <strong>worked</strong> yesterday</li>
+                <li>They <strong>have finished</strong> the project</li>
+                <li>We <strong>are studying</strong> English</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Irregular Verbs</h3>
+            <ul>
+                <li>I <strong>go</strong> to work every day</li>
+                <li>She <strong>went</strong> to Paris last year</li>
+                <li>They <strong>have gone</strong> home</li>
+                <li>He <strong>saw</strong> a wonderful movie</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Verb To Be</h3>
+            <ul>
+                <li>I <strong>am</strong> a student</li>
+                <li>She <strong>is</strong> happy</li>
+                <li>They <strong>were</strong> at home yesterday</li>
+                <li>We <strong>will be</strong> there soon</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Auxiliary Verbs</h3>
+            <ul>
+                <li>I <strong>am studying</strong> English</li>
+                <li>She <strong>has finished</strong> her homework</li>
+                <li><strong>Do</strong> you like pizza?</li>
+                <li>The house <strong>was built</strong> in 1990</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Modal Verbs</h3>
+            <ul>
+                <li>I <strong>can</strong> speak English</li>
+                <li>You <strong>should</strong> study hard</li>
+                <li>She <strong>must</strong> go now</li>
+                <li>They <strong>might</strong> come tomorrow</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên "-ed" với regular verbs ở quá khứ</p>
+            <div class="example">
+                ❌ I walk to school yesterday | ✅ I walked to school yesterday
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng sai dạng irregular verb</p>
+            <div class="example">
+                ❌ I goed home | ✅ I went home<br>
+                ❌ He ate-ed | ✅ He ate
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Nhầm lẫn "to be" với động từ thường</p>
+            <div class="example">
+                ❌ I am go to school | ✅ I go to school<br>
+                ❌ She is happy go | ✅ She is happy
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng modal verb sai cấu trúc</p>
+            <div class="example">
+                ❌ I can to swim | ✅ I can swim<br>
+                ❌ She can goes | ✅ She can go
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng modal verb với một động từ khác đã chia</p>
+            <div class="example">
+                ❌ I must go to study | ✅ I must study<br>
+                ❌ He should going | ✅ He should go
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Regular Verbs - Ghi Nhớ Quy Tắc "-ed"</strong></p>
+            <ul>
+                <li>Phát âm: /t/, /d/, /ɪd/ tùy theo âm cuối của động từ</li>
+                <li>Quy tắc chính tả: -e → -d, Consonant+y → -i+ed, CVC → gấp đôi+ed</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Irregular Verbs - Ghi Nhớ Từng Cái</strong></p>
+            <ul>
+                <li>Viết ra bảng và học thuộc</li>
+                <li>Nhóm các động từ theo quy luật (nếu có)</li>
+                <li>Sử dụng thường xuyên để ghi nhớ</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Verb To Be - Chú Ý Người & Số</strong></p>
+            <ul>
+                <li>I am | You/We/They are | He/She/It is</li>
+                <li>I was | You/We/They were | He/She/It was</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Auxiliary Verbs - Chỉ Là Phụ Trợ</strong></p>
+            <ul>
+                <li>Luôn theo sau bởi động từ chính</li>
+                <li>be + V-ing | have + past participle | do + base verb</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Modal Verbs - Cấu Trúc Đơn Giản</strong></p>
+            <ul>
+                <li>Modal verb + base verb (KHÔNG thêm "-s" hay "-ed")</li>
+                <li>I can go | She should study | They must help (KHÔNG "she cans", "they musts")</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Động Từ</th>
+                        <th>Định Nghĩa</th>
+                        <th>Ví Dụ</th>
+                        <th>Đặc Điểm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Regular</strong></td>
+                        <td>Thêm -ed</td>
+                        <td>play → played</td>
+                        <td>Tuân theo quy tắc</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Irregular</strong></td>
+                        <td>Dạng riêng</td>
+                        <td>go → went → gone</td>
+                        <td>Phải ghi nhớ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>To Be</strong></td>
+                        <td>Trạng thái/Tính từ</td>
+                        <td>am, is, are, was, were</td>
+                        <td>Thay đổi theo người & số</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Auxiliary</strong></td>
+                        <td>Phụ trợ động từ</td>
+                        <td>be, have, do</td>
+                        <td>Kèm động từ chính</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modal</strong></td>
+                        <td>Khuyết thiếu</td>
+                        <td>can, must, should</td>
+                        <td>Không thay đổi theo chủ ngữ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

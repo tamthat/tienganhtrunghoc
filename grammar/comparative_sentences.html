@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Câu So Sánh (Comparative Sentences)</h2>
+
+        <div class="card">
+            <h3>Câu So Sánh Là Gì?</h3>
+            <p><span class="highlight">Câu So Sánh (Comparative Sentence)</span> là <strong>câu dùng để so sánh giữa hai hoặc nhiều người, vật, hoặc sự vật có chất lượng giống nhau</strong>. Tiếng Anh có ba kiểu so sánh chính: so sánh bằng (equality), so sánh hơn (superiority), so sánh nhất (superlative).</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> So sánh bằng: as...as | So sánh hơn: -er/more...than | So sánh nhất: the -est/the most | So sánh kép: the more...the more
+            </div>
+
+            <h3>Ba Kiểu So Sánh Chính</h3>
+            <ul>
+                <li><strong>So Sánh Bằng (Equality):</strong> Hai vật/người bằng nhau</li>
+                <li><strong>So Sánh Hơn (Comparative):</strong> Một vật/người hơn vật/người khác</li>
+                <li><strong>So Sánh Nhất (Superlative):</strong> Vật/người tốt nhất/xấu nhất trong nhóm</li>
+                <li><strong>So Sánh Kép (Double Comparative):</strong> Mối quan hệ giữa hai sự thay đổi</li>
+                <li><strong>So Sánh Bội Số (Multiple Comparative):</strong> Gấp bao nhiêu lần</li>
+            </ul>
+        </div>
+
+        <!-- EQUALITY COMPARISON -->
+        <h2>✅ 1. So Sánh Bằng (Equality Comparison)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">So sánh bằng</span> dùng để <strong>chỉ rằng hai người, vật hay sự vật có cùng một chất lượng hoặc mức độ nào đó</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Xác Định (Affirm)</strong></td>
+                        <td>S + V + as + Adj/Adv + as + O</td>
+                        <td>John is as tall as Tom</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định (Negative)</strong></td>
+                        <td>S + V + not as + Adj/Adv + as + O</td>
+                        <td>Lucy is not as tall as Helena</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nhấn Mạnh</strong></td>
+                        <td>S + V + (exactly/just) as + Adj/Adv + as + O</td>
+                        <td>The taste is exactly as delicious as before</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Her hair is as long as mine<br>
+                • This room is as big as that one<br>
+                • My car runs as fast as yours<br>
+                • He works as hard as his brother<br>
+                • The weather is as nice as last year<br>
+                • She is not as intelligent as her sister<br>
+                • Paris is not as big as London<br>
+                • He runs just as fast as the champion
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "As...as" dùng với tính từ/trạng từ ở dạng dương tính (positive), không phải so sánh hơn
+            </div>
+        </div>
+
+        <!-- COMPARATIVE SENTENCES -->
+        <h2>📈 2. So Sánh Hơn (Comparative Sentences)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">So sánh hơn</span> dùng để <strong>chỉ rằng một người/vật có nhiều hơn hoặc ít hơn một chất lượng nào đó so với người/vật khác</strong>.</p>
+
+            <h3>II. Tính Từ Ngắn (One Syllable)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình Thức</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thêm -er</strong></td>
+                        <td>S + V + Adj + -er + than + O</td>
+                        <td>My house is larger than hers</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Âm tiết kết thúc bằng -e</strong></td>
+                        <td>Thêm -r</td>
+                        <td>nice → nicer | large → larger</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Âm tiết kết thúc bằng -y</strong></td>
+                        <td>Đổi y→i, thêm -er</td>
+                        <td>happy → happier | easy → easier</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Nguyên âm + phụ âm</strong></td>
+                        <td>Nhân đôi phụ âm cuối, thêm -er</td>
+                        <td>hot → hotter | big → bigger</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • This car is faster than that one<br>
+                • She is taller than her sister<br>
+                • The movie is longer than I expected<br>
+                • He is cleverer than his brother<br>
+                • My dog is happier than before
+            </div>
+
+            <h3>III. Tính Từ Dài (Two or More Syllables)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình Thức</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thêm "more"</strong></td>
+                        <td>S + V + more + Adj + than + O</td>
+                        <td>This book is more interesting than that</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thêm "less"</strong></td>
+                        <td>S + V + less + Adj + than + O</td>
+                        <td>Tea is less strong than coffee</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • This building is more modern than that one<br>
+                • She is more patient than I am<br>
+                • The second book is less complicated than the first<br>
+                • Your idea is more practical than mine<br>
+                • The new design is more beautiful than the old one
+            </div>
+
+            <h3>IV. So Sánh Hơn Bất Thường (Irregular Comparatives)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tính Từ/Trạng Từ</th>
+                        <th>So Sánh Hơn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>good</strong></td>
+                        <td><strong>better</strong></td>
+                        <td>This book is better than that one</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>bad</strong></td>
+                        <td><strong>worse</strong></td>
+                        <td>Today's weather is worse than yesterday</td>
+                    </tr>
+                    <tr>
+                        <td><strong>much/many</strong></td>
+                        <td><strong>more</strong></td>
+                        <td>I have more books than you</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>little</strong></td>
+                        <td><strong>less</strong></td>
+                        <td>She has less experience than him</td>
+                    </tr>
+                    <tr>
+                        <td><strong>far</strong></td>
+                        <td><strong>farther/further</strong></td>
+                        <td>The hospital is farther than the school</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SUPERLATIVE SENTENCES -->
+        <h2>🏆 3. So Sánh Nhất (Superlative Sentences)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">So sánh nhất</span> dùng để <strong>chỉ rằng một người/vật có chất lượng tốt nhất hoặc xấu nhất trong một nhóm ba hoặc nhiều hơn</strong>.</p>
+
+            <h3>II. Tính Từ Ngắn (One Syllable)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình Thức</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thêm -est</strong></td>
+                        <td>S + V + the + Adj + -est</td>
+                        <td>My house is the largest in the neighborhood</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Quy Tắc Giống Comparative</strong></td>
+                        <td>Áp dụng các quy tắc -e, -y, nhân đôi</td>
+                        <td>big → biggest | happy → happiest</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • The Nile is the longest river in the world<br>
+                • She is the smartest student in the class<br>
+                • This is the hottest day of the year<br>
+                • He is the youngest in the family<br>
+                • It's the nicest day we've had
+            </div>
+
+            <h3>III. Tính Từ Dài (Two or More Syllables)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình Thức</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thêm "the most"</strong></td>
+                        <td>S + V + the + most + Adj</td>
+                        <td>This is the most expensive hotel</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thêm "the least"</strong></td>
+                        <td>S + V + the + least + Adj</td>
+                        <td>That's the least popular restaurant</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                • London is the most popular tourist destination<br>
+                • This is the most interesting film I've seen<br>
+                • It's the most beautiful sunset ever<br>
+                • That's the least comfortable chair<br>
+                • She is the most intelligent person in the group
+            </div>
+
+            <h3>IV. So Sánh Nhất Bất Thường (Irregular Superlatives)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tính Từ</th>
+                        <th>So Sánh Nhất</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>good</strong></td>
+                        <td><strong>the best</strong></td>
+                        <td>This is the best meal I've ever had</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>bad</strong></td>
+                        <td><strong>the worst</strong></td>
+                        <td>It was the worst film I've ever seen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>much/many</strong></td>
+                        <td><strong>the most</strong></td>
+                        <td>She has the most books in the library</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>little</strong></td>
+                        <td><strong>the least</strong></td>
+                        <td>He has the least experience</td>
+                    </tr>
+                    <tr>
+                        <td><strong>far</strong></td>
+                        <td><strong>the farthest/furthest</strong></td>
+                        <td>That's the farthest distance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DOUBLE COMPARATIVE -->
+        <h2>🔄 4. So Sánh Kép (Double Comparative)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">So sánh kép</span> dùng để <strong>chỉ mối quan hệ giữa hai sự thay đổi hoặc hai tiến triển song song - khi một cái tăng thì cái kia cũng tăng (hoặc cái này tăng thì cái kia giảm)</strong>.</p>
+
+            <h3>II. Cấu Trúc: "The Comparative...The Comparative"</h3>
+
+            <p><strong>Công Thức: The + Comparative + S + V, the + Comparative + S + V</strong></p>
+
+            <div class="example">
+                • The more you practice, the better you get<br>
+                • The harder you study, the higher your grades<br>
+                • The older you get, the wiser you become<br>
+                • The more experience you have, the more confident you are<br>
+                • The less you sleep, the more tired you feel<br>
+                • The more expensive the jacket, the better quality it is<br>
+                • The colder it is, the hungrier I get
+            </div>
+
+            <h3>III. Cấu Trúc: "Comparative...and Comparative"</h3>
+
+            <p><strong>Công Thức: Comparative + and + Comparative</strong></p>
+
+            <div class="example">
+                • It's getting bigger and bigger<br>
+                • The city is growing faster and faster<br>
+                • My English is getting better and better<br>
+                • The work is becoming more and more difficult<br>
+                • The problem is getting worse and worse<br>
+                • She is getting more and more confident<br>
+                • The traffic is getting heavier and heavier
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Dạng này thường dùng để diễn tả tiến triển hoặc sự thay đổi liên tục<br>
+                ✅ It's getting better and better | ✅ The more, the merrier (càng đông càng vui)
+            </div>
+        </div>
+
+        <!-- MULTIPLE COMPARATIVE -->
+        <h2>✖️ 5. So Sánh Bội Số (Multiple Comparative)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">So sánh bội số</span> dùng để <strong>chỉ rằng một vật lớn hơn, nhỏ hơn, hoặc bằng bao nhiêu lần so với vật khác</strong>.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình Thức</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gấp Bao Nhiêu Lần</strong></td>
+                        <td>S1 + V + number + times + as + Adj/Adv + as + S2</td>
+                        <td>This box is twice as large as that one</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Nhân Đôi</strong></td>
+                        <td>S1 + V + twice + as + Adj/Adv + as + S2</td>
+                        <td>He is twice as old as his sister</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gấp Ba Lần</strong></td>
+                        <td>S1 + V + three times + as + Adj/Adv + as + S2</td>
+                        <td>The salary is three times as high</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Nửa, Một Phần</strong></td>
+                        <td>S1 + V + half as + Adj/Adv + as + S2</td>
+                        <td>This book is half as long as that one</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • My salary is twice as much as yours<br>
+                • The house is four times as big as the apartment<br>
+                • This box is three times heavier than that one<br>
+                • The new model is half the price of the old one<br>
+                • The population is five times larger than before<br>
+                • She runs three times as fast as her brother<br>
+                • The project is twice as complex as expected
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG dùng "more" với bội số<br>
+                ❌ He is twice more older | ✅ He is twice as old<br>
+                ❌ The box is more twice as large | ✅ The box is twice as large
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai "than" và "then"</p>
+            <div class="example">
+                ❌ This car is faster then that one | ✅ This car is faster than that one<br>
+                ❌ She is more intelligent then him | ✅ She is more intelligent than him
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Double Comparative (thêm "more" và "-er" cùng lúc)</p>
+            <div class="example">
+                ❌ more better | ✅ better | ❌ more bigger | ✅ bigger<br>
+                ❌ more taller | ✅ taller | ❌ more faster | ✅ faster
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Quên "the" trong Superlative</p>
+            <div class="example">
+                ❌ She is most intelligent student | ✅ She is the most intelligent student<br>
+                ❌ This is longest river | ✅ This is the longest river
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "more" với từ ngắn hoặc "-er" với từ dài</p>
+            <div class="example">
+                ❌ more big | ✅ bigger | ❌ interestinger | ✅ more interesting
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng "-er/est" khi nên dùng "more/most"</p>
+            <div class="example">
+                ❌ beautiful → beautifuller | ✅ beautiful → more beautiful<br>
+                ❌ expensive → expensivest | ✅ expensive → the most expensive
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Đếm Âm Tiết Để Xác Định Quy Tắc</strong></p>
+            <ul>
+                <li>1 âm tiết: -er/-est | 2 âm tiết kết thúc -y, -er, -le, -ow: -er/-est</li>
+                <li>2 âm tiết hoặc hơn: more/less/most/least</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhớ Các Từ Bất Thường</strong></p>
+            <ul>
+                <li>good-better-best | bad-worse-worst | much-more-most</li>
+                <li>far-farther/further-farthest/furthest | little-less-least</li>
+            </ul>
+
+            <p><strong>Mẹo 3: "Than" cho So Sánh, "Then" cho Thời Gian</strong></p>
+            <ul>
+                <li>faster THAN you (so sánh)</li>
+                <li>Walk, THEN turn left (thời gian)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Superlative Luôn Có "The"</strong></p>
+            <ul>
+                <li>the + -est (the tallest)</li>
+                <li>the + most (the most beautiful)</li>
+                <li>Ngoại lệ: So sánh kép không cần "the"</li>
+            </ul>
+
+            <p><strong>Mẹo 5: So Sánh Kép - "The...The" hoặc "...and..."</strong></p>
+            <ul>
+                <li>The more...the more (càng...càng...)</li>
+                <li>bigger and bigger (ngày càng to hơn)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng So Sánh Ba Kiểu</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kiểu</th>
+                        <th>So Sánh Bằng</th>
+                        <th>So Sánh Hơn</th>
+                        <th>So Sánh Nhất</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Số Lượng</strong></td>
+                        <td>2 vật</td>
+                        <td>2 vật</td>
+                        <td>3 vật trở lên</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức</strong></td>
+                        <td>as...as</td>
+                        <td>-er/more...than</td>
+                        <td>the -est/the most</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ý Nghĩa</strong></td>
+                        <td>Bằng nhau</td>
+                        <td>Hơn hoặc ít hơn</td>
+                        <td>Tốt/xấu nhất</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>John is as tall as Tom</td>
+                        <td>John is taller than Tom</td>
+                        <td>John is the tallest</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

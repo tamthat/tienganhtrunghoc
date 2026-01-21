@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Thán Từ (Interjections)</h2>
+
+        <div class="card">
+            <h3>Thán Từ Là Gì?</h3>
+            <p><span class="highlight">Thán Từ (Interjection)</span> là một từ loại dùng để <strong>diễn tả cảm xúc, phản ứng tức thì hoặc những lời kêu gọi ngắn gọn, không có mối quan hệ ngữ pháp với phần còn lại của câu</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Thán từ là những từ độc lập, không tuân theo quy tắc ngữ pháp thông thường. Chúng thường được theo sau bởi dấu chấm than (!) để thể hiện cảm xúc mạnh mẽ.
+            </div>
+
+            <h3>Đặc Điểm Của Thán Từ</h3>
+            <ul>
+                <li><strong>Độc Lập Ngữ Pháp:</strong> Không kết nối với các từ khác trong câu</li>
+                <li><strong>Biểu Đạt Cảm Xúc Tức Thì:</strong> Thể hiện phản ứng đột ngột</li>
+                <li><strong>Dấu Chấm Than:</strong> Thường được theo sau bởi ! khi cảm xúc mạnh</li>
+                <li><strong>Dấu Phẩy:</strong> Có thể dùng , khi cảm xúc nhẹ nhàng hơn</li>
+                <li><strong>Vị Trí Linh Hoạt:</strong> Có thể ở đầu, giữa, hoặc cuối câu</li>
+            </ul>
+        </div>
+
+        <!-- INTERJECTIONS OF JOY -->
+        <h2>😊 1. Thán Từ Vui Mừng (Interjections of Joy)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Thán từ vui mừng</span> là những thán từ <strong>diễn tả hạnh phúc, vui sướng, hoặc sự phấn khích</strong>.</p>
+
+            <h3>II. Danh Sách Thán Từ Vui Mừng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thán Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yay!</strong></td>
+                        <td>Yay! (biểu thị vui mừng)</td>
+                        <td>Yay! We won the game!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hurray!</strong></td>
+                        <td>Hurray! (vỗ tay, ăn mừng)</td>
+                        <td>Hurray! Happy birthday!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Woohoo!</strong></td>
+                        <td>Woohoo! (sôi nổi, phấn khích)</td>
+                        <td>Woohoo! I got the job!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Great!</strong></td>
+                        <td>Great! (tuyệt vời)</td>
+                        <td>Great! Let's start the party!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Excellent!</strong></td>
+                        <td>Excellent! (tuyệt diệu)</td>
+                        <td>Excellent! You did a fantastic job!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Wonderful!</strong></td>
+                        <td>Wonderful! (tuyệt diệu, tuyệt vời)</td>
+                        <td>Wonderful! That's exactly what I wanted!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • <strong>Yay!</strong> I passed the exam!<br>
+                • <strong>Hurray!</strong> We're going on vacation!<br>
+                • <strong>Woohoo!</strong> We won!<br>
+                • <strong>Great!</strong> Let's celebrate tonight!<br>
+                • <strong>Excellent!</strong> You made it!<br>
+                • <strong>Wonderful!</strong> This is amazing!
+            </div>
+        </div>
+
+        <!-- INTERJECTIONS OF SURPRISE -->
+        <h2>😲 2. Thán Từ Ngạc Nhiên (Interjections of Surprise)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Thán từ ngạc nhiên</span> là những thán từ <strong>diễn tả sự kinh ngạc, bất ngờ, hoặc tỉnh táo</strong>.</p>
+
+            <h3>II. Danh Sách Thán Từ Ngạc Nhiên</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thán Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Wow!</strong></td>
+                        <td>Wow! (tuyệt diệu, ngạc nhiên)</td>
+                        <td>Wow! That's incredible!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Oh!</strong></td>
+                        <td>Oh! (tỉnh táo)</td>
+                        <td>Oh! I didn't know that!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ah!</strong></td>
+                        <td>Ah! (hiểu rồi, tỉnh táo)</td>
+                        <td>Ah! I understand now!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>What!</strong></td>
+                        <td>What! (sốc, bất ngờ)</td>
+                        <td>What! Really?!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Really?!</strong></td>
+                        <td>Really?! (thực sự sao?)</td>
+                        <td>Really?! I can't believe it!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Yikes!</strong></td>
+                        <td>Yikes! (kinh sợ, ngạc nhiên)</td>
+                        <td>Yikes! That was close!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • <strong>Wow!</strong> That sunset is breathtaking!<br>
+                • <strong>Oh!</strong> I didn't expect to see you here!<br>
+                • <strong>Ah!</strong> Now I get it!<br>
+                • <strong>What!</strong> You're moving to Paris?!<br>
+                • <strong>Really?!</strong> I had no idea!<br>
+                • <strong>Yikes!</strong> That spider is huge!
+            </div>
+        </div>
+
+        <!-- INTERJECTIONS OF PAIN -->
+        <h2>😣 3. Thán Từ Đau Đớn (Interjections of Pain)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Thán từ đau đớn</span> là những thán từ <strong>diễn tả cảm giác đau, khó chịu, hoặc sự hối hận</strong>.</p>
+
+            <h3>II. Danh Sách Thán Từ Đau Đớn</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thán Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ouch!</strong></td>
+                        <td>Ouch! (đau)</td>
+                        <td>Ouch! That really hurt!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ow!</strong></td>
+                        <td>Ow! (ai, đau)</td>
+                        <td>Ow! I stubbed my toe!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oh no!</strong></td>
+                        <td>Oh no! (không, tệ)</td>
+                        <td>Oh no! I forgot my wallet!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Alas!</strong></td>
+                        <td>Alas! (tiếc thay, ôi)</td>
+                        <td>Alas, he died in the war.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ugh!</strong></td>
+                        <td>Ugh! (ghê, khó chịu)</td>
+                        <td>Ugh! This tastes awful!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Argh!</strong></td>
+                        <td>Argh! (tức giận, khó chịu)</td>
+                        <td>Argh! I can't find my keys!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • <strong>Ouch!</strong> That comment really hurt my feelings.<br>
+                • <strong>Ow!</strong> I bumped into the wall!<br>
+                • <strong>Oh no!</strong> I lost my phone!<br>
+                • <strong>Alas!</strong> The old building is being demolished.<br>
+                • <strong>Ugh!</strong> This is so frustrating!<br>
+                • <strong>Argh!</strong> I can't believe we forgot!
+            </div>
+        </div>
+
+        <!-- INTERJECTIONS OF GREETING -->
+        <h2>👋 4. Thán Từ Chào Hỏi (Interjections of Greeting)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Thán từ chào hỏi</span> là những thán từ <strong>dùng để chào hỏi, xin chào, tạm biệt, hoặc gọi sự chú ý</strong>.</p>
+
+            <h3>II. Danh Sách Thán Từ Chào Hỏi</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thán Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hello!</strong></td>
+                        <td>Hello! (xin chào)</td>
+                        <td>Hello! Nice to meet you!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hi!</strong></td>
+                        <td>Hi! (xin chào - thân mật)</td>
+                        <td>Hi! How are you doing?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hey!</strong></td>
+                        <td>Hey! (này, chào)</td>
+                        <td>Hey! Wait for me!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Goodbye!</strong></td>
+                        <td>Goodbye! (tạm biệt)</td>
+                        <td>Goodbye! See you soon!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bye!</strong></td>
+                        <td>Bye! (tạm biệt - thân mật)</td>
+                        <td>Bye! Have a great day!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Psst!</strong></td>
+                        <td>Psst! (này, xin chút chú ý)</td>
+                        <td>Psst! Do you have a pen?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • <strong>Hello!</strong> My name is John.<br>
+                • <strong>Hi!</strong> How have you been?<br>
+                • <strong>Hey!</strong> Can you help me?<br>
+                • <strong>Goodbye!</strong> It was nice seeing you!<br>
+                • <strong>Bye!</strong> See you tomorrow!<br>
+                • <strong>Psst!</strong> Come here, I need to tell you something!
+            </div>
+        </div>
+
+        <!-- INTERJECTIONS OF APPROVAL -->
+        <h2>👍 5. Thán Từ Sự Chấp Thuận (Interjections of Approval)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Thán từ sự chấp thuận</span> là những thán từ <strong>dùng để biểu thị sự đồng ý, công nhận, lời khen ngợi, hoặc sự phê duyệt</strong>.</p>
+
+            <h3>II. Danh Sách Thán Từ Sự Chấp Thuận</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thán Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Great!</strong></td>
+                        <td>Great! (tuyệt vời, tốt)</td>
+                        <td>Great! You did it perfectly!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Awesome!</strong></td>
+                        <td>Awesome! (tuyệt diệu)</td>
+                        <td>Awesome! That was incredible!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Excellent!</strong></td>
+                        <td>Excellent! (tuyệt diệu, xuất sắc)</td>
+                        <td>Excellent! Your work is impressive!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Bravo!</strong></td>
+                        <td>Bravo! (vỗ tay, tuyệt vời)</td>
+                        <td>Bravo! That was an excellent performance!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Well done!</strong></td>
+                        <td>Well done! (làm tốt lắm)</td>
+                        <td>Well done! You passed the test!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Yes!</strong></td>
+                        <td>Yes! (vâng, đúng)</td>
+                        <td>Yes! I agree with you!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • <strong>Great!</strong> That's exactly what I wanted!<br>
+                • <strong>Awesome!</strong> You're so talented!<br>
+                • <strong>Excellent!</strong> Perfect solution!<br>
+                • <strong>Bravo!</strong> That was a stunning performance!<br>
+                • <strong>Well done!</strong> I'm so proud of you!<br>
+                • <strong>Yes!</strong> I completely agree!
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Các thán từ sự chấp thuận thường được sử dụng để khuyến khích và công nhận thành tích của ai đó
+            </div>
+        </div>
+
+        <!-- POSITION AND PUNCTUATION -->
+        <h2>📍 Vị Trí & Dấu Câu (Position & Punctuation)</h2>
+
+        <div class="card">
+            <h3>I. Vị Trí Của Thán Từ</h3>
+
+            <p><strong>1. Ở Đầu Câu (Thường Dùng Nhất)</strong></p>
+            <div class="example">
+                • <strong>Wow!</strong> That's amazing!<br>
+                • <strong>Ouch!</strong> That really hurt!<br>
+                • <strong>Hey!</strong> Watch out!
+            </div>
+
+            <p><strong>2. Ở Cuối Câu</strong></p>
+            <div class="example">
+                • You won the lottery, <strong>wow!</strong><br>
+                • I stubbed my toe, <strong>ouch!</strong><br>
+                • That's wonderful, <strong>isn't it, great!</strong>
+            </div>
+
+            <p><strong>3. Giữa Câu (Hiếm)</strong></p>
+            <div class="example">
+                • I was, <strong>alas</strong>, too late.<br>
+                • She is, <strong>surprisingly</strong>, very talented.<br>
+                • He did, <strong>ouch</strong>, fall down the stairs.
+            </div>
+
+            <h3>II. Dấu Câu Với Thán Từ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dấu Câu</th>
+                        <th>Sử Dụng</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Exclamation Mark (!)</strong></td>
+                        <td>Cảm xúc mạnh</td>
+                        <td>Wow! That's incredible!</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Comma (,)</strong></td>
+                        <td>Cảm xúc nhẹ nhàng</td>
+                        <td>Oh, I see what you mean.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Question Mark (?)</strong></td>
+                        <td>Câu hỏi/ngạc nhiên</td>
+                        <td>What? Really?!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Dấu chấm than (!) được sử dụng khi cảm xúc mạnh mẽ. Dấu phẩy (,) được sử dụng khi cảm xúc nhẹ nhàng hơn hoặc chỉ để ngắt câu.
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Interjections of Joy (Vui Mừng)</h3>
+            <ul>
+                <li><strong>Yay!</strong> We're going on vacation!</li>
+                <li><strong>Hurray!</strong> Happy birthday to you!</li>
+                <li><strong>Woohoo!</strong> I got the promotion!</li>
+                <li><strong>Great!</strong> Let's celebrate tonight!</li>
+                <li><strong>Excellent!</strong> You did fantastic!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Interjections of Surprise (Ngạc Nhiên)</h3>
+            <ul>
+                <li><strong>Wow!</strong> That's an amazing view!</li>
+                <li><strong>Oh!</strong> I didn't know that!</li>
+                <li><strong>Ah!</strong> Now I understand!</li>
+                <li><strong>What!</strong> You're moving away?!</li>
+                <li><strong>Yikes!</strong> That was scary!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Interjections of Pain (Đau Đớn)</h3>
+            <ul>
+                <li><strong>Ouch!</strong> That really hurt!</li>
+                <li><strong>Ow!</strong> I bumped my head!</li>
+                <li><strong>Oh no!</strong> I lost my keys!</li>
+                <li><strong>Alas!</strong> The old song is forgotten.</li>
+                <li><strong>Ugh!</strong> This traffic is unbearable!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Interjections of Greeting (Chào Hỏi)</h3>
+            <ul>
+                <li><strong>Hello!</strong> Nice to meet you!</li>
+                <li><strong>Hi!</strong> How have you been?</li>
+                <li><strong>Hey!</strong> Wait up!</li>
+                <li><strong>Goodbye!</strong> See you later!</li>
+                <li><strong>Bye!</strong> Take care!</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Interjections of Approval (Sự Chấp Thuận)</h3>
+            <ul>
+                <li><strong>Great!</strong> Perfect solution!</li>
+                <li><strong>Awesome!</strong> You're amazing!</li>
+                <li><strong>Excellent!</strong> Well executed!</li>
+                <li><strong>Bravo!</strong> Fantastic performance!</li>
+                <li><strong>Well done!</strong> I'm proud of you!</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Sử dụng thán từ trong lời nói chính thức</p>
+            <div class="example">
+                ❌ Wow! What an amazing opportunity! (trong báo cáo chính thức)<br>
+                ✅ It's an excellent opportunity. (cách viết chính thức)
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên dấu chấm than</p>
+            <div class="example">
+                ❌ Wow that's incredible | ✅ Wow! That's incredible!
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng dấu phẩy khi cảm xúc mạnh mẽ</p>
+            <div class="example">
+                ❌ Ouch, that really hurt! (nên dùng !) | ✅ Ouch! That really hurt!
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sử dụng thán từ quá thường xuyên</p>
+            <div class="example">
+                ❌ Wow! Awesome! Great! Excellent! (quá nhiều)<br>
+                ✅ That's wonderful. Great job! (cân bằng hơn)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Không nhận biết thán từ là độc lập</p>
+            <div class="example">
+                ❌ Wow is an amazing day | ✅ Wow! What an amazing day!
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhóm Thán Từ Theo Cảm Xúc</strong></p>
+            <ul>
+                <li>Vui mừng: yay, hurray, woohoo, great, excellent</li>
+                <li>Ngạc nhiên: wow, oh, ah, what, yikes</li>
+                <li>Đau đớn: ouch, ow, oh no, alas, ugh</li>
+                <li>Chào hỏi: hello, hi, hey, goodbye, bye</li>
+                <li>Chấp thuận: great, awesome, excellent, bravo, well done</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Sử Dụng Thán Từ Trong Tiếng Nói Hơn Viết</strong></p>
+            <ul>
+                <li>Thán từ phổ biến hơn trong tiếng nói hàng ngày</li>
+                <li>Trong viết chính thức, dùng ít thán từ hơn</li>
+                <li>Trong viết sáng tạo/câu chuyện, có thể dùng nhiều hơn</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Nghe & Lặp Lại</strong></p>
+            <ul>
+                <li>Nghe phim tiếng Anh để thấy cách người bản xứ sử dụng thán từ</li>
+                <li>Lưu ý tôi điệu và bối cảnh</li>
+                <li>Lặp lại để quen thuộc với cách phát âm</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Dấu Câu - Cảm Xúc Mạnh = !</strong></p>
+            <ul>
+                <li>Cảm xúc mạnh → Dấu chấm than (!)</li>
+                <li>Cảm xúc nhẹ → Dấu phẩy (,)</li>
+                <li>Câu hỏi/ngạc nhiên → Dấu hỏi (?) hoặc chấm than (!?)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Thực Hành Với Bối Cảnh Thực Tế</strong></p>
+            <ul>
+                <li>Tưởng tượng những tình huống khác nhau</li>
+                <li>Suy nghĩ về thán từ nào thích hợp nhất</li>
+                <li>Nói to thực hành để quen với cảm giác</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Thán Từ</th>
+                        <th>Ví Dụ</th>
+                        <th>Ý Nghĩa Chính</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Joy</strong></td>
+                        <td>Yay! Hurray! Woohoo!</td>
+                        <td>Vui mừng, phấn khích</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Surprise</strong></td>
+                        <td>Wow! Oh! Ah! Yikes!</td>
+                        <td>Ngạc nhiên, tỉnh táo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pain</strong></td>
+                        <td>Ouch! Ow! Oh no! Ugh!</td>
+                        <td>Đau đớn, khó chịu</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Greeting</strong></td>
+                        <td>Hello! Hi! Hey! Goodbye!</td>
+                        <td>Chào hỏi, gọi chú ý</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Approval</strong></td>
+                        <td>Great! Awesome! Bravo!</td>
+                        <td>Sự chấp thuận, lời khen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

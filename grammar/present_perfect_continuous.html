@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Định Nghĩa & Khái Niệm</h2>
+
+        <div class="card">
+            <h3>Thì Hiện Tại Hoàn Thành Tiếp Diễn Là Gì?</h3>
+            <p><span class="highlight">Present Perfect Continuous Tense</span> là thì được sử dụng để diễn tả các hành động <strong>bắt đầu từ quá khứ và vẫn tiếp tục ở hiện tại hoặc vừa dừng lại không lâu</strong>. Đó là những hoạt động nhấn mạn <strong>quá trình hoặc khoảng thời gian diễn ra</strong>, không chỉ kết quả.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Present Perfect Continuous nhấn mạn <strong>sự tiếp tục hoặc khoảng thời gian</strong> của hành động, trong khi Present Perfect nhấn mạn <strong>kết quả</strong> của hành động.
+            </div>
+
+            <h3>Đặc Điểm Chính</h3>
+            <ul>
+                <li>Diễn tả hành động bắt đầu từ quá khứ và vẫn tiếp tục đến hiện tại</li>
+                <li>Nhấn mạn quá trình hoặc khoảng thời gian diễn ra, không phải kết quả</li>
+                <li>Hành động có thể vẫn đang xảy ra hoặc vừa dừng lại không lâu</li>
+                <li>Cấu trúc: have/has + been + V-ing (động từ thêm -ing)</li>
+                <li>Thường đi kèm với: for, since, all day, all morning, recently, lately</li>
+                <li>Nhấn mạn tính tiếp diễn, không phải hoàn thành</li>
+            </ul>
+        </div>
+
+        <!-- FORMATION SECTION -->
+        <h2>🔨 Cấu Trúc & Cách Chia</h2>
+
+        <div class="card">
+            <h3>I. Câu Khẳng Định (Affirmative)</h3>
+            
+            <div class="formula">
+                Subject + have/has + been + V-ing
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Have/Has Been</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="verb-form">I</span></td>
+                        <td><span class="highlight">have been</span></td>
+                        <td>I <span class="verb-form">have been working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">You</span></td>
+                        <td><span class="highlight">have been</span></td>
+                        <td>You <span class="verb-form">have been working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">We</span></td>
+                        <td><span class="highlight">have been</span></td>
+                        <td>We <span class="verb-form">have been working</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="verb-form">They</span></td>
+                        <td><span class="highlight">have been</span></td>
+                        <td>They <span class="verb-form">have been working</span></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><span class="verb-form">He/She/It</span></td>
+                        <td><span class="highlight">has been</span></td>
+                        <td>He <span class="verb-form">has been working</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>have been reading</strong> all morning<br>
+                • She <strong>has been sleeping</strong> for 2 hours<br>
+                • They <strong>have been studying</strong> since 3 PM<br>
+                • It <strong>has been raining</strong> for days
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>II. Câu Phủ Định (Negative)</h3>
+            
+            <div class="formula">
+                Subject + have/has + NOT + been + V-ing
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Thêm "not" sau have/has hoặc rút gọn thành hasn't/haven't</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Phủ Định Đầy Đủ</th>
+                        <th>Phủ Định Rút Gọn</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td>have not been</td>
+                        <td>haven't been</td>
+                        <td>I <strong>have not been working</strong></td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td>has not been</td>
+                        <td>hasn't been</td>
+                        <td>She <strong>has not been eating</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • I <strong>have not been sleeping</strong> well<br>
+                • He <strong>hasn't been working</strong> lately<br>
+                • They <strong>haven't been studying</strong> hard<br>
+                • She <strong>has not been feeling</strong> well
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>III. Câu Hỏi (Questions)</h3>
+            
+            <div class="formula">
+                Have/Has + Subject + been + V-ing + ?
+            </div>
+
+            <p><span class="highlight">Quy tắc:</span> Đặt have/has lên đầu câu</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngôi</th>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I/You/We/They</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Have</span> you been working?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td>He/She/It</td>
+                        <td><span style="color: #32b8c6; font-weight: bold;">Has</span> she been sleeping?</td>
+                        <td>Yes, she has</td>
+                        <td>No, she hasn't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>✓ Ví dụ:</strong><br>
+                • <strong>Have you</strong> been waiting long? → Yes, I have<br>
+                • <strong>Has he</strong> been studying? → Yes, he has<br>
+                • <strong>Have they</strong> been playing football? → No, they haven't<br>
+                • <strong>Has she</strong> been working here long? → No, she hasn't
+            </div>
+        </div>
+
+        <div class="card info">
+            <h3>IV. Tổng Hợp Cấu Trúc</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Câu</th>
+                        <th>Cấu Trúc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + have/has + been + V-ing</td>
+                        <td>She has been working hard</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + have/has + NOT + been + V-ing</td>
+                        <td>She has not been working hard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Have/Has + S + been + V-ing + ?</td>
+                        <td>Has she been working hard?</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Trả Lời Ngắn</strong></td>
+                        <td>Yes/No + S + have/has</td>
+                        <td>Yes, she has</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SPELLING RULES -->
+        <h2>✏️ Quy Tắc Thêm -ING</h2>
+
+        <div class="card warning">
+            <h3>Quy Tắc Thêm -ING Cơ Bản</h3>
+
+            <p><strong>A) Động từ thông thường: Chỉ thêm -ing</strong></p>
+            <div class="example">
+                • read → <strong>reading</strong><br>
+                • write → <strong>writing</strong><br>
+                • play → <strong>playing</strong><br>
+                • work → <strong>working</strong><br>
+                • study → <strong>studying</strong>
+            </div>
+
+            <p><strong>B) Động từ kết thúc bằng e (câm): Bỏ e, thêm -ing</strong></p>
+            <div class="example">
+                • make → <strong>making</strong> (không phải "makeing")<br>
+                • take → <strong>taking</strong><br>
+                • come → <strong>coming</strong><br>
+                • live → <strong>living</strong><br>
+                • have → <strong>having</strong>
+            </div>
+
+            <p><strong>C) Động từ kết thúc bằng ie: Đổi ie → y, thêm -ing</strong></p>
+            <div class="example">
+                • lie → <strong>lying</strong><br>
+                • die → <strong>dying</strong><br>
+                • tie → <strong>tying</strong>
+            </div>
+
+            <p><strong>D) Động từ 1 âm tiết, kết thúc CVC (Consonant-Vowel-Consonant): Gấp đôi phụ âm cuối, thêm -ing</strong></p>
+            <div class="example">
+                • sit → <strong>sitting</strong> (s-i-t)<br>
+                • run → <strong>running</strong> (r-u-n)<br>
+                • swim → <strong>swimming</strong> (s-w-i-m)<br>
+                • stop → <strong>stopping</strong> (s-t-o-p)<br>
+                • cut → <strong>cutting</strong> (c-u-t)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Không gấp đôi nếu động từ kết thúc bằng -w, -x, -y:<br>
+                • fix → <strong>fixing</strong> (không phải "ffixing")<br>
+                • play → <strong>playing</strong> (không phải "pplaying")<br>
+                • sew → <strong>sewing</strong> (không phải "ssewing")
+            </div>
+
+            <p><strong>E) Động từ 2+ âm tiết, âm tiết cuối được nhấn, kết thúc CVC: Gấp đôi phụ âm cuối</strong></p>
+            <div class="example">
+                • prefer (pre-FER) → <strong>preferring</strong><br>
+                • begin (be-GIN) → <strong>beginning</strong><br>
+                • omit (o-MIT) → <strong>omitting</strong><br>
+                • occur (oc-CUR) → <strong>occurring</strong>
+            </div>
+        </div>
+
+        <!-- USAGE SECTION -->
+        <h2>💡 Cách Sử Dụng Thì Hiện Tại Hoàn Thành Tiếp Diễn</h2>
+
+        <div class="card">
+            <h3>1. Hành Động Bắt Đầu Từ Quá Khứ & Vẫn Tiếp Tục Ở Hiện Tại</h3>
+            <p>Diễn tả hành động bắt đầu trong quá khứ và vẫn đang diễn ra ở hiện tại, nhấn mạn <strong>khoảng thời gian</strong></p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have been working</strong> here for 5 years<br>
+                • She <strong>has been studying</strong> English for 3 months<br>
+                • They <strong>have been living</strong> in this house since 2015<br>
+                • He <strong>has been waiting</strong> for the bus for 20 minutes
+            </div>
+
+            <div class="note">
+                <strong>📌 Khác với Present Perfect:</strong> She has worked here for 5 years (có thể đã bỏ việc) ≠ She has been working here for 5 years (vẫn đang làm việc)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>2. Hành Động Vừa Dừng Lại Nhưng Còn Ảnh Hưởng</h3>
+            <p>Diễn tả hành động vừa dừng lại không lâu nhưng vẫn có ảnh hưởng rõ ràng ở hiện tại</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have been running</strong> - I'm tired (mệt vì chạy bộ)<br>
+                • She <strong>has been crying</strong> - her eyes are red (mắt còn đỏ vì khóc)<br>
+                • They <strong>have been playing</strong> - they are sweating (còn mồ hôi)<br>
+                • He <strong>has been cooking</strong> - the kitchen smells good (mùi còn thơm)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý:</strong> Hành động đã dừng nhưng chứng cớ vẫn còn - đó là điểm khác biệt với Present Continuous
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>3. Hành Động Lặp Lại Từ Quá Khứ Đến Hiện Tại</h3>
+            <p>Diễn tả hành động xảy ra nhiều lần, bắt đầu từ quá khứ và vẫn tiếp tục</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have been calling</strong> you all morning (gọi nhiều lần)<br>
+                • She <strong>has been asking</strong> him the same question all week<br>
+                • They <strong>have been visiting</strong> us every weekend<br>
+                • He <strong>has been writing</strong> emails since yesterday
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>4. Quá Trình Tạm Thời (Temporary Situations)</h3>
+            <p>Diễn tả quá trình hoặc tình trạng tạm thời bắt đầu từ quá khứ</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • I <strong>have been living</strong> with my parents (tạm thời)<br>
+                • She <strong>has been working</strong> as a teacher this year<br>
+                • They <strong>have been renovating</strong> the house for months<br>
+                • He <strong>has been using</strong> crutches since his accident
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>5. Sự Phàn Nàn Với Hành Động Lặp Lại</h3>
+            <p>Để diễn tả sự bực bội hoặc phàn nàn với hành động lặp lại trong một khoảng thời gian</p>
+
+            <div class="example">
+                <strong>Ví dụ:</strong><br>
+                • She <strong>has been complaining</strong> all day (phàn nàn liên tục)<br>
+                • They <strong>have been making</strong> noise since morning<br>
+                • He <strong>has been interrupting</strong> me all meeting<br>
+                • The baby <strong>has been crying</strong> for hours
+            </div>
+        </div>
+
+        <!-- TIME EXPRESSIONS SECTION -->
+        <h2>⏰ Từ & Cụm Từ Chỉ Thời Gian</h2>
+
+        <div class="card">
+            <h3>Từ Chỉ Thời Gian Thường Dùng Với Present Perfect Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Từ / Cụm Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khoảng thời gian</strong></td>
+                        <td>for (suốt, trong)</td>
+                        <td>I have been working <strong>for</strong> 5 hours</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ thời điểm</strong></td>
+                        <td>since (từ lúc)</td>
+                        <td>She has been studying <strong>since</strong> 2 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ngày hôm nay</strong></td>
+                        <td>all day, all morning, all afternoon, all night, today</td>
+                        <td>We have been working <strong>all day</strong></td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Gần đây</strong></td>
+                        <td>recently, lately, for the past week/month</td>
+                        <td>They have been studying <strong>recently</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quá trình</strong></td>
+                        <td>over, during, throughout</td>
+                        <td>He has been playing <strong>throughout</strong> the day</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📌 Quan Trọng:</strong> <strong>For</strong> dùng với khoảng thời gian (2 hours, 3 days, 5 years), <strong>Since</strong> dùng với thời điểm cụ thể (2 PM, Monday, 2020)
+            </div>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <h2>🔄 So Sánh: Present Perfect Continuous vs Present Perfect Simple</h2>
+
+        <div class="card">
+            <h3>Sự Khác Biệt Chính</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Present Perfect Simple</th>
+                        <th>Present Perfect Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + have/has + V3</td>
+                        <td>S + have/has + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ý Nhấn</strong></td>
+                        <td>Kết quả hoặc hoàn thành</td>
+                        <td>Quá trình hoặc khoảng thời gian</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tập Trung</strong></td>
+                        <td>Điều gì được hoàn thành</td>
+                        <td>Bao lâu hoặc quá trình thế nào</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Hành Động</strong></td>
+                        <td>Thường đã hoàn thành</td>
+                        <td>Vẫn đang tiếp tục hoặc vừa dừng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I have read this book (đã đọc xong)</td>
+                        <td>I have been reading this book (còn đang đọc)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ She <strong>has painted</strong> the living room (phòng khách đã được sơn) - RESULT<br>
+                ✓ She <strong>has been painting</strong> the living room (cô ấy đang sơn, chưa xong) - PROCESS<br><br>
+                ✓ I <strong>have finished</strong> my homework (bài tập hoàn thành)<br>
+                ✓ I <strong>have been doing</strong> my homework (vẫn đang làm)<br><br>
+                ✓ He <strong>has worked</strong> here for 5 years (có thể đã từ chức)<br>
+                ✓ He <strong>has been working</strong> here for 5 years (vẫn đang làm việc)
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>So Sánh: Present Perfect Continuous vs Present Continuous</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Present Continuous</th>
+                        <th>Present Perfect Continuous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấu Trúc</strong></td>
+                        <td>S + am/is/are + V-ing</td>
+                        <td>S + have/has + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Thời Gian Bắt Đầu</strong></td>
+                        <td>Không rõ, không quan trọng</td>
+                        <td>Từ quá khứ đến hiện tại</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Khoảng Thời Gian</strong></td>
+                        <td>Không nhấn mạn</td>
+                        <td>Nhấn mạn khoảng thời gian (for, since)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ So Sánh</strong></td>
+                        <td>I am reading a book (đang đọc bây giờ)</td>
+                        <td>I have been reading for 2 hours (đã đọc 2 tiếng)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="example">
+                <strong>So sánh cụ thể:</strong><br>
+                ✓ She <strong>is studying</strong> (đang học, không rõ bao lâu)<br>
+                ✓ She <strong>has been studying</strong> for 3 hours (đã học 3 tiếng)<br><br>
+                ✓ It <strong>is raining</strong> (đang mưa)<br>
+                ✓ It <strong>has been raining</strong> since morning (đã mưa từ sáng)
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>✅ Khẳng Định</h3>
+                <ul>
+                    <li>I <strong>have been working</strong> hard all day</li>
+                    <li>She <strong>has been sleeping</strong> for 10 hours</li>
+                    <li>They <strong>have been studying</strong> since morning</li>
+                    <li>It <strong>has been raining</strong> for days</li>
+                    <li>We <strong>have been learning</strong> English for 5 years</li>
+                    <li>He <strong>has been waiting</strong> for hours</li>
+                    <li>The baby <strong>has been crying</strong> all night</li>
+                    <li>I <strong>have been running</strong> - I'm exhausted</li>
+                    <li>She <strong>has been working</strong> non-stop</li>
+                    <li>They <strong>have been traveling</strong> around Asia</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>❌ Phủ Định</h3>
+                <ul>
+                    <li>I <strong>have not been working</strong> lately</li>
+                    <li>She <strong>has not been sleeping</strong> well</li>
+                    <li>They <strong>have not been studying</strong> hard</li>
+                    <li>It <strong>hasn't been raining</strong> recently</li>
+                    <li>We <strong>haven't been learning</strong> much</li>
+                    <li>He <strong>hasn't been waiting</strong> long</li>
+                    <li>The cat <strong>hasn't been eating</strong> properly</li>
+                    <li>I <strong>haven't been exercising</strong> this week</li>
+                    <li>She <strong>hasn't been feeling</strong> well</li>
+                    <li>They <strong>haven't been practicing</strong> regularly</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>❓ Câu Hỏi & Trả Lời</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Câu Hỏi</th>
+                        <th>Trả Lời Dương</th>
+                        <th>Trả Lời Âm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Have you been working?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Has she been sleeping?</td>
+                        <td>Yes, she has</td>
+                        <td>No, she hasn't</td>
+                    </tr>
+                    <tr>
+                        <td>Have they been studying?</td>
+                        <td>Yes, they have</td>
+                        <td>No, they haven't</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>Has it been raining long?</td>
+                        <td>Yes, it has</td>
+                        <td>No, it hasn't</td>
+                    </tr>
+                    <tr>
+                        <td>Have you been waiting long?</td>
+                        <td>Yes, I have</td>
+                        <td>No, I haven't</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- STATIVE VERBS SECTION -->
+        <h2>⚡ Động Từ KHÔNG Dùng Present Perfect Continuous</h2>
+
+        <div class="card warning">
+            <h3>Stative Verbs (Động Từ Trạng Thái)</h3>
+            <p>Những động từ này diễn tả trạng thái, tình cảm, hoặc sở hữu không thể dùng ở dạng continuous (cả Present Continuous lẫn Present Perfect Continuous)</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Động Từ</th>
+                        <th>❌ Sai</th>
+                        <th>✅ Đúng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cảm Xúc</strong></td>
+                        <td>like, love, hate, prefer, want</td>
+                        <td>I have been liking it</td>
+                        <td>I have liked it</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Sở Hữu</strong></td>
+                        <td>have, own, possess, belong</td>
+                        <td>She has been having a car</td>
+                        <td>She has had a car</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nhận Thức</strong></td>
+                        <td>see, hear, taste, smell, feel</td>
+                        <td>I have been seeing you</td>
+                        <td>I have seen you</td>
+                    </tr>
+                    <tr style="background-color: #fef3f0;">
+                        <td><strong>Suy Nghĩ</strong></td>
+                        <td>think, believe, know, understand</td>
+                        <td>I have been thinking that...</td>
+                        <td>I think that...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Xuất Hiện</strong></td>
+                        <td>seem, look, appear</td>
+                        <td>She has been looking tired</td>
+                        <td>She has looked tired</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Chú Ý Đặc Biệt:</strong> Một số động từ có thể dùng continuous khi có nghĩa khác:<br>
+                • I think (tôi nghĩ rằng) ≠ I am thinking (tôi đang suy nghĩ)<br>
+                • She has a car (cô ấy có một chiếc xe) ≠ She is having breakfast (cô ấy đang ăn sáng)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Quên "been" trong cấu trúc</p>
+            <div class="example">
+                ❌ I have working | ✅ I have been working
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Quên thêm -ing vào động từ</p>
+            <div class="example">
+                ❌ She has been work | ✅ She has been working
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng stative verbs ở dạng continuous</p>
+            <div class="example">
+                ❌ I have been loving this song | ✅ I have loved this song
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Sai chia have/has</p>
+            <div class="example">
+                ❌ He have been studying | ✅ He has been studying
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm lẫn for và since</strong></p>
+            <div class="example">
+                ❌ I have been working since 5 hours | ✅ I have been working for 5 hours
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ "Quá Trình" Và "Khoảng Thời Gian"</strong></p>
+            <ul>
+                <li>Present Perfect Continuous = Quá trình + Khoảng thời gian</li>
+                <li>Tìm "for" hoặc "since" - dấu hiệu của Present Perfect Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 2: So Sánh 3 Thì</strong></p>
+            <ul>
+                <li>Present Continuous: Đang làm (ngay bây giờ)</li>
+                <li>Present Perfect: Đã làm (kết quả ở hiện tại)</li>
+                <li>Present Perfect Continuous: Đã làm bao lâu (quá trình từ quá khứ)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: "Been" Là Chìa Khóa</strong></p>
+            <ul>
+                <li>have/has + been + V-ing = Present Perfect Continuous</li>
+                <li>Nếu không có "been" thì không phải Present Perfect Continuous</li>
+            </ul>
+
+            <p><strong>Mẹo 4: For Vs Since</strong></p>
+            <ul>
+                <li>For = Khoảng thời gian (2 hours, 3 days, 5 years)</li>
+                <li>Since = Thời điểm cụ thể (2 PM, Monday, 2020, when I arrived)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Tránh Stative Verbs</strong></p>
+            <ul>
+                <li>Không dùng continuous với like, love, have, know, think (khi là suy nghĩ chung)</li>
+                <li>Dùng Present Perfect Simple thay vào đó</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Khía Cạnh</th>
+                        <th>Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Định Nghĩa</strong></td>
+                        <td>Hành động từ quá khứ tiếp tục đến hiện tại, nhấn mạn quá trình</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Khẳng Định</strong></td>
+                        <td>S + have/has + been + V-ing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công Thức Phủ Định</strong></td>
+                        <td>S + have/has + NOT + been + V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Công Thức Câu Hỏi</strong></td>
+                        <td>Have/Has + S + been + V-ing?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quy Tắc -ING</strong></td>
+                        <td>Thêm -ing, bỏ e câm, gấp đôi CVC (giống Present Continuous)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Từ Chỉ Thời Gian</strong></td>
+                        <td>for, since, all day, all morning, recently, lately</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Không Dùng Với</strong></td>
+                        <td>Stative verbs (like, love, have, know, see, hear...)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Khác Với Present Perfect Simple</strong></td>
+                        <td>Nhấn mạnh quá trình, không phải kết quả</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

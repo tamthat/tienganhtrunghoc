@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Giới Từ (Prepositions)</h2>
+
+        <div class="card">
+            <h3>Giới Từ Là Gì?</h3>
+            <p><span class="highlight">Giới từ (Preposition)</span> là một từ loại dùng để <strong>nối danh từ hoặc đại từ với những từ khác trong câu, chỉ mối quan hệ về thời gian, vị trí, hướng, phương tiện, nguyên nhân, hoặc mục đích</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Giới từ luôn đi trước danh từ hoặc đại từ (tạo cụm giới từ). Chúng giúp cung cấp thêm thông tin chi tiết về mối quan hệ giữa các thành phần trong câu.
+            </div>
+
+            <h3>Chức Năng Của Giới Từ Trong Câu</h3>
+            <ul>
+                <li><strong>Chỉ Thời Gian:</strong> We met at 3 o'clock</li>
+                <li><strong>Chỉ Vị Trí:</strong> The book is on the table</li>
+                <li><strong>Chỉ Hướng:</strong> He walked toward the river</li>
+                <li><strong>Chỉ Phương Tiện:</strong> I go to work by bus</li>
+                <li><strong>Chỉ Nguyên Nhân:</strong> She stayed home because of illness</li>
+            </ul>
+        </div>
+
+        <!-- PREPOSITIONS OF TIME -->
+        <h2>⏰ 1. Giới Từ Chỉ Thời Gian (Prepositions of Time)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Giới từ chỉ thời gian</span> là những giới từ <strong>dùng để chỉ khi một hành động xảy ra</strong>. Chúng trả lời câu hỏi "WHEN?" (Khi nào?).</p>
+
+            <p><strong>Ba Giới Từ Thời Gian Chính: AT, IN, ON</strong></p>
+
+            <h3>II. Quy Tắc Sử Dụng AT, IN, ON</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Quy Tắc</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Giờ cụ thể, bữa ăn, thời khắc chính xác</td>
+                        <td>at 3 o'clock, at noon, at midnight, at lunchtime</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AT</strong></td>
+                        <td>Kỳ nghỉ dài (Christmas, Easter, New Year)</td>
+                        <td>at Christmas, at Easter, at New Year</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Các cụm từ khác</td>
+                        <td>at night, at the weekend, at present</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>IN</strong></td>
+                        <td>Tháng, năm, mùa, thế kỷ, thập niên</td>
+                        <td>in May, in 2025, in summer, in the 21st century</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IN</strong></td>
+                        <td>Phần của ngày</td>
+                        <td>in the morning, in the afternoon, in the evening</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>IN</strong></td>
+                        <td>Thời gian trong tương lai</td>
+                        <td>in a few minutes, in two weeks, in 3 months</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ON</strong></td>
+                        <td>Ngày cụ thể, ngày trong tuần</td>
+                        <td>on Monday, on Friday, on 6 March</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON</strong></td>
+                        <td>Ngày cộng với buổi trong ngày</td>
+                        <td>on Monday morning, on Friday afternoon</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>AT (Giờ/Thời Khắc)</strong></p>
+            <div class="example">
+                • I wake up <strong>at 6:30 AM</strong><br>
+                • The meeting starts <strong>at noon</strong><br>
+                • We eat dinner <strong>at 7 PM</strong><br>
+                • They celebrate <strong>at Christmas</strong><br>
+                • She works <strong>at night</strong>
+            </div>
+
+            <p><strong>IN (Tháng/Năm/Mùa/Phần Ngày)</strong></p>
+            <div class="example">
+                • He was born <strong>in 1990</strong><br>
+                • It's warm <strong>in summer</strong><br>
+                • I study <strong>in the morning</strong><br>
+                • We'll meet <strong>in May</strong><br>
+                • The bus arrives <strong>in 10 minutes</strong>
+            </div>
+
+            <p><strong>ON (Ngày/Ngày Trong Tuần)</strong></p>
+            <div class="example">
+                • I have class <strong>on Monday</strong><br>
+                • Her birthday is <strong>on 15 August</strong><br>
+                • We go out <strong>on Friday nights</strong><br>
+                • The event is <strong>on Christmas Day</strong><br>
+                • I work <strong>on weekends</strong>
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> KHÔNG dùng at/in/on trước "next" hoặc "last"<br>
+                ✅ I'll see you next week | ❌ I'll see you in next week<br>
+                ✅ They came last month | ❌ They came at last month
+            </div>
+        </div>
+
+        <!-- PREPOSITIONS OF PLACE -->
+        <h2>📍 2. Giới Từ Chỉ Nơi Chốn (Prepositions of Place)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Giới từ chỉ nơi chốn</span> là những giới từ <strong>dùng để chỉ vị trí hoặc tọa độ của người, vật hoặc sự vật</strong>. Chúng trả lời câu hỏi "WHERE?" (Ở đâu?) hoặc "AT WHAT LOCATION?" (Ở vị trí nào?).</p>
+
+            <h3>II. Ba Giới Từ Nơi Chốn Chính: IN, ON, AT</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IN</strong></td>
+                        <td>Bên trong, được bao quanh</td>
+                        <td>in the room, in the box, in the car, in London</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON</strong></td>
+                        <td>Trên bề mặt, tiếp xúc</td>
+                        <td>on the table, on the shelf, on the wall, on the floor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Một vị trí/điểm cụ thể, sự kiện</td>
+                        <td>at home, at work, at school, at the station</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Giới Từ Nơi Chốn Khác</h3>
+
+            <div class="example">
+                <strong>Vị Trí Dọc:</strong> above (trên), below (dưới), over (trên), under (dưới), beneath (dưới)<br>
+                <strong>Khoảng Cách:</strong> near (gần), beside (bên cạnh), next to (cạnh), by (bên cạnh), far from (xa từ)<br>
+                <strong>Vị Trí Tương Đối:</strong> in front of (phía trước), behind (phía sau), between (giữa), among (trong), around (xung quanh)
+            </div>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>IN (Bên Trong)</strong></p>
+            <div class="example">
+                • I am <strong>in the kitchen</strong><br>
+                • The books are <strong>in the box</strong><br>
+                • They live <strong>in Paris</strong><br>
+                • She's swimming <strong>in the pool</strong><br>
+                • He is <strong>in bed</strong>
+            </div>
+
+            <p><strong>ON (Trên Bề Mặt)</strong></p>
+            <div class="example">
+                • The lamp is <strong>on the desk</strong><br>
+                • The picture hangs <strong>on the wall</strong><br>
+                • I found my keys <strong>on the floor</strong><br>
+                • There's a spot <strong>on my shirt</strong><br>
+                • The cat is sitting <strong>on the sofa</strong>
+            </div>
+
+            <p><strong>AT (Vị Trí Cụ Thể)</strong></p>
+            <div class="example">
+                • I work <strong>at the office</strong><br>
+                • Meet me <strong>at the entrance</strong><br>
+                • She's <strong>at school</strong><br>
+                • We met <strong>at a party</strong><br>
+                • He is waiting <strong>at the bus stop</strong>
+            </div>
+
+            <p><strong>Giới Từ Khác</strong></p>
+            <div class="example">
+                • The bird is flying <strong>above the tree</strong><br>
+                • The box is <strong>under the table</strong><br>
+                • He lives <strong>near the station</strong><br>
+                • Sit <strong>beside me</strong><br>
+                • The house is <strong>between the two trees</strong>
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "To" dùng cho hướng đi (sang một nơi), nhưng "arrive" dùng với "in" hoặc "at"<br>
+                ✅ I went to Paris | ✅ I arrived in Paris<br>
+                ✅ I arrived at the station
+            </div>
+        </div>
+
+        <!-- PREPOSITIONS OF DIRECTION -->
+        <h2>➡️ 3. Giới Từ Chỉ Hướng (Prepositions of Direction)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Giới từ chỉ hướng</span> là những giới từ <strong>dùng để chỉ hướng hoặc đường đi của một hành động</strong>. Chúng trả lời câu hỏi "WHICH DIRECTION?" hoặc "WHERE TO?" (Hướng nào? Sang đâu?).</p>
+
+            <h3>II. Danh Sách Giới Từ Chỉ Hướng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TO</strong></td>
+                        <td>Hướng tới, sang (điểm đến)</td>
+                        <td>to Paris, to school, to the hospital</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>INTO</strong></td>
+                        <td>Từ bên ngoài vào bên trong</td>
+                        <td>into the house, into the car, into the room</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ONTO</strong></td>
+                        <td>Lên trên bề mặt</td>
+                        <td>onto the table, onto the roof, onto the bus</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>OUT OF</strong></td>
+                        <td>Từ bên trong ra ngoài</td>
+                        <td>out of the house, out of the car, out of the room</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FROM</strong></td>
+                        <td>Xuất phát từ, bắt đầu từ</td>
+                        <td>from London, from the office, from here</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ACROSS</strong></td>
+                        <td>Qua từ bên này sang bên kia</td>
+                        <td>across the street, across the ocean, across the bridge</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ALONG</strong></td>
+                        <td>Dọc theo</td>
+                        <td>along the road, along the river, along the path</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THROUGH</strong></td>
+                        <td>Xuyên qua, đi vào trong và ra ngoài</td>
+                        <td>through the forest, through the tunnel, through the door</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AROUND</strong></td>
+                        <td>Xung quanh, vòng quanh</td>
+                        <td>around the building, around the world, around the tree</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>TOWARD/TOWARDS</strong></td>
+                        <td>Hướng tới, về phía</td>
+                        <td>toward the door, towards her, toward home</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UP</strong></td>
+                        <td>Lên, phía trên</td>
+                        <td>up the stairs, up the mountain, up the hill</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>DOWN</strong></td>
+                        <td>Xuống, phía dưới</td>
+                        <td>down the stairs, down the river, down the street</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PAST</strong></td>
+                        <td>Vượt quá, đi ngang qua</td>
+                        <td>past the school, past the church, past the building</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • She walked <strong>to the beach</strong><br>
+                • The cat jumped <strong>onto the fence</strong><br>
+                • He walked <strong>into the house</strong><br>
+                • I came <strong>from the office</strong><br>
+                • They crossed <strong>across the bridge</strong><br>
+                • We walked <strong>along the river</strong><br>
+                • He drove <strong>through the tunnel</strong><br>
+                • The plane flew <strong>around the world</strong><br>
+                • She ran <strong>toward the door</strong><br>
+                • He climbed <strong>up the mountain</strong>
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> "Into" = vào bên trong | "Onto" = lên trên | "In" = đã ở bên trong | "On" = đã ở trên<br>
+                ✅ She went into the house (vào) | ✅ She is in the house (đã ở trong)<br>
+                ✅ He jumped onto the table (nhảy lên) | ✅ He is on the table (đã ở trên)
+            </div>
+        </div>
+
+        <!-- PREPOSITIONS OF MEANS/INSTRUMENT -->
+        <h2>🚌 4. Giới Từ Chỉ Phương Tiện (Prepositions of Means)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Giới từ chỉ phương tiện</span> là những giới từ <strong>dùng để chỉ cách thức hoặc dụng cụ thực hiện một hành động</strong>. Chúng trả lời câu hỏi "HOW?" hoặc "BY WHAT MEANS?" (Bằng cách nào? Dùng phương tiện gì?).</p>
+
+            <h3>II. Giới Từ Chỉ Phương Tiện</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BY</strong></td>
+                        <td>Bằng (phương tiện giao thông, phương pháp)</td>
+                        <td>by bus, by train, by car, by plane, by phone</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WITH</strong></td>
+                        <td>Dùng (dụng cụ, công cụ)</td>
+                        <td>with a pen, with a knife, with a hammer, with scissors</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ON</strong></td>
+                        <td>Dùng (trong một số trường hợp)</td>
+                        <td>on his bike, on roller skates, on foot</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>IN</strong></td>
+                        <td>Dùng (ngôn ngữ, phương tiện viết)</td>
+                        <td>in English, in Spanish, in writing, in pen</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>BY (Phương Tiện Giao Thông)</strong></p>
+            <div class="example">
+                • I go to work <strong>by bus</strong><br>
+                • She travels <strong>by train</strong><br>
+                • They arrive <strong>by plane</strong><br>
+                • He communicates <strong>by phone</strong><br>
+                • We send letters <strong>by mail</strong>
+            </div>
+
+            <p><strong>WITH (Dụng Cụ/Công Cụ)</strong></p>
+            <div class="example">
+                • I write <strong>with a pen</strong><br>
+                • He cuts the bread <strong>with a knife</strong><br>
+                • She paints <strong>with a brush</strong><br>
+                • They fixed it <strong>with a hammer</strong><br>
+                • I opened the can <strong>with a can opener</strong>
+            </div>
+
+            <p><strong>ON (Một Số Trường Hợp)</strong></p>
+            <div class="example">
+                • He is riding <strong>on his bike</strong><br>
+                • She came <strong>on roller skates</strong><br>
+                • They walked <strong>on foot</strong>
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> By + phương tiện (không dùng "the", "a")<br>
+                ✅ by bus | ❌ by the bus | ❌ by a bus
+            </div>
+        </div>
+
+        <!-- PREPOSITIONS OF CAUSE/REASON -->
+        <h2>💡 5. Giới Từ Chỉ Nguyên Nhân (Prepositions of Cause & Reason)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Giới từ chỉ nguyên nhân</span> là những giới từ <strong>dùng để chỉ lý do hoặc nguyên nhân của một sự việc</strong>. Chúng trả lời câu hỏi "WHY?" hoặc "FOR WHAT REASON?" (Tại sao? Vì lý do gì?).</p>
+
+            <h3>II. Phân Biệt Cause và Reason</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Định Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAUSE</strong></td>
+                        <td>Yếu tố trực tiếp gây ra sự việc (từ bên ngoài)</td>
+                        <td>The accident happened because of fog</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>REASON</strong></td>
+                        <td>Lý do hoặc động lực cho hành động (thường liên quan đến con người)</td>
+                        <td>She was praised for her honesty</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Giới Từ Chỉ Nguyên Nhân (Cause)</h3>
+
+            <div class="example">
+                <strong>Giới Từ Chỉ Cause:</strong> because of, due to, owing to, on account of, from<br>
+                <strong>Cấu Trúc:</strong> preposition + noun/gerund
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BECAUSE OF</strong></td>
+                        <td>Vì, do (phổ biến nhất)</td>
+                        <td>The event was canceled because of rain</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>DUE TO</strong></td>
+                        <td>Do, vì (tính thức hơn)</td>
+                        <td>The delay was due to traffic</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OWING TO</strong></td>
+                        <td>Do, vì (tính thức, chính thức)</td>
+                        <td>She didn't attend owing to illness</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON ACCOUNT OF</strong></td>
+                        <td>Do, vì (tính thức)</td>
+                        <td>They left on account of bad weather</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FROM</strong></td>
+                        <td>Do, từ (cảm xúc)</td>
+                        <td>She trembled from fear</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Giới Từ Chỉ Lý Do (Reason)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>FOR</strong></td>
+                        <td>Vì, do (lý do, mục đích)</td>
+                        <td>She was rewarded for her hard work</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>OUT OF</strong></td>
+                        <td>Do, từ (cảm xúc, động lực)</td>
+                        <td>They helped out of kindness</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WITH</strong></td>
+                        <td>Với, bằng (tình cảm, thái độ)</td>
+                        <td>He worked with passion</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>THROUGH</strong></td>
+                        <td>Qua, bằng (phương pháp, cách thức)</td>
+                        <td>She succeeded through determination</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>V. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>CAUSE (Nguyên Nhân Trực Tiếp)</strong></p>
+            <div class="example">
+                • The match was canceled <strong>because of rain</strong><br>
+                • The flight was delayed <strong>due to</strong> technical issues<br>
+                • She didn't come <strong>owing to</strong> illness<br>
+                • He couldn't work <strong>on account of</strong> his injury<br>
+                • She trembled <strong>from</strong> fear
+            </div>
+
+            <p><strong>REASON (Lý Do/Động Lực)</strong></p>
+            <div class="example">
+                • She was rewarded <strong>for</strong> her honesty<br>
+                • He was fined <strong>for</strong> speeding<br>
+                • They acted <strong>out of</strong> kindness<br>
+                • She worked <strong>with</strong> enthusiasm<br>
+                • He succeeded <strong>through</strong> hard work
+            </div>
+
+            <div class="note">
+                <strong>💡 So Sánh:</strong><br>
+                • CAUSE = yếu tố bên ngoài gây ra hậu quả: The accident happened <strong>because of</strong> fog<br>
+                • REASON = động lực/lý do cho hành động: She was praised <strong>for</strong> her courage
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Prepositions of Time</h3>
+            <ul>
+                <li>I wake up <strong>at 6 AM</strong></li>
+                <li>She was born <strong>in 1995</strong></li>
+                <li>We meet <strong>on Mondays</strong></li>
+                <li>The event is <strong>at Christmas</strong></li>
+                <li>I'll see you <strong>in two weeks</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Prepositions of Place</h3>
+            <ul>
+                <li>The book is <strong>on the table</strong></li>
+                <li>I am <strong>in the office</strong></li>
+                <li>They are sitting <strong>at home</strong></li>
+                <li>The lamp is <strong>above the desk</strong></li>
+                <li>She lives <strong>near the station</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Prepositions of Direction</h3>
+            <ul>
+                <li>She ran <strong>toward the door</strong></li>
+                <li>We walked <strong>across the bridge</strong></li>
+                <li>The cat jumped <strong>onto the fence</strong></li>
+                <li>He drove <strong>through the tunnel</strong></li>
+                <li>They walked <strong>along the river</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Prepositions of Means</h3>
+            <ul>
+                <li>I go to school <strong>by bus</strong></li>
+                <li>She writes <strong>with a pen</strong></li>
+                <li>He cut it <strong>with a knife</strong></li>
+                <li>They communicate <strong>by email</strong></li>
+                <li>I'll send it <strong>by mail</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Prepositions of Cause & Reason</h3>
+            <ul>
+                <li>The game was canceled <strong>because of rain</strong></li>
+                <li>She was praised <strong>for her work</strong></li>
+                <li>They helped <strong>out of kindness</strong></li>
+                <li>He succeeded <strong>through determination</strong></li>
+                <li>The flight delayed <strong>due to</strong> weather</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng sai AT/IN/ON với thời gian</p>
+            <div class="example">
+                ❌ I wake up in 6 AM | ✅ I wake up at 6 AM<br>
+                ❌ She was born on 1995 | ✅ She was born in 1995<br>
+                ❌ We meet at Mondays | ✅ We meet on Mondays
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng sai AT/IN/ON với nơi chốn</p>
+            <div class="example">
+                ❌ The book is in the table | ✅ The book is on the table<br>
+                ❌ I am at the kitchen | ✅ I am in the kitchen
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Nhầm lẫn INTO/IN và ONTO/ON</p>
+            <div class="example">
+                ❌ She went in the house (sai - đã ở trong) | ✅ She went into the house (vào)<br>
+                ❌ He jumped on the table (sai - đã ở trên) | ✅ He jumped onto the table (nhảy lên)
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "by" với mạo từ hoặc số lượng</p>
+            <div class="example">
+                ❌ I go by the bus | ✅ I go by bus<br>
+                ❌ by a car | ✅ by car
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm BECAUSE OF với BECAUSE</p>
+            <div class="example">
+                ❌ Because of he was late, ... | ✅ Because he was late, ...<br>
+                ❌ Because of rain, ... | ✅ Because of the rain, ...
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: At/In/On với Thời Gian</strong></p>
+            <ul>
+                <li>AT = Giờ chính xác (at 3 PM)</li>
+                <li>IN = Tháng/Năm/Mùa (in May, in 2025)</li>
+                <li>ON = Ngày cụ thể (on Monday)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: At/In/On với Nơi Chốn</strong></p>
+            <ul>
+                <li>IN = Bên trong (in the room)</li>
+                <li>ON = Trên bề mặt (on the table)</li>
+                <li>AT = Vị trí cụ thể, sự kiện (at home, at the station)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: INTO vs IN / ONTO vs ON</strong></p>
+            <ul>
+                <li>INTO/ONTO = chỉ hướng động (vào, lên)</li>
+                <li>IN/ON = chỉ vị trí tĩnh (đã ở)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: BY + Phương Tiện (Không Dùng Mạo Từ)</strong></p>
+            <ul>
+                <li>by bus, by train, by car (KHÔNG "by the bus")</li>
+            </ul>
+
+            <p><strong>Mẹo 5: BECAUSE vs BECAUSE OF</strong></p>
+            <ul>
+                <li>BECAUSE + mệnh đề: Because he was late, ...</li>
+                <li>BECAUSE OF + danh từ: Because of the rain, ...</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Giới Từ</th>
+                        <th>Giới Từ Chính</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Time</strong></td>
+                        <td>at, in, on</td>
+                        <td>at 3 PM, in May, on Monday</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Place</strong></td>
+                        <td>in, on, at, above, below, near</td>
+                        <td>in the room, on the table, at home</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Direction</strong></td>
+                        <td>to, into, onto, out of, from, across</td>
+                        <td>to Paris, into the house, out of the room</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Means</strong></td>
+                        <td>by, with, on, in</td>
+                        <td>by bus, with a pen, by email</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cause & Reason</strong></td>
+                        <td>because of, due to, for, out of</td>
+                        <td>because of rain, for his work</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Động Từ Nguyên Mẫu Có "To" (To-Infinitive)</h2>
+
+        <div class="card">
+            <h3>Động Từ Nguyên Mẫu Có "To" Là Gì?</h3>
+            <p><span class="highlight">Động Từ Nguyên Mẫu Có "To" (To-Infinitive)</span> là <strong>dạng to + V1 (base form) của động từ, dùng để chỉ hành động không có thì, có thể làm chủ ngữ, tân ngữ, bổ ngữ, hoặc sau tính từ để giải thích lý do</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> To-infinitive khác với bare infinitive (V1 không có "to") được dùng sau modal verbs. To-infinitive có nhiều chức năng trong câu tiếng Anh.
+            </div>
+
+            <h3>To-Infinitive Vs Bare Infinitive</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>To-Infinitive</th>
+                        <th>Bare Infinitive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hình Thức</strong></td>
+                        <td>to + V1</td>
+                        <td>V1</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ Hình Thức</strong></td>
+                        <td>to study, to run, to write</td>
+                        <td>study, run, write</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dùng Sau</strong></td>
+                        <td>Hầu hết các động từ khác, tính từ, danh từ</td>
+                        <td>Modal verbs (can, will, must, should, may)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>I want to go (Tôi muốn đi)</td>
+                        <td>I can go (Tôi có thể đi)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> To-infinitive và bare infinitive có cùng một dạng động từ nhưng được sử dụng trong những bối cảnh khác nhau.
+            </div>
+        </div>
+
+        <!-- TO-INFINITIVE AFTER ADJECTIVES -->
+        <h2>📍 1. To-Infinitive Sau Tính Từ (To-Infinitive After Adjectives)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">To-infinitive sau tính từ</span> là <strong>to-infinitive đứng sau tính từ để giải thích lý do tại sao chủ ngữ có tính chất đó</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: S + be + adj + to-infinitive | Giải thích "tại sao" hoặc "mục đích"
+            </div>
+
+            <h3>II. Các Tính Từ Thường Dùng Với To-Infinitive</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tính Từ Cảm Xúc</th>
+                        <th>Tính Từ Khác</th>
+                        <th>Tính Từ "Difficulty"</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>happy, sad, angry</td>
+                        <td>good, bad, easy, hard</td>
+                        <td>difficult, easy, impossible</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>surprised, shocked, upset</td>
+                        <td>important, useful, necessary</td>
+                        <td>simple, complex, challenging</td>
+                    </tr>
+                    <tr>
+                        <td>pleased, proud, glad</td>
+                        <td>ready, willing, able</td>
+                        <td>uncommon, rare, frequent</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td>sorry, afraid, worried</td>
+                        <td>lucky, unlucky, likely</td>
+                        <td>possible, probable, uncertain</td>
+                    </tr>
+                    <tr>
+                        <td>relieved, touched</td>
+                        <td>reluctant, hesitant</td>
+                        <td>obvious, clear</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Tính Từ Cảm Xúc:</strong></p>
+            <div class="example">
+                • I'm happy to hear that (Tôi vui mừng khi nghe điều đó)<br>
+                • She was surprised to see him (Cô ấy ngạc nhiên khi thấy anh ấy)<br>
+                • He felt relieved to finish the project (Anh ấy cảm thấy nhẹ nhõm khi hoàn thành dự án)<br>
+                • They were upset to hear the news (Họ bực dọc khi nghe tin tức)<br>
+                • I'm proud to be part of this team (Tôi tự hào là một phần của đội này)
+            </div>
+
+            <p><strong>Tính Từ "Dễ/Khó":</strong></p>
+            <div class="example">
+                • It's easy to make mistakes (Dễ dàng để mắc lỗi)<br>
+                • The book is difficult to read (Cuốn sách khó đọc)<br>
+                • This is simple to understand (Cái này dễ hiểu)<br>
+                • It's impossible to know everything (Không thể biết mọi thứ)<br>
+                • The puzzle is hard to solve (Câu đố khó giải)
+            </div>
+
+            <p><strong>Tính Từ "Sẵn Sàng/Có Khả Năng":</strong></p>
+            <div class="example">
+                • He's ready to start (Anh ấy sẵn sàng bắt đầu)<br>
+                • Are you willing to help? (Bạn có sẵn lòng giúp không?)<br>
+                • She's able to handle this (Cô ấy có khả năng xử lý cái này)<br>
+                • They're likely to arrive on time (Họ có khả năng đến đúng giờ)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Khi tính từ mô tả cái gì đó thay vì cảm xúc của người, danh từ/đại từ phải ở sau "for"<br>
+                ✅ It's easy to understand | ✅ It's easy for me to understand<br>
+                ✅ This book is difficult to read | ✅ This book is difficult for children to read
+            </div>
+        </div>
+
+        <!-- TO-INFINITIVE OF PURPOSE -->
+        <h2>🎯 2. To-Infinitive Để Chỉ Mục Đích (To-Infinitive of Purpose)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">To-infinitive chỉ mục đích</span> là <strong>to-infinitive dùng để trả lời câu hỏi "Tại sao?" hoặc "Với mục đích gì?"</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Dùng "to + V" hoặc "in order to + V" hoặc "so as to + V" | Chủ ngữ của cả hai phần phải giống nhau
+            </div>
+
+            <h3>II. Công Thức Và Cách Dùng</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Mức Độ Chính Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>to + V</strong></td>
+                        <td>Không chính thức, phổ biến</td>
+                        <td>I went to the store to buy milk</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>in order to + V</strong></td>
+                        <td>Chính thức hơn</td>
+                        <td>I went to the store in order to buy milk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>so as to + V</strong></td>
+                        <td>Chính thức, ít dùng</td>
+                        <td>I went to the store so as to buy milk</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Dùng "to + V" (Phổ biến):</strong></p>
+            <div class="example">
+                • He went to university to get a degree (Anh ấy đi đại học để lấy bằng cấp)<br>
+                • She studied hard to pass the exam (Cô ấy học chăm chỉ để qua kỳ thi)<br>
+                • I'm calling to ask for help (Tôi gọi để xin giúp đỡ)<br>
+                • They went shopping to buy Christmas gifts (Họ đi mua sắm để mua quà Giáng sinh)<br>
+                • I left early to avoid traffic (Tôi rời sớm để tránh tắc đường)
+            </div>
+
+            <p><strong>Dùng "in order to + V" (Chính thức):</strong></p>
+            <div class="example">
+                • Students should read regularly in order to improve their vocabulary<br>
+                • The company invested in new technology in order to stay competitive<br>
+                • We need to discuss this in order to find a solution<br>
+                • She attended the training in order to obtain certification
+            </div>
+
+            <p><strong>Dùng "so as to + V" (Chính thức, ít dùng):</strong></p>
+            <div class="example">
+                • They left at dawn so as to arrive by noon<br>
+                • She whispered so as not to disturb the children<br>
+                • We studied hard so as to be well-prepared
+            </div>
+
+            <h3>IV. Dạng Phủ Định</h3>
+
+            <div class="example">
+                • I woke up early in order not to miss the flight<br>
+                • She spoke quietly so as not to wake the baby<br>
+                • He came to not disappoint them (không chính thức, nên tránh)<br>
+                • ✅ He came in order not to disappoint them (đúng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Quan Trọng:</strong> KHÔNG dùng "for" thay cho "to" để chỉ mục đích<br>
+                ❌ I went to the store for buy milk | ✅ I went to the store to buy milk<br>
+                ❌ She studied for pass the exam | ✅ She studied to pass the exam
+            </div>
+        </div>
+
+        <!-- TO-INFINITIVE AFTER VERBS -->
+        <h2>💬 3. To-Infinitive Sau Một Số Động Từ (To-Infinitive After Verbs)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">To-infinitive sau động từ</span> là <strong>một số động từ cần phải được theo sau bởi to-infinitive, chứ không phải gerund hoặc cách khác</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Một số động từ chỉ theo gerund | Một số chỉ theo infinitive | Một số có thể theo cả hai
+            </div>
+
+            <h3>II. Động Từ Chỉ Theo Sau To-Infinitive</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WANT</strong></td>
+                        <td>Muốn</td>
+                        <td>I want to go home</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>NEED</strong></td>
+                        <td>Cần</td>
+                        <td>She needs to study</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HOPE</strong></td>
+                        <td>Hy vọng</td>
+                        <td>He hopes to succeed</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>PLAN</strong></td>
+                        <td>Lên kế hoạch</td>
+                        <td>They plan to travel</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DECIDE</strong></td>
+                        <td>Quyết định</td>
+                        <td>We decided to leave</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AGREE</strong></td>
+                        <td>Đồng ý</td>
+                        <td>I agreed to help</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROMISE</strong></td>
+                        <td>Hứa</td>
+                        <td>She promised to call</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>REFUSE</strong></td>
+                        <td>Từ chối</td>
+                        <td>He refused to answer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OFFER</strong></td>
+                        <td>Đề nghị</td>
+                        <td>They offered to help</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ATTEMPT</strong></td>
+                        <td>Cố gắng</td>
+                        <td>I attempted to fix it</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MANAGE</strong></td>
+                        <td>Quản lý được</td>
+                        <td>She managed to finish</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FAIL</strong></td>
+                        <td>Thất bại</td>
+                        <td>They failed to arrive</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LEARN</strong></td>
+                        <td>Học</td>
+                        <td>I learned to drive</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Động Từ Với Object + To-Infinitive</h3>
+
+            <p><strong>Công Thức: S + V + Object + to-infinitive</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WANT</strong></td>
+                        <td>Muốn (ai)</td>
+                        <td>I want him to go home</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ASK</strong></td>
+                        <td>Yêu cầu</td>
+                        <td>She asked me to help</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TELL</strong></td>
+                        <td>Bảo, nói</td>
+                        <td>He told us to leave</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ORDER</strong></td>
+                        <td>Ra lệnh</td>
+                        <td>The boss ordered him to work harder</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INVITE</strong></td>
+                        <td>Mời</td>
+                        <td>They invited us to join</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ENCOURAGE</strong></td>
+                        <td>Khuyến khích</td>
+                        <td>The teacher encouraged students to read</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TEACH</strong></td>
+                        <td>Dạy</td>
+                        <td>My father taught me to swim</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FORCE</strong></td>
+                        <td>Buộc</td>
+                        <td>They forced him to confess</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PERMIT</strong></td>
+                        <td>Cho phép</td>
+                        <td>The school permitted students to leave early</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>PERSUADE</strong></td>
+                        <td>Thuyết phục</td>
+                        <td>I persuaded her to stay</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I want to study English (Tôi muốn học tiếng Anh)<br>
+                • She hopes to become a doctor (Cô ấy hy vọng trở thành bác sĩ)<br>
+                • They agreed to meet tomorrow (Họ đồng ý gặp nhau ngày mai)<br>
+                • I asked him to help me (Tôi yêu cầu anh ấy giúp tôi)<br>
+                • The teacher encouraged students to ask questions (Giáo viên khuyến khích học sinh đặt câu hỏi)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG dùng gerund sau những động từ này (ngoại trừ một vài động từ đặc biệt)<br>
+                ✅ I want to go | ❌ I want going<br>
+                ✅ She hopes to succeed | ❌ She hopes succeeding
+            </div>
+        </div>
+
+        <!-- TOO AND ENOUGH WITH TO-INFINITIVE -->
+        <h2>⚖️ 4. "Too" & "Enough" Với To-Infinitive</h2>
+
+        <div class="card">
+            <h3>I. Công Thức Với "Too"</h3>
+
+            <div class="formula">
+                <strong>Too + Adjective/Adverb + to-infinitive</strong><br>
+                Quá... để...
+            </div>
+
+            <div class="example">
+                • I'm too tired to work (Tôi quá mệt để làm việc)<br>
+                • The coffee is too hot to drink (Cà phê quá nóng để uống)<br>
+                • He drives too fast to see the road signs (Anh ấy lái quá nhanh để nhìn thấy biển báo)<br>
+                • She's too shy to speak in public (Cô ấy quá nhзастенчивый để nói công khai)
+            </div>
+
+            <h3>II. Công Thức Với "Enough"</h3>
+
+            <div class="formula">
+                <strong>Adjective/Adverb + Enough + to-infinitive</strong><br>
+                ... đủ để...
+            </div>
+
+            <div class="example">
+                • I'm strong enough to lift this box (Tôi đủ mạnh để nâng chiếc hộp này)<br>
+                • She's experienced enough to handle this project (Cô ấy đủ kinh nghiệm để xử lý dự án này)<br>
+                • He works fast enough to finish on time (Anh ấy làm nhanh đủ để kết thúc đúng giờ)<br>
+                • They're old enough to understand (Họ đủ lớn để hiểu)
+            </div>
+
+            <h3>III. Với Danh Từ</h3>
+
+            <p><strong>Công Thức: Too + much/many/little + noun + to-infinitive</strong></p>
+            <div class="example">
+                • I have too much work to finish today (Tôi có quá nhiều công việc để hoàn thành hôm nay)<br>
+                • There are too many people in the room (Có quá nhiều người trong phòng)<br>
+                • There's too little time to prepare (Có quá ít thời gian để chuẩn bị)
+            </div>
+
+            <p><strong>Công Thức: Enough + noun + to-infinitive</strong></p>
+            <div class="example">
+                • I have enough time to finish (Tôi có đủ thời gian để hoàn thành)<br>
+                • We have enough money to buy a car (Chúng tôi có đủ tiền để mua xe)<br>
+                • Do you have enough courage to try? (Bạn có đủ can đảm để thử không?)
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng gerund thay vì to-infinitive sau động từ</p>
+            <div class="example">
+                ❌ I want going | ✅ I want to go<br>
+                ❌ She hopes becoming a doctor | ✅ She hopes to become a doctor
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng "for" để chỉ mục đích thay vì "to"</p>
+            <div class="example">
+                ❌ I went to the store for buy milk | ✅ I went to the store to buy milk<br>
+                ❌ She studies for pass the exam | ✅ She studies to pass the exam
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Sai vị trí của "enough"</p>
+            <div class="example">
+                ❌ I'm enough strong to lift this | ✅ I'm strong enough to lift this<br>
+                ❌ He runs fast too | ✅ He runs too fast (với "too", adj trước "too")
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên object trong động từ + object + to-infinitive</p>
+            <div class="example">
+                ❌ She asked to help | ✅ She asked me to help<br>
+                ❌ I want to go home | ✅ I want you to go home (nếu chỉ người khác)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Nhầm split infinitive (chia tách infinitive)</p>
+            <div class="example">
+                Split: To boldly go (adverb ở giữa)<br>
+                Unsplit: To go boldly<br>
+                Lưu ý: Split infinitive không phải là lỗi ngữ pháp, nhưng nên tránh trong viết chính thức
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Nhớ Danh Sách Động Từ + To-Infinitive</strong></p>
+            <ul>
+                <li>Want, need, hope, plan, decide, agree, promise, refuse, offer, attempt, manage, fail, learn</li>
+                <li>Luyện tập tạo câu với mỗi động từ</li>
+            </ul>
+
+            <p><strong>Mẹo 2: "For" KHÔNG Bao Giờ Cho Mục Đích</strong></p>
+            <ul>
+                <li>Luôn dùng "to", "in order to", hoặc "so as to"</li>
+                <li>"For" dùng cho: "for + noun" (cho, để), chứ không phải cho mục đích</li>
+            </ul>
+
+            <p><strong>Mẹo 3: "Too" vs "Enough"</strong></p>
+            <ul>
+                <li>"Too + adj": Quá... (tiêu cực) → không thể làm cái gì</li>
+                <li>"Adj + Enough": ... đủ (tích cực) → có thể làm cái gì</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Object + To-Infinitive</strong></p>
+            <ul>
+                <li>Khi có object (người khác), dùng: Subject + V + Object + to-infinitive</li>
+                <li>Ví dụ: Ask, tell, invite, force, teach, encourage, persuade</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Phân Biệt</strong></p>
+            <ul>
+                <li>Viết 10 câu với to-infinitive sau động từ</li>
+                <li>Viết 10 câu với to-infinitive để chỉ mục đích</li>
+                <li>Viết 10 câu với to-infinitive sau tính từ</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt To-Infinitive</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vị Trí</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sau Tính Từ</strong></td>
+                        <td>S + be + adj + to-V</td>
+                        <td>I'm happy to help</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Mục Đích</strong></td>
+                        <td>S + V + to-V / in order to-V / so as to-V</td>
+                        <td>I went to study</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sau Động Từ</strong></td>
+                        <td>S + V + to-V</td>
+                        <td>I want to go</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Với Object</strong></td>
+                        <td>S + V + Object + to-V</td>
+                        <td>I asked him to help</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Too/Enough</strong></td>
+                        <td>too + adj + to-V / adj + enough + to-V</td>
+                        <td>Too tired to work / Strong enough to lift</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Cấu Trúc Câu Cơ Bản (Basic Sentence Structures)</h2>
+
+        <div class="card">
+            <h3>Cấu Trúc Câu Là Gì?</h3>
+            <p><span class="highlight">Cấu trúc câu (Sentence Structure)</span> là <strong>sự sắp xếp các thành phần chính của câu theo một trình tự nhất định để tạo thành một câu có ý nghĩa hoàn chỉnh</strong>. Có năm cấu trúc câu cơ bản trong tiếng Anh.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Cấu trúc câu cơ bản được ký hiệu bằng các chữ cái viết tắt: S (Subject), V (Verb), O (Object), C (Complement), IO (Indirect Object), DO (Direct Object).
+            </div>
+
+            <h3>Các Thành Phần Chính Của Câu</h3>
+            <ul>
+                <li><strong>Subject (S):</strong> Chủ ngữ - người hoặc vật thực hiện hành động</li>
+                <li><strong>Verb (V):</strong> Động từ - hành động hoặc trạng thái</li>
+                <li><strong>Object (O):</strong> Tân ngữ - người hoặc vật bị tác động bởi hành động</li>
+                <li><strong>Complement (C):</strong> Bổ ngữ - mô tả chủ ngữ hoặc tân ngữ</li>
+                <li><strong>Indirect Object (IO):</strong> Tân ngữ gián tiếp - thường là người hưởng lợi</li>
+                <li><strong>Direct Object (DO):</strong> Tân ngữ trực tiếp - vật được trao/cho</li>
+            </ul>
+        </div>
+
+        <!-- STRUCTURE 1: SV -->
+        <h2>1️⃣ Cấu Trúc 1: SV (Subject + Verb)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Cấu trúc SV</span> là <strong>cấu trúc câu đơn giản nhất, chỉ gồm chủ ngữ và động từ nội động (intransitive verb)</strong>.</p>
+
+            <p><strong>Động Từ Nội Động (Intransitive Verb):</strong> Động từ không cần tân ngữ, hành động kết thúc ở chủ ngữ.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + V (Intransitive)</strong><br>
+                Chủ ngữ + Động từ nội động
+            </div>
+
+            <h3>III. Danh Sách Động Từ Nội Động Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>sleep</strong></td>
+                        <td>Ngủ</td>
+                        <td>She sleeps</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>run</strong></td>
+                        <td>Chạy</td>
+                        <td>They run</td>
+                    </tr>
+                    <tr>
+                        <td><strong>sit</strong></td>
+                        <td>Ngồi</td>
+                        <td>He sits</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>stand</strong></td>
+                        <td>Đứng</td>
+                        <td>I stand</td>
+                    </tr>
+                    <tr>
+                        <td><strong>laugh</strong></td>
+                        <td>Cười</td>
+                        <td>We laugh</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>cry</strong></td>
+                        <td>Khóc</td>
+                        <td>The baby cries</td>
+                    </tr>
+                    <tr>
+                        <td><strong>arrive</strong></td>
+                        <td>Đến</td>
+                        <td>They arrive</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>disappear</strong></td>
+                        <td>Mất tích</td>
+                        <td>He disappears</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I am sleeping<br>
+                • She laughs loudly<br>
+                • They run every morning<br>
+                • He sits down<br>
+                • The dog barks<br>
+                • We have arrived<br>
+                • She disappeared yesterday<br>
+                • The children play outside
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Cấu trúc SV có thể có trạng từ hoặc cụm giới từ bổ sung, nhưng chúng là tuỳ chọn<br>
+                ✅ She sleeps | ✅ She sleeps peacefully | ✅ She sleeps in the bedroom
+            </div>
+        </div>
+
+        <!-- STRUCTURE 2: SVO -->
+        <h2>2️⃣ Cấu Trúc 2: SVO (Subject + Verb + Object)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Cấu trúc SVO</span> là <strong>cấu trúc câu gồm chủ ngữ, động từ ngoại động (transitive verb), và tân ngữ trực tiếp</strong>.</p>
+
+            <p><strong>Động Từ Ngoại động (Transitive Verb):</strong> Động từ cần tân ngữ, hành động truyền sang vật nhận.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + V (Transitive) + O</strong><br>
+                Chủ ngữ + Động từ ngoại động + Tân ngữ trực tiếp
+            </div>
+
+            <h3>III. Danh Sách Động Từ Ngoại Động Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>eat</strong></td>
+                        <td>Ăn</td>
+                        <td>I eat apples</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>drink</strong></td>
+                        <td>Uống</td>
+                        <td>She drinks water</td>
+                    </tr>
+                    <tr>
+                        <td><strong>love</strong></td>
+                        <td>Yêu</td>
+                        <td>They love music</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>buy</strong></td>
+                        <td>Mua</td>
+                        <td>He buys books</td>
+                    </tr>
+                    <tr>
+                        <td><strong>see</strong></td>
+                        <td>Nhìn thấy</td>
+                        <td>I see a cat</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>teach</strong></td>
+                        <td>Dạy</td>
+                        <td>She teaches English</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I eat rice<br>
+                • She drinks coffee<br>
+                • They love their parents<br>
+                • He plays football<br>
+                • I read books<br>
+                • She teaches students<br>
+                • We watch movies<br>
+                • They built a house
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Tân ngữ phải là danh từ hoặc đại từ<br>
+                ✅ I eat apples | ❌ I eat eating | ✅ She loves him | ❌ She loves he
+            </div>
+        </div>
+
+        <!-- STRUCTURE 3: SVC -->
+        <h2>3️⃣ Cấu Trúc 3: SVC (Subject + Linking Verb + Complement)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Cấu trúc SVC</span> là <strong>cấu trúc câu gồm chủ ngữ, động từ liên kết (linking verb), và bổ ngữ chủ ngữ (subject complement)</strong>.</p>
+
+            <p><strong>Động Từ Liên Kết (Linking Verb):</strong> Động từ không tạo hành động, chỉ kết nối chủ ngữ với bổ ngữ mô tả chủ ngữ.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + Linking V + C</strong><br>
+                Chủ ngữ + Động từ liên kết + Bổ ngữ (tính từ/danh từ)
+            </div>
+
+            <h3>III. Danh Sách Động Từ Liên Kết Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ Liên Kết</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>be (am/is/are)</strong></td>
+                        <td>Là</td>
+                        <td>I am happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>seem</strong></td>
+                        <td>Dường như</td>
+                        <td>She seems tired</td>
+                    </tr>
+                    <tr>
+                        <td><strong>look</strong></td>
+                        <td>Trông</td>
+                        <td>He looks handsome</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>feel</strong></td>
+                        <td>Cảm thấy</td>
+                        <td>I feel sick</td>
+                    </tr>
+                    <tr>
+                        <td><strong>appear</strong></td>
+                        <td>Có vẻ</td>
+                        <td>It appears difficult</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>become</strong></td>
+                        <td>Trở thành</td>
+                        <td>She became famous</td>
+                    </tr>
+                    <tr>
+                        <td><strong>remain</strong></td>
+                        <td>Vẫn là</td>
+                        <td>He remains silent</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>smell</strong></td>
+                        <td>Có mùi</td>
+                        <td>The food smells delicious</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Bổ Ngữ Là Tính Từ:</strong></p>
+            <div class="example">
+                • I am happy<br>
+                • She looks beautiful<br>
+                • He feels tired<br>
+                • The weather seems cold<br>
+                • They are clever<br>
+                • The music sounds lovely
+            </div>
+
+            <p><strong>Bổ Ngữ Là Danh Từ:</strong></p>
+            <div class="example">
+                • I am a teacher<br>
+                • She is a doctor<br>
+                • He became a pilot<br>
+                • My father is an engineer<br>
+                • They are students<br>
+                • That is a book
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Bổ ngữ chủ ngữ mô tả hoặc xác định lại chủ ngữ<br>
+                ✅ She is beautiful (tính từ) | ✅ She is a teacher (danh từ)<br>
+                ❌ She is run (sai - "run" là động từ không phải bổ ngữ)
+            </div>
+        </div>
+
+        <!-- STRUCTURE 4: SVOC -->
+        <h2>4️⃣ Cấu Trúc 4: SVOC (Subject + Verb + Object + Complement)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Cấu trúc SVOC</span> là <strong>cấu trúc câu gồm chủ ngữ, động từ ngoại động, tân ngữ trực tiếp, và bổ ngữ tân ngữ (object complement)</strong>.</p>
+
+            <p><strong>Bổ Ngữ Tân Ngữ (Object Complement):</strong> Từ mô tả hoặc xác định lại tân ngữ sau khi động từ được thực hiện.</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + V (Transitive) + O + C</strong><br>
+                Chủ ngữ + Động từ ngoại động + Tân ngữ + Bổ ngữ tân ngữ
+            </div>
+
+            <h3>III. Danh Sách Động Từ SVOC Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>make</strong></td>
+                        <td>Làm cho</td>
+                        <td>I made her happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>call</strong></td>
+                        <td>Gọi, xưng</td>
+                        <td>They call him a genius</td>
+                    </tr>
+                    <tr>
+                        <td><strong>consider</strong></td>
+                        <td>Xem xét</td>
+                        <td>I consider him a friend</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>find</strong></td>
+                        <td>Thấy, coi</td>
+                        <td>She found the book interesting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>paint</strong></td>
+                        <td>Sơn</td>
+                        <td>They painted the house blue</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>name</strong></td>
+                        <td>Đặt tên</td>
+                        <td>She named her daughter Lucy</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Bổ Ngữ Là Tính Từ:</strong></p>
+            <div class="example">
+                • I made her happy<br>
+                • They found the exam difficult<br>
+                • She painted the wall red<br>
+                • He kept the room clean<br>
+                • We consider this necessary<br>
+                • They left him alone
+            </div>
+
+            <p><strong>Bổ Ngữ Là Danh Từ:</strong></p>
+            <div class="example">
+                • They call him a genius<br>
+                • She named her baby Emma<br>
+                • I consider him a good friend<br>
+                • Everyone calls her a hero<br>
+                • He called his friend a liar<br>
+                • We appointed him the manager
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Bổ ngữ tân ngữ luôn mô tả lại tân ngữ<br>
+                ✅ I made her happy (happy mô tả her)<br>
+                ✅ They call him a genius (genius xác định lại him)
+            </div>
+        </div>
+
+        <!-- STRUCTURE 5: SVOO -->
+        <h2>5️⃣ Cấu Trúc 5: SVOO (Subject + Verb + Indirect Object + Direct Object)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Cấu trúc SVOO</span> là <strong>cấu trúc câu gồm chủ ngữ, động từ ngoại động hai tân ngữ (ditransitive verb), tân ngữ gián tiếp, và tân ngữ trực tiếp</strong>.</p>
+
+            <p><strong>Tân Ngữ Gián Tiếp (Indirect Object):</strong> Thường là người hưởng lợi từ hành động. Được hỏi "whom?" hoặc "to whom?".</p>
+
+            <p><strong>Tân Ngữ Trực Tiếp (Direct Object):</strong> Là vật được trao, cho, hay gửi. Được hỏi "what?"</p>
+
+            <h3>II. Công Thức</h3>
+
+            <div class="formula">
+                <strong>S + V (Ditransitive) + IO + DO</strong><br>
+                Chủ ngữ + Động từ hai tân ngữ + Tân ngữ gián tiếp + Tân ngữ trực tiếp
+            </div>
+
+            <h3>III. Danh Sách Động Từ SVOO Phổ Biến</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>give</strong></td>
+                        <td>Cho</td>
+                        <td>I gave him a book</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>send</strong></td>
+                        <td>Gửi</td>
+                        <td>She sent me a letter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>teach</strong></td>
+                        <td>Dạy</td>
+                        <td>He taught them English</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>buy</strong></td>
+                        <td>Mua</td>
+                        <td>I bought her a gift</td>
+                    </tr>
+                    <tr>
+                        <td><strong>tell</strong></td>
+                        <td>Kể</td>
+                        <td>She told me a story</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>lend</strong></td>
+                        <td>Cho mượn</td>
+                        <td>He lent me money</td>
+                    </tr>
+                    <tr>
+                        <td><strong>offer</strong></td>
+                        <td>Đề nghị</td>
+                        <td>They offered him the job</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>IV. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I gave her a flower<br>
+                • She sent him an email<br>
+                • He taught them mathematics<br>
+                • I bought my mother a gift<br>
+                • She told me a secret<br>
+                • He lent his friend a pen<br>
+                • We offered them the opportunity<br>
+                • They served us dinner
+            </div>
+
+            <h3>V. Chuyển Đổi Giữa SVOO và SV + Prep + O</h3>
+
+            <p><strong>SVOO → S + V + DO + Prep + IO</strong></p>
+            <div class="example">
+                • I gave him a book | I gave a book <strong>to</strong> him<br>
+                • She sent me a letter | She sent a letter <strong>to</strong> me<br>
+                • He taught them English | He taught English <strong>to</strong> them<br>
+                • I bought her a gift | I bought a gift <strong>for</strong> her<br>
+                • She told me a story | She told a story <strong>to</strong> me
+            </div>
+
+            <div class="note">
+                <strong>📌 Lưu Ý:</strong> Tân ngữ gián tiếp (người) luôn đứng trước tân ngữ trực tiếp (vật)<br>
+                ✅ I gave her a book | ❌ I gave a book her<br>
+                ✅ I bought my friend a pen | ❌ I bought a pen my friend
+            </div>
+        </div>
+
+        <!-- EXAMPLES SECTION -->
+        <h2>📝 Tổng Hợp Ví Dụ Chi Tiết</h2>
+
+        <div class="card">
+            <h3>Structure SV (Intransitive Verb)</h3>
+            <ul>
+                <li>He laughs</li>
+                <li>She runs every morning</li>
+                <li>The dog barks loudly</li>
+                <li>They arrived on time</li>
+                <li>We have slept well</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Structure SVO (Transitive Verb)</h3>
+            <ul>
+                <li>I love my family</li>
+                <li>She reads books</li>
+                <li>He eats rice</li>
+                <li>They watch movies</li>
+                <li>We built a house</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Structure SVC (Linking Verb)</h3>
+            <ul>
+                <li>I am happy</li>
+                <li>She is a teacher</li>
+                <li>He looks tired</li>
+                <li>They became famous</li>
+                <li>The weather seems cold</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Structure SVOC (Object Complement)</h3>
+            <ul>
+                <li>I made her happy</li>
+                <li>They called him a hero</li>
+                <li>She painted the wall blue</li>
+                <li>He found the exam difficult</li>
+                <li>We appointed her the manager</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Structure SVOO (Two Objects)</h3>
+            <ul>
+                <li>I gave her a book</li>
+                <li>She sent me an email</li>
+                <li>He taught them English</li>
+                <li>I bought my mother a gift</li>
+                <li>They offered him the position</li>
+            </ul>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng động từ ngoại động mà không có tân ngữ</p>
+            <div class="example">
+                ❌ I love | ✅ I love my family<br>
+                ❌ She reads | ✅ She reads books
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng động từ nội động với tân ngữ</p>
+            <div class="example">
+                ❌ I sleep a book | ✅ I sleep<br>
+                ❌ She runs a dog | ✅ She runs
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Sai thứ tự tân ngữ trong SVOO</p>
+            <div class="example">
+                ❌ I gave a book her | ✅ I gave her a book<br>
+                ❌ She sent a letter me | ✅ She sent me a letter
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Nhầm lẫn SVOC với SVO</p>
+            <div class="example">
+                ❌ I made her | ✅ I made her happy (cần bổ ngữ tân ngữ)<br>
+                ❌ They called him | ✅ They called him a hero
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng sai động từ liên kết</p>
+            <div class="example">
+                ❌ She runs happy | ✅ She seems happy<br>
+                ❌ He eats tired | ✅ He feels tired
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Phân Biệt Động Từ Nội Động & Ngoại Động</strong></p>
+            <ul>
+                <li>Nội động: Hành động kết thúc ở chủ ngữ, không cần tân ngữ (sleep, run, laugh, cry)</li>
+                <li>Ngoại động: Hành động truyền sang vật khác, cần tân ngữ (eat, drink, love, buy)</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Nhận Biết Động Từ Liên Kết</strong></p>
+            <ul>
+                <li>Thường là: be, seem, look, feel, appear, become, remain, smell, taste</li>
+                <li>Sau động từ liên kết là tính từ hoặc danh từ, không phải hành động</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Thử Thêm Câu Hỏi Để Kiểm Tra</strong></p>
+            <ul>
+                <li>SV: Chỉ hỏi "Who?" hoặc "What?"</li>
+                <li>SVO: Hỏi "What?" hoặc "Whom?" sau động từ</li>
+                <li>SVC: Hỏi "What is the subject like?"</li>
+                <li>SVOC: Hỏi "What?" và "What is the object like?"</li>
+                <li>SVOO: Hỏi "Who?" (IO) và "What?" (DO)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Thứ Tự SVOO - IO Trước DO</strong></p>
+            <ul>
+                <li>Tân ngữ gián tiếp (người) luôn đứng trước tân ngữ trực tiếp (vật)</li>
+                <li>IO = người hưởng lợi (who benefits?)</li>
+                <li>DO = vật được trao (what?)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Luyện Tập Với Từng Cấu Trúc</strong></p>
+            <ul>
+                <li>Viết ví dụ của riêng bạn cho mỗi cấu trúc</li>
+                <li>Kiểm tra xem các thành phần có đầy đủ không</li>
+                <li>So sánh với các ví dụ mẫu</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Nhanh</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Công Thức</th>
+                        <th>Động Từ</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SV</strong></td>
+                        <td>S + V</td>
+                        <td>Nội động</td>
+                        <td>I sleep</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SVO</strong></td>
+                        <td>S + V + O</td>
+                        <td>Ngoại động</td>
+                        <td>I eat rice</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SVC</strong></td>
+                        <td>S + V + C</td>
+                        <td>Liên kết</td>
+                        <td>I am happy</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>SVOC</strong></td>
+                        <td>S + V + O + C</td>
+                        <td>Ngoại động</td>
+                        <td>I made her happy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SVOO</strong></td>
+                        <td>S + V + IO + DO</td>
+                        <td>Hai tân ngữ</td>
+                        <td>I gave her a book</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

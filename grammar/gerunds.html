@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Danh Động Từ (Gerunds)</h2>
+
+        <div class="card">
+            <h3>Danh Động Từ Là Gì?</h3>
+            <p><span class="highlight">Danh Động Từ (Gerund)</span> là <strong>dạng V-ing của động từ nhưng đóng vai trò như một danh từ, có thể làm chủ ngữ, tân ngữ, bổ ngữ, hoặc tân ngữ của giới từ</strong>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Danh động từ luôn kết thúc bằng -ing nhưng hoạt động như danh từ. Không được nhầm với present participle (V-ing dùng trong động từ tiếp diễn).
+            </div>
+
+            <h3>Danh Động Từ Vs Present Participle</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>Danh Động Từ (Gerund)</th>
+                        <th>Present Participle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hình Thức</strong></td>
+                        <td>V-ing</td>
+                        <td>V-ing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Vai Trò</strong></td>
+                        <td>Danh từ</td>
+                        <td>Động từ hoặc Tính từ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ví Dụ</strong></td>
+                        <td>Swimming is fun (danh từ - chủ ngữ)</td>
+                        <td>She is swimming (động từ - continuous)</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Ví Dụ 2</strong></td>
+                        <td>I enjoy reading (danh từ - tân ngữ)</td>
+                        <td>The reading man (tính từ - mô tả)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Để phân biệt, hãy xem xét chức năng trong câu. Nếu là danh từ → Gerund. Nếu là động từ/tính từ → Present Participle.
+            </div>
+        </div>
+
+        <!-- GERUND AS SUBJECT -->
+        <h2>📍 1. Danh Động Từ Làm Chủ Ngữ (Gerund as Subject)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh động từ làm chủ ngữ</span> là <strong>danh động từ đứng ở vị trí chủ ngữ của câu, thường được theo sau bởi động từ số ít (singular verb)</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Gerund subject = singular → động từ số ít (is, does, was) | Có thể thay thế bằng danh từ thông thường
+            </div>
+
+            <h3>II. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • Swimming is a good exercise (Bơi là bài tập tốt)<br>
+                • Reading helps expand knowledge (Đọc giúp mở rộng kiến thức)<br>
+                • Cooking is her favorite hobby (Nấu ăn là sở thích ưa thích của cô ấy)<br>
+                • Learning English requires patience (Học tiếng Anh đòi hỏi kiên nhẫn)<br>
+                • Traveling around the world is expensive (Du lịch vòng quanh thế giới rất tốn kém)<br>
+                • Making mistakes is normal (Mắc lỗi là chuyện bình thường)
+            </div>
+
+            <p><strong>Gerund Phrase Làm Chủ Ngữ:</strong></p>
+            <div class="example">
+                • Traveling to new places excites me (Đi du lịch đến những nơi mới làm tôi hứng thú)<br>
+                • Finishing this project on time will be difficult (Hoàn thành dự án này đúng thời gian sẽ rất khó khăn)<br>
+                • Living in the city is stressful (Sống ở thành phố rất stress)<br>
+                • Finding a good job takes time (Tìm một công việc tốt mất thời gian)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> Gerund subject luôn được coi là số ít, dùng động từ số ít<br>
+                ✅ Swimming is relaxing | ❌ Swimming are relaxing<br>
+                ✅ Learning languages develops your brain | ❌ Learning languages develop your brain
+            </div>
+        </div>
+
+        <!-- GERUND AS OBJECT -->
+        <h2>🎯 2. Danh Động Từ Làm Tân Ngữ (Gerund as Object)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh động từ làm tân ngữ</span> là <strong>danh động từ đứng sau động từ hoặc sau một động từ khác để làm tân ngữ trực tiếp</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Một số động từ chỉ theo sau gerund | Một số động từ chỉ theo sau infinitive | Một số có thể theo sau cả hai
+            </div>
+
+            <h3>II. Động Từ Chỉ Theo Sau Gerund</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Động Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ENJOY</strong></td>
+                        <td>Thích, hưởng thụ</td>
+                        <td>I enjoy reading books</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>AVOID</strong></td>
+                        <td>Tránh</td>
+                        <td>She avoided making mistakes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SUGGEST</strong></td>
+                        <td>Đề xuất, gợi ý</td>
+                        <td>He suggested going out</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FINISH</strong></td>
+                        <td>Kết thúc, hoàn thành</td>
+                        <td>We finished eating dinner</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DISLIKE</strong></td>
+                        <td>Không thích</td>
+                        <td>He dislikes waiting for buses</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MIND</strong></td>
+                        <td>Để ý, phiền</td>
+                        <td>I don't mind waiting</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RECOMMEND</strong></td>
+                        <td>Khuyên, giới thiệu</td>
+                        <td>They recommended meeting earlier</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ADMIT</strong></td>
+                        <td>Thừa nhận</td>
+                        <td>He admitted stealing the necklace</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DISCUSS</strong></td>
+                        <td>Thảo luận</td>
+                        <td>We discussed going on holiday</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>KEEP</strong></td>
+                        <td>Tiếp tục</td>
+                        <td>He kept working all night</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IMAGINE</strong></td>
+                        <td>Tưởng tượng</td>
+                        <td>I can't imagine leaving this place</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>MISS</strong></td>
+                        <td>Nhớ, bỏ lỡ</td>
+                        <td>She missed seeing the movie</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I enjoy playing tennis (Tôi thích chơi tennis)<br>
+                • She avoided talking to him (Cô ấy tránh nói chuyện với anh ấy)<br>
+                • We finished preparing the dinner (Chúng tôi hoàn thành chuẩn bị bữa tối)<br>
+                • He suggested going to the beach (Anh ấy gợi ý đi tới bãi biển)<br>
+                • They recommended visiting the museum (Họ khuyên thăm bảo tàng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> KHÔNG được dùng infinitive sau những động từ này<br>
+                ✅ I enjoy playing | ❌ I enjoy to play<br>
+                ✅ We finished eating | ❌ We finished to eat
+            </div>
+        </div>
+
+        <!-- GERUND AFTER PREPOSITIONS -->
+        <h2>🔄 3. Danh Động Từ Sau Giới Từ (Gerund After Prepositions)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh động từ sau giới từ</span> là <strong>danh động từ luôn được dùng sau mọi giới từ (in, on, at, about, for, before, after, v.v.)</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> LUÔN dùng gerund sau preposition | KHÔNG bao giờ dùng infinitive sau preposition | Quy tắc bắt buộc
+            </div>
+
+            <h3>II. Các Giới Từ Phổ Biến + Gerund</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giới Từ</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IN</strong></td>
+                        <td>Trong</td>
+                        <td>She is interested in learning</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>ON</strong></td>
+                        <td>Trên, về</td>
+                        <td>He insisted on coming</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AT</strong></td>
+                        <td>Tại, với</td>
+                        <td>Good at driving</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>FOR</strong></td>
+                        <td>Cho, vì</td>
+                        <td>Thank you for helping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ABOUT</strong></td>
+                        <td>Về</td>
+                        <td>Think about traveling</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BEFORE</strong></td>
+                        <td>Trước</td>
+                        <td>Before leaving</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AFTER</strong></td>
+                        <td>Sau</td>
+                        <td>After finishing</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>BY</strong></td>
+                        <td>Bằng, bởi</td>
+                        <td>By studying hard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WITHOUT</strong></td>
+                        <td>Không</td>
+                        <td>Without saying anything</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>INSTEAD OF</strong></td>
+                        <td>Thay vì</td>
+                        <td>Instead of going</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <div class="example">
+                • I'm interested in learning languages (Tôi quan tâm đến việc học các ngôn ngữ)<br>
+                • He insisted on coming with us (Anh ấy khăng khăng muốn đi cùng chúng tôi)<br>
+                • Thank you for helping me (Cảm ơn bạn đã giúp đỡ tôi)<br>
+                • I'm good at playing basketball (Tôi giỏi chơi bóng rổ)<br>
+                • Before leaving, check your bag (Trước khi đi, hãy kiểm tra túi xách)<br>
+                • She succeeded in finding a job (Cô ấy thành công trong việc tìm được việc làm)<br>
+                • I'm thinking about moving to another city (Tôi đang suy nghĩ về việc chuyển đến thành phố khác)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Quy Tắc Bắt Buộc:</strong> KHÔNG bao giờ dùng infinitive sau preposition<br>
+                ✅ Interested in reading | ❌ Interested in to read<br>
+                ✅ Before leaving | ❌ Before to leave<br>
+                ✅ Thank you for helping | ❌ Thank you for to help
+            </div>
+        </div>
+
+        <!-- GERUND WITH POSSESSIVE -->
+        <h2>👤 4. Danh Động Từ Với Possessive (Gerund with Possessive)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+            
+            <p><span class="highlight">Danh động từ với possessive</span> là <strong>khi có danh từ hoặc đại từ đứng trước gerund, phải dùng dạng possessive (sở hữu)</strong>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Formal: Possessive + Gerund | Informal: Object pronoun + Gerund | Formal thích hơn trong viết
+            </div>
+
+            <h3>II. Possessive Pronouns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Đại Từ Nhân Xưng</th>
+                        <th>Possessive</th>
+                        <th>Ví Dụ Formal</th>
+                        <th>Ví Dụ Informal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td><strong>My</strong></td>
+                        <td>I appreciate my helping</td>
+                        <td>I appreciate me helping</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>You</strong></td>
+                        <td><strong>Your</strong></td>
+                        <td>I appreciate your helping</td>
+                        <td>I appreciate you helping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>He</strong></td>
+                        <td><strong>His</strong></td>
+                        <td>I appreciate his helping</td>
+                        <td>I appreciate him helping</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>She</strong></td>
+                        <td><strong>Her</strong></td>
+                        <td>I appreciate her helping</td>
+                        <td>I appreciate her helping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>It</strong></td>
+                        <td><strong>Its</strong></td>
+                        <td>Despite its being broken</td>
+                        <td>Despite it being broken</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>We</strong></td>
+                        <td><strong>Our</strong></td>
+                        <td>I appreciate our helping</td>
+                        <td>I appreciate us helping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>They</strong></td>
+                        <td><strong>Their</strong></td>
+                        <td>I appreciate their helping</td>
+                        <td>I appreciate them helping</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Possessive Nouns + Gerund</h3>
+
+            <div class="example">
+                • Formal: I don't like John's interrupting (Tôi không thích John gián đoạn)<br>
+                • Formal: We appreciated Mary's helping us (Chúng tôi đánh giá cao Mary đã giúp chúng tôi)<br>
+                • Formal: The teacher didn't approve of Sarah's cheating (Giáo viên không chấp thuận Sarah gian lận)<br>
+                • Formal: Do you mind my asking a question? (Bạn có phiền tôi hỏi một câu hỏi không?)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Về Kiểu Viết:</strong><br>
+                <strong>Formal (Chính thức):</strong> I appreciate your helping me<br>
+                <strong>Informal (Không chính thức):</strong> I appreciate you helping me<br>
+                Trong viết chính thức, dùng possessive tốt hơn. Trong lời nói thường, object pronoun cũng được chấp nhận.
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Nhầm gerund với present participle</p>
+            <div class="example">
+                ❌ Reading is fun (present participle - sai) | ✅ Reading is fun (gerund - danh từ)<br>
+                ❌ I enjoy to read | ✅ I enjoy reading
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng infinitive sau preposition</p>
+            <div class="example">
+                ❌ Interested in to learn | ✅ Interested in learning<br>
+                ❌ Before to leave | ✅ Before leaving
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Dùng gerund sau động từ chỉ theo infinitive</p>
+            <div class="example">
+                ❌ I want studying | ✅ I want to study<br>
+                ❌ She plans reading | ✅ She plans to read
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Quên possessive trước gerund (formal)</p>
+            <div class="example">
+                ❌ I don't like him interrupting (informal) | ✅ I don't like his interrupting (formal)<br>
+                ❌ We opposed him going | ✅ We opposed his going
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Dùng plural verb với gerund subject</p>
+            <div class="example">
+                ❌ Reading are fun | ✅ Reading is fun<br>
+                ❌ Learning languages require patience | ✅ Learning languages requires patience
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: Phân Biệt Gerund Vs Infinitive</strong></p>
+            <ul>
+                <li>Gerund = Danh từ (V-ing) | Infinitive = "to + V"</li>
+                <li>Gerund thường theo sau động từ nhất định: enjoy, avoid, suggest, recommend, finish, mind, admit</li>
+                <li>Infinitive theo sau: want, plan, decide, hope, learn, offer, agree, promise</li>
+            </ul>
+
+            <p><strong>Mẹo 2: Sau Preposition LUÔN Dùng Gerund</strong></p>
+            <ul>
+                <li>in, on, at, for, about, before, after, by, without, instead of → LUÔN + Gerund</li>
+                <li>Nhớ: Preposition + Gerund (không bao giờ infinitive)</li>
+            </ul>
+
+            <p><strong>Mẹo 3: Gerund Subject = Singular</strong></p>
+            <ul>
+                <li>Gerund làm chủ ngữ luôn số ít</li>
+                <li>Reading is fun (không "are fun")</li>
+                <li>Learning languages requires patience (không "require")</li>
+            </ul>
+
+            <p><strong>Mẹo 4: Possessive Trước Gerund</strong></p>
+            <ul>
+                <li>Formal: My/Your/His/Her/Their + Gerund</li>
+                <li>Informal: Me/You/Him/Her/Them + Gerund</li>
+                <li>Ưu tiên possessive trong viết chính thức</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Lập Bảng Động Từ + Gerund</strong></p>
+            <ul>
+                <li>Viết danh sách những động từ theo sau gerund</li>
+                <li>Luyện tập lặp lại các cụm từ này</li>
+                <li>Thực hành tạo câu với mỗi động từ</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Danh Động Từ</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vị Trí</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chủ Ngữ</strong></td>
+                        <td>Gerund + is/V singular</td>
+                        <td>Reading is fun</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Tân Ngữ</strong></td>
+                        <td>V + Gerund</td>
+                        <td>I enjoy reading</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sau Preposition</strong></td>
+                        <td>Preposition + Gerund</td>
+                        <td>In reading, she excels</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Với Possessive</strong></td>
+                        <td>Possessive + Gerund</td>
+                        <td>I appreciate your helping</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

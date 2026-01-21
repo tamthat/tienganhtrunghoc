@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #134252;
+            background-color: #ffffff;
+        }
+
+        .content-wrapper {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #208080;
+            font-size: 1.6em;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid rgba(94, 82, 64, 0.2);
+            padding-bottom: 10px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #134252;
+            font-size: 1.2em;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #626c71;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #208080;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card.info {
+            border-left-color: #32b8c6;
+        }
+
+        .card.warning {
+            border-left-color: #a84f2f;
+        }
+
+        .card.success {
+            border-left-color: #2d6b8f;
+        }
+
+        .example {
+            background-color: #f9f6f0;
+            border-left: 3px solid #32b8c6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .example strong {
+            color: #208080;
+            font-style: normal;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #a84f2f;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #a84f2f;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background-color: #208080;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(94, 82, 64, 0.2);
+            font-size: 0.95em;
+        }
+
+        tr:hover {
+            background-color: #f9f6f0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula {
+            background-color: #e8f4f8;
+            border: 1px solid #32b8c6;
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #134252;
+            text-align: center;
+        }
+
+        .verb-form {
+            font-weight: bold;
+            color: #208080;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #626c71;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .content-wrapper {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- DEFINITION SECTION -->
+        <h2>📖 Used To/Would/Be Used To (Quen Thuộc & Thói Quen Trong Quá Khứ)</h2>
+
+        <div class="card">
+            <h3>Ba Cấu Trúc Về Thói Quen & Quen Thuộc</h3>
+            <p><span class="highlight">Ba cấu trúc "used to", "would", và "be/get used to" được dùng để nói về thói quen, hành động lặp lại trong quá khứ, hoặc tình trạng quen thuộc/làm quen</span>.</p>
+            
+            <div class="note">
+                <strong>💡 Ghi Nhớ:</strong> Mặc dù ba cấu trúc này có vẻ tương tự, nhưng ý nghĩa, cách sử dụng, và thời gian của chúng rất khác nhau. Cần phân biệt rõ ràng.
+            </div>
+
+            <h3>So Sánh Tổng Quát</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Ý Nghĩa</th>
+                        <th>Với Gì</th>
+                        <th>Thì</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USED TO</strong></td>
+                        <td>Hành động/tình trạng trong quá khứ (không còn)</td>
+                        <td>V1 (base form)</td>
+                        <td>Quá khứ</td>
+                        <td>I used to swim</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WOULD</strong></td>
+                        <td>Hành động lặp lại trong quá khứ (không còn)</td>
+                        <td>V1 (base form)</td>
+                        <td>Quá khứ</td>
+                        <td>I would swim</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BE USED TO</strong></td>
+                        <td>Quen thuộc, thoải mái với cái gì (hiện tại)</td>
+                        <td>Noun / V-ing</td>
+                        <td>Bất kỳ thì nào</td>
+                        <td>I'm used to swimming</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>GET USED TO</strong></td>
+                        <td>Quá trình làm quen/thoải mái (đang thích nghi)</td>
+                        <td>Noun / V-ing</td>
+                        <td>Bất kỳ thì nào</td>
+                        <td>I'm getting used to swimming</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- USED TO -->
+        <h2>📚 1. USED TO (Hành Động/Tình Trạng Trong Quá Khứ)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">USED TO dùng để mô tả hành động hoặc tình trạng trong quá khứ mà bây giờ không còn xảy ra</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: used to + V1 | Dùng cho cả hành động (actions) và tình trạng (states) | Nhấn mạnh rằng điều đó KHÔNG còn xảy ra
+            </div>
+
+            <h3>II. Công Thức & Hình Thức</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dạng</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Khẳng Định</strong></td>
+                        <td>S + used to + V1</td>
+                        <td>I used to play tennis</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Phủ Định</strong></td>
+                        <td>S + didn't use to + V1 (NỀN: use to, không "used")</td>
+                        <td>I didn't use to play tennis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Câu Hỏi</strong></td>
+                        <td>Did + S + use to + V1? (NỀN: use to, không "used")</td>
+                        <td>Did you use to play tennis?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Used To + Hành Động (Không Lặp Lại Nhất Thiết):</strong></p>
+            <div class="example">
+                • I used to live in Paris (Tôi từng sống ở Paris - bây giờ không)<br>
+                • She used to work as a teacher (Cô ấy từng làm giáo viên)<br>
+                • They used to visit us every summer (Họ thường đến thăm chúng tôi vào mỗi mùa hè)<br>
+                • He used to smoke a lot (Anh ấy từng hút thuốc nhiều)
+            </div>
+
+            <p><strong>Used To + Tình Trạng/Trạng Thái (Điểm Khác Biệt Quan Trọng):</strong></p>
+            <div class="example">
+                • There used to be a park here (Từng có một công viên ở đây)<br>
+                • I used to be afraid of the dark (Tôi từng sợ bóng tối)<br>
+                • She used to love chocolate (Cô ấy từng yêu thích sô cô la)<br>
+                • They used to feel happy together (Họ từng cảm thấy hạnh phúc cùng nhau)
+            </div>
+
+            <p><strong>Phủ Định & Câu Hỏi (Lưu Ý: KHÔNG "used"):</strong></p>
+            <div class="example">
+                • I didn't use to like coffee (Tôi không từng thích cà phê)<br>
+                • Did you use to play football? (Bạn có từng chơi bóng đá không?)<br>
+                • She didn't use to speak English (Cô ấy không từng nói tiếng Anh)<br>
+                • Did they use to go to that school? (Họ có từng đi trường đó không?)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý Quan Trọng:</strong> Trong phủ định và câu hỏi, "used" trở thành "use"<br>
+                ✅ I used to play | ❌ I used to play (khẳng định)<br>
+                ✅ I didn't use to play | ❌ I didn't used to play<br>
+                ✅ Did you use to play? | ❌ Did you used to play?
+            </div>
+        </div>
+
+        <!-- WOULD FOR PAST HABITS -->
+        <h2>🔁 2. WOULD (Hành Động Lặp Lại Trong Quá Khứ)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">WOULD (modal verb) dùng để mô tả hành động lặp lại, thói quen trong quá khứ, thường trong bối cảnh kể chuyện</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: would + V1 | CHỈ dùng cho hành động (KHÔNG dùng cho states) | Formal/literary tone | Thường không dùng phủ định/câu hỏi
+            </div>
+
+            <h3>II. Ví Dụ & Bối Cảnh Sử Dụng</h3>
+
+            <p><strong>Would + Hành Động Lặp Lại (Trong Kể Chuyện):</strong></p>
+            <div class="example">
+                • Every summer, we would go to the beach (Mỗi mùa hè, chúng tôi lại đi biển)<br>
+                • When I was a child, I would play with my friends every day<br>
+                (Khi tôi là trẻ, tôi thường chơi với bạn bè mỗi ngày)<br>
+                • He would always tell stories before bedtime<br>
+                (Anh ấy luôn kể chuyện trước khi đi ngủ)<br>
+                • The old dog would sleep in the sun every afternoon<br>
+                (Con chó già lúc nào cũng ngủ dưới ánh nắng vào chiều)
+            </div>
+
+            <p><strong>Would - Các Đặc Điểm Ngôn Ngữ:</strong></p>
+            <div class="example">
+                • Formal & Storytelling tone: "When we were young, we would explore the forest."<br>
+                (Khi chúng tôi còn trẻ, chúng tôi thường khám phá rừng)<br>
+                • Nostalgia: "I would spend hours reading in the library."<br>
+                (Tôi thường dành nhiều giờ đọc sách ở thư viện)<br>
+                • Predictable behavior: "My father would always wake up at 5 am."<br>
+                (Cha tôi lúc nào cũng thức dậy lúc 5 giờ sáng)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ KHÔNG Dùng Would Cho States (Tình Trạng):</strong><br>
+                ❌ I would live in Paris (sai - tình trạng) | ✅ I used to live in Paris (đúng)<br>
+                ❌ She would like chocolate (sai) | ✅ She used to like chocolate (đúng)<br>
+                ✅ We would visit the beach (đúng - hành động lặp lại)
+            </div>
+        </div>
+
+        <!-- BE USED TO -->
+        <h2>✅ 3. BE USED TO (Quen Thuộc, Thoải Mái)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">BE USED TO dùng để nói rằng bạn quen thuộc hoặc thoải mái với cái gì (do kinh nghiệm)</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: be + used to + noun / V-ing | Có thể dùng ở bất kỳ thì nào | Nhấn mạnh tình trạng HIỆN TẠI của sự quen thuộc
+            </div>
+
+            <h3>II. Công Thức & Các Thì</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present</strong></td>
+                        <td>am/is/are + used to + noun/V-ing</td>
+                        <td>I'm used to hot weather</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past</strong></td>
+                        <td>was/were + used to + noun/V-ing</td>
+                        <td>I was used to hard work</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Future</strong></td>
+                        <td>will be + used to + noun/V-ing</td>
+                        <td>I'll be used to the new job</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Perfect</strong></td>
+                        <td>have/has been + used to + noun/V-ing</td>
+                        <td>I've been used to this routine</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Be Used To + Danh Từ (Quen Với Cái Gì):</strong></p>
+            <div class="example">
+                • I'm used to the noise in this city (Tôi quen với tiếng ồn trong thành phố này)<br>
+                • She's used to cold weather (Cô ấy quen với thời tiết lạnh)<br>
+                • They were used to long working hours (Họ quen với giờ làm việc dài)<br>
+                • Are you used to the spicy food here? (Bạn quen với đồ ăn cay ở đây không?)
+            </div>
+
+            <p><strong>Be Used To + V-ing (Quen Với Làm Gì):</strong></p>
+            <div class="example">
+                • I'm used to waking up early (Tôi quen với việc thức dậy sớm)<br>
+                • She's used to working from home (Cô ấy quen với việc làm việc từ nhà)<br>
+                • They were used to traveling constantly (Họ quen với việc liên tục đi du lịch)<br>
+                • Are you used to speaking English every day? (Bạn quen với việc nói tiếng Anh mỗi ngày không?)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Lưu Ý:</strong> "Be used to" KHÔNG chỉ quá khứ, mà chỉ tình trạng HIỆN TẠI của sự quen thuộc<br>
+                ✅ I'm used to hard work (tôi quen rồi, bây giờ tôi thoải mái)<br>
+                ✅ I was used to hard work (lúc đó tôi quen, nên tôi thoải mái)
+            </div>
+        </div>
+
+        <!-- GET USED TO -->
+        <h2>🔄 4. GET USED TO (Quá Trình Làm Quen)</h2>
+
+        <div class="card">
+            <h3>I. Định Nghĩa & Đặc Điểm</h3>
+
+            <p><span class="highlight">GET USED TO dùng để nói về quá trình THÍCH NGHI, LÀNG QUEN dần dần với cái gì mới</span>.</p>
+
+            <div class="note">
+                <strong>📌 Đặc Điểm:</strong> Công thức: get + used to + noun / V-ing | Nhấn mạnh QUÁTRÌNH thay đổi | Còn đang thích nghi, chưa hoàn toàn thoải mái | Có thể dùng ở bất kỳ thì nào
+            </div>
+
+            <h3>II. Công Thức & Các Thì</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thì</th>
+                        <th>Công Thức</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Present</strong></td>
+                        <td>am/is/are + getting + used to + noun/V-ing</td>
+                        <td>I'm getting used to my new job</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Past</strong></td>
+                        <td>got + used to + noun/V-ing</td>
+                        <td>I got used to the noise</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Future</strong></td>
+                        <td>will get + used to + noun/V-ing</td>
+                        <td>I'll get used to the new schedule</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>Perfect</strong></td>
+                        <td>have/has + got + used to + noun/V-ing</td>
+                        <td>I've got used to the routine</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>III. Ví Dụ Chi Tiết</h3>
+
+            <p><strong>Get Used To + Danh Từ (Quá Trình Thích Nghi):</strong></p>
+            <div class="example">
+                • I'm getting used to the new apartment (Tôi đang dần làm quen với căn hộ mới)<br>
+                • She got used to the new city after a few months<br>
+                (Cô ấy đã làm quen với thành phố mới sau vài tháng)<br>
+                • They will get used to their new classmates soon<br>
+                (Họ sẽ sớm làm quen với các bạn cùng lớp mới)<br>
+                • How long did it take you to get used to the climate?<br>
+                (Mất bao lâu để bạn làm quen với khí hậu?)
+            </p>
+
+            <p><strong>Get Used To + V-ing (Quá Trình Thích Nghi Với Hành Động):</strong></p>
+            <div class="example">
+                • I'm getting used to waking up at 5 am (Tôi đang dần làm quen với việc thức dậy lúc 5 giờ)<br>
+                • She got used to working from home<br>
+                (Cô ấy đã làm quen với việc làm việc từ nhà)<br>
+                • It takes time to get used to eating healthy food<br>
+                (Mất thời gian để làm quen với việc ăn uống lành mạnh)<br>
+                • They will get used to traveling by train soon<br>
+                (Họ sẽ sớm làm quen với việc đi tàu)
+            </div>
+
+            <div class="note">
+                <strong>⚠️ Be Used To Vs Get Used To:</strong><br>
+                • <strong>Be used to:</strong> Bạn đã quen (hoàn thành tình trạng) → I'm used to hard work<br>
+                • <strong>Get used to:</strong> Bạn đang làm quen dần (quá trình) → I'm getting used to hard work
+            </div>
+        </div>
+
+        <!-- NOTES SECTION -->
+        <h2>🎯 Lưu Ý Quan Trọng & Mẹo Học</h2>
+
+        <div class="card warning">
+            <h3>⚠️ Những Lỗi Phổ Biến</h3>
+
+            <p><strong>Lỗi 1:</strong> Dùng "used" trong phủ định/câu hỏi của "used to"</p>
+            <div class="example">
+                ❌ I didn't used to play | ✅ I didn't use to play<br>
+                ❌ Did you used to swim? | ✅ Did you use to swim?
+            </div>
+
+            <p><strong>Lỗi 2:</strong> Dùng "would" cho past states</p>
+            <div class="example">
+                ❌ I would live in Paris | ✅ I used to live in Paris<br>
+                ❌ She would like chocolate | ✅ She used to like chocolate
+            </div>
+
+            <p><strong>Lỗi 3:</strong> Nhầm lẫn "be used to" và "used to"</p>
+            <div class="example">
+                ❌ I used to the noise (sai) | ✅ I'm used to the noise (quen rồi)<br>
+                ❌ I'm used to go to school (sai - động từ) | ✅ I'm used to going to school
+            </div>
+
+            <p><strong>Lỗi 4:</strong> Dùng "be used to" cho quá trình (nên dùng "get used to")</p>
+            <div class="example">
+                ❌ I'm used to the new job (không rõ ý) | ✅ I'm getting used to the new job (đang thích nghi)<br>
+                ✅ I was used to it (đã quen rồi)
+            </div>
+
+            <p><strong>Lỗi 5:</strong> Sau "used to/be used to/get used to" quên dùng danh từ hoặc V-ing</p>
+            <div class="example">
+                ❌ I used to work (có thể đúng, nhưng cần ngữ cảnh) | ✅ I used to work here<br>
+                ❌ I'm used to wake up early (sai) | ✅ I'm used to waking up early
+            </div>
+        </div>
+
+        <div class="card success">
+            <h3>✨ Mẹo Học Hiệu Quả</h3>
+
+            <p><strong>Mẹo 1: USED TO - Actions & States</strong></p>
+            <ul>
+                <li>Dùng cho cả HÀNH ĐỘNG và TÌNH TRẠNG quá khứ</li>
+                <li>Nhấn mạnh: KHÔNG còn xảy ra bây giờ</li>
+                <li>Phủ định: I didn't use to (không "used")</li>
+                <li>Câu hỏi: Did you use to? (không "used")</li>
+            </ul>
+
+            <p><strong>Mẹo 2: WOULD - Actions Only</strong></p>
+            <ul>
+                <li>CHỈ dùng cho HÀNH ĐỘNG lặp lại (không states)</li>
+                <li>Formal/storytelling tone</li>
+                <li>Không dùng phủ định/câu hỏi thường</li>
+                <li>Ví dụ: Every summer, we would go...</li>
+            </ul>
+
+            <p><strong>Mẹo 3: BE USED TO - Current Familiarity</strong></p>
+            <ul>
+                <li>Be + used to + Noun / V-ing</li>
+                <li>HIỆN TẠI: Bạn đã quen, thoải mái</li>
+                <li>Bất kỳ thì nào nhưng chỉ tình trạng QUA KHỨ/HIỆN TẠI</li>
+                <li>Ví dụ: I'm used to the noise (quen rồi)</li>
+            </ul>
+
+            <p><strong>Mẹo 4: GET USED TO - Process of Adaptation</strong></p>
+            <ul>
+                <li>Get + used to + Noun / V-ing</li>
+                <li>QUÁTRÌNH: Đang dần làm quen</li>
+                <li>Chưa hoàn toàn quen, còn đang thích nghi</li>
+                <li>Ví dụ: I'm getting used to the noise (đang dần quen)</li>
+            </ul>
+
+            <p><strong>Mẹo 5: Bảng Ánh Xạ Nhanh</strong></p>
+            <ul>
+                <li>Quá khứ, không còn → used to (cả action & state)</li>
+                <li>Quá khứ, hành động lặp lại, tự truyện → would</li>
+                <li>Quen rồi, thoải mái → be used to</li>
+                <li>Đang làm quen → get used to</li>
+            </ul>
+
+            <p><strong>Mẹo 6: Practice</strong></p>
+            <ul>
+                <li>Viết 5 câu về thói quen quá khứ (used to)</li>
+                <li>Viết 5 câu kể chuyện (would)</li>
+                <li>Viết 5 câu về quen thuộc (be used to)</li>
+                <li>Viết 5 câu về đang thích nghi (get used to)</li>
+            </ul>
+        </div>
+
+        <div class="card info">
+            <h3>💡 Bảng Tóm Tắt Chi Tiết</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cấu Trúc</th>
+                        <th>Công Thức</th>
+                        <th>Dùng Cho</th>
+                        <th>Ý Nghĩa Chính</th>
+                        <th>Ví Dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USED TO</strong></td>
+                        <td>used to + V1</td>
+                        <td>Actions & States (quá khứ)</td>
+                        <td>Quá khứ, không còn</td>
+                        <td>I used to live in Paris</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>WOULD</strong></td>
+                        <td>would + V1</td>
+                        <td>Actions chỉ (lặp lại)</td>
+                        <td>Thói quen quá khứ (kể chuyện)</td>
+                        <td>We would visit every summer</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BE USED TO</strong></td>
+                        <td>be + used to + N/V-ing</td>
+                        <td>Current familiarity</td>
+                        <td>Quen rồi, thoải mái</td>
+                        <td>I'm used to waking up early</td>
+                    </tr>
+                    <tr style="background-color: #f0f7fb;">
+                        <td><strong>GET USED TO</strong></td>
+                        <td>get + used to + N/V-ing</td>
+                        <td>Process of becoming familiar</td>
+                        <td>Đang làm quen</td>
+                        <td>I'm getting used to the new job</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
