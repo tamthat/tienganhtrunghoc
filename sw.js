@@ -10,8 +10,8 @@
 
 // VERSION and PRECACHE are rewritten by scripts/build-sw.mjs after every build,
 // so a new build gets a fresh shell cache and ships its hashed assets offline.
-const VERSION = 'd99651b205';
-const PRECACHE = ["./index.html","./manifest.webmanifest","./favicon.svg","./assets/index-D5C1KInn.js","./assets/index-DKgaVQuk.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png"];
+const VERSION = 'ac996dd964';
+const PRECACHE = ["./index.html","./manifest.webmanifest","./favicon.svg","./assets/index-DCafJlyZ.js","./assets/index-DKgaVQuk.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png"];
 
 // Shell is per-build. Data is not: dict/grammar files never change, so keeping
 // them across deploys avoids re-downloading tens of megabytes.
